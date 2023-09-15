@@ -1,12 +1,17 @@
 /** @format */
 
-import React from "react";
+// import React from "react";
 import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faSeedling } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faLocationDot, faMobile, faPaperPlane, faSeedling } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./layout/Navbar";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
+
 
 export default function () {
   return (
@@ -69,15 +74,16 @@ export default function () {
               </div>
               <div className='text-end'>
                 <a href='' className='text-decoration-none text-dark'>
-                  {/* <i className='fa fa-send fa-2xl my-4'></i> */}
-                  <FontAwesomeIcon icon={faSeedling} className='fa-2x my-4' />
+                
+                  <FontAwesomeIcon icon={faPaperPlane} className="fa-2xl my-4" />
                 </a>
               </div>
             </div>
 
             <div className='col-md-6 mt-5 justify-content-between'>
               <div className='d-flex align-items-center px-4 py-4 mt-5 text-dark bg-white rounded shadow-sm'>
-                <i className='fa fas fa-mobile-alt me-5 fa-2xl'></i>
+                <FontAwesomeIcon icon={faMobile} className="me-5 fa-2xl" />
+
                 <div className='lh-1'>
                   <h1 className='h6 mb-3 text-dark lh-1'>Phone Number</h1>
                   <small>
@@ -99,7 +105,8 @@ export default function () {
                 </div>
               </div>
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded shadow-sm'>
-                <i className='fa fas fa-envelope-o me-5 fa-2xl'></i>
+                <FontAwesomeIcon icon={faEnvelope} className="me-5 fa-2xl"/>
+
                 <div className='lh-1'>
                   <h1 className='h6 mb-3 text-dark lh-1'>Email Address</h1>
                   <small>
@@ -113,7 +120,7 @@ export default function () {
                 </div>
               </div>
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded shadow-sm'>
-                <i className='fa fa fa-map-marker me-5 fa-2xl'></i>
+                <FontAwesomeIcon icon={faLocationDot} className="me-5 fa-2xl"/>
                 <div className='lh-1'>
                   <h1 className='h6 mb-3 text-dark lh-1'>Location</h1>
                   <small>

@@ -8,10 +8,16 @@ import smm from "../../Assets/smm.png";
 import sem from "../../Assets/sem.png";
 
 function Navbar() {
+  const navStyle = {
+    background: '#FFF',
+    boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+    height: '7.45494rem',
+   
+  };
   return (
     <section>
-      <nav className='navbar navbar-expand-lg navbar-light'>
-        <div className='container-lg d-flex justify-content-between align-items-center'>
+      <nav className='navbar navbar-expand-lg navbar-light'  style={navStyle}>
+        <div className=' container-lg d-flex justify-content-between align-items-center'>
           <Link className='navbar-brand' to='/'>
             <img src={Logo} alt='Logo' />
           </Link>
@@ -101,7 +107,7 @@ function Navbar() {
               </div>
             </li>
             <li className='nav-item mx-3'>
-              <Link className='nav-link' to='/about'>
+              <Link className='nav-link' to='/about-us'>
                 About Us
               </Link>
             </li>
@@ -116,7 +122,7 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item mx-3'>
-              <Link className='nav-link' to='/contact'>
+              <Link className='nav-link' to='/contact-us'>
                 Contact Us
               </Link>
             </li>

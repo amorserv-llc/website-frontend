@@ -31,12 +31,12 @@ import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
-import Navbar from "./layout/Navbar";
+import Navbar from "./layout/NavBar";
 
 export default function Index() {
   return (
     <>
-      <Navbar />
+    <Navbar />
       <Header />
 
       <section id='sec-2' className='py-4'>
@@ -49,7 +49,7 @@ export default function Index() {
         </div>
 
         <div className='client-wrapper'>
-          <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i>
+          {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
           <div className='client-carousel'>
             <img
               src={nike}
@@ -95,7 +95,7 @@ export default function Index() {
               alt='...'
             />
           </div>
-          <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i>
+          {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>
       </section>
 
@@ -202,7 +202,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src='images/brand.svg' width='25px' alt='...' />
+              <img src='' width='25px' alt='...' />
               <a href='' className='px-2 serv-link'>
                 Branding
               </a>
