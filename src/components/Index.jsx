@@ -422,7 +422,7 @@ export default function Index() {
               <div className='info'>
                 <div className='name-img'>
                   <div className='image'>
-                    <img src='../images/t1.png' alt='' draggable='false' />
+                    <img src={t1} alt='' draggable='false' />
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>

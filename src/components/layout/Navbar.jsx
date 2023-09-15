@@ -4,8 +4,8 @@ import Logo from "../../Assets/Logo.png";
 import { Link } from "react-router-dom";
 import seoIcon from "../../Assets/seoIcon.png";
 import em from "../../Assets/em.png";
-import smm from '../../Assets/smm.png'
-
+import smm from "../../Assets/smm.png";
+import sem from "../../Assets/sem.png";
 
 function Navbar() {
   return (
@@ -40,7 +40,7 @@ function Navbar() {
               <div className='dropdown-menu'>
                 <Link
                   className='nav-link'
-                  to='/seo'
+                  to='/search-engine-optimization'
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <img src={seoIcon} width='20' height='20' alt='...' />
@@ -52,23 +52,22 @@ function Navbar() {
                   </div>
                 </Link>
 
-            
                 <Link
                   className='nav-link'
-                  to='/smm'
+                  to='/social-media-marketing'
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <img src={smm} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
                     <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
-                    Social Media Management
+                      Social Media Management
                     </h6>
-                    <p className='mb-0 opacity-75'>  Connect with your Audience</p>
+                    <p className='mb-0 opacity-75'>
+                      {" "}
+                      Connect with your Audience
+                    </p>
                   </div>
                 </Link>
-
-
-             
 
                 <Link
                   className='nav-link'
@@ -78,30 +77,27 @@ function Navbar() {
                   <img src={em} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
                     <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
-                    Email Marketing
+                      Email Marketing
                     </h6>
-                    <p className='mb-0 opacity-75'>Reach your Customers' Inboxes</p>
+                    <p className='mb-0 opacity-75'>
+                      Reach your Customers' Inboxes
+                    </p>
                   </div>
                 </Link>
 
-
-
-
-
-
-
-                <a
-                  href='services/sem.html'
-                  className='d-flex gap-3 py-2 dropdown-item'
+                <Link
+                  className='nav-link'
+                  to='/search-engine-marketing'
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  {/* <img src="images/sem.png" width="20" height="20" alt="..."> */}
-                  <div className='d-flex gap-2 w-100 justify-content-between'>
-                    <div>
-                      <h6 className='mb-0'>Search Engine Marketing</h6>
-                      <p className='mb-0 opacity-75'>Drive Traffic with Ads</p>
-                    </div>
+                  <img src={sem} width='20' height='20' alt='...' />
+                  <div style={{ marginLeft: "10px" }}>
+                    <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
+                      Search Engine Marketing
+                    </h6>
+                    <p className='mb-0 opacity-75'>Drive Traffic with Ads</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </li>
             <li className='nav-item mx-3'>

@@ -12,9 +12,7 @@ import TermsCondition from "./components/TermsCondition";
 import Seo from "./components/services/Seo";
 import Smm from "./components/services/Smm";
 import Em from "./components/services/Em";
-
-
-
+import Sem from "./components/services/Sem";
 
 function App() {
   return (
@@ -22,15 +20,16 @@ function App() {
       <Router>
         <div>
           <Routes>
-          <Route path='/' element={<Index />} />
+            <Route path='/' element={<Index />} />
             <Route path='/about' element={<About />} />
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/blog' element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='/terms%condition' element={<TermsCondition />} />
-            <Route path='/seo' element={<Seo />} />
-            <Route path='/smm' element={<Smm/>} />
-            <Route path='/email-marketing' element={<Em/>} />
+            <Route path='/search-engine-optimization' element={<Seo />} />
+            <Route path='/social-media-marketing' element={<Smm />} />
+            <Route path='/email-marketing' element={<Em />} />
+            <Route path='/search-engine-marketing' element={<Sem />} />
           </Routes>
         </div>
       </Router>

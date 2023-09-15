@@ -2,12 +2,24 @@
 
 import React, { useState } from "react";
 import Navbar from "../layout/Navbar";
-import em0 from '../../Assets/em0.png'
+import em0 from "../../Assets/em0.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 
-export default function Em() {
+import ff1 from "../../Assets/ff1.png";
+import ff2 from "../../Assets/ff2.png";
+import ff3 from "../../Assets/ff3.png";
+import ff4 from "../../Assets/ff4.png";
+import ff5 from "../../Assets/ff5.png";
+import ff6 from "../../Assets/ff6.png";
+import ff7 from "../../Assets/ff7.png";
+import ff8 from "../../Assets/ff8.png";
+import ff9 from "../../Assets/ff9.png";
+import ff10 from "../../Assets/ff10.png";
+import ff11 from "../../Assets/ff11.png";
+import ff12 from "../../Assets/ff12.png";
 
+export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
 
   // Function to handle button click and set the active button
@@ -28,7 +40,9 @@ export default function Em() {
           <div class='content'>
             <h1>How does Email Marketing earn loyalty for your brand?</h1>
             <p>
-            Empower your business with our effective email marketing strategies. Elevate engagement, drive conversions, and foster lasting customer relationships.
+              Empower your business with our effective email marketing
+              strategies. Elevate engagement, drive conversions, and foster
+              lasting customer relationships.
             </p>
             <a href='#'>
               <button>Schedule a Call</button>
@@ -40,32 +54,29 @@ export default function Em() {
         </div>
       </header>
 
-
-
-
-
-
-
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2>Our Success-driven Email marketing <br /> services</h2>
+        <h2>
+          Our Success-driven Email marketing <br /> services
+        </h2>
         <p className='text-center'>
-        Your Path to Email Marketing Excellence Starts Here.
+          Your Path to Email Marketing Excellence Starts Here.
         </p>
         <div className='contents'>
           <div className='container'>
-            <div className='row'>                    
-
-          
+            <div className='row'>
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff1} alt='image' />
                     <h4 className='card-title'>Brand Story Emails</h4> <br />
                     <p className='card-text'>
-                    Craft a captivating narrative around your brand with our brand story emails. We'll infuse your unique identity into every message, creating an emotional connection that resonates with your audience and reinforces brand loyalty.
+                      Craft a captivating narrative around your brand with our
+                      brand story emails. We'll infuse your unique identity into
+                      every message, creating an emotional connection that
+                      resonates with your audience and reinforces brand loyalty.
                     </p>
                   </div>
                 </div>
@@ -73,10 +84,14 @@ export default function Em() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff2} alt='image' />
                     <h4 className='card-title'>Transactional Emails</h4> <br />
                     <p className='card-text'>
-                    Seamlessly blend functionality and engagement with our transactional emails. Elevate user experience while strategically integrating personalized content, transforming routine interactions into meaningful touchpoints.
+                      Seamlessly blend functionality and engagement with our
+                      transactional emails. Elevate user experience while
+                      strategically integrating personalized content,
+                      transforming routine interactions into meaningful
+                      touchpoints.
                     </p>
                   </div>
                 </div>
@@ -84,10 +99,14 @@ export default function Em() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff3} alt='image' />
                     <h4 className='card-title'>Email Newsletters</h4> <br />
                     <p className='card-text'>
-                    Engage and inform your subscribers with email newsletters that provide valuable insights, updates, and highlights. Our expertly designed newsletters establish your authority while keeping your audience eagerly anticipating each edition.
+                      Engage and inform your subscribers with email newsletters
+                      that provide valuable insights, updates, and highlights.
+                      Our expertly designed newsletters establish your authority
+                      while keeping your audience eagerly anticipating each
+                      edition.
                     </p>
                   </div>
                 </div>
@@ -96,10 +115,13 @@ export default function Em() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff4} alt='image' />
                     <h4 className='card-title'>Dedicated Emails</h4> <br />
                     <p className='card-text'>
-                    When it's time to shine a spotlight on a specific offer, event, or announcement, our dedicated emails deliver. We create attention-grabbing content that ensures your message takes center stage and drives immediate action.
+                      When it's time to shine a spotlight on a specific offer,
+                      event, or announcement, our dedicated emails deliver. We
+                      create attention-grabbing content that ensures your
+                      message takes center stage and drives immediate action.
                     </p>
                   </div>
                 </div>
@@ -107,13 +129,14 @@ export default function Em() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
-                    <h4 className='card-title'>
-                    Lead Nurturing Emails
-                    </h4>{" "}
-                    <br />
+                    <img src={ff5} alt='image' />
+                    <h4 className='card-title'>Lead Nurturing Emails</h4> <br />
                     <p className='card-text'>
-                    Guide your leads along their journey to conversion with our lead nurturing emails. Tailored to each stage, these emails provide relevant content that nurtures prospects into loyal customers, increasing your overall conversion rates.
+                      Guide your leads along their journey to conversion with
+                      our lead nurturing emails. Tailored to each stage, these
+                      emails provide relevant content that nurtures prospects
+                      into loyal customers, increasing your overall conversion
+                      rates.
                     </p>
                   </div>
                 </div>
@@ -121,24 +144,22 @@ export default function Em() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff6} alt='image' />
                     <h4 className='card-title'>Sponsorship Emails</h4> <br />
                     <p className='card-text'>
-                    Enhance your partnerships and collaborations with impactful sponsorship emails. We'll help you create compelling content that resonates with both your audience and your partners', fostering mutual success and engagement.
+                      Enhance your partnerships and collaborations with
+                      impactful sponsorship emails. We'll help you create
+                      compelling content that resonates with both your audience
+                      and your partners', fostering mutual success and
+                      engagement.
                     </p>
                   </div>
                 </div>
-              </div>   
-        
-          
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
 
       <div
         className='text-center'
@@ -147,7 +168,8 @@ export default function Em() {
         <div className='container'>
           <h2>Does Email Marketing Still Work?</h2>
           <p>
-          Over the years, Email marketing stil remains effective in driving engagement <br /> and conversions.
+            Over the years, Email marketing stil remains effective in driving
+            engagement <br /> and conversions.
           </p>
           <div className='row'>
             <div className='col-md-3'>
@@ -157,28 +179,24 @@ export default function Em() {
             <div className='col-md-3'>
               <h1>81%</h1>
               <p>
-              of businesses still rely on email as their primary customer acquisition channel.
+                of businesses still rely on email as their primary customer
+                acquisition channel.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>5hrs</h1>
-              <p>
-              a day spent checking email (work+personal)
-              </p>
+              <p>a day spent checking email (work+personal)</p>
             </div>
             <div className='col-md-3'>
               <h1>49%</h1>
-              <p>of consumers like to receive promotional emails from their favorite brands.</p>
+              <p>
+                of consumers like to receive promotional emails from their
+                favorite brands.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
 
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
@@ -186,50 +204,75 @@ export default function Em() {
             <h3>Why you need email marketing services</h3>
 
             <p>
-            Email marketing is essential for propelling your business forward. It's a dynamic tool that not only nurtures customer relationships but also drives conversions. Our  email marketing services are meticulously designed to create personalized campaigns that resonate with your audience, leading to increased engagement and measurable results. At Amorserv Consulting, we're dedicated to helping you harness the true potential of email marketing to amplify your brand's reach and achieve your business goals.
+              Email marketing is essential for propelling your business forward.
+              It's a dynamic tool that not only nurtures customer relationships
+              but also drives conversions. Our email marketing services are
+              meticulously designed to create personalized campaigns that
+              resonate with your audience, leading to increased engagement and
+              measurable results. At Amorserv Consulting, we're dedicated to
+              helping you harness the true potential of email marketing to
+              amplify your brand's reach and achieve your business goals.
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff7} alt='image' />
                 <h3>Build Customer Loyalty</h3>
                 <p>
-                Nurture lasting relationships with your customers through targeted email campaigns. Our strategies ensure your audience feels valued and engaged, fostering loyalty that translates into repeat business and brand advocacy.
+                  Nurture lasting relationships with your customers through
+                  targeted email campaigns. Our strategies ensure your audience
+                  feels valued and engaged, fostering loyalty that translates
+                  into repeat business and brand advocacy.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff8} alt='image' />
                 <h3>Expand Your Business Reach</h3>
                 <p>
-                Tap into a broader market by utilizing email marketing's wide reach. We help you connect with potential customers beyond borders, giving your brand a global presence and enabling growth in new regions.
+                  Tap into a broader market by utilizing email marketing's wide
+                  reach. We help you connect with potential customers beyond
+                  borders, giving your brand a global presence and enabling
+                  growth in new regions.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff9} alt='image' />
                 <h3>Connect With Different Audiences</h3>
                 <p>
-                Tailor your messages to resonate with diverse audience segments. With our expertise, you can effectively communicate with different demographics, ensuring each email resonates and drives meaningful interactions.
+                  Tailor your messages to resonate with diverse audience
+                  segments. With our expertise, you can effectively communicate
+                  with different demographics, ensuring each email resonates and
+                  drives meaningful interactions.
                 </p>
               </div>
 
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff10} alt='image' />
                 <h3>Save Time and Effort</h3>
                 <p>
-                Streamline your communication efforts with automated email campaigns. We implement time-saving solutions that consistently engage your audience, allowing you to focus on other critical aspects of your business.
+                  Streamline your communication efforts with automated email
+                  campaigns. We implement time-saving solutions that
+                  consistently engage your audience, allowing you to focus on
+                  other critical aspects of your business.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff11} alt='image' />
                 <h3>Test Email Campaigns and Drive Strong Results</h3>
                 <p>
-                Achieve optimal outcomes with well-tested email campaigns. We meticulously analyze data and fine-tune strategies to ensure every email delivers impactful results, driving higher open rates, click-throughs, and conversions.
+                  Achieve optimal outcomes with well-tested email campaigns. We
+                  meticulously analyze data and fine-tune strategies to ensure
+                  every email delivers impactful results, driving higher open
+                  rates, click-throughs, and conversions.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff12} alt='image' />
                 <h3>Track Your Analytics</h3>
                 <p>
-                Harness the power of data-driven decision-making. Our email marketing services provide comprehensive analytics, enabling you to monitor the effectiveness of your campaigns in real-time, refine your strategies, and maximize your ROI.
+                  Harness the power of data-driven decision-making. Our email
+                  marketing services provide comprehensive analytics, enabling
+                  you to monitor the effectiveness of your campaigns in
+                  real-time, refine your strategies, and maximize your ROI.
                 </p>
               </div>
             </div>
@@ -237,75 +280,81 @@ export default function Em() {
         </div>
       </section>
 
-
-
-
-
-
-
-      
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
             <h3>Benefits of using our email marketing services</h3>
 
             <p>
-            Experience heightened customer engagement and amplified conversions with our data-driven email marketing expertise.
+              Experience heightened customer engagement and amplified
+              conversions with our data-driven email marketing expertise.
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff1} alt='image' />
                 <h3>Personalized Campaigns</h3>
                 <p>
-                Tailored content resonates deeply. Our email marketing services deliver personalized campaigns that address each recipient's preferences, leading to higher engagement and conversion rates.
+                  Tailored content resonates deeply. Our email marketing
+                  services deliver personalized campaigns that address each
+                  recipient's preferences, leading to higher engagement and
+                  conversion rates.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff2} alt='image' />
                 <h3>Targeted Audience Engagement</h3>
                 <p>
-                Reach the right people with the right message. Our strategies ensure your emails land in the inboxes of your target audience, maximizing the impact of your campaigns.
+                  Reach the right people with the right message. Our strategies
+                  ensure your emails land in the inboxes of your target
+                  audience, maximizing the impact of your campaigns.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff6} alt='image' />
                 <h3>Measurable ROI</h3>
                 <p>
-                Every action is trackable. Our services provide comprehensive analytics, giving you real-time insights into open rates, click-throughs, and conversions, allowing you to fine-tune your strategies for maximum ROI.
+                  Every action is trackable. Our services provide comprehensive
+                  analytics, giving you real-time insights into open rates,
+                  click-throughs, and conversions, allowing you to fine-tune
+                  your strategies for maximum ROI.
                 </p>
               </div>
 
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff3} alt='image' />
                 <h3>Real-Time Communication</h3>
                 <p>
-                Stay current with your audience. Our email marketing allows you to deliver timely updates, offers, and news directly to your subscribers' inboxes, keeping your brand top-of-mind.
+                  Stay current with your audience. Our email marketing allows
+                  you to deliver timely updates, offers, and news directly to
+                  your subscribers' inboxes, keeping your brand top-of-mind.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff4} alt='image' />
                 <h3>Flexibility and Versatility</h3>
                 <p>
-                Adapt to your audience's preferences. Whether it's promotional content, educational resources, or personalized recommendations, our services cater to various types of messaging to suit your goals.
+                  Adapt to your audience's preferences. Whether it's promotional
+                  content, educational resources, or personalized
+                  recommendations, our services cater to various types of
+                  messaging to suit your goals.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff5} alt='image' />
                 <h3>Lead Nurturing and Conversion</h3>
                 <p>
-                Guide leads through the sales funnel. Our services include lead nurturing emails that provide valuable information, paving the way for conversions and turning leads into loyal customers.                </p>
+                  Guide leads through the sales funnel. Our services include
+                  lead nurturing emails that provide valuable information,
+                  paving the way for conversions and turning leads into loyal
+                  customers.{" "}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
       <ContactForm />
-
-
-
 
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
@@ -325,7 +374,7 @@ export default function Em() {
                 style={{ width: "100%", height: "60px" }}
                 onClick={() => handleButtonClick(1)}
               >
-               What is the significance of email marketing for businesses?{" "}
+                What is the significance of email marketing for businesses?{" "}
               </button>
             </p>
             <div
@@ -333,7 +382,10 @@ export default function Em() {
               id='collapseExample1'
             >
               <div className='card card-body'>
-              Email marketing is a powerful tool that helps businesses engage their audience, nurture leads, and drive conversions. It enables personalized communication, boosts brand loyalty, and delivers measurable ROI.{" "}
+                Email marketing is a powerful tool that helps businesses engage
+                their audience, nurture leads, and drive conversions. It enables
+                personalized communication, boosts brand loyalty, and delivers
+                measurable ROI.{" "}
               </div>
             </div>
           </div>
@@ -366,8 +418,7 @@ export default function Em() {
         </div>
       </section>
 
-
-<Footer />
+      <Footer />
     </>
   );
 }

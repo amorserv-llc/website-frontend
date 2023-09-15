@@ -8,8 +8,23 @@ import twoup from "../../Assets/twoup.png";
 import threeup from "../../Assets/threeup.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import ff from "../../Assets/ff.png";
+
+import ff1 from "../../Assets/ff1.png";
+import ff2 from "../../Assets/ff2.png";
+import ff3 from "../../Assets/ff3.png";
+import ff4 from "../../Assets/ff4.png";
+import ff5 from "../../Assets/ff5.png";
+import ff6 from "../../Assets/ff6.png";
+import ff7 from "../../Assets/ff7.png";
+import ff8 from "../../Assets/ff8.png";
+import ff9 from "../../Assets/ff9.png";
+import ff10 from "../../Assets/ff10.png";
+import ff11 from "../../Assets/ff11.png";
+import ff12 from "../../Assets/ff12.png";
+import ff13 from "../../Assets/ff13.png";
+import ff14 from "../../Assets/ff14.png";
+import ff15 from "../../Assets/ff15.png";
 
 export default function () {
   const [activeButton, setActiveButton] = useState(null);
@@ -60,8 +75,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    {/* <img src={save} alt='image' className="fram" /> */}
-                    <FontAwesomeIcon icon={faFileLines} />
+                    <img src={ff} alt='image' />
                     <h4 className='card-title'>
                       Keyword Research & Strategy
                     </h4>{" "}
@@ -80,7 +94,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff1} alt='image' />
                     <h4 className='card-title'>Link Building</h4> <br />
                     <p className='card-text'>
                       Enhance your website's authority and credibility through
@@ -94,7 +108,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff2} alt='image' />
                     <h4 className='card-title'>Technical SEO</h4> <br />
                     <p className='card-text'>
                       Elevate your website's performance and user experience
@@ -109,7 +123,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff3} alt='image' />
                     <h4 className='card-title'>Franchise SEO</h4> <br />
                     <p className='card-text'>
                       Tailored strategies that leverage the unique needs of
@@ -123,7 +137,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff4} alt='image' />
                     <h4 className='card-title'>Amazon SEO</h4> <br />
                     <p className='card-text'>
                       Stand out in the competitive Amazon marketplace with
@@ -137,7 +151,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff5} alt='image' />
                     <h4 className='card-title'>Shopify SEO</h4> <br />
                     <p className='card-text'>
                       Elevate your Shopify store's visibility and rankings with
@@ -151,7 +165,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff6} alt='image' />
                     <h4 className='card-title'>eCommerce SEO</h4> <br />
                     <p className='card-text'>
                       Transform your online store into a powerhouse with
@@ -164,7 +178,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff7} alt='image' />
                     <h4 className='card-title'>
                       Conversion Rate Optimization (CRO)
                     </h4>{" "}
@@ -181,7 +195,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff8} alt='image' />
                     <h4 className='card-title'>Content Writing</h4> <br />
                     <p className='card-text'>
                       Fuel your digital journey with captivating, SEO-optimized
@@ -196,7 +210,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff9} alt='image' />
                     <h4 className='card-title'>Local SEO</h4> <br />
                     <p className='card-text'>
                       Dominate your local market with targeted optimizations
@@ -209,7 +223,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff10} alt='image' />
                     <h4 className='card-title'>Off-Page SEO</h4> <br />
                     <p className='card-text'>
                       Expand your digital footprint beyond your website through
@@ -222,7 +236,7 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff11} alt='image' />
                     <h4 className='card-title'>On-Page SEO</h4> <br />
                     <p className='card-text'>
                       Craft compelling web pages optimized for search engines
@@ -285,7 +299,7 @@ export default function () {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff12} alt='image' />
                 <h3>Experience Matters</h3>
                 <p>
                   With years of hands-on experience in the dynamics of SEO, we
@@ -294,7 +308,7 @@ export default function () {
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff13} alt='image' />
                 <h3>Dedicated SEO Professionals</h3>
                 <p>
                   Our team is composed of passionate SEO specialists who are
@@ -303,7 +317,7 @@ export default function () {
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff14} alt='image' />
                 <h3>Relationships & Results</h3>
                 <p>
                   We don't just deliver results; we build lasting partnerships.
@@ -314,7 +328,7 @@ export default function () {
               </div>
 
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff15} alt='image' />
                 <h3>We’re Always Getting Better</h3>
                 <p>
                   In the ever-changing landscape of digital marketing, we stay
@@ -324,7 +338,7 @@ export default function () {
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff7} alt='image' />
                 <h3>We Play Fair</h3>
                 <p>
                   Ethics are at our core. Our approach to SEO in Canada and
@@ -334,7 +348,7 @@ export default function () {
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff2} alt='image' />
                 <h3>Transparent Reporting</h3>
                 <p>
                   Open communication is key. Our reporting provides clear

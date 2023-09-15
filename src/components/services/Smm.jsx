@@ -2,15 +2,29 @@
 
 import React, { useState } from "react";
 import Navbar from "../layout/Navbar";
-import smo from '../../Assets/smo.png'
+import smo from "../../Assets/smo.png";
 import oneup from "../../Assets/oneup.png";
 import twoup from "../../Assets/twoup.png";
 import threeup from "../../Assets/threeup.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 
-export default function Smm() {
+import ff from "../../Assets/ff.png";
 
+import ff1 from "../../Assets/ff1.png";
+import ff2 from "../../Assets/ff2.png";
+import ff3 from "../../Assets/ff3.png";
+import ff4 from "../../Assets/ff4.png";
+import ff5 from "../../Assets/ff5.png";
+import ff6 from "../../Assets/ff6.png";
+import ff7 from "../../Assets/ff7.png";
+import ff8 from "../../Assets/ff8.png";
+import ff9 from "../../Assets/ff9.png";
+import ff10 from "../../Assets/ff10.png";
+import ff11 from "../../Assets/ff11.png";
+import ff12 from "../../Assets/ff12.png";
+
+export default function Smm() {
   const [activeButton, setActiveButton] = useState(null);
 
   // Function to handle button click and set the active button
@@ -26,28 +40,27 @@ export default function Smm() {
     <>
       <Navbar />
 
-      <header class="header-bg">
-            <div class="header">
-                <div class="content">
-                    <h1>
-                      How SMO builds your brand awareness?
-                    </h1>
+      <header class='header-bg'>
+        <div class='header'>
+          <div class='content'>
+            <h1>How SMO builds your brand awareness?</h1>
 
-                    <p>Social Media Marketing is a cost-effective way to maximize brand awareness and witness tangible results as your message resonates across social channels.</p>
+            <p>
+              Social Media Marketing is a cost-effective way to maximize brand
+              awareness and witness tangible results as your message resonates
+              across social channels.
+            </p>
 
-                    <a href="#"><button>Schedule a Call</button></a>
-                </div>
-                <div class="image">
-                    <img src={smo} class="img-fluid" alt="header-image" />
-                </div>
-            </div>
-        </header>
+            <a href='#'>
+              <button>Schedule a Call</button>
+            </a>
+          </div>
+          <div class='image'>
+            <img src={smo} class='img-fluid' alt='header-image' />
+          </div>
+        </div>
+      </header>
 
-
-
-
-
-        
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
@@ -63,8 +76,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    {/* <img src={save} alt='image' className="fram" /> */}
-                    {/* <FontAwesomeIcon icon={faFileLines} /> */}
+                    <img src={ff} alt='image' className='fram' />
                     <h4 className='card-title'>
                       Keyword Research & Strategy
                     </h4>{" "}
@@ -83,7 +95,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff1} alt='image' />
                     <h4 className='card-title'>Link Building</h4> <br />
                     <p className='card-text'>
                       Enhance your website's authority and credibility through
@@ -97,7 +109,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff2} alt='image' />
                     <h4 className='card-title'>Technical SEO</h4> <br />
                     <p className='card-text'>
                       Elevate your website's performance and user experience
@@ -112,7 +124,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff3} alt='image' />
                     <h4 className='card-title'>Franchise SEO</h4> <br />
                     <p className='card-text'>
                       Tailored strategies that leverage the unique needs of
@@ -126,7 +138,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff4} alt='image' />
                     <h4 className='card-title'>Amazon SEO</h4> <br />
                     <p className='card-text'>
                       Stand out in the competitive Amazon marketplace with
@@ -140,7 +152,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff5} alt='image' />
                     <h4 className='card-title'>Shopify SEO</h4> <br />
                     <p className='card-text'>
                       Elevate your Shopify store's visibility and rankings with
@@ -154,7 +166,7 @@ export default function Smm() {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
-                    <img src='' alt='image' />
+                    <img src={ff6} alt='image' />
                     <h4 className='card-title'>eCommerce SEO</h4> <br />
                     <p className='card-text'>
                       Transform your online store into a powerhouse with
@@ -163,16 +175,11 @@ export default function Smm() {
                     </p>
                   </div>
                 </div>
-              </div> 
-         
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
 
       <div
         className='text-center'
@@ -181,7 +188,8 @@ export default function Smm() {
         <div className='container'>
           <h2>Why you need Social Media Marketing?</h2>
           <p>
-          Social media marketing service is essential in expanding your brand reach, engagement, <br /> and driving conversions.
+            Social media marketing service is essential in expanding your brand
+            reach, engagement, <br /> and driving conversions.
           </p>
           <div className='row'>
             <div className='col-md-3'>
@@ -191,26 +199,26 @@ export default function Smm() {
             <div className='col-md-3'>
               <h1>78%</h1>
               <p>
-              of consumers are willing to buy from brands after a positive social media experience.
+                of consumers are willing to buy from brands after a positive
+                social media experience.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>91%</h1>
               <p>
-              of executives will increase social media marketing budgets in the next 3 years
+                of executives will increase social media marketing budgets in
+                the next 3 years
               </p>
             </div>
             <div className='col-md-3'>
               <h1>72.2%</h1>
-              <p>of companies use social media data to inform business decisions</p>
+              <p>
+                of companies use social media data to inform business decisions
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
 
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
@@ -218,50 +226,72 @@ export default function Smm() {
             <h3>Why Choose Amorserv SM Services?</h3>
 
             <p>
-            Unlock a journey to online success with SEO expertise that delivers exceptional results
+              Unlock a journey to online success with SEO expertise that
+              delivers exceptional results
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff7} alt='image' />
                 <h3>Data Driven</h3>
                 <p>
-                At Amorserv Consulting, we propel your success through strategies meticulously crafted from data analysis. Every move we make is rooted in insights, ensuring your campaigns outperform and drive remarkable growth.
+                  At Amorserv Consulting, we propel your success through
+                  strategies meticulously crafted from data analysis. Every move
+                  we make is rooted in insights, ensuring your campaigns
+                  outperform and drive remarkable growth.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff8} alt='image' />
                 <h3>Dedicated SM Professionals</h3>
                 <p>
-                We boasts of a team of devoted  social media experts, tirelessly working to elevate your brand's online presence. With unwavering dedication, we bring your vision to life in the digital space, ensuring your message resonates with your target audience.
+                  We boasts of a team of devoted social media experts,
+                  tirelessly working to elevate your brand's online presence.
+                  With unwavering dedication, we bring your vision to life in
+                  the digital space, ensuring your message resonates with your
+                  target audience.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff9} alt='image' />
                 <h3>Certified Experts</h3>
                 <p>
-                Place your trust in our industry-certified SM professionals. Our team's extensive qualifications and expertise empower campaigns with specialized skills, providing you with a competitive edge that's backed by knowledge.
+                  Place your trust in our industry-certified SM professionals.
+                  Our team's extensive qualifications and expertise empower
+                  campaigns with specialized skills, providing you with a
+                  competitive edge that's backed by knowledge.
                 </p>
               </div>
 
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff10} alt='image' />
                 <h3>Industry Insights</h3>
                 <p>
-                Navigate the digital landscape with unwavering confidence. We equip you with insights garnered from years of experience. These insights give your brand an edge, propelling it beyond competition and into a realm of sustained success.
+                  Navigate the digital landscape with unwavering confidence. We
+                  equip you with insights garnered from years of experience.
+                  These insights give your brand an edge, propelling it beyond
+                  competition and into a realm of sustained success.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff11} alt='image' />
                 <h3>Team Support</h3>
                 <p>
-                Collaboration lies at the heart of our approach. With a passionate and dedicated SM team by your side, you're not just another client – you're a partner on a journey toward growth. Your goals are our goals, and we're committed to your brand's ascent.
+                  Collaboration lies at the heart of our approach. With a
+                  passionate and dedicated SM team by your side, you're not just
+                  another client – you're a partner on a journey toward growth.
+                  Your goals are our goals, and we're committed to your brand's
+                  ascent.
                 </p>
               </div>
               <div className='col-md-4'>
-                <img src='' alt='image' />
+                <img src={ff12} alt='image' />
                 <h3>Transparent Reporting</h3>
                 <p>
-                We prioritize transparency. Our reporting is more than numbers; it's a detailed map guiding your brand's journey. Witness the impact of your campaigns as we lay out the metrics, ensuring you're informed and empowered every step of the way.
+                  We prioritize transparency. Our reporting is more than
+                  numbers; it's a detailed map guiding your brand's journey.
+                  Witness the impact of your campaigns as we lay out the
+                  metrics, ensuring you're informed and empowered every step of
+                  the way.
                 </p>
               </div>
             </div>
@@ -269,19 +299,14 @@ export default function Smm() {
         </div>
       </section>
 
-
-
-
-
-
-
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Amorserv Agile SM Methodology</h3>
           </div>
           <p className='my-4 pt-5 text-center'>
-          We adopt tailored strategies fuel captivating content. Meticulous monitoring to ensure growth, adapting to your brand journey.
+            We adopt tailored strategies fuel captivating content. Meticulous
+            monitoring to ensure growth, adapting to your brand journey.
           </p>
 
           <div className='frame container'>
@@ -388,7 +413,9 @@ export default function Smm() {
               id='collapseExample1'
             >
               <div className='card card-body'>
-              Social media marketing is the strategic use of social platforms to connect with your audience, build brand awareness, engage users, and ultimately achieve business goals.{" "}
+                Social media marketing is the strategic use of social platforms
+                to connect with your audience, build brand awareness, engage
+                users, and ultimately achieve business goals.{" "}
               </div>
             </div>
           </div>
@@ -422,7 +449,6 @@ export default function Smm() {
       </section>
 
       <Footer />
-
     </>
   );
 }
