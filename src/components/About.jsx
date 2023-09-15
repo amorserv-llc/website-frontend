@@ -1,0 +1,254 @@
+/** @format */
+
+import React from "react";
+import Navbar from "./layout/NavBar";
+import Footer from "./layout/Footer";
+
+import about from "../Assets/about.png";
+import value from "../Assets/value.png";
+import mission from "../Assets/mission.png";
+import vision from "../Assets/vision.png";
+import person4 from "../Assets/person4.png";
+import amazon from "../Assets/amazon.png";
+import visa from "../Assets/visa.png";
+import person6 from "../Assets/person6.png";
+import person3 from "../Assets/person3.png";
+import person5 from "../Assets/person5.png";
+import person2 from "../Assets/person2.png";
+import person7 from "../Assets/person7.png";
+import person1 from "../Assets/person1.png";
+import richard from "../Assets/richard.png";
+import cox from "../Assets/cox.png";
+import citi from "../Assets/citi.png";
+import gold from "../Assets/gold.png";
+import flock from "../Assets/flock.png";
+import google from "../Assets/google.png";
+import star from "../Assets/star.png";
+import forbes from "../Assets/forbes.png";
+import traveller from "../Assets/traveller.png";
+import cnn from "../Assets/cnn.png";
+import samsung from "../Assets/samsung.png";
+
+export default function About() {
+  return (
+    <>
+      <Navbar />
+
+      <header className='header-bg'>
+        <div className='header'>
+          <div className='content'>
+            <h1>Curious to Know Our Story?</h1>
+            <p>Indeed, our journey has been remarkable</p>
+            <a href='#'>
+              <button>Learn More</button>
+            </a>
+          </div>
+          <div className='image abt-img'>
+            <img src={about} className='img-fluid' alt='header-image' />
+          </div>
+        </div>
+      </header>
+
+      <section className='about-intro container'>
+        <div className='intro'>
+          <h2>Who are we?</h2>
+
+          <article>
+            Lorem ipsum dolor sit amet consectetur. Condimentum lorem neque in
+            adipiscing sed nibh mi lectus. Orci urna amet quam et. Mauris arcu
+            eu duis orci mi. Volutpat nec sed elit sagittis tincidunt in dictum.
+            Purus malesuada amet at et nec cursus risus nunc. Mauris sem eu diam
+            tellus. In maecenas venenatis viverra pellentesque nibh dictumst
+            donec mauris. Urna in fringilla aenean pretium dolor. Felis semper
+            sed interdum id sapien dolor. Urna eget in neque est. Posuere
+            aliquet eget molestie ut. Faucibus odio a at nunc fermentum auctor
+            orci. Varius ut dolor condimentum natoque ac quis. In vestibulum id
+            senectus pellentesque non est netus sed varius. Turpis commodo ut
+            quis id dolor est. Duis bibendum velit turpis quam orci eget odio. A
+            iaculis consequat sed turpis vulputate donec pharetra. Aliquam enim
+            velit bibendum sed nullam nisl vel sagittis rhoncus. Eget quam in.
+          </article>
+        </div>
+      </section>
+
+      <section className='container vmv'>
+        <div className='ul'>
+          <div className='vision'>
+            <div className='image'>
+              <img src={vision} alt='image vision' />
+            </div>
+
+            <h2>Our Vision</h2>
+
+            <p>
+              Feeling frustrated with low website traffic, weak search rankings,
+              and lackluster social media presence?
+            </p>
+          </div>
+
+          <div className='mission'>
+            <div className='image'>
+              <img src={mission} alt='image mission' />
+            </div>
+
+            <h2>Our Mission</h2>
+
+            <p>
+              Feeling frustrated with low website traffic, weak search rankings,
+              and lackluster social media presence?
+            </p>
+          </div>
+
+          <div className='value'>
+            <div className='image'>
+              <img src={value} alt='image value' />
+            </div>
+
+            <h2>Our Value</h2>
+
+            <p>
+              Feeling frustrated with low website traffic, weak search rankings,
+              and lackluster social media presence?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className='team container'>
+        <h2>Our Team</h2>
+
+        <div className='members'>
+          <div className='first-row'>
+            <div className='member'>
+              <div className='image'>
+                <img src={person4} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person5} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person2} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+            
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person1} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={richard} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person7} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person6} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+
+            <div className='member'>
+              <div className='image'>
+                <img src={person3} alt='' />
+              </div>
+              <div className='detail'>
+                <h6>John Doe</h6>
+                <p>President</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='partnership'>
+        <h2>PARTNERSHIPS & ACCOLADES</h2>
+
+        <div>
+          <ul>
+            <li>
+              <img src={visa} alt='' />
+            </li>
+            <li>
+              <img src={amazon} alt='' />
+            </li>
+            <li>
+              <img src={cox} alt='' />
+            </li>
+            <li>
+              <img src={citi} alt='' />
+            </li>
+            <li>
+              <img src={samsung} alt='' />
+            </li>
+            <li>
+              <img src={cnn} alt='' />
+            </li>
+            <li>
+              <img src={traveller} alt='' />
+            </li>
+            <li>
+              <img src={gold} alt='' />
+            </li>
+            <li>
+              <img src={forbes} alt='' />
+            </li>
+            <li>
+              <img src={star} alt='' />
+            </li>
+            <li>
+              <img src={google} alt='' />
+            </li>
+            <li>
+              <img src={flock} alt='' />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
