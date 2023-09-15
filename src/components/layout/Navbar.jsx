@@ -94,7 +94,7 @@ function Navbar() {
                 <Link
                   className='nav-link'
                   to='/search-engine-marketing'
-                  style={{ display: "flex", alignItems: "center" }}
+                  style={{ display: "flex",  alignItems: "center" }}
                 >
                   <img src={sem} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
