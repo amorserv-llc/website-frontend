@@ -31,7 +31,7 @@ import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
-import Navbar from "./layout/NavBar";
+import Navbar from "./layout/TopNavbar";
 
 export default function Index() {
   return (

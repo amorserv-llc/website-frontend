@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './layout/NavBar'
+import Navbar from './layout/TopNavbar'
 import terms from '../Assets/terms.png'
 import Footer from './layout/Footer'
 

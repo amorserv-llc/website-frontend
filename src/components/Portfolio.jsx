@@ -13,7 +13,7 @@ import Footer from "./layout/Footer";
 import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
-import Navbar from "./layout/Navbar";
+import Navbar from "./layout/TopNavbar";
 
 
 export default function Portfolio() {

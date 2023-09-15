@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import Navbar from "../layout/Navbar";
+import Navbar from "../layout/TopNavbar";
 import em0 from "../../Assets/em0.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";

@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import Navbar from "../layout/Navbar";
+import Navbar from "../layout/TopNavbar";
 import Footer from "../layout/Footer";
 import sem0 from "../../Assets/sem0.png";
 import secondsem from "../../Assets/secondsem.png";

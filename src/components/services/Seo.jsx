@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import Navbar from "../layout/Navbar";
+import Navbar from "../layout/TopNavbar";
 import seo from "../../Assets/seo.png";
 import oneup from "../../Assets/oneup.png";
 import twoup from "../../Assets/twoup.png";

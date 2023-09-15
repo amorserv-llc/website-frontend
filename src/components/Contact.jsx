@@ -6,7 +6,7 @@ import Footer from "./layout/Footer";
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faLocationDot, faMobile, faPaperPlane, faSeedling } from "@fortawesome/free-solid-svg-icons";
-import Navbar from "./layout/Navbar";
+import Navbar from "./layout/TopNavbar";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';

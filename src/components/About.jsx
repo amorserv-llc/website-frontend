@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import Navbar from "./layout/NavBar";
+import Navbar from "./layout/TopNavbar";
 import Footer from "./layout/Footer";
 
 import about from "../Assets/about.png";
