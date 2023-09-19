@@ -90,9 +90,9 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-#sec-0 span{
-  color: #3D3D3D;
-  font-feature-settings: 'clig' off, 'liga' off;
+#sec-0 span {
+  color: #3d3d3d;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 1.3rem;
   font-style: normal;
@@ -103,6 +103,7 @@ body {
 #sec-5 {
   background: #eff3fd !important;
 }
+
 #sec-5 h3 {
   color: #226666 !important;
   font-weight: bold;
@@ -117,13 +118,25 @@ body {
   line-height: 3.125rem; /* 142.857% */
 }
 #sec-6 p {
-  color: #1a202c;
+  color: #696969;
   text-align: center;
   font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+
+#sec-6 .service-feat p {
+
+  color: #696969;
+text-align: center;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 150% */
+letter-spacing: 0.03125rem;
 }
 
 .tandc {
@@ -163,7 +176,6 @@ body {
   align-items: center; /* Center vertically */
   min-height: 100vh; /* Minimum height of the viewport */
 }
-
 
 .threestep {
   text-align: center; /* Center the image horizontally within its container */
@@ -246,10 +258,19 @@ footer {
   background: #1a202c;
 }
 footer h5 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  padding-bottom: 15px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 1.875rem */
+  letter-spacing: -0.025rem;
+  display: flex;
+  width: 9.5rem;
+  height: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 }
 footer a {
   text-decoration: none;

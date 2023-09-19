@@ -20,14 +20,14 @@ export default function () {
                 className='d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none navbar-brand'
                 href='/index.html'
               >
-                <img src={logo2} alt='logo' />
+                <img src={logo2} alt='logo' style={{ marginLeft: "-25px" }} />
                 <div
                   style={{
                     padding: "10px",
                     fontSize: "20px",
                     position: "absolute",
-                    top: "100px",
-                    left: "20px",
+                    top: "70px",
+                    left: "-15px",
                   }}
                 >
                   <span>

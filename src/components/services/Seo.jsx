@@ -5,7 +5,7 @@ import Navbar from "../layout/TopNavbar";
 import seo from "../../Assets/seo.png";
 import oneup from "../../Assets/oneup.png";
 import twoup from "../../Assets/twoup.png";
-import threeup from "../../Assets/threeup.png";
+import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 import ff from "../../Assets/ff.png";
@@ -64,7 +64,9 @@ export default function () {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2>Our Comprehensive SEO Services </h2>
+        <h2>
+          Our Comprehensive <br /> SEO Services{" "}
+        </h2>
         <p className='text-center'>
           Maximize your online presence with our SEO services for visibility{" "}
           <br /> and success.
@@ -252,15 +254,15 @@ export default function () {
       </section>
 
       <div
-        className='text-center'
-        style={{ backgroundColor: " #226666", height: "300px", color: "white" }}
+        className='text-center p-5'
+        style={{ backgroundColor: " #226666", height: "30.375rem", color: "white", }}
       >
         <div className='container'>
           <h2>Why you need SEO?</h2>
           <p>
             Enhance Your Brand's Visibility and Success with Our Unmatched SEO
             Expertise.
-          </p>
+          </p> <br />
           <div className='row'>
             <div className='col-md-3'>
               <h2>70%</h2>
@@ -372,75 +374,26 @@ export default function () {
             monitoring to ensure growth, adapting to your brand journey.
           </p>
 
-          <div className='frame container'>
-            <div className='group'>
-              <div className='div'>
-                <p className='plan-we-understand'>
-                  <span className='text-wrapper'>
-                    Plan
-                    <br />
-                  </span>
-                  <span className='span'>
-                    We understand your <br />
-                    goals and audience.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='architecture-plan'
-                    alt='Architecture plan'
-                    src={oneup}
-                  />
-                </div>
-              </div>
-              <div className='text-wrapper-2'>1</div>
-            </div>
-            <div className='group-2'>
-              <div className='text-wrapper-2'>2</div>
-              <div className='group-3'>
-                <p className='p'>
-                  <span className='text-wrapper-3'>
-                    Plan
-                    <br />
-                  </span>
-                  <span className='text-wrapper-4'>
-                    We develop tailored <br />
-                    marketing campaigns.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='edit-note-icon'
-                    alt='Edit note icon'
-                    src={twoup}
-                  />
+          <section id='sec-6' className='py-5'>
+            <div className='container-lg my-4'>
+              {/* <div className='col-12 text-center'>
+                <h3 className='mb-4'>Our Simplified 3-Step Process</h3>
+              </div> */}
+              {/* <h5 className='my-4 text-center'>
+                For Maximizing Your Digital Marketing Success
+              </h5> */}
+
+              <div
+                className='centered-container'
+                style={{ marginTop: "-160px" }}
+              >
+                <div className='threestep'>
+                  <img src={threestep} alt='3-Step' />
                 </div>
               </div>
             </div>
-            <div className='group-4'>
-              <div className='text-wrapper-2'>3</div>
-              <div className='group-5'>
-                <p className='p'>
-                  <span className='text-wrapper-5'>
-                    Grow
-                    <br />
-                  </span>
-                  <span className='text-wrapper-4'>
-                    We track progress and <br />
-                    optimize for success.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='grow-money-icon'
-                    alt='Grow money icon'
-                    src={threeup}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='text-center'>
+          </section>
+          <div className='text-center' style={{ marginTop: "-160px" }}>
             <a href='#' className='btn mt-4 btn-real'>
               Get Started
             </a>

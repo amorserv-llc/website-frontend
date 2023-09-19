@@ -18,7 +18,7 @@ function Navbar() {
     <section>
       <nav className='navbar navbar-expand-lg navbar-light'  style={navStyle}>
         <div className=' container-lg d-flex justify-content-between align-items-center'>
-          <Link className='navbar-brand' to='/'>
+          <Link className='navbar-brand' to='/' style={{ marginLeft: "-20px" }}>
             <img src={Logo} alt='Logo' />
           </Link>
           <button
