@@ -8,6 +8,11 @@ import b1 from "../Assets/b1.png";
 import b2 from "../Assets/b2.png";
 import b3 from "../Assets/b3.png";
 import b4 from "../Assets/b4.png";
+
+import love from "../Assets/love.png";
+import shear from "../Assets/shear.png";
+import comment from "../Assets/comment.png";
+
 import Footer from "./layout/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,11 +22,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
-  faFacebookF,
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { Padding } from "@mui/icons-material";
 
 export default function () {
   return (
@@ -46,10 +49,10 @@ export default function () {
         </div>
       </div>
 
-      <section className='container-lg'>
+      <section className='container-lg pt-5 pb-5'>
         <div className='row g-5 '>
           <div className='col-md-4 d-none d-md-block'>
-            <div className='position-sticky blog-side' style={{ top: "2rem" }}>
+            <div className='position-sticey blog-side' style={{ top: "2rem" }}>
               <div className='mb-3 rounded searchh'>
                 <div className='input-group'>
                   <input
@@ -125,24 +128,41 @@ export default function () {
               </div>
 
               <div className='p-4'>
-                <h4 className=''>Elsewhere</h4>
-                <div className='d-flex row gap-2 mb-3'>
-                  <a href='#' className='btn mt-1 btn-sidebar w-auto rounded-4'>
-                    Popular Tag
-                  </a>
-                  <a href='#' className='btn mt-1 btn-sidebar w-auto rounded-4'>
-                    Popular Tag
-                  </a>
-                  <a href='#' className='btn mt-1 btn-sidebar w-auto rounded-4'>
-                    Popular Tag
-                  </a>
-                  <a href='#' className='btn mt-1 btn-sidebar w-auto rounded-4'>
-                    Popular Tag
-                  </a>
+                <h4 className='tag'>Tags</h4>
+                <div className='d-flex flex-column flex-md-row mb-3  gap-2'>
+                  <div className='d-flex flex-column'>
+                    <a
+                      href='#'
+                      className='btn mt-1 btn-sidebar w-auto rounded-4'
+                    >
+                      Popular Tag
+                    </a>
+                    <a
+                      href='#'
+                      className='btn mt-1 btn-sidebar w-auto rounded-4'
+                    >
+                      Popular Tag
+                    </a>
+                  </div>
+                  <div className='d-flex flex-column'>
+                    <a
+                      href='#'
+                      className='btn mt-1 btn-sidebar w-auto rounded-4'
+                    >
+                      Popular Tag
+                    </a>
+                    <a
+                      href='#'
+                      className='btn mt-1 btn-sidebar w-auto rounded-4'
+                    >
+                      Popular Tag
+                    </a>
+                  </div>
                 </div>
+
                 <ol className='list-unstyled my-4'>
                   <FontAwesomeIcon
-                    icon={faInstagram }
+                    icon={faInstagram}
                     style={{ marginRight: "10px", fontSize: "22px" }}
                   />
                   <FontAwesomeIcon
@@ -153,15 +173,16 @@ export default function () {
                     icon={faTwitter}
                     style={{ marginRight: " 10px", fontSize: "22px" }}
                   />
-                  <FontAwesomeIcon icon={faShareAlt} 
-                  style={{ marginRight: " 10px", fontSize: "22px" }}
+                  <FontAwesomeIcon
+                    icon={faShareAlt}
+                    style={{ marginRight: " 10px", fontSize: "22px" }}
                   />
                 </ol>
               </div>
             </div>
           </div>
 
-          <div className='col-md-8 row pt-5'>
+          <div className='col-md-8 row pt-5 blog '>
             <div className='col-md-5 mx-1'>
               <div className='border rounded overflow-hidden mb-4 shadow-sm'>
                 <div className='col p-3 d-flex flex-column position-static'>
@@ -177,22 +198,40 @@ export default function () {
                     facilisi. Elit arcu vulputate sed proin quam lorem eleifend.
                     Lacinia nunc nunc.
                   </p>
-                  <a href='/blog/blog-sing.html' className='mb-3'>
-                    Continue reading
-                  </a>
+
                   <div>
                     <div className='d-flex row justify-content-between'>
-                      <div className='text-muted col-6'>Nov 12 2021</div>
+                      <div className='text-muted col-6'>7th April 2023</div>
                       <ol className='list-unstyled col-6 justify-content-end'>
-                        <FontAwesomeIcon icon={faHeart}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faShareAlt}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faComment} 
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                         />
+                        <div
+                          style={{
+                            padding: "4px",
+                            position: "relative",
+                            fill: "#555",
+                          }}
+                        >
+                          <span>
+                            <img
+                              src={love}
+                              alt='image1'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={shear}
+                              alt='image2'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={comment}
+                              alt='image3'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                        </div>
                       </ol>
                     </div>
                   </div>
@@ -212,24 +251,42 @@ export default function () {
                     malesuada etiam mauris integer tincidunt magna. Id morbi vel
                     ultricies quisque. Aliquam orci id commodo etiam cras
                     facilisi. Elit arcu vulputate sed proin quam lorem eleifend.
-                    Lacinia nunc nunc.
+                    Lacinia nunc nunc.kk
                   </p>
-                  <a href='#' className='mb-3'>
-                    Continue reading
-                  </a>
+
                   <div>
                     <div className='d-flex row justify-content-between'>
-                      <div className='text-muted col-6'>Nov 12 2021</div>
+                      <div className='text-muted col-6'>7th April 2023</div>
                       <ol className='list-unstyled col-6 justify-content-end'>
-                        <FontAwesomeIcon icon={faHeart}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faShareAlt}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faComment} 
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                         />
+                        <div
+                          style={{
+                            padding: "4px",
+                            position: "relative",
+                            fill: "#555",
+                          }}
+                        >
+                          <span>
+                            <img
+                              src={love}
+                              alt='image1'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={shear}
+                              alt='image2'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={comment}
+                              alt='image3'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                        </div>
                       </ol>
                     </div>
                   </div>
@@ -251,22 +308,40 @@ export default function () {
                     facilisi. Elit arcu vulputate sed proin quam lorem eleifend.
                     Lacinia nunc nunc.
                   </p>
-                  <a href='#' className='mb-3'>
-                    Continue reading
-                  </a>
+
                   <div>
                     <div className='d-flex row justify-content-between'>
-                      <div className='text-muted col-6'>Nov 12 2021</div>
+                      <div className='text-muted col-6'>7th April 2023</div>
                       <ol className='list-unstyled col-6 justify-content-end'>
-                        <FontAwesomeIcon icon={faHeart}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faShareAlt}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faComment} 
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                         />
+                        <div
+                          style={{
+                            padding: "4px",
+                            position: "relative",
+                            fill: "#555",
+                          }}
+                        >
+                          <span>
+                            <img
+                              src={love}
+                              alt='image1'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={shear}
+                              alt='image2'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={comment}
+                              alt='image3'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                        </div>
                       </ol>
                     </div>
                   </div>
@@ -288,22 +363,40 @@ export default function () {
                     facilisi. Elit arcu vulputate sed proin quam lorem eleifend.
                     Lacinia nunc nunc.
                   </p>
-                  <a href='#' className='mb-3'>
-                    Continue reading
-                  </a>
+                
                   <div>
                     <div className='d-flex row justify-content-between'>
-                      <div className='text-muted col-6'>Nov 12 2021</div>
+                      <div className='text-muted col-6'>7th April 2023</div>
                       <ol className='list-unstyled col-6 justify-content-end'>
-                        <FontAwesomeIcon icon={faHeart}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faShareAlt}
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                          />
-                        <FontAwesomeIcon icon={faComment} 
-                         style={{ marginRight: " 10px", fontSize: "15px" }}
-                         />
+                        <div
+                          style={{
+                            padding: "4px",
+                            position: "relative",
+                            fill: "#555",
+                          }}
+                        >
+                          <span>
+                            <img
+                              src={love}
+                              alt='image1'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={shear}
+                              alt='image2'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src={comment}
+                              alt='image3'
+                              style={{ width: "20px", marginRight: "12px" }}
+                            />
+                          </span>
+                        </div>
                       </ol>
                     </div>
                   </div>
@@ -312,12 +405,27 @@ export default function () {
             </div>
 
             <nav className='blog-pagination pb-5 mb-5 text-center'>
-              <a className='btn btn-outline-success' href='#'>
+              <a className='btn men btn-outline-success' href='#'>
                 1
               </a>
-              <a className='btn btn-outline-secondary disabled'>2</a>
-              <a className='btn btn-outline-secondary disabled'>3</a>
-              <a className='btn btn-outline-secondary disabled'>4</a>
+              <a
+                className='btn men btn-outline-secondary disabled'
+                style={{ marginLeft: "10px" }}
+              >
+                2
+              </a>
+              <a
+                className='btn men btn-outline-secondary disabled'
+                style={{ marginLeft: "10px" }}
+              >
+                3
+              </a>
+              <a
+                className='btn men btn-outline-secondary disabled'
+                style={{ marginLeft: "10px" }}
+              >
+                4
+              </a>
             </nav>
           </div>
         </div>

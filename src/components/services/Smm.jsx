@@ -40,9 +40,9 @@ export default function Smm() {
     <>
       <Navbar />
 
-      <header class='header-bg'>
-        <div class='header'>
-          <div class='content'>
+      <header className='header-bg'>
+        <div className='header'>
+          <div className='content'>
             <h1>How SMO builds your brand awareness?</h1>
 
             <p>
@@ -55,8 +55,8 @@ export default function Smm() {
               <button>Schedule a Call</button>
             </a>
           </div>
-          <div class='image'>
-            <img src={smo} class='img-fluid' alt='header-image' />
+          <div className='image'>
+            <img src={smo} className='img-fluid' alt='header-image' />
           </div>
         </div>
       </header>

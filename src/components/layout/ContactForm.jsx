@@ -9,11 +9,14 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      surname: "",
+      full_name: "",
       position: "",
-      companyName: "",
+      company_name: "",
+      email: "",
+      phone: "",
+      user_website: "",
       message: "",
+      website_id: 1,
     };
   }
 
@@ -25,15 +28,18 @@ class ContactForm extends Component {
     e.preventDefault();
 
     // Define the API endpoint URL
-    const apiUrl = "https://your-api-endpoint-url.com"; // Replace with your actual API endpoint URL
+    const apiUrl = "http://127.0.0.1:8000/api/consulting/contacts"; // Update with your actual API endpoint URL
 
     // Create an object with the form data
     const formData = {
-      name: this.state.name,
-      surname: this.state.surname,
+      full_name: this.state.full_name,
       position: this.state.position,
-      companyName: this.state.companyName,
+      company_name: this.state.company_name,
+      email: this.state.email,
+      phone: this.state.phone,
+      user_website: this.state.user_website,
       message: this.state.message,
+      website_id: this.state.website_id, // Include website_id
     };
 
     // Make a POST request to the API endpoint
@@ -44,10 +50,12 @@ class ContactForm extends Component {
         console.log(response.data);
         // You can also reset the form fields here
         this.setState({
-          name: "",
-          surname: "",
+          full_name: "",
           position: "",
-          companyName: "",
+          company_name: "",
+          email: "",
+          phone: "",
+          user_website: "",
           message: "",
         });
       })
@@ -60,7 +68,7 @@ class ContactForm extends Component {
   render() {
     return (
       <section id='sec-6' style={{ background: "#eff3fd" }}>
-        <div className='container'>
+        <div className='container '>
           <div className='content text-center'>
             <div className='col-12 text-center'>
               <h3 className='mb-4'>Let’s Grow your Business</h3>
@@ -71,107 +79,126 @@ class ContactForm extends Component {
             </p>
           </div>
 
-          <div className='row'>
-            <div className='col-md-6'>
-              <form onSubmit={this.handleSubmit}>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='name'
-                    name='name'
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Your Full Name'
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='surname'
-                    name='surname'
-                    value={this.state.surname}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Company Name'
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='position'
-                    name='position'
-                    value={this.state.position}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Phone Number'
-                  />
-                </div>
-              </form>
-            </div>
-            <div className='col-md-6'>
-              <form onSubmit={this.handleSubmit}>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='companyName'
-                    name='email'
-                    value={this.state.companyName}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Your Email Address'
-                  />
+          <div className='container d-flex justify-content-center align-items-center'>
+            <div
+              className='form-container'
+              style={{ width: "62.5625rem", borderRadius: "0.5rem" }}
+            >
+              <div className='row forminput'>
+                <div className='col-md-6'>
+                  <form onSubmit={this.handleSubmit}>
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='name'
+                        name='full_name'
+                        value={this.state.full_name}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Your Full Name'
+                      />
+                    </div>
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='company_name'
+                        name='company_name'
+                        value={this.state.company_name}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Company Name'
+                      />
+                    </div>
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='phone'
+                        name='phone'
+                        value={this.state.phone}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Phone Number'
+                      />
+                    </div>
+                  </form>
                 </div>
 
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='companyName'
-                    name='position'
-                    value={this.state.companyName}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Your Position'
-                  />
+                <div className='col-md-6'>
+                  <form onSubmit={this.handleSubmit}>
+                    <div className='form-group'>
+                      <input
+                        type='email'
+                        id='email'
+                        name='email'
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Email Address'
+                      />
+                    </div>
+
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='position'
+                        name='position'
+                        value={this.state.position}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Position'
+                      />
+                    </div>
+
+                    <div className='form-group'>
+                      <input
+                        type='text'
+                        id='user_website'
+                        name='user_website'
+                        value={this.state.user_website}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        required
+                        placeholder='Your Website'
+                      />
+                    </div>
+                  </form>
                 </div>
 
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    id='companyName'
-                    name='companyName'
-                    value={this.state.companyName}
-                    onChange={this.handleChange}
-                    className='form-control'
-                    required
-                    placeholder='Your Website'
-                  />
+                <div className='col-md-12'>
+                  <form onSubmit={this.handleSubmit}>
+                    <div className='form-group'>
+                      <textarea
+                        id='message'
+                        name='message'
+                        value={this.state.message}
+                        onChange={this.handleChange}
+                        className='form-control'
+                        rows='6'
+                        required
+                        placeholder='Your Message'
+                      ></textarea>
+                    </div>
+
+                    {/* Include a hidden input for website_id */}
+                    <input
+                      type='hidden'
+                      name='website_id'
+                      value={this.state.website_id}
+                    />
+
+                    <div className='text-right pb-5'>
+                      <button type='submit' className='btn btn-real'>
+                        Get Started
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              </form>
-            </div>
-            <div className='col-md-12'>
-              <div className='form-group'>
-                <textarea
-                  id='message'
-                  name='message'
-                  value={this.state.message}
-                  onChange={this.handleChange}
-                  className='form-control' // No col-12 class for the textarea
-                  rows='6' // Increase the number of rows to fill more space
-                  required
-                  placeholder='Which subscription plan are you interested in?'
-                ></textarea>
               </div>
-            </div>
-            <div className='form-group text-center'>
-              <button type='submit' className='btn btn-real'>
-                Get Started
-              </button>
             </div>
           </div>
         </div>

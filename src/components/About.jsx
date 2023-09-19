@@ -54,19 +54,16 @@ export default function About() {
           <h2>Who are we?</h2>
 
           <article>
-            Lorem ipsum dolor sit amet consectetur. Condimentum lorem neque in
-            adipiscing sed nibh mi lectus. Orci urna amet quam et. Mauris arcu
-            eu duis orci mi. Volutpat nec sed elit sagittis tincidunt in dictum.
-            Purus malesuada amet at et nec cursus risus nunc. Mauris sem eu diam
-            tellus. In maecenas venenatis viverra pellentesque nibh dictumst
-            donec mauris. Urna in fringilla aenean pretium dolor. Felis semper
-            sed interdum id sapien dolor. Urna eget in neque est. Posuere
-            aliquet eget molestie ut. Faucibus odio a at nunc fermentum auctor
-            orci. Varius ut dolor condimentum natoque ac quis. In vestibulum id
-            senectus pellentesque non est netus sed varius. Turpis commodo ut
-            quis id dolor est. Duis bibendum velit turpis quam orci eget odio. A
-            iaculis consequat sed turpis vulputate donec pharetra. Aliquam enim
-            velit bibendum sed nullam nisl vel sagittis rhoncus. Eget quam in.
+            Established in 2016, Amorserv Consulting stands as the best digital
+            marketing agency in Chicago. We infuse our expertise into every
+            strategy, driving brands towards digital excellence. As the best
+            digital marketing agency in Chicago, USA, we're committed to
+            delivering unparalleled results.
+            <br /> <br />
+            The name “AmorServ ” conveys a strong message of dedication,
+            commitment, and passion for serving customers. The fact that the
+            name literally means “We Love to Serve You” reinforces this message
+            and sets a high standard for the company.
           </article>
         </div>
       </section>
@@ -81,8 +78,8 @@ export default function About() {
             <h2>Our Vision</h2>
 
             <p>
-              Feeling frustrated with low website traffic, weak search rankings,
-              and lackluster social media presence?
+              Our vision is to set new standards in the digital marketing
+              industry with data-driven and ROI-yielding solutions.
             </p>
           </div>
 
@@ -94,8 +91,9 @@ export default function About() {
             <h2>Our Mission</h2>
 
             <p>
-              Feeling frustrated with low website traffic, weak search rankings,
-              and lackluster social media presence?
+              Our mission is clearly refine the digital marketing landscape,
+              empower business to thrive in the ever-evolving digital space, and
+              place busineess in the sales forefront.
             </p>
           </div>
 
@@ -107,8 +105,9 @@ export default function About() {
             <h2>Our Value</h2>
 
             <p>
-              Feeling frustrated with low website traffic, weak search rankings,
-              and lackluster social media presence?
+              The focus on the TRIBE core values - Transparency, Result-Driven,
+              Impact-Focused, Best People, and Excellence sets a high standard
+              for us.
             </p>
           </div>
         </div>
@@ -148,7 +147,6 @@ export default function About() {
                 <p>President</p>
               </div>
             </div>
-            
 
             <div className='member'>
               <div className='image'>
@@ -205,9 +203,8 @@ export default function About() {
 
       <section className='partnership'>
         <h2>PARTNERSHIPS & ACCOLADES</h2>
-
-        <div>
-          <ul>
+        <div className='partner-images'>
+          <ul className='container p-5'>
             <li>
               <img src={visa} alt='' />
             </li>

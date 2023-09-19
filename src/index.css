@@ -1,12 +1,13 @@
-body{
+/** @format */
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
-
-.header nav{
+.header nav {
   background: #ffffff !important;
 }
 
@@ -22,147 +23,244 @@ body{
   object-fit: cover;
 }
 
-.navbar .nav-item .nav-link:hover{
-  border-bottom: 2px solid #B13557;
-  transition: .15s;
+.navbar .nav-item .nav-link:hover {
+  border-bottom: 2px solid #b13557;
+  transition: 0.15s;
   animation: ease-in;
 }
-.nav-link{
+.nav-link {
   border: none !important;
 }
-.container-fluid{
+.container-fluid {
   margin: 0 30px !important;
 }
-.navbar-nav{
+.navbar-nav {
   font-size: 14px;
   color: #555555;
   font-weight: 600;
   margin-right: 10rem;
 }
-.navbar-nav li .dropdown-menu h6{
+.navbar-nav li .dropdown-menu h6 {
   font-size: 14px !important;
   font-weight: bold;
-  
 }
-.navbar-nav li .dropdown-menu p{
+.navbar-nav li .dropdown-menu p {
   font-size: 12px !important;
-  
 }
 
-.head h5{
+.head h5 {
   color: #226666;
 }
-.head p{
-  color: #1A202C;
+.head p {
+  color: #1a202c;
   font-weight: 500;
 }
-.head .btn{
-  background-color: #B13557;
-  color: #FFFFFF;
+.head .btn {
+  background-color: #b13557;
+  color: #ffffff;
   font-size: 16px;
 }
 .head .btn:hover {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   background-color: #d15072 !important;
   border-color: none !important;
 }
-#sec-2 h3{
+#sec-2 h3 {
   color: #226666 !important;
   font-weight: bold;
 }
-#sec-3{
-  background: #FAFAFB !important;
+#sec-3 {
+  background: #fafafb !important;
 }
-#sec-3 h3{
+#sec-3 h3 {
   color: #226666 !important;
   font-weight: bold;
 }
-#sec-3 p{
+#sec-3 p {
   color: #555555 !important;
   font-size: 14px;
 }
-#sec-4 p{
+#sec-4 p {
   color: #555555 !important;
   font-size: 16px;
   font-weight: 500;
 }
-#sec-5{
-  background: #EFF3FD !important;
+#sec-0 p {
+  color: #226666 !important;
+  font-size: 16px;
+  font-weight: 500;
 }
-#sec-5 h3{
+#sec-0 span{
+  color: #3D3D3D;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.03125rem;
+}
+#sec-5 {
+  background: #eff3fd !important;
+}
+#sec-5 h3 {
   color: #226666 !important;
   font-weight: bold;
 }
-#sec-6 h3{
-  color: #226666 !important;
-  font-weight: bold;
+#sec-6 h3 {
+  color: #266;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.125rem; /* 142.857% */
 }
-#sec-5 p{
+#sec-6 p {
+  color: #1a202c;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.tandc {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: -0.02rem;
+}
+
+#sec-5 p {
   color: #555555 !important;
   font-size: 14px;
 }
-#sec-5 a{
+#sec-5 a {
   text-decoration: none;
   color: #555555;
   font-weight: 500;
 }
-#sec-5 .btn-serv{
-  background-color: #D9D9D9;
+#sec-5 .btn-serv {
+  background-color: #d9d9d9;
   color: #555555;
   font-size: 17px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
-  
 }
-#sec-7 h3{
+#sec-7 h3 {
   color: #226666;
-
 }
-.btn-real{
-  background-color: #B13557 !important;
-  color: #FFFFFF !important;
+
+.centered-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Minimum height of the viewport */
+}
+
+
+.threestep {
+  text-align: center; /* Center the image horizontally within its container */
+}
+
+.threestep img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+}
+
+.portfolio p {
+  color: #555;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem; /* 156.25% */
+  text-transform: capitalize;
+}
+.portfolio a {
+  color: #266;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 100% */
+  letter-spacing: 0.01125rem;
+  display: flex;
+  width: 16.0625rem;
+  height: 2.25rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.port-btn {
+  display: flex;
+  width: 12.375rem;
+  height: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: -0.02rem;
+}
+.btn-real {
+  background-color: #b13557 !important;
+  color: #ffffff !important;
   font-weight: 500 !important;
   border: none !important;
   padding: 10px 30px !important;
 }
 .btn-real:hover {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   background-color: #d15072 !important;
   border-color: none !important;
   transform: scale(1.05);
 }
-.bg-card{
-  background: #DDE0E4 !important;
+.bg-card {
+  background: #dde0e4 !important;
   border: none !important;
 }
-.bg-card small{
-  color: #B13557 !important;
+.bg-card small {
+  color: #b13557 !important;
   font-weight: 500;
 }
-.bg-card span{
+.bg-card span {
   color: #226666 !important;
   font-weight: 500;
 }
 
-footer{
-  background: #1A202C;
+footer {
+  background: #1a202c;
 }
-footer h5{
+footer h5 {
   font-size: 20px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 15px;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
 }
-footer p{
-  color: #FFFFFF;
+footer p {
+  color: #ffffff;
   font-size: 14px;
 }
-footer .border-top{
+footer .border-top {
   border-top: 1px solid rgba(72, 98, 132, 0.16) !important;
 }
 
@@ -199,7 +297,7 @@ footer .border-top{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #B13557;
+  background: #b13557;
   color: white;
   cursor: pointer;
   text-align: center;
@@ -241,62 +339,60 @@ footer .border-top{
   position: relative;
 }
 
-
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
   .client-wrapper .client-carousel {
-      grid-auto-columns: calc(100% / 4);
-      gap: 2px;
+    grid-auto-columns: calc(100% / 4);
+    gap: 2px;
   }
 
   .client-carousel img {
-      padding-left: 30px;
-      padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .client-wrapper .client-carousel {
-      grid-auto-columns: calc(100% / 4);
-      gap: 2px;
+    grid-auto-columns: calc(100% / 4);
+    gap: 2px;
   }
 
   .client-carousel img {
-      padding-left: 30px;
-      padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .client-wrapper .client-carousel {
-      grid-auto-columns: calc(100% / 3);
-      gap: 2px;
+    grid-auto-columns: calc(100% / 3);
+    gap: 2px;
   }
 
   .client-carousel img {
-      padding-left: 25px;
-      padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .client-wrapper {
-      width: 100%;
-      padding: 0 25px;
+    width: 100%;
+    padding: 0 25px;
   }
 
   .client-wrapper i:first-child {
-      left: 10px;
+    left: 10px;
   }
-  
+
   .client-wrapper i:last-child {
-      right: 10px;
+    right: 10px;
   }
 
   .navbar-brand {
-      width: 130px;
+    width: 130px;
   }
 }
-
 
 @media (max-width: 990px) {
   .col-md-aut {
@@ -373,7 +469,11 @@ footer .border-top{
 .frame .text-wrapper-2 {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(180deg, rgb(61.48, 61.48, 61.48) 0%, rgba(255, 248.63, 248.63, 0) 83.61%);
+  background: linear-gradient(
+    180deg,
+    rgb(61.48, 61.48, 61.48) 0%,
+    rgba(255, 248.63, 248.63, 0) 83.61%
+  );
   background-clip: text;
   color: transparent;
   font-family: "Roboto-Bold", Helvetica;
@@ -477,4 +577,3 @@ footer .border-top{
   top: 0;
   width: 1454px;
 }
-

@@ -25,7 +25,7 @@ function App() {
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/contact-us' element={<Contact />} />
-            <Route path='/terms%condition' element={<TermsCondition />} />
+            <Route path='/terms/condition' element={<TermsCondition />} />
             <Route path='/search-engine-optimization' element={<Seo />} />
             <Route path='/social-media-marketing' element={<Smm />} />
             <Route path='/email-marketing' element={<Em />} />

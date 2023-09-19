@@ -29,7 +29,7 @@ export default function Portfolio() {
               Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.
               </p>
               <a href='#'>
-                <button>Free Consultation</button>
+                <button className="port-btn">Free Consultation</button>
               </a>
             </div>
             <div className='image'>
@@ -40,7 +40,7 @@ export default function Portfolio() {
       </section>
 
       <section id='port-1' className='py-5'>
-        <div className='container-lg my-4 portfolios'>
+        <div className='container-lg my-4 portfolio'>
           <div className='row gx-md-5'>
             <div className='col-md-6 my-4'>
               <div className='card port-card'>
@@ -165,7 +165,7 @@ export default function Portfolio() {
       </div>
 
       <div className='wrapper mt-5'>
-        <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i>
+        {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
         <ul className='carousel'>
           <li className='card'>
             <div className='info'>
@@ -273,7 +273,7 @@ export default function Portfolio() {
             </p>
           </li>
         </ul>
-        <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i>
+        {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
       </div>
       {/* </section> */}
 

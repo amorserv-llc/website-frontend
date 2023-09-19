@@ -1,5 +1,5 @@
 import React from 'react'
-import home from "../../Assets/home.png";
+import homeimg from "../../Assets/homeimg.png";
 export default function 
 
 () {
@@ -14,7 +14,7 @@ export default function
                   <a href=""><button>Get Expert</button></a>
               </div>
               <div className="image">
-                  <img src={home} className="img-fluid" alt="header-image" />
+                  <img src={homeimg} className="img-fluid" alt="header-image" />
               </div>
           </div>
         
