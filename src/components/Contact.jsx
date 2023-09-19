@@ -31,7 +31,8 @@ export default function () {
           <div className='content'>
             <h1>Contact Information</h1>
             <p>
-            Our digital marketing experts are always available to  give you top-notch solution to your marketing challenges.
+              Our digital marketing experts are always available to give you
+              top-notch solution to your marketing challenges.
             </p>
             <a href='#'>
               <button>Schedule a Call</button>
@@ -79,7 +80,11 @@ export default function () {
                 </div>
                 <div className='mb-3'>
                   {/* <label>Message</label> */}
-                  <textarea className='form-control' placeholder="Message" rows='6'></textarea>
+                  <textarea
+                    className='form-control'
+                    placeholder='Message'
+                    rows='6'
+                  ></textarea>
                 </div>
                 <div className='text-right'>
                   <a href='' className='text-decoration-none text-dark'>
@@ -115,7 +120,8 @@ export default function () {
                     </a>
                   </small>
                 </div>
-              </div> <br /> <br />
+              </div>{" "}
+              <br /> <br />
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded cons'>
                 <FontAwesomeIcon icon={faEnvelope} className='me-5 fa-2xl' />
                 <div className='lh-1'>
@@ -129,7 +135,8 @@ export default function () {
                     </a>
                   </small>
                 </div>
-              </div><br /> <br />
+              </div>
+              <br /> <br />
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded cons'>
                 <FontAwesomeIcon icon={faLocationDot} className='me-5 fa-2xl' />
                 <div className='lh-1'>
