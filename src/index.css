@@ -14,7 +14,6 @@ body {
 .navbar-brand {
   max-width: 200px;
   height: auto;
-  /* margin-left: 2rem; */
 }
 
 .navbar-brand img {
@@ -31,6 +30,7 @@ body {
 .nav-link {
   border: none !important;
 }
+
 .container-fluid {
   margin: 0 30px !important;
 }

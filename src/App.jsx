@@ -13,6 +13,7 @@ import Seo from "./components/services/Seo";
 import Smm from "./components/services/Smm";
 import Em from "./components/services/Em";
 import Sem from "./components/services/Sem";
+import Branding from "./components/services/Branding";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/social-media-marketing' element={<Smm />} />
             <Route path='/email-marketing' element={<Em />} />
             <Route path='/search-engine-marketing' element={<Sem />} />
+            <Route path='/branding' element={<Branding />} />
           </Routes>
         </div>
       </Router>
