@@ -68,7 +68,7 @@ export default function Sem() {
       </header>
 
       <div style={{ color: "#266", textAlign: "center" }}>
-        <h1> What is Search Engine Marketing?</h1>
+        <h1 className="pt-5"> What is Search Engine Marketing?</h1>
         <p>Understanding the Essence of Search Engine Marketing (SEM)</p>
       </div>
 

@@ -49,7 +49,7 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-            <p>
+            <p >
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.
             </p>

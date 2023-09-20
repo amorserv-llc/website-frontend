@@ -61,7 +61,7 @@
   font-weight: 500;
   line-height: 150%; /* 1.5rem */
   display: flex;
-  height: 16.3125rem;
+  /* height: 16.3125rem; */
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
