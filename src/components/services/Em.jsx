@@ -21,16 +21,19 @@ import ff12 from "../../Assets/ff12.png";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
-
-  // Function to handle button click and set the active button
-  const handleButtonClick = (buttonId) => {
-    setActiveButton(buttonId === activeButton ? null : buttonId);
-  };
-
-  // Define a CSS class to make the active button green
   const buttonClass = (buttonId) => {
     return `btn btn-light ${activeButton === buttonId ? "active-button" : ""}`;
   };
+  // Function to handle button click and set the active button
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(activeButton === buttonId ? null : buttonId);
+  };
+
+  // Determine the arrow direction based on the activeButton state
+  const getArrowDirection = (buttonId) => {
+    return activeButton === buttonId ? "up" : "down";
+  };
+
   return (
     <>
       <Navbar />
@@ -371,10 +374,29 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "60px" }}
+                style={{ width: "100%", height: "6rem", flexShrink: "0" }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is the significance of email marketing for businesses?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                    style={{
+                      transform: `rotate(${
+                        getArrowDirection(1) === "down" ? 0 : 180
+                      }deg)`,
+                    }}
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
               </button>
             </p>
             <div
@@ -389,20 +411,41 @@ export default function Em() {
               </div>
             </div>
           </div>
-
+          <br />
+          <br />
+          <br />
           <div className='container'>
             <p>
               <button
                 className={buttonClass(2)}
                 type='button'
                 data-toggle='collapse'
-                data-target='#collapseExample2'
+                data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
-                aria-controls='collapseExample2'
-                style={{ width: "100%", height: "60px" }}
+                aria-controls='collapseExample1'
+                style={{ width: "100%", height: "6rem", flexShrink: "0" }}
                 onClick={() => handleButtonClick(2)}
               >
                 How can personalized email campaigns benefit my brand?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                    style={{
+                      transform: `rotate(${
+                        getArrowDirection(2) === "down" ? 0 : 180
+                      }deg)`,
+                    }}
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
               </button>
             </p>
             <div
