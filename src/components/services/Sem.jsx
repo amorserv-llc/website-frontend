@@ -204,7 +204,7 @@ export default function Sem() {
                   search results when potential customers are actively searching
                   for your products or services. Be visible to those in need and
                   be a click away from conversions.
-                </p>
+                </p> <br /> <br /><br />
               </div>
 
               <div className='col-md-4'>
@@ -277,7 +277,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se1} width='25px' alt='...' />
+              <img src={se1} width='25px' alt='...' style={{ marginLeft: '-140px' }} />
               <a href='' className='px-2 serv-link'>
                 Pay-Per-Click (PPC){" "}
               </a>
@@ -305,7 +305,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se4} width='25px' alt='...' />
+              <img src={se4} width='25px' alt='...' style={{ marginLeft: '-100px' }} />
               <a href='' className='px-2 serv-link'>
                 Ad Copywriting
               </a>
@@ -314,7 +314,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se5} width='25px' alt='...' />
+              <img src={se5} width='25px' alt='...' style={{ marginLeft: '-110px' }}/>
               <a href='' className='px-2 serv-link'>
                 Ad Campaign Creation{" "}
               </a>
@@ -323,7 +323,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se6} width='25px' alt='...' />
+              <img src={se6} width='25px' alt='...' style={{ marginLeft: '-30px' }} />
               <a href='' className='px-2 serv-link'>
                 Performance Analytics
               </a>
