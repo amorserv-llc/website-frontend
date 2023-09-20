@@ -50,43 +50,40 @@ export default function () {
             <div className='col-md-6'>
               <div className='rounded-4 card contacts p-5'>
                 <h4 className='py-3 text-center'>How can we help?</h4>
-                {/* <p className='text-center pb-1'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut lab
-        </p> */}
+                
+                
                 <div className='mb-3'>
-                  {/* <label>Full Name</label> */}
                   <input
                     type='name'
-                    className='form-control'
-                    placeholder='Enter Full Name'
+                    className='control'
+                    placeholder='Full Name'
                   />
                 </div>
                 <div className='mb-3'>
-                  {/* <label>Phone</label> */}
                   <input
                     type='phone'
-                    className='form-control'
-                    placeholder='Enter Phone Number'
+                    className='control'
+                    
+                    placeholder='Phone'
                   />
                 </div>
                 <div className='mb-3'>
                   {/* <label>Email</label> */}
                   <input
                     type='email'
-                    className='form-control'
-                    placeholder='name@example.com'
+                    className='control'
+                    placeholder='Email'
                   />
-                </div>
+                </div><br />
                 <div className='mb-3'>
                   {/* <label>Message</label> */}
                   <textarea
                     className='form-control'
                     placeholder='Message'
-                    rows='6'
+                    rows='13'
                   ></textarea>
                 </div>
-                <div className='text-right'>
+                <div style={{ marginLeft: '430px' }}>
                   <a href='' className='text-decoration-none text-dark'>
                     <FontAwesomeIcon
                       icon={faPaperPlane}
