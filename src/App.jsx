@@ -14,10 +14,17 @@ import Smm from "./components/services/Smm";
 import Em from "./components/services/Em";
 import Sem from "./components/services/Sem";
 import Branding from "./components/services/Branding";
+import fav from './Assets/fav.png';
+
+import { Helmet } from 'react-helmet';
+
 
 function App() {
   return (
     <>
+         <Helmet>
+        <link rel="shortcut icon" href={fav} type="image/x-icon" />
+      </Helmet>
       <Router>
         <div>
           <Routes>
