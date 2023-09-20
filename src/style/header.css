@@ -9,7 +9,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .header-bg {
   width: 100%;
   background: #fafafb;
@@ -55,16 +54,17 @@
 }
 
 .header-bg .header .content p {
-  width: 33.5rem;
-  color: var(--Black, #1a202c);
-  font-feature-settings: "clig" off, "liga" off;
+  color: #1a202c;
   font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 150% */
-  letter-spacing: 0.03125rem;
-  opacity: 0.45;
+  font-weight: 500;
+  line-height: 150%; /* 1.5rem */
+  display: flex;
+  height: 16.3125rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .header-bg .header .content button {
