@@ -9,14 +9,128 @@ import sem from "../../Assets/sem.png";
 
 function Navbar() {
   const navStyle = {
-    background: '#FFF',
-    boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
-    height: '7.45494rem',
-   
+    background: "#FFF",
+    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+    height: "7.45494rem",
   };
   return (
     <section>
-      <nav className='navbar navbar-expand-lg navbar-light'  style={navStyle}>
+      <nav class='navbar navbar-expand-lg navbar-light bg-light' style={navStyle}>
+      <div className=' container-lg justify-content-between align-items-center'>
+          <Link className='navbar-brand' to='/'>
+            <img src={Logo} alt='Logo'  className="logo"/>
+          </Link>{" "}
+          <button
+            class='navbar-toggler'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarNav'
+            aria-controls='navbarNav'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='navbarNav'>
+          <ul className='navbar-nav d-flex flex-row'>
+            <li className='nav-item mx-3 dropdown'>
+              <a
+                className='nav-link dropdown-toggle'
+                href='#'
+                role='button'
+                data-bs-toggle='dropdown'
+                aria-expanded='false'
+              >
+                Services
+              </a>
+              <div className='dropdown-menu'>
+                <Link
+                  className='nav-link'
+                  to='/search-engine-optimization'
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img src={seoIcon} width='20' height='20' alt='...' />
+                  <div style={{ marginLeft: "10px" }}>
+                    <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
+                      Search Engine Optimization
+                    </h6>
+                    <p className='mb-0 opacity-75'>Get Found Online</p>
+                  </div>
+                </Link>
+
+                <Link
+                  className='nav-link'
+                  to='/social-media-marketing'
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img src={smm} width='20' height='20' alt='...' />
+                  <div style={{ marginLeft: "10px" }}>
+                    <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
+                      Social Media Management
+                    </h6>
+                    <p className='mb-0 opacity-75'>
+                      {" "}
+                      Connect with your Audience
+                    </p>
+                  </div>
+                </Link>
+
+                <Link
+                  className='nav-link'
+                  to='/email-marketing'
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img src={em} width='20' height='20' alt='...' />
+                  <div style={{ marginLeft: "10px" }}>
+                    <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
+                      Email Marketing
+                    </h6>
+                    <p className='mb-0 opacity-75'>
+                      Reach your Customers' Inboxes
+                    </p>
+                  </div>
+                </Link>
+
+                <Link
+                  className='nav-link'
+                  to='/search-engine-marketing'
+                  style={{ display: "flex",  alignItems: "center" }}
+                >
+                  <img src={sem} width='20' height='20' alt='...' />
+                  <div style={{ marginLeft: "10px" }}>
+                    <h6 className='mb-0' style={{ whiteSpace: "nowrap" }}>
+                      Search Engine Marketing
+                    </h6>
+                    <p className='mb-0 opacity-75'>Drive Traffic with Ads</p>
+                  </div>
+                </Link>
+              </div>
+            </li>
+            <li className='nav-item mx-3'>
+              <Link className='nav-link' to='/about-us'>
+                About Us
+              </Link>
+            </li>
+            <li className='nav-item mx-3'>
+              <Link className='nav-link' to='/portfolio'>
+                Portfolio
+              </Link>
+            </li>
+            <li className='nav-item mx-3'>
+              <Link className='nav-link' to='/blog'>
+                Blog
+              </Link>
+            </li>
+            <li className='nav-item mx-3'>
+              <Link className='nav-link' to='/contact-us'>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <nav className='navbar navbar-expand-lg navbar-light'  style={navStyle}>
         <div className=' container-lg d-flex justify-content-between align-items-center'>
           <Link className='navbar-brand' to='/'>
             <img src={Logo} alt='Logo' />
@@ -128,7 +242,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </section>
   );
 }
