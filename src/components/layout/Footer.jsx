@@ -27,17 +27,17 @@ export default function () {
                     fontSize: "20px",
                     position: "absolute",
                     top: "70px",
-                    left: "-15px",
+                    left: "5px",
                   }}
                 >
                   <span>
-                    <img src={image1} alt='image1' style={{ width: "40px" }} />
+                    <img src={image1} alt='image1' style={{ width: "50px" }} />
                   </span>
                   <span>
-                    <img src={image2} alt='image2' style={{ width: "40px" }} />
+                    <img src={image2} alt='image2' style={{ width: "50px" }} />
                   </span>
                   <span>
-                    <img src={image3} alt='image3' style={{ width: "40px" }} />
+                    <img src={image3} alt='image3' style={{ width: "50px" }} />
                   </span>
                 </div>
               </a>
