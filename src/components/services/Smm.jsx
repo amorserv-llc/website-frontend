@@ -5,7 +5,7 @@ import Navbar from "../layout/TopNavbar";
 import smo from "../../Assets/smo.png";
 import oneup from "../../Assets/oneup.png";
 import twoup from "../../Assets/twoup.png";
-import threeup from "../../Assets/threeup.png";
+import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 
@@ -185,7 +185,7 @@ export default function Smm() {
         className='text-center'
         style={{ backgroundColor: " #226666", height: "300px", color: "white" }}
       >
-        <div className='container'>
+        <div className='container p-5'>
           <h2>Why you need Social Media Marketing?</h2>
           <p>
             Social media marketing service is essential in expanding your brand
@@ -238,7 +238,8 @@ export default function Smm() {
                   strategies meticulously crafted from data analysis. Every move
                   we make is rooted in insights, ensuring your campaigns
                   outperform and drive remarkable growth.
-                </p>
+                </p>{" "}
+                <br /> <br /> <br />
               </div>
               <div className='col-md-4'>
                 <img src={ff8} alt='image' />
@@ -304,80 +305,18 @@ export default function Smm() {
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Amorserv Agile SM Methodology</h3>
           </div>
-          <p className='my-4 pt-5 text-center'>
-            We adopt tailored strategies fuel captivating content. Meticulous
-            monitoring to ensure growth, adapting to your brand journey.
+          <p className='my-4 text-center' style={{ color: "#3D3D3D" }}>
+            We adopt tailored strategies to fuel captivating content. Meticulous
+            monitoring to <br />
+            ensure growth, adapting to your brand journey.
           </p>
 
-          <div className='frame container'>
-            <div className='group'>
-              <div className='div'>
-                <p className='plan-we-understand'>
-                  <span className='text-wrapper'>
-                    Plan
-                    <br />
-                  </span>
-                  <span className='span'>
-                    We understand your <br />
-                    goals and audience.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='architecture-plan'
-                    alt='Architecture plan'
-                    src={oneup}
-                  />
-                </div>
-              </div>
-              <div className='text-wrapper-2'>1</div>
-            </div>
-            <div className='group-2'>
-              <div className='text-wrapper-2'>2</div>
-              <div className='group-3'>
-                <p className='p'>
-                  <span className='text-wrapper-3'>
-                    Plan
-                    <br />
-                  </span>
-                  <span className='text-wrapper-4'>
-                    We develop tailored <br />
-                    marketing campaigns.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='edit-note-icon'
-                    alt='Edit note icon'
-                    src={twoup}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className='group-4'>
-              <div className='text-wrapper-2'>3</div>
-              <div className='group-5'>
-                <p className='p'>
-                  <span className='text-wrapper-5'>
-                    Grow
-                    <br />
-                  </span>
-                  <span className='text-wrapper-4'>
-                    We track progress and <br />
-                    optimize for success.
-                  </span>
-                </p>
-                <div className='img-wrapper'>
-                  <img
-                    className='grow-money-icon'
-                    alt='Grow money icon'
-                    src={threeup}
-                  />
-                </div>
-              </div>
+          <div className='centered-container' style={{ marginTop: "-160px" }}>
+            <div className='threestep'>
+              <img src={threestep} alt='3-Step' />
             </div>
           </div>
-          <div className='text-center'>
+          <div className='text-center' style={{ marginTop: "-170px" }}>
             <a href='#' className='btn mt-4 btn-real'>
               Get Started
             </a>
@@ -392,7 +331,6 @@ export default function Smm() {
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Social Media Marketing FAQs</h3>
           </div>
-
           <div className='container'>
             <p>
               <button
@@ -402,24 +340,41 @@ export default function Smm() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "60px" }}
+                style={{ width: "100%", height: " 6rem", flexShrink: "0" }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is social media marketing?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
               </button>
             </p>
             <div
               className={`collapse ${activeButton === 1 ? "show" : ""}`}
               id='collapseExample1'
             >
-              <div className='card card-body'>
+              <div
+                className='card card-body'
+                style={{ color: "#010101", backgroundColor: "white" }}
+              >
                 Social media marketing is the strategic use of social platforms
                 to connect with your audience, build brand awareness, engage
                 users, and ultimately achieve business goals.{" "}
               </div>
             </div>
           </div>
-
+          <br /> <br /> <br />
           <div className='container'>
             <p>
               <button
@@ -429,10 +384,24 @@ export default function Smm() {
                 data-target='#collapseExample2'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample2'
-                style={{ width: "100%", height: "60px" }}
+                style={{ width: "100%", height: "6rem", flexShrink: "0" }}
                 onClick={() => handleButtonClick(2)}
               >
                 What are the 5 ways of social media marketing?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
               </button>
             </p>
             <div

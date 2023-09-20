@@ -150,7 +150,7 @@ export default function Index() {
             <div className='col-lg-6 align-items-center d-flex justify-content-center'>
               <img src={g1} className='img-fluid' alt='...' />
             </div>
-            <div className='col-lg-6 mt-3 align-items-center col-lg-6 col-md-12 text-center'>
+            <div className='col-lg-6 mt-3 align-items-center col-lg-6 col-md-12'>
               <span className='my-4'>
                 We understand your struggles and are here to help. Let us be
                 your guide and empower your brand with personalized,
@@ -159,10 +159,13 @@ export default function Index() {
                 As your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-              <div className='text-center mt-3 h'>
-                <a href='#' className='btn mt-4 btn-real'>
+              <a href='#' className='btn mt-4 btn-real'>
+                Get Free Proposal
+              </a>
+              <div className='mt-3 h'>
+                {/* <a href='#' className='btn mt-4 btn-real'>
                   Get Free Proposal
-                </a>
+                </a> */}
                 <p className='my-4'>Take control of your online success.</p>
               </div>
             </div>
@@ -183,7 +186,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={digi} width='25px' alt='...' />
+              <img src={digi} width='25px' alt='...'  style={{ marginLeft: "-45PX" }}/>
               <a href='' className='px-2 serv-link'>
                 Digital Marketing
               </a>
@@ -192,7 +195,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={paid} width='25px' alt='...' />
+              <img src={paid} width='25px' alt='...' style={{ marginLeft: "-100PX" }}/>
               <a href='' className='px-2 serv-link'>
                 Paid Media
               </a>
@@ -201,7 +204,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={branding} width='25px' alt='...' />
+              <img src={branding} width='25px' alt='...' style={{ marginLeft: "-110PX" }} />
               <a href='' className='px-2 serv-link'>
                 Branding
               </a>
@@ -210,7 +213,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={social} width='25px' alt='...' />
+              <img src={social} width='25px' alt='...' style={{ marginLeft: "-85PX" }}/>
               <a href='' className='px-2 serv-link'>
                 Social Media
               </a>
@@ -237,7 +240,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={searchop} width='25px' alt='...' />
+              <img src={searchop} width='25px' alt='...' style={{ marginLeft: "45PX" }}/>
               <a href='' className='px-2 serv-link'>
                 Search Engine Optimazation
               </a>
@@ -246,7 +249,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={email} width='25px' alt='...' />
+              <img src={email} width='25px' alt='...' style={{ marginLeft: "-45PX" }}/>
               <a href='' className='px-2 serv-link'>
                 Email Marketing
               </a>
@@ -289,12 +292,12 @@ export default function Index() {
 
       <section id='sec-6'>
         <div className='container-lg pt-5 mb-5'>
-          <div className='col-12 text-center'>
+          <div className='col-12'>
             <h3 className='mb-4 fw-bold'>
               Trusted by Thousands of <br />
               Happy Customer
             </h3>
-            <p>
+            <p className="text-center">
               Proudly impacting industries with the best digital strategies.
               Hear <br />
               from our valued clients, not just us.
