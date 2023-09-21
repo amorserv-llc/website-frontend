@@ -131,15 +131,13 @@ export default function () {
                 <h4 className='tag'>Tags</h4>
                 <div className='d-flex flex-column flex-md-row mb-3  gap-5'>
                   <div className='d-flex flex-column'>
-                    
-                       <a
+                    <a
                       href='#'
                       className='btn mt-1 btn-sidebar  w-auto rounded-4'
                     >
                       Popular Tag
                     </a>
-                    
-                  
+
                     <br />
                     <a
                       href='#'
@@ -210,10 +208,10 @@ export default function () {
             </div>
           </div>
 
-          <div className='col-md-8 row pt-5 blog '>
+          <div className='col-md-8 row pt-5'>
             <div className='col-md-5 mx-1'>
               <div className='border rounded overflow-hidden mb-4 shadow-sm'>
-                <div className='col p-3 d-flex flex-column position-static'>
+                <div className='col p-3 d-flex flex-column position-static blog'>
                   <img src={b1} className='pb-3' alt='...' />
 
                   <p className='card-text mb-auto'>
@@ -268,7 +266,7 @@ export default function () {
             </div>
             <div className='col-md-5 mx-1'>
               <div className='border rounded overflow-hidden mb-4 shadow-sm'>
-                <div className='col p-3 d-flex flex-column position-static'>
+                <div className='col p-3 d-flex flex-column position-static blog'>
                   <img src={b2} className='pb-3' alt='...' />
 
                   <p className='card-text mb-auto'>
@@ -323,7 +321,7 @@ export default function () {
             </div>
             <div className='col-md-5 mx-1'>
               <div className='border rounded overflow-hidden mb-4 shadow-sm'>
-                <div className='col p-3 d-flex flex-column position-static'>
+                <div className='col p-3 d-flex flex-column position-static blog'>
                   <img src={b3} className='pb-3' alt='...' />
 
                   <p className='card-text mb-auto'>
@@ -378,7 +376,7 @@ export default function () {
             </div>
             <div className='col-md-5 mx-1'>
               <div className='border rounded overflow-hidden mb-4 shadow-sm'>
-                <div className='col p-3 d-flex flex-column position-static'>
+                <div className='col p-3 d-flex flex-column position-static blog'>
                   <img src={b4} className='pb-3' alt='...' />
 
                   <p className='card-text mb-auto'>
