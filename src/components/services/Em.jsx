@@ -21,8 +21,10 @@ import ff12 from "../../Assets/ff12.png";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
+  const primaryBackgroundColor = '#D3DCE7';
+
   const buttonClass = (buttonId) => {
-    return `btn btn-light ${activeButton === buttonId ? "active-button" : ""}`;
+    return `btn primaryBackgroundColor ${activeButton === buttonId ? "active-button" : ""}`;
   };
   // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
@@ -374,7 +376,7 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0" }}
+                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is the significance of email marketing for businesses?{" "}
@@ -423,7 +425,7 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0" }}
+                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
                 onClick={() => handleButtonClick(2)}
               >
                 How can personalized email campaigns benefit my brand?{" "}
