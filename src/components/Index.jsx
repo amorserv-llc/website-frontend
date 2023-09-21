@@ -186,7 +186,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={digi} width='25px' alt='...'  style={{ marginLeft: "-45PX" }}/>
+              <img
+                src={digi}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-45PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Digital Marketing
               </a>
@@ -195,7 +200,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={paid} width='25px' alt='...' style={{ marginLeft: "-100PX" }}/>
+              <img
+                src={paid}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-100PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Paid Media
               </a>
@@ -204,7 +214,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={branding} width='25px' alt='...' style={{ marginLeft: "-110PX" }} />
+              <img
+                src={branding}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-110PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Branding
               </a>
@@ -213,7 +228,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={social} width='25px' alt='...' style={{ marginLeft: "-85PX" }}/>
+              <img
+                src={social}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-85PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Social Media
               </a>
@@ -240,7 +260,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={searchop} width='25px' alt='...' style={{ marginLeft: "45PX" }}/>
+              <img
+                src={searchop}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "45PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Search Engine Optimazation
               </a>
@@ -249,7 +274,12 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={email} width='25px' alt='...' style={{ marginLeft: "-45PX" }}/>
+              <img
+                src={email}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-45PX" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Email Marketing
               </a>
@@ -283,12 +313,11 @@ export default function Index() {
             <p style={{ color: "#266" }}>
               it's Time to take controle of your online presence
             </p>
-            <div style={{ marginTop: '-19px' }}>
-            <a href='#' className='btn mt-4 btn-real'>
-              Get Free Proposal
-            </a>
+            <div style={{ marginTop: "-19px" }}>
+              <a href='#' className='btn mt-4 btn-real'>
+                Get Free Proposal
+              </a>
             </div>
-           
           </div>
         </div>
       </section>
@@ -300,7 +329,7 @@ export default function Index() {
               Trusted by Thousands of <br />
               Happy Customer
             </h3>
-            <p className="text-center">
+            <p className='text-center'>
               Proudly impacting industries with the best digital strategies.
               Hear <br />
               from our valued clients, not just us.
@@ -318,7 +347,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Amorserv's dynamic digital strategies triggered an unprecedented
@@ -334,7 +365,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 With Amorserv's digital tactics, our website witnessed a
@@ -350,7 +383,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Amorserv's involvement marked a turning point for our online
@@ -366,7 +401,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -381,7 +418,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -396,7 +435,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -411,7 +452,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -426,7 +469,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -441,7 +486,9 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
+                <p className='rate' style={{ color: "#B13557" }}>
+                  4.5
+                </p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -452,6 +499,26 @@ export default function Index() {
           {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>
       </section>
+      <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='135'
+          height='16'
+          viewBox='0 0 135 16'
+          fill='none'
+        >
+          <circle cx='67.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <circle cx='97.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <circle cx='127.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <path
+            fill-rule='evenodd'
+            clip-rule='evenodd'
+            d='M7.55721 15.949C7.53816 15.9491 7.51909 15.9492 7.5 15.9492C7.48091 15.9492 7.46184 15.9491 7.44279 15.949H6.9469V15.9291C3.06303 15.646 0 12.4053 0 8.44922C0 4.49311 3.06303 1.25241 6.9469 0.969304V0.949219H7.5H37.0841V0.960556C37.2218 0.953031 37.3604 0.949219 37.5 0.949219C41.6421 0.949219 45 4.30708 45 8.44922C45 12.5914 41.6421 15.9492 37.5 15.9492C37.3604 15.9492 37.2218 15.9454 37.0841 15.9379V15.949H7.55721Z'
+            fill='#1A202C'
+          />
+        </svg>
+      </div>
+
       <Form />
       <Footer />
     </>
