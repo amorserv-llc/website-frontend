@@ -464,7 +464,7 @@ export default function () {
               className={`collapse ${activeButton === 1 ? "show" : ""}`}
               id='collapseExample1'
             >
-              <div className='card card-body'>
+              <div className='card card-boo'>
                 SEO, or Search Engine Optimization, is the practice of
                 optimizing your website to rank higher on search engine results
                 pages (SERPs). It's crucial because higher rankings mean
@@ -512,7 +512,110 @@ export default function () {
               className={`collapse ${activeButton === 2 ? "show" : ""}`}
               id='collapseExample2'
             >
-              <div className='card card-body'>
+              <div className='card card-boo'>
+                Yes, we offer revisions to the design to ensure it meets your
+                requirements and expectations.
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <br /> <br /> <br />
+          <div className='container'>
+            <p>
+              <button
+                className={buttonClass(3)}
+                type='button'
+                data-toggle='collapse'
+                data-target='#collapseExample1'
+                aria-expanded={activeButton === 3 ? "true" : "false"}
+                aria-controls='collapseExample1'
+                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                onClick={() => handleButtonClick(3)}
+              >
+                Is local SEO important for businesses?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                    style={{
+                      transform: `rotate(${
+                        getArrowDirection(3) === "down" ? 0 : 180
+                      }deg)`,
+                    }}
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div
+              className={`collapse ${activeButton === 3 ? "show" : ""}`}
+              id='collapseExample2'
+            >
+              <div className='card card-boo'>
+                Yes, we offer revisions to the design to ensure it meets your
+                requirements and expectations.
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <br /> <br /> <br />
+          <div className='container'>
+            <p>
+              <button
+                className={buttonClass(4)}
+                type='button'
+                data-toggle='collapse'
+                data-target='#collapseExample1'
+                aria-expanded={activeButton === 4 ? "true" : "false"}
+                aria-controls='collapseExample1'
+                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                onClick={() => handleButtonClick(4)}
+              >
+                What is the difference between on-page and off-page SEO?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                    style={{
+                      transform: `rotate(${
+                        getArrowDirection(4) === "down" ? 0 : 180
+                      }deg)`,
+                    }}
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div
+              className={`collapse ${activeButton === 4 ? "show" : ""}`}
+              id='collapseExample2'
+            >
+              <div className='card card-boo'>
                 Yes, we offer revisions to the design to ensure it meets your
                 requirements and expectations.
               </div>
