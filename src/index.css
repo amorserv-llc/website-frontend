@@ -89,6 +89,17 @@ body {
   height: 40px;
   padding: 0.6em 1.4em 0.5em 0.8em;
 }
+.rapp{
+  color: #010101;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Roboto;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 150% */
+letter-spacing: 0.03125rem;
+opacity: 0.45;
+}
 .head h5 {
   color: #226666;
 }

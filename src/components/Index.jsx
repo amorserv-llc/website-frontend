@@ -264,7 +264,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id='sec-6' className='py-5'>
+      <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Our Simplified 3-Step Process</h3>
@@ -279,13 +279,16 @@ export default function Index() {
             </div>
           </div>
 
-          <div className='text-center' style={{ marginTop: "-160px" }}>
+          <div className='text-center' style={{ marginTop: "-170px" }}>
             <p style={{ color: "#266" }}>
               it's Time to take controle of your online presence
             </p>
+            <div style={{ marginTop: '-19px' }}>
             <a href='#' className='btn mt-4 btn-real'>
               Get Free Proposal
             </a>
+            </div>
+           
           </div>
         </div>
       </section>
@@ -315,7 +318,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Amorserv's dynamic digital strategies triggered an unprecedented
@@ -331,7 +334,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 With Amorserv's digital tactics, our website witnessed a
@@ -347,7 +350,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Amorserv's involvement marked a turning point for our online
@@ -363,7 +366,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -378,7 +381,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -393,7 +396,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -408,7 +411,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -423,7 +426,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
@@ -438,7 +441,7 @@ export default function Index() {
                   </div>
                   <h4>Viezh Robert</h4>
                 </div>
-                <p className='rate'>4.5</p>
+                <p className='rate' style={{ color: '#B13557' }}>4.5</p>
               </div>
               <p className='detail'>
                 Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada

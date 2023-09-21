@@ -28,9 +28,13 @@ import ff15 from "../../Assets/ff15.png";
 
 export default function () {
   const [activeButton, setActiveButton] = useState(null);
-  const buttonClass = (buttonId) => {
-    return `btn btn-light ${activeButton === buttonId ? "active-button" : ""}`;
+  const bg = (btC) => {
+     return' backgroundColor:red'
   };
+  const buttonClass = (buttonId) => {
+    return `btn  ${activeButton === buttonId ? "active-button" : ""}`;
+  };
+
   // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
@@ -49,7 +53,7 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-            <p >
+            <p style={{ opacity: '0.45' }} >
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.
             </p>
@@ -128,6 +132,55 @@ export default function () {
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
+                    <img src={ff9} alt='image' />
+                    <h4 className='card-title'>Local SEO</h4> <br />
+                    <p className='card-text'>
+                      Dominate your local market with targeted optimizations
+                      that put your business on the map, making it easier for
+                      nearby customers to find you online.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                  <div className='card-body'>
+                    <img src={ff11} alt='image' />
+                    <h4 className='card-title'>On-Page SEO</h4> <br />
+                    <p className='card-text'>
+                      Craft compelling web pages optimized for search engines
+                      and users alike, utilizing strategic keyword placement,
+                      meta tags, and content enhancements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                  <div className='card-body'>
+                    <img src={ff10} alt='image' />
+                    <h4 className='card-title'>Off-Page SEO</h4> <br />
+                    <p className='card-text'>
+                      Expand your digital footprint beyond your website through
+                      off-page strategies like content outreach and social media
+                      engagement, boosting your brand's online authority.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                  <div className='card-body'>
                     <img src={ff3} alt='image' />
                     <h4 className='card-title'>Franchise SEO</h4> <br />
                     <p className='card-text'>
@@ -135,6 +188,20 @@ export default function () {
                       franchise businesses ensuring a consistent online presence
                       across multiple locations and maximizing local search
                       visibility.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                  <div className='card-body'>
+                    <img src={ff5} alt='image' />
+                    <h4 className='card-title'>Shopify SEO</h4> <br />
+                    <p className='card-text'>
+                      Elevate your Shopify store's visibility and rankings with
+                      specialized SEO strategies designed to optimize product
+                      pages, collections, and overall website performance.
                     </p>
                   </div>
                 </div>
@@ -153,19 +220,7 @@ export default function () {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff5} alt='image' />
-                    <h4 className='card-title'>Shopify SEO</h4> <br />
-                    <p className='card-text'>
-                      Elevate your Shopify store's visibility and rankings with
-                      specialized SEO strategies designed to optimize product
-                      pages, collections, and overall website performance.
-                    </p>
-                  </div>
-                </div>
-              </div>
+
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
@@ -176,6 +231,21 @@ export default function () {
                       Transform your online store into a powerhouse with
                       comprehensive SEO strategies tailored to ecommerce
                       platforms, driving higher traffic and boosting sales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                  <div className='card-body'>
+                    <img src={ff8} alt='image' />
+                    <h4 className='card-title'>Content Writing</h4> <br />
+                    <p className='card-text'>
+                      Fuel your digital journey with captivating, SEO-optimized
+                      content that resonates with your audience, increases
+                      engagement, and establishes your brand as an industry
+                      leader.
                     </p>
                   </div>
                 </div>
@@ -197,60 +267,8 @@ export default function () {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff8} alt='image' />
-                    <h4 className='card-title'>Content Writing</h4> <br />
-                    <p className='card-text'>
-                      Fuel your digital journey with captivating, SEO-optimized
-                      content that resonates with your audience, increases
-                      engagement, and establishes your brand as an industry
-                      leader.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff9} alt='image' />
-                    <h4 className='card-title'>Local SEO</h4> <br />
-                    <p className='card-text'>
-                      Dominate your local market with targeted optimizations
-                      that put your business on the map, making it easier for
-                      nearby customers to find you online.{" "}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff10} alt='image' />
-                    <h4 className='card-title'>Off-Page SEO</h4> <br />
-                    <p className='card-text'>
-                      Expand your digital footprint beyond your website through
-                      off-page strategies like content outreach and social media
-                      engagement, boosting your brand's online authority.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff11} alt='image' />
-                    <h4 className='card-title'>On-Page SEO</h4> <br />
-                    <p className='card-text'>
-                      Craft compelling web pages optimized for search engines
-                      and users alike, utilizing strategic keyword placement,
-                      meta tags, and content enhancements.
-                    </p>
-                  </div>
-                </div>
-              </div>
+       
+             
             </div>
           </div>
         </div>
@@ -373,27 +391,21 @@ export default function () {
       </section>
 
       <section id='sec-6' className='py-5'>
-        <div className='container-lg my-4'>
+        <div className='container-lg'>
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Amorserv Agile SEO Methodology</h3>
           </div>
-          <p className='my-4 pt-5 text-center'>
+          <p className='text-center' style={{ color: '#3D3D3D', fontWeight: '400', paddingBottom: '30px' }}>
             We adopt tailored strategies to fuel captivating content. Meticulous
-            monitoring to ensure growth, adapting to your brand journey.
+            monitoring to <br /> ensure growth, adapting to your brand journey.
           </p>
 
-          <section id='sec-6' className='py-5'>
+          <section id='sec-6'>
             <div className='container-lg my-4'>
-              {/* <div className='col-12 text-center'>
-                <h3 className='mb-4'>Our Simplified 3-Step Process</h3>
-              </div> */}
-              {/* <h5 className='my-4 text-center'>
-                For Maximizing Your Digital Marketing Success
-              </h5> */}
-
+             
               <div
                 className='centered-container'
-                style={{ marginTop: "-160px" }}
+                style={{ marginTop: "-180px" }}
               >
                 <div className='threestep'>
                   <img src={threestep} alt='3-Step' />
@@ -401,7 +413,7 @@ export default function () {
               </div>
             </div>
           </section>
-          <div className='text-center' style={{ marginTop: "-160px" }}>
+          <div className='text-center' style={{ marginTop: "-160px", marginBottom: '80px' }}>
             <a href='#' className='btn mt-4 btn-real'>
               Get Started
             </a>
@@ -412,7 +424,7 @@ export default function () {
       <ContactForm />
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
-          <div className='col-12 text-center'>
+          <div className='col-12'>
             <h3 className='mb-4'>Search Engine Optimization FAQs</h3>
           </div>
           <div className='container'>

@@ -10,7 +10,7 @@ export default function
                   <h1>
                     We're your Partner for Digital Marketing Success
                   </h1>
-                  <p>Empower Your Brand, and Drive Results with AmorServ Consulting</p>
+                  <p className='rapp' >Empower Your Brand, and Drive Results with AmorServ Consulting</p>
                   <a href=""><button>Get Expert</button></a>
               </div>
               <div className="image">
