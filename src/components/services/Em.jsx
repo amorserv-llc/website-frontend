@@ -168,7 +168,7 @@ export default function Em() {
         className='text-center'
         style={{ backgroundColor: " #226666", height: "300px", color: "white" }}
       >
-        <div className='container'>
+        <div className='container p-5'>
           <h2>Does Email Marketing Still Work?</h2>
           <p>
             Over the years, Email marketing stil remains effective in driving
