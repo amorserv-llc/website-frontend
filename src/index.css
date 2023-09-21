@@ -348,6 +348,8 @@ body {
 
 footer {
   background: #1a202c;
+  height: 30rem;
+  flex-shrink: 0;
 }
 footer h5 {
   color: #fff;
@@ -367,14 +369,32 @@ footer h5 {
 footer a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 footer p {
-  color: #ffffff;
-  font-size: 14px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.5rem */
+  letter-spacing: -0.02rem;
 }
 footer .border-top {
   border-top: 1px solid rgba(72, 98, 132, 0.16) !important;
+}
+footer ul li a {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -0.02rem;
+  display: flex;
+  height: 2.75rem;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 .client-wrapper {
