@@ -8,7 +8,7 @@ export default function
         <div className="header">
               <div className="content">
                   <h1>
-                    We're your Partner for Digital Marketing Success
+                    We're your Partner for Digital Marketing <br /> Success
                   </h1>
                   <p className='rapp' >Empower Your Brand, and Drive Results with AmorServ Consulting</p>
                   <a href=""><button>Get Expert</button></a>
