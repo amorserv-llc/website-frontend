@@ -102,9 +102,8 @@
 .team .members .first-row .member {
   width: calc(
     25% - 15px
-  ); /* 25% width for each member with 15px spacing between them */
+  ); 
   margin-bottom: 20px; /* Add spacing between rows */
-  border: 1px solid #ddd; /* Optional: Add a border to each member for better separation */
   padding: 10px; /* Optional: Add padding for better spacing within each member */
 }
 
