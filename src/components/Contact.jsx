@@ -4,23 +4,10 @@
 import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart,
-  faLocationDot,
-  faMobile,
-  faPaperPlane,
-  faSeedling,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Navbar from "./layout/TopNavbar";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faMapMarker,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
+
 
 export default function () {
   return (
@@ -30,13 +17,13 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Contact Information</h1>
-            <p>
+            <p className="ourd">
               Our digital marketing experts are always available to give you
-              top-notch solution to your marketing challenges.
+              <br />top-notch solution to your marketing challenges.
             </p>
-            <a href='#'>
+            {/* <a href='#'>
               <button>Schedule a Call</button>
-            </a>
+            </a> */}
           </div>
           <div className='image'>
             <img src={contact} className='img-fluid' alt='header-image' />
