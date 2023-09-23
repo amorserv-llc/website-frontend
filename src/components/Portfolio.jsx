@@ -24,7 +24,7 @@ export default function Portfolio() {
           <div className='header'>
             <div className='content'>
               <h1>Explore our portfolio for more insight!</h1>
-              <p>
+              <p style={{ opacity: '0.45' }}>
                 Dive into our portfolio for a closer look at our dynamic
                 projects. Witness how our strategies have transformed
                 businesses. Our work is a testament to our expertise,

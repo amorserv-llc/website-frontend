@@ -17,7 +17,7 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Contact Information</h1>
-            <p className="ourd">
+            <p className="ourd" style={{ opacity: '0.45' }}>
               Our digital marketing experts are always available to give you
               <br />top-notch solution to your marketing challenges.
             </p>
@@ -25,7 +25,7 @@ export default function () {
               <button>Schedule a Call</button>
             </a> */}
           </div>
-          <div className='image'>
+          <div className=''>
             <img src={contact} className='img-fluid' alt='header-image' />
           </div>
         </div>

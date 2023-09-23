@@ -38,7 +38,7 @@ export default function About() {
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
-            <p>Indeed, our journey has been remarkable</p>
+            <p style={{ opacity: '0.45' }}>Indeed, our journey has been remarkable</p>
             <a href='#'>
               <button>Learn More</button>
             </a>

@@ -44,16 +44,16 @@ export default function Em() {
         <div class='header'>
           <div class='content'>
             <h1>How does Email Marketing earn loyalty for your brand?</h1>
-            <p>
-              Empower your business with our effective email marketing
-              strategies. Elevate engagement, drive conversions, and foster
+            <p style={{ opacity: '0.45' }}>
+              Empower your business with our effective email marketing <br />
+              strategies. Elevate engagement, drive conversions, and foster <br />
               lasting customer relationships.
             </p>
             <a href='#'>
               <button>Schedule a Call</button>
             </a>
           </div>
-          <div class='image'>
+          <div style={{ height: '36rem', width: '45rem' }}>
             <img src={em0} class='img-fluid' alt='header-image' />
           </div>
         </div>

@@ -53,9 +53,9 @@ export default function Sem() {
         <div className='header'>
           <div className='content'>
             <h1>How Search Engine Marketing promotes your brand online?</h1>
-            <p>
-              Search engine marketing propels your brand's online visibility by
-              strategically engaging your target audience and driving valuable
+            <p style={{ opacity: '0.45' }}>
+              Search engine marketing propels your brand's online visibility <br /> by
+              strategically engaging your target audience and driving  <br />valuable
               traffic.
             </p>
             <a href='#'>
@@ -63,7 +63,7 @@ export default function Sem() {
             </a>
           </div>
 
-          <div className='image'>
+          <div style={{ height: '36rem', width: '45rem' }}>
             <img src={sem0} className='img-fluid' alt='header-image' />
           </div>
         </div>

@@ -14,17 +14,6 @@ import shear from "../Assets/shear.png";
 import comment from "../Assets/comment.png";
 
 import Footer from "./layout/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart,
-  faShareAlt,
-  faComment,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default function () {
   return (
@@ -35,7 +24,7 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Explore our blog for more information!</h1>
-            <p>
+            <p style={{ opacity: '0.45' }}>
               Stay up-to-date on the latest developments in the world of digital
               marketing.
             </p>
@@ -43,7 +32,7 @@ export default function () {
               <button>Learn More</button>
             </a>
           </div>
-          <div className='image'>
+          <div className='image ' style={{ width: '53rem', height: '45rem'  }}>
             <img src={blogpage} className='img-fluid' alt='header-image' />
           </div>
         </div>

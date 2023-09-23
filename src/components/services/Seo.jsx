@@ -60,7 +60,7 @@ export default function () {
               <button>Learn More</button>
             </a>
           </div>
-          <div className='image'>
+          <div style={{ height: '36rem', width: '45rem' }}>
             <img src={seo} className='img-fluid' alt='header-image' />
           </div>
         </div>
