@@ -14,6 +14,7 @@ export default function
                   <a href=""><button>Get Expert</button></a>
               </div>
               <div className="image">
+                
                   <img src={homeimg} className="img-fluid" alt="header-image" />
               </div>
           </div>

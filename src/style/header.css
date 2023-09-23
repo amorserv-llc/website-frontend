@@ -96,8 +96,8 @@
   position: relative;
   z-index: 2; */
   width: 43.28631rem;
-  height: 37.5625rem;
-  flex-shrink: 0;
+  /* height: 37.5625rem; */
+  /* flex-shrink: 0; */
 }
 
 .header-bg .header .image img {
