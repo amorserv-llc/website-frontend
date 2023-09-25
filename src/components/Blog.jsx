@@ -32,9 +32,7 @@ export default function () {
               <button>Learn More</button>
             </a>
           </div>
-          <div className='image ' style={{ width: '53rem', height: '45rem'  }}>
-            <img src={blogpage} className='img-fluid' alt='header-image' />
-          </div>
+            <img src={blogpage} className='' alt='header-image' />
         </div>
       </div>
 

@@ -13,6 +13,7 @@ function Navbar() {
     background: "#FFF",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     height: "7.45494rem",
+    maxWidth: 'none',
   };
 
   // Add a class when scrolling down to fix the navbar

@@ -53,9 +53,7 @@ export default function Em() {
               <button>Schedule a Call</button>
             </a>
           </div>
-          <div style={{ height: '36rem', width: '45rem' }}>
-            <img src={em0} class='img-fluid' alt='header-image' />
-          </div>
+            <img src={em0} alt='header-image' />
         </div>
       </header>
 

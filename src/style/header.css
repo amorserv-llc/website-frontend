@@ -10,28 +10,28 @@
 }
 
 .header-bg {
-  width: 100%;
+  /* width: 100%; */
+  
   display: flex;
   justify-content: center;
   position: relative;
-  height: 36.9375rem;
-  flex-shrink: 0;
-  background: #fafafb;
   height: 52.0625rem;
   flex-shrink: 0;
+  background: #fafafb;
 }
 
 .header-bg .header {
-  width: 90%;
+  width: 85%;
+  max-width: none;
   height: auto;
   padding-top: 50px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   position: relative;
 }
 
 .header-bg .header .content {
-  width: 600px;
+  /* width: 600px; */
   height: 80%;
   /* padding-top: 30px; */
   position: relative;
@@ -52,7 +52,7 @@
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.5rem; /* 116.667% */
+  line-height: 3.5rem;
 }
 
 .header-bg .header .content p {
@@ -87,21 +87,21 @@
 }
 
 .header-bg .header .image {
-  /* width: 800px;
+  width: 800px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
   position: relative;
-  z-index: 2; */
+  z-index: 2;
   width: 43.28631rem;
   /* height: 37.5625rem; */
   /* flex-shrink: 0; */
 }
 
 .header-bg .header .image img {
-  max-width: 100%;
+  max-width: none;
   height: 100%;
   object-fit: cover;
   position: relative;

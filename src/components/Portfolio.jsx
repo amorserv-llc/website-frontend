@@ -26,15 +26,15 @@ export default function Portfolio() {
               <h1>Explore our portfolio for more insight!</h1>
               <p style={{ opacity: '0.45' }}>
                 Dive into our portfolio for a closer look at our dynamic
-                projects. Witness how our strategies have transformed
-                businesses. Our work is a testament to our expertise,
-                innovation, and commitment to driving success.
+                projects. <br />Witness how our strategies have transformed
+                businesses. Our <br /> work is a testament to our expertise,
+                innovation, and <br /> commitment to driving success.
               </p>
               <a href='#'>
                 <button className='port-btn'>Free Consultation</button>
               </a>
             </div>
-            <div className='image'>
+            <div className=''>
               <img src={portfolio} className='img-fluid' alt='header-image' />
             </div>
           </div>

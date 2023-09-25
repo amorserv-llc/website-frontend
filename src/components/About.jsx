@@ -43,7 +43,7 @@ export default function About() {
               <button>Learn More</button>
             </a>
           </div>
-          <div className='image abt-img'>
+          <div className='abt-img'>
             <img src={about} className='img-fluid' alt='header-image' />
           </div>
         </div>

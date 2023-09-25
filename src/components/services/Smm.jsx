@@ -50,8 +50,8 @@ export default function Smm() {
             <h1>How SMO builds your brand awareness?</h1>
 
             <p style={{ opacity: '0.45' }}>
-              Social Media Marketing is a cost-effective way to maximize brand
-              awareness and witness tangible results as your message resonates
+              Social Media Marketing is a cost-effective way to maximize <br />brand
+              awareness and witness tangible results as your message <br /> resonates
               across social channels.
             </p>
 
@@ -59,9 +59,7 @@ export default function Smm() {
               <button>Schedule a Call</button>
             </a>
           </div>
-          <div style={{ height: '36rem', width: '45rem' }}>
-            <img src={smo} className='img-fluid' alt='header-image' />
-          </div>
+            <img src={smo}  alt='header-image' />
         </div>
       </header>
 

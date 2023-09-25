@@ -62,10 +62,7 @@ export default function Sem() {
               <button>Schedule a Call</button>
             </a>
           </div>
-
-          <div style={{ height: '36rem', width: '45rem' }}>
-            <img src={sem0} className='img-fluid' alt='header-image' />
-          </div>
+            <img src={sem0} alt='header-image' />
         </div>
       </header>
 

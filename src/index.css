@@ -31,30 +31,29 @@ body {
   z-index: 1;
   width: 198px;
 }
-/* Add this CSS to your stylesheet */
 .fixed-navbar {
   position: fixed;
   top: 0;
+  height: 6rem;
   width: 100%;
   z-index: 1000; /* Adjust the z-index as needed */
   transition: background-color 0.3s ease; /* Add a smooth background color transition if desired */
-  /* Add any other styles you want for the fixed navbar */
 }
 .custom-dropdown-menu {
   background-color: #ccc; /* Replace with your desired background color */
 }
-/* .navbar .nav-item .nav-link:hover {
-  border-bottom: 2px solid #b13557;
+.navbar .nav-item .nav-link:hover {
+  border-bottom: 3px solid #b13557;
   transition: 0.15s;
   animation: ease-in;
-} */
+}
 /* .nav-link {
   border: none !important;
 } */
 
-/* .container-fluid {
+.container-fluid {
   margin: 0 30px !important;
-} */
+}
 .navbar-nav {
   font-size: 14px;
   color: #555555;
@@ -67,13 +66,13 @@ body {
 
 
 
-/* .navbar-nav li .dropdown-menu h6 {
+.navbar-nav li .dropdown-menu h6 {
   font-size: 14px !important;
   font-weight: bold;
-} */
-/* .navbar-nav li .dropdown-menu p {
+}
+.navbar-nav li .dropdown-menu p {
   font-size: 12px !important;
-} */
+}
 .control {
   border: 1px solid black;
   float: left;
@@ -282,7 +281,7 @@ opacity: 0.45;
 }
 
 .threestep img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-width: 100%; /* Ensure the .image doesn't exceed its container's width */
   max-height: 100%; /* Ensure the image doesn't exceed its container's height */
 }
 
