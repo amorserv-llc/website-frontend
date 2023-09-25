@@ -192,9 +192,9 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "-45PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Digital Marketing
-              </a>
+              </span>
             </button>
             <button
               type='button'
@@ -206,9 +206,9 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "-100PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Paid Media
-              </a>
+              </span>
             </button>
             <button
               type='button'
@@ -220,9 +220,9 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "-110PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Branding
-              </a>
+              </span>
             </button>
             <button
               type='button'
@@ -234,27 +234,27 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "-85PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Social Media
-              </a>
+              </span>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
               <img src={website} width='25px' alt='...' />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Website Development
-              </a>
+              </span>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
               <img src={webop} width='25px' alt='...' />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Website Optimization
-              </a>
+              </span>
             </button>
             <button
               type='button'
@@ -266,9 +266,9 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "45PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Search Engine Optimazation
-              </a>
+              </span>
             </button>
             <button
               type='button'
@@ -280,9 +280,9 @@ export default function Index() {
                 alt='...'
                 style={{ marginLeft: "-45PX" }}
               />
-              <a href='' className='px-2 serv-link'>
+              <span href='' className='px-2 serv-link'>
                 Email Marketing
-              </a>
+              </span>
             </button>
             <div className='text-center'>
               <p className='mt-4'>Get free marketing guide</p>
