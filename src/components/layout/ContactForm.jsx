@@ -181,7 +181,7 @@ class ContactForm extends Component {
                         className='form-control'
                         rows='6'
                         required
-                        placeholder='Your Message'
+                        placeholder='Which subscription plan are you interested in?'
                       ></textarea>
                     </div>
 
