@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Navbar from "../layout/TopNavbar";
 import Footer from "../layout/Footer";
 import sem0 from "../../Assets/sem0.png";
-import secondsem from "../../Assets/secondsem.png";
+import updates from "../../Assets/updates.png";
 
 import ff12 from "../../Assets/ff12.png";
 import ff13 from "../../Assets/ff13.png";
@@ -93,8 +93,8 @@ export default function Sem() {
             </p>
           </div>
 
-          <div className='image'>
-            <img src={secondsem} className='img-fluid' alt='header-image' />
+          <div className=''>
+            <img src={updates} className='img-fluid' alt='header-image' />
           </div>
         </div>
       </section>
