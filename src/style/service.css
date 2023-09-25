@@ -338,7 +338,7 @@ section.trust-agency .contents .detail .image img {
 }
 .btn{
   border-radius: 0;
-}
+  }
 .btn.active-button {
   background-color: #266 !important;
   width: 68.75rem;

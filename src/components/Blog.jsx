@@ -418,24 +418,24 @@ export default function () {
             </div>
 
             <nav className='blog-pagination pb-5 mb-5 text-center'>
-              <a className='btn men btn-outline-success' href='#'>
+              <a className='btn men btn-outline-success' href='#' style={{ borderRadius: '1.90625rem'}}>
                 1
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
               >
                 2
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
               >
                 3
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
               >
                 4
               </a>
