@@ -41,10 +41,20 @@ flex-shrink: 0;
 .custom-dropdown-menu {
   background-color: #ccc; /* Replace with your desired background color */
 }
+.navbar .nav-item .nav-link {
+  border-bottom: 3px solid transparent; /* Add a transparent border initially */
+  transition: border-color 0.15s ease-in; /* Use transition for smoother effect */
+}
 .navbar .nav-item .nav-link:hover {
   border-bottom: 3px solid #b13557;
   transition: 0.15s;
   animation: ease-in;
+}
+
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:focus {
+  /* border-bottom-color: #b13557; */
+  color: #b13557;
 }
 /* .nav-link {
   border: none !important;
