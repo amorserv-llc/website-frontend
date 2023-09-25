@@ -366,6 +366,7 @@ letter-spacing: 0.00938rem;
   font-weight: 500 !important;
   border: none !important;
   padding: 10px 30px !important;
+  border-radius: 0.36738rem
 }
 .btn-real:hover {
   color: #ffffff !important;

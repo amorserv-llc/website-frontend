@@ -200,7 +200,7 @@ export default function Portfolio() {
           </div>
 
           <div className='text-center'>
-            <button a href='#' className='btn mt-1 btn-real'>
+            <button a href='#' className='mt-1 btn-real'>
                 Schedule a Call
               
             </button>

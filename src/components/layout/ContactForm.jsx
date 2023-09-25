@@ -193,7 +193,7 @@ class ContactForm extends Component {
                     />
 
                     <div className='text-right pb-5'>
-                      <button type='submit' className='btn btn-real'>
+                      <button type='submit' className='btn-real'>
                         Get Started
                       </button>
                     </div>

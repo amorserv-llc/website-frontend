@@ -32,6 +32,7 @@ import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
 import Navbar from "./layout/TopNavbar";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   return (
@@ -159,13 +160,12 @@ export default function Index() {
                 As your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-              <a href='#' className='btn mt-4 btn-real'>
+              <Link className='btn-real' to='/'>
                 Get Free Proposal
-              </a>
+              </Link>
+              
               <div className='mt-3 h'>
-                {/* <a href='#' className='btn mt-4 btn-real'>
-                  Get Free Proposal
-                </a> */}
+               
                 <p className='my-4'>Take control of your online success.</p>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function Index() {
             </button>
             <div className='text-center'>
               <p className='mt-4'>Get free marketing guide</p>
-              <a href='#' className='btn mt-4 btn-real'>
+              <a href='#' className='btn-real'>
                 Download
               </a>
             </div>
