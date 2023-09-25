@@ -11,34 +11,33 @@ body {
   background: #ffffff !important;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   max-width: 200px;
-  height: auto;
-}
+  max-width: auto;
+  height: 4.3rem;
+  width: 12.62344rem;
+height: 4.30675rem;
+flex-shrink: 0;
+} */
 
 .navbar-brand img {
-  width: 100%;
-  height: 100%;
+  width: 12.62344rem;
+  /* height: 100%; */
   object-fit: cover;
   margin-left: -20px;
+  
 }
 
-.logo-massaviu {
-  /* position: fixed; */
-  padding: 6px;
-  background: transparent;
-  overflow: hidden;
-  z-index: 1;
-  width: 198px;
-}
 .fixed-navbar {
   position: fixed;
   top: 0;
-  height: 6rem;
+  /* height: 6rem; */
   width: 100%;
-  z-index: 1000; /* Adjust the z-index as needed */
-  transition: background-color 0.3s ease; /* Add a smooth background color transition if desired */
+  z-index: 99; 
+  transition: background-color 0.3s ease;
 }
+
+
 .custom-dropdown-menu {
   background-color: #ccc; /* Replace with your desired background color */
 }
@@ -51,20 +50,18 @@ body {
   border: none !important;
 } */
 
-.container-fluid {
+/* .container-fluid {
   margin: 0 30px !important;
-}
+} */
 .navbar-nav {
   font-size: 14px;
   color: #555555;
   font-weight: 600;
-  margin-left: 30rem;
+  margin-left: 36rem;
   display: inline-flex;
   align-items: flex-start;
   gap: 3.125rem;
 }
-
-
 
 .navbar-nav li .dropdown-menu h6 {
   font-size: 14px !important;
@@ -90,16 +87,16 @@ body {
   height: 40px;
   padding: 0.6em 1.4em 0.5em 0.8em;
 }
-.rapp{
+.rapp {
   color: #010101;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Roboto;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5rem; /* 150% */
-letter-spacing: 0.03125rem;
-opacity: 0.45;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.03125rem;
+  opacity: 0.45;
 }
 .head h5 {
   color: #226666;
@@ -316,32 +313,32 @@ opacity: 0.45;
   justify-content: center;
   flex-shrink: 0;
 }
-.card-boo{
+.card-boo {
   color: #010101;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Poppins;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 500;
-line-height: 1.5rem; /* 120% */
-letter-spacing: 0.00938rem;
-display: flex;
-/* width: 58.5rem; */
-height: 8rem;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 120% */
+  letter-spacing: 0.00938rem;
+  display: flex;
+  /* width: 58.5rem; */
+  height: 8rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 }
-.ourd{
-  color: #1A202C;
-text-align: justify;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Poppins;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
- line-height: 1.5rem; 
-letter-spacing: 0.00938rem;
+.ourd {
+  color: #1a202c;
+  text-align: justify;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.00938rem;
 }
 .port-btn {
   display: flex;
@@ -365,7 +362,7 @@ letter-spacing: 0.00938rem;
   font-weight: 500 !important;
   border: none !important;
   padding: 10px 30px !important;
-  border-radius: 0.36738rem
+  border-radius: 0.36738rem;
 }
 .btn-real:hover {
   color: #ffffff !important;

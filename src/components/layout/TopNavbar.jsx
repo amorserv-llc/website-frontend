@@ -12,8 +12,8 @@ function Navbar() {
   const navStyle = {
     background: "#FFF",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-    height: "7.45494rem",
-    maxWidth: 'none',
+    height: "5.9375rem",
+    // maxWidth: 'none',
   };
 
   // Add a class when scrolling down to fix the navbar
@@ -40,15 +40,12 @@ function Navbar() {
         style={navStyle}
       >
         <div className='container-lg justify-content-between align-items-center'>
-          <div className='logo-massaviu'>
             <Link className='navbar-brand' to='/'>
               <img
                 src={Logo}
                 alt='Logo'
-                style={{ maxWidth: "100%", height: "auto" }}
               />
             </Link>
-          </div>
 
           <button
             className='navbar-toggler'

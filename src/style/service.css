@@ -34,12 +34,20 @@ section.service-feat .contents {
 .card-body {
   border-radius: 1.075rem;
   background: #eff3fd;
+  cursor: pointer;
   /* width: 25.625rem; */
   height: 28.25rem;
   flex-shrink: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
     0px 8px 12px 6px rgba(0, 0, 0, 0.15);
 }
+
+.card-body:hover {
+  transform: scale(1.05); /* Increase the size on hover */
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.4), 0px 12px 18px 8px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+  background: #dbe4ff; /* Change background color on hover */
+}
+
 section.service-feat .contents p {
   color: #696969;
   text-align: center;
