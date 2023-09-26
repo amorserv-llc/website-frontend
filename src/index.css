@@ -15,7 +15,7 @@ body {
 }
 
 .navBarContainer {
-   width: 100%;
+  width: 100%;
   position: fixed;
   z-index: 99;
   background: #fff;
@@ -39,11 +39,16 @@ body {
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  z-index: 10;
-  top: 20px;
-  /* background-color: red; */
-}
+  z-index: 99;
+  top: 45px;
+  background-color: white;
 
+}
+.hoverable-link:hover {
+  border-bottom: 3px solid #b13557;
+  background-color: lightgray;
+  color: black;
+}
 .navItem {
   position: relative;
   height: 100%;
@@ -54,6 +59,7 @@ body {
   font-style: normal;
   /* font-weight: bold; */
   font-weight: 600;
+  
 }
 .navItem p {
   font-size: 1rem;
@@ -77,6 +83,7 @@ object-fit: contain; */
   width: 12.62344rem;
   height: 4.30675rem;
   flex-shrink: 0;
+  
 }
 
 .navBarContainer .navDy .navlinks {
