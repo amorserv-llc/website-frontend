@@ -85,15 +85,11 @@ export default function Smm() {
                   <div className='card-body'>
                     <img src={ff} alt='image' className='fram' />
                     <h4 className='card-title'>
-                      Keyword Research & Strategy
+                    Content Creation
                     </h4>{" "}
                     <br />
                     <p className='card-text'>
-                      Uncover your online potential with our expert keyword
-                      research and strategy. Our analysis of search trends,
-                      competition, and audience intent informs a strategic
-                      keyword plan to drive traffic and boost your digital
-                      success.
+                    Our content creation specialist will craft compelling and shareable content that captivates your audience's attention. From posts to visually engaging graphics.
                     </p>
                   </div>
                 </div>
@@ -103,11 +99,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff1} alt='image' />
-                    <h4 className='card-title'>Link Building</h4> <br />
+                    <h4 className='card-title'>Social Media Advertising</h4> <br />
                     <p className='card-text'>
-                      Enhance your website's authority and credibility through
-                      strategic link-building techniques, driving organic
-                      traffic and improving your search engine rankings
+                    Amplify your reach through targeted social media advertising campaigns. We pinpoint your ideal audience, maximizing your ROI and driving meaningful engagement.
                     </p>
                   </div>
                 </div>
@@ -117,12 +111,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff2} alt='image' />
-                    <h4 className='card-title'>Technical SEO</h4> <br />
+                    <h4 className='card-title'>Influencer Marketing</h4> <br />
                     <p className='card-text'>
-                      Elevate your website's performance and user experience
-                      with meticulous technical optimizations that ensure search
-                      engines can crawl, index, and understand your content
-                      effectively.
+                    Leverage the influence of thought leaders in your industry to boost brand visibility. Our influencer partnerships amplify your message and connect you with a wider audience.
                     </p>
                   </div>
                 </div>
@@ -132,12 +123,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff3} alt='image' />
-                    <h4 className='card-title'>Franchise SEO</h4> <br />
+                    <h4 className='card-title'>Handle each platform</h4> <br />
                     <p className='card-text'>
-                      Tailored strategies that leverage the unique needs of
-                      franchise businesses ensuring a consistent online presence
-                      across multiple locations and maximizing local search
-                      visibility.
+                    Tailor your content for each platform's unique audience and style. Whether it's Facebook, Instagram, Twitter, or LinkedIn, we curate content that speaks to your audience's preferences.
                     </p>
                   </div>
                 </div>
@@ -146,12 +134,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff4} alt='image' />
-                    <h4 className='card-title'>Amazon SEO</h4> <br />
+                    <h4 className='card-title'>Social Media Contest and Giveaways</h4> <br />
                     <p className='card-text'>
-                      Stand out in the competitive Amazon marketplace with
-                      Amazon-specific SEO tactics that drive your products to
-                      the top of search results, increasing visibility and
-                      sales.
+                    Engage and excite your audience with captivating contests and giveaways. Our strategies drive participation, boost interaction, and ultimately, nurture brand loyalty.
                     </p>
                   </div>
                 </div>
@@ -160,11 +145,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff5} alt='image' />
-                    <h4 className='card-title'>Shopify SEO</h4> <br />
+                    <h4 className='card-title'>Instant replies and user engagement</h4> <br />
                     <p className='card-text'>
-                      Elevate your Shopify store's visibility and rankings with
-                      specialized SEO strategies designed to optimize product
-                      pages, collections, and overall website performance.
+                    Create meaningful connections by promptly responding to user queries and comments. Our proactive approach to engagement fosters a positive brand image and fosters customer trust.
                     </p>
                   </div>
                 </div>
@@ -174,11 +157,9 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff6} alt='image' />
-                    <h4 className='card-title'>eCommerce SEO</h4> <br />
+                    <h4 className='card-title'>Analytics and Reporting</h4> <br />
                     <p className='card-text'>
-                      Transform your online store into a powerhouse with
-                      comprehensive SEO strategies tailored to ecommerce
-                      platforms, driving higher traffic and boosting sales.
+                    Access real-time insights into your social media performance. Our detailed analytics and reporting provide a clear view of your strategy's impact, enabling informed decision-making and continuous improvement.
                     </p>
                   </div>
                 </div>
