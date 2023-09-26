@@ -1,5 +1,5 @@
 /** @format */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Logo from "../../Assets/Logo.png";
 import { Link } from "react-router-dom";
@@ -7,10 +7,22 @@ import seoIcon from "../../Assets/seoIcon.png";
 import em from "../../Assets/em.png";
 import smm from "../../Assets/smm.png";
 import sem from "../../Assets/sem.png";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    const closeDropdown = (event) => {
+      if (!event.target.closest(".navItem")) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("click", closeDropdown);
+
+    return () => {
+      document.removeEventListener("click", closeDropdown);
+    };
+  }, []);
 
   return (
     <section className='navBarContainer'>
@@ -53,9 +65,7 @@ function Navbar() {
                 >
                   <img src={seoIcon} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
-                    <h6 className='mb-0' >
-                      Search Engine Optimization
-                    </h6>
+                    <h6 className='mb-0'>Search Engine Optimization</h6>
                     <p className='opacity-75'>Get Found Online</p>
                   </div>
                 </Link>
@@ -67,9 +77,7 @@ function Navbar() {
                 >
                   <img src={smm} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
-                    <h6 className='mb-0'>
-                      Social Media Management
-                    </h6>
+                    <h6 className='mb-0'>Social Media Management</h6>
                     <p className='mb-0 opacity-75'>
                       {" "}
                       Connect with your Audience
@@ -84,9 +92,7 @@ function Navbar() {
                 >
                   <img src={em} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
-                    <h6 className='mb-0'>
-                      Email Marketing
-                    </h6>
+                    <h6 className='mb-0'>Email Marketing</h6>
                     <p className='mb-0 opacity-75'>
                       Reach your Customers' Inboxes
                     </p>
@@ -100,9 +106,7 @@ function Navbar() {
                 >
                   <img src={sem} width='20' height='20' alt='...' />
                   <div style={{ marginLeft: "10px" }}>
-                    <h6 className='mb-0' >
-                      Search Engine Marketing
-                    </h6>
+                    <h6 className='mb-0'>Search Engine Marketing</h6>
                     <p className='mb-0 opacity-75'>Drive Traffic with Ads</p>
                   </div>
                 </Link>
