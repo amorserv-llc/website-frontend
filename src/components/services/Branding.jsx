@@ -7,7 +7,10 @@ import braimage from "../../Assets/braimage.png";
 export default function Branding() {
   return (
     <>
-      <TopNavbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
+
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
@@ -21,7 +24,12 @@ export default function Branding() {
             </a>
           </div>
           <div className=''>
-            <img src={braimage} className='img-fluid' alt='header-image' style={{  }} />
+            <img
+              src={braimage}
+              className='img-fluid'
+              alt='header-image'
+              style={{}}
+            />
           </div>
         </div>
       </header>
@@ -91,33 +99,20 @@ export default function Branding() {
         </div>
       </section>
 
-     
-
-
-
-
-      <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img src={braimage} class="img-fluid" alt="header-image" />
-    </div>
-    <div class="col-md-6">
-      <ul>
-        <li>Text 1</li>
-        <li>Text 2</li>
-        <li>Text 3</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-  
-
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6'>
+            <img src={braimage} class='img-fluid' alt='header-image' />
+          </div>
+          <div class='col-md-6'>
+            <ul>
+              <li>Text 1</li>
+              <li>Text 2</li>
+              <li>Text 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

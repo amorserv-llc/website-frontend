@@ -37,7 +37,10 @@ import { Link } from "react-router-dom";
 export default function Index() {
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
+
       <Header />
 
       <section id='sec-2' className='py-4'>

@@ -19,7 +19,10 @@ import { Link } from "react-router-dom";
 export default function Portfolio() {
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
+
       <section>
         <div className='header-bg'>
           <div className='header'>
@@ -202,8 +205,10 @@ export default function Portfolio() {
           </div>
 
           <div className='text-center'>
-            <button className='mt-1 btn-real' >
-              <Link to='/contact-us' style={{ color: 'white' }}>Schedule a Call</Link>
+            <button className='mt-1 btn-real'>
+              <Link to='/contact-us' style={{ color: "white" }}>
+                Schedule a Call
+              </Link>
             </button>
           </div>
         </div>

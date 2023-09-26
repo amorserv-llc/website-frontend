@@ -4,22 +4,24 @@
 import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
 
-
 import Navbar from "./layout/TopNavbar";
 import React from "react";
-
 
 export default function () {
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
+
       <div className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Contact Information</h1>
-            <p className="ourd" style={{ opacity: '0.45' }}>
+            <p className='ourd' style={{ opacity: "0.45" }}>
               Our digital marketing experts are always available to give you
-              <br />top-notch solution to your marketing challenges.
+              <br />
+              top-notch solution to your marketing challenges.
             </p>
             {/* <a href='#'>
               <button>Schedule a Call</button>

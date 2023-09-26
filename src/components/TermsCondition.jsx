@@ -8,7 +8,9 @@ import Footer from "./layout/Footer";
 export default function () {
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
 
       <div className='header-bg'>
         <div className='header'>
@@ -28,7 +30,11 @@ export default function () {
         </div>
       </div>
 
-      <section id='terms' className='container-lg  pt-5' style={{ marginTop: '200px' }}>
+      <section
+        id='terms'
+        className='container-lg  pt-5'
+        style={{ marginTop: "200px" }}
+      >
         <p>
           These terms and conditions ("Terms") govern your use of the Amorserv
           Consulting website and services. By accessing our website or engaging

@@ -41,7 +41,9 @@ export default function Em() {
 
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
 
       <header class='header-bg'>
         <div class='header'>

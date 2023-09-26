@@ -50,7 +50,9 @@ export default function Sem() {
 
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
 
       <header className='header-bg'>
         <div className='header'>

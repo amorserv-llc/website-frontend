@@ -33,7 +33,10 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
-      <Navbar />
+    <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
+
 
       <header className='header-bg'>
         <div className='header'>

@@ -49,7 +49,9 @@ export default function () {
 
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
 
       <header className='header-bg'>
         <div className='header'>
@@ -415,7 +417,6 @@ export default function () {
             <Link className='btn mt-4 btn-real' to='/contact-us'>
               Get Started
             </Link>
-          
           </div>
         </div>
       </section>

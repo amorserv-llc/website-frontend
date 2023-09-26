@@ -14,36 +14,42 @@ import Smm from "./components/services/Smm";
 import Em from "./components/services/Em";
 import Sem from "./components/services/Sem";
 import Branding from "./components/services/Branding";
-import fav from './Assets/fav.png';
+import fav from "./Assets/fav.png";
 
-import { Helmet } from 'react-helmet';
-
+import { Helmet } from "react-helmet";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 function App() {
   return (
+    <ScrollToTop>
     <>
-         <Helmet>
-        <link rel="shortcut icon" href={fav} type="image/x-icon" />
+      <Helmet>
+        <link rel='shortcut icon' href={fav} type='image/x-icon' />
       </Helmet>
-      <Router>
-        <div>
-          <Routes>
-            <Route path='/' element={<Index />} />
-            <Route path='/about-us' element={<About />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/contact-us' element={<Contact />} />
-            <Route path='/terms/condition' element={<TermsCondition />} />
-            <Route path='/search-engine-optimization' element={<Seo />} />
-            <Route path='/social-media-marketing' element={<Smm />} />
-            <Route path='/email-marketing' element={<Em />} />
-            <Route path='/search-engine-marketing' element={<Sem />} />
-            <Route path='/branding' element={<Branding />} />
-          </Routes>
-        </div>
-      </Router>
+     
+        <Router>
+          <div>
+            <Routes>
+              <Route path='/' element={<Index />} />
+              <Route path='/about-us' element={<About />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/blog' element={<Blog />} />
+              <Route path='/contact-us' element={<Contact />} />
+              <Route path='/terms/condition' element={<TermsCondition />} />
+              <Route path='/search-engine-optimization' element={<Seo />} />
+              <Route path='/social-media-marketing' element={<Smm />} />
+              <Route path='/email-marketing' element={<Em />} />
+              <Route path='/search-engine-marketing' element={<Sem />} />
+              <Route path='/branding' element={<Branding />} />
+            </Routes>
+          </div>
+        </Router>
+      
     </>
+    </ScrollToTop>
+
   );
+
 }
 
 export default App;

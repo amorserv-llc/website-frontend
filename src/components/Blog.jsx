@@ -19,23 +19,23 @@ import { Link } from "react-router-dom";
 export default function () {
   return (
     <>
-      <Navbar />
+      <div style={{ paddingBottom: "90px" }}>
+        <Navbar />
+      </div>
 
       <div className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Explore our blog for more information!</h1>
-            <p style={{ opacity: '0.45' }}>
+            <p style={{ opacity: "0.45" }}>
               Stay up-to-date on the latest developments in the world of digital
               marketing.
             </p>
-            <Link to='/contact-us' >
-                          <button>Learn More</button>
-
+            <Link to='/contact-us'>
+              <button>Learn More</button>
             </Link>
-           
           </div>
-            <img src={blogpage} className='' alt='header-image' />
+          <img src={blogpage} className='' alt='header-image' />
         </div>
       </div>
 
@@ -421,24 +421,28 @@ export default function () {
             </div>
 
             <nav className='blog-pagination pb-5 mb-5 text-center'>
-              <a className='btn men btn-outline-success' href='#' style={{ borderRadius: '1.90625rem'}}>
+              <a
+                className='btn men btn-outline-success'
+                href='#'
+                style={{ borderRadius: "1.90625rem" }}
+              >
                 1
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
+                style={{ marginLeft: "10px", borderRadius: "1.90625rem" }}
               >
                 2
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
+                style={{ marginLeft: "10px", borderRadius: "1.90625rem" }}
               >
                 3
               </a>
               <a
                 className='btn men btn-outline-secondary disabled'
-                style={{ marginLeft: "10px", borderRadius: '1.90625rem' }}
+                style={{ marginLeft: "10px", borderRadius: "1.90625rem" }}
               >
                 4
               </a>
