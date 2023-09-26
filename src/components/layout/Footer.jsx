@@ -20,7 +20,7 @@ export default function () {
                 className='d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none navbar-brand'
                 href='/index.html'
               >
-                {/* <img src={logo2} alt='logo' style={{ marginLeft: "-25px" }} /> */}
+                <img src={logo2} alt='logo' style={{  width:'120px' }} />
                 <div
                   style={{
                     padding: "10px",
