@@ -21,35 +21,32 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 
 function App() {
   return (
-    <ScrollToTop>
     <>
       <Helmet>
         <link rel='shortcut icon' href={fav} type='image/x-icon' />
       </Helmet>
-     
-        <Router>
-          <div>
-            <Routes>
-              <Route path='/' element={<Index />} />
-              <Route path='/about-us' element={<About />} />
-              <Route path='/portfolio' element={<Portfolio />} />
-              <Route path='/blog' element={<Blog />} />
-              <Route path='/contact-us' element={<Contact />} />
-              <Route path='/terms/condition' element={<TermsCondition />} />
-              <Route path='/search-engine-optimization' element={<Seo />} />
-              <Route path='/social-media-marketing' element={<Smm />} />
-              <Route path='/email-marketing' element={<Em />} />
-              <Route path='/search-engine-marketing' element={<Sem />} />
-              <Route path='/branding' element={<Branding />} />
-            </Routes>
-          </div>
-        </Router>
-      
+
+
+      <Router>
+        <div>
+          <Routes>
+            <Route path='/' element={<ScrollToTop> <Index /> </ScrollToTop >} />
+            
+            <Route path='/about-us' element={<ScrollToTop> <About /> </ScrollToTop >} />
+            <Route path='/portfolio' element={<ScrollToTop> <Portfolio /> </ScrollToTop >} />
+            <Route path='/blog' element={<ScrollToTop> <Blog /> </ScrollToTop >} />
+            <Route path='/contact-us' element={<ScrollToTop> <Contact /> </ScrollToTop >} />
+            <Route path='/terms/condition' element={<ScrollToTop> <TermsCondition /> </ScrollToTop >} />
+            <Route path='/search-engine-optimization' element={<ScrollToTop> <Seo /> </ScrollToTop >} />
+            <Route path='/social-media-marketing' element={<ScrollToTop> <Smm /> </ScrollToTop >} />
+            <Route path='/email-marketing' element={<ScrollToTop> <Em /> </ScrollToTop >} />
+            <Route path='/search-engine-marketing' element={<ScrollToTop> <Sem /> </ScrollToTop >} />
+            <Route path='/branding' element={<ScrollToTop> <Branding /> </ScrollToTop >} />
+          </Routes>
+        </div>
+      </Router>
     </>
-    </ScrollToTop>
-
   );
-
 }
 
 export default App;
