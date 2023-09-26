@@ -14,6 +14,7 @@ import shear from "../Assets/shear.png";
 import comment from "../Assets/comment.png";
 
 import Footer from "./layout/Footer";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
@@ -28,9 +29,11 @@ export default function () {
               Stay up-to-date on the latest developments in the world of digital
               marketing.
             </p>
-            <a href='#'>
-              <button>Learn More</button>
-            </a>
+            <Link to='/contact-us' >
+                          <button>Learn More</button>
+
+            </Link>
+           
           </div>
             <img src={blogpage} className='' alt='header-image' />
         </div>

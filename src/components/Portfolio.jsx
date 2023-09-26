@@ -14,6 +14,7 @@ import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Navbar from "./layout/TopNavbar";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
   return (
@@ -24,15 +25,16 @@ export default function Portfolio() {
           <div className='header'>
             <div className='content'>
               <h1>Explore our portfolio for more insight!</h1>
-              <p style={{ opacity: '0.45' }}>
+              <p style={{ opacity: "0.45" }}>
                 Dive into our portfolio for a closer look at our dynamic
-                projects. <br />Witness how our strategies have transformed
-                businesses. Our <br /> work is a testament to our expertise,
-                innovation, and <br /> commitment to driving success.
+                projects. <br />
+                Witness how our strategies have transformed businesses. Our{" "}
+                <br /> work is a testament to our expertise, innovation, and{" "}
+                <br /> commitment to driving success.
               </p>
-              <a href='#'>
+              <Link to='/contact-us'>
                 <button className='port-btn'>Free Consultation</button>
-              </a>
+              </Link>
             </div>
             <div className=''>
               <img src={portfolio} className='img-fluid' alt='header-image' />
@@ -200,12 +202,9 @@ export default function Portfolio() {
           </div>
 
           <div className='text-center'>
-            <button a href='#' className='mt-1 btn-real'>
-                Schedule a Call
-              
+            <button className='mt-1 btn-real' >
+              <Link to='/contact-us' style={{ color: 'white' }}>Schedule a Call</Link>
             </button>
-             
-          
           </div>
         </div>
       </section>
@@ -337,13 +336,24 @@ export default function Portfolio() {
         {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
       </div>
       {/* </section> */}
-      <div className="pt-5 pb-5" style={{ marginLeft: '40px' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="135" height="16" viewBox="0 0 135 16" fill="none">
-  <circle cx="67.5" cy="8.44922" r="7.5" fill="#DDE0E4"/>
-  <circle cx="97.5" cy="8.44922" r="7.5" fill="#DDE0E4"/>
-  <circle cx="127.5" cy="8.44922" r="7.5" fill="#DDE0E4"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.55721 15.949C7.53816 15.9491 7.51909 15.9492 7.5 15.9492C7.48091 15.9492 7.46184 15.9491 7.44279 15.949H6.9469V15.9291C3.06303 15.646 0 12.4053 0 8.44922C0 4.49311 3.06303 1.25241 6.9469 0.969304V0.949219H7.5H37.0841V0.960556C37.2218 0.953031 37.3604 0.949219 37.5 0.949219C41.6421 0.949219 45 4.30708 45 8.44922C45 12.5914 41.6421 15.9492 37.5 15.9492C37.3604 15.9492 37.2218 15.9454 37.0841 15.9379V15.949H7.55721Z" fill="#1A202C"/>
-</svg>
+      <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='135'
+          height='16'
+          viewBox='0 0 135 16'
+          fill='none'
+        >
+          <circle cx='67.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <circle cx='97.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <circle cx='127.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
+          <path
+            fill-rule='evenodd'
+            clip-rule='evenodd'
+            d='M7.55721 15.949C7.53816 15.9491 7.51909 15.9492 7.5 15.9492C7.48091 15.9492 7.46184 15.9491 7.44279 15.949H6.9469V15.9291C3.06303 15.646 0 12.4053 0 8.44922C0 4.49311 3.06303 1.25241 6.9469 0.969304V0.949219H7.5H37.0841V0.960556C37.2218 0.953031 37.3604 0.949219 37.5 0.949219C41.6421 0.949219 45 4.30708 45 8.44922C45 12.5914 41.6421 15.9492 37.5 15.9492C37.3604 15.9492 37.2218 15.9454 37.0841 15.9379V15.949H7.55721Z'
+            fill='#1A202C'
+          />
+        </svg>
       </div>
 
       <Footer />

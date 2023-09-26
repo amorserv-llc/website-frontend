@@ -160,12 +160,11 @@ export default function Index() {
                 As your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-              <Link className='btn-real' to='/'>
+              <Link className='btn-real' to='/contstc-us'>
                 Get Free Proposal
               </Link>
-              
+
               <div className='mt-3 h'>
-               
                 <p className='my-4'>Take control of your online success.</p>
               </div>
             </div>
@@ -314,9 +313,9 @@ export default function Index() {
               it's Time to take controle of your online presence
             </p>
             <div style={{ marginTop: "-19px" }}>
-              <a href='#' className='btn mt-4 btn-real'>
+              <Link className='btn mt-4 btn-real' to='/contact-us'>
                 Get Free Proposal
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -25,13 +25,16 @@ import ff12 from "../../Assets/ff12.png";
 import ff13 from "../../Assets/ff13.png";
 import ff14 from "../../Assets/ff14.png";
 import ff15 from "../../Assets/ff15.png";
+import { Link } from "react-router-dom";
 
 export default function () {
   const [activeButton, setActiveButton] = useState(null);
-  const primaryBackgroundColor = '#D3DCE7';
+  const primaryBackgroundColor = "#D3DCE7";
 
   const buttonClass = (buttonId) => {
-    return `btn primaryBackgroundColor ${activeButton === buttonId ? "active-button" : ""}`;
+    return `btn primaryBackgroundColor ${
+      activeButton === buttonId ? "active-button" : ""
+    }`;
   };
 
   // Function to handle button click and set the active button
@@ -52,15 +55,16 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-            <p style={{ opacity: '0.45' }} >
+            <p style={{ opacity: "0.45" }}>
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.
             </p>
-            <a href='#'>
+
+            <Link to='/contact-us'>
               <button>Learn More</button>
-            </a>
+            </Link>
           </div>
-            <img src={seo}  alt='header-image' />
+          <img src={seo} alt='header-image' />
         </div>
       </header>
 
@@ -166,15 +170,6 @@ export default function () {
                 </div>
               </div>
 
-
-
-
-
-
-
-
-
-
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
@@ -189,7 +184,7 @@ export default function () {
                   </div>
                 </div>
               </div>
-        
+
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
@@ -218,7 +213,6 @@ export default function () {
                 </div>
               </div>
 
-
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
@@ -232,7 +226,7 @@ export default function () {
                   </div>
                 </div>
               </div>
-          
+
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
                   <div className='card-body'>
@@ -264,8 +258,6 @@ export default function () {
                   </div>
                 </div>
               </div>
-       
-             
             </div>
           </div>
         </div>
@@ -392,14 +384,20 @@ export default function () {
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Amorserv Agile SEO Methodology</h3>
           </div>
-          <p className='text-center' style={{ color: '#3D3D3D', fontWeight: '400', paddingBottom: '30px' }}>
+          <p
+            className='text-center'
+            style={{
+              color: "#3D3D3D",
+              fontWeight: "400",
+              paddingBottom: "30px",
+            }}
+          >
             We adopt tailored strategies to fuel captivating content. Meticulous
             monitoring to <br /> ensure growth, adapting to your brand journey.
           </p>
 
           <section id='sec-6'>
             <div className='container-lg my-4'>
-             
               <div
                 className='centered-container'
                 style={{ marginTop: "-180px" }}
@@ -410,10 +408,14 @@ export default function () {
               </div>
             </div>
           </section>
-          <div className='text-center' style={{ marginTop: "-160px", marginBottom: '80px' }}>
-            <a href='#' className='btn mt-4 btn-real'>
+          <div
+            className='text-center'
+            style={{ marginTop: "-160px", marginBottom: "80px" }}
+          >
+            <Link className='btn mt-4 btn-real' to='/contact-us'>
               Get Started
-            </a>
+            </Link>
+          
           </div>
         </div>
       </section>
@@ -433,7 +435,12 @@ export default function () {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor  }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is SEO and why is it important?{" "}
@@ -481,7 +488,12 @@ export default function () {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(2)}
               >
                 How long does it take to see SEO results?{" "}
@@ -516,15 +528,6 @@ export default function () {
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
           <br /> <br /> <br />
           <div className='container'>
             <p>
@@ -535,7 +538,12 @@ export default function () {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 3 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(3)}
               >
                 Is local SEO important for businesses?{" "}
@@ -570,10 +578,6 @@ export default function () {
               </div>
             </div>
           </div>
-
-
-
-
           <br /> <br /> <br />
           <div className='container'>
             <p>
@@ -584,7 +588,12 @@ export default function () {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 4 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(4)}
               >
                 What is the difference between on-page and off-page SEO?{" "}

@@ -18,13 +18,16 @@ import ff9 from "../../Assets/ff9.png";
 import ff10 from "../../Assets/ff10.png";
 import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
+import { Link } from "react-router-dom";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
-  const primaryBackgroundColor = '#D3DCE7';
+  const primaryBackgroundColor = "#D3DCE7";
 
   const buttonClass = (buttonId) => {
-    return `btn primaryBackgroundColor ${activeButton === buttonId ? "active-button" : ""}`;
+    return `btn primaryBackgroundColor ${
+      activeButton === buttonId ? "active-button" : ""
+    }`;
   };
   // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
@@ -44,16 +47,18 @@ export default function Em() {
         <div class='header'>
           <div class='content'>
             <h1>How does Email Marketing earn loyalty for your brand?</h1>
-            <p style={{ opacity: '0.45' }}>
+            <p style={{ opacity: "0.45" }}>
               Empower your business with our effective email marketing <br />
-              strategies. Elevate engagement, drive conversions, and foster <br />
+              strategies. Elevate engagement, drive conversions, and foster{" "}
+              <br />
               lasting customer relationships.
             </p>
-            <a href='#'>
+
+            <Link to='/contact-us'>
               <button>Schedule a Call</button>
-            </a>
+            </Link>
           </div>
-            <img src={em0} alt='header-image' />
+          <img src={em0} alt='header-image' />
         </div>
       </header>
 
@@ -374,7 +379,12 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is the significance of email marketing for businesses?{" "}
@@ -423,7 +433,12 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(2)}
               >
                 How can personalized email campaigns benefit my brand?{" "}
@@ -459,9 +474,6 @@ export default function Em() {
             </div>
           </div>
 
-
-
-
           <br />
           <br />
           <br />
@@ -474,7 +486,12 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 3 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(3)}
               >
                 Can email marketing help with lead generation?{" "}
@@ -510,10 +527,6 @@ export default function Em() {
             </div>
           </div>
 
-
-
-
-
           <br />
           <br />
           <br />
@@ -526,10 +539,16 @@ export default function Em() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 4 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(4)}
               >
-                How can automated email campaigns save time and improve efficiency?{" "}
+                How can automated email campaigns save time and improve
+                efficiency?{" "}
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

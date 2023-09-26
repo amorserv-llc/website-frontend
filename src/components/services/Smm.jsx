@@ -23,12 +23,15 @@ import ff9 from "../../Assets/ff9.png";
 import ff10 from "../../Assets/ff10.png";
 import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
+import { Link } from "react-router-dom";
 
 export default function Smm() {
   const [activeButton, setActiveButton] = useState(null);
-  const primaryBackgroundColor = '#D3DCE7';
+  const primaryBackgroundColor = "#D3DCE7";
   const buttonClass = (buttonId) => {
-    return `btn primaryBackgroundColor ${activeButton === buttonId ? "active-button" : ""}`;
+    return `btn primaryBackgroundColor ${
+      activeButton === buttonId ? "active-button" : ""
+    }`;
   };
   // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
@@ -49,17 +52,17 @@ export default function Smm() {
           <div className='content'>
             <h1>How SMO builds your brand awareness?</h1>
 
-            <p style={{ opacity: '0.45' }}>
-              Social Media Marketing is a cost-effective way to maximize <br />brand
-              awareness and witness tangible results as your message <br /> resonates
-              across social channels.
+            <p style={{ opacity: "0.45" }}>
+              Social Media Marketing is a cost-effective way to maximize <br />
+              brand awareness and witness tangible results as your message{" "}
+              <br /> resonates across social channels.
             </p>
 
-            <a href='#'>
+            <Link to='/contact-us'>
               <button>Schedule a Call</button>
-            </a>
+            </Link>
           </div>
-            <img src={smo}  alt='header-image' />
+          <img src={smo} alt='header-image' />
         </div>
       </header>
 
@@ -319,9 +322,9 @@ export default function Smm() {
             </div>
           </div>
           <div className='text-center' style={{ marginTop: "-170px" }}>
-            <a href='#' className='btn mt-4 btn-real'>
+            <Link className='btn mt-4 btn-real' to='/contact-us'>
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -342,7 +345,12 @@ export default function Smm() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(1)}
               >
                 What is social media marketing?{" "}
@@ -391,7 +399,12 @@ export default function Smm() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(2)}
               >
                 What are the 5 ways of social media marketing?{" "}
@@ -426,9 +439,6 @@ export default function Smm() {
               </div>
             </div>
           </div>
-
-
-
           <br /> <br /> <br />
           <div className='container'>
             <p>
@@ -439,7 +449,12 @@ export default function Smm() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 3 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(3)}
               >
                 What is the importance of social media optimization (SMO)?{" "}
@@ -474,7 +489,6 @@ export default function Smm() {
               </div>
             </div>
           </div>
-
           <br /> <br /> <br />
           <div className='container'>
             <p>
@@ -485,7 +499,12 @@ export default function Smm() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 4 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(4)}
               >
                 How does social media marketing impact brand visibility?{" "}

@@ -28,12 +28,15 @@ import se4 from "../../Assets/se4.png";
 import se5 from "../../Assets/se5.png";
 import se6 from "../../Assets/se6.png";
 import ContactForm from "../layout/ContactForm";
+import { Link } from "react-router-dom";
 export default function Sem() {
   const [activeButton, setActiveButton] = useState(null);
-  const primaryBackgroundColor = '#D3DCE7';
+  const primaryBackgroundColor = "#D3DCE7";
 
   const buttonClass = (buttonId) => {
-    return `btn primaryBackgroundColor ${activeButton === buttonId ? "active-button" : ""}`;
+    return `btn primaryBackgroundColor ${
+      activeButton === buttonId ? "active-button" : ""
+    }`;
   };
   // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
@@ -53,28 +56,36 @@ export default function Sem() {
         <div className='header'>
           <div className='content'>
             <h1>How Search Engine Marketing promotes your brand online?</h1>
-            <p style={{ opacity: '0.45' }}>
-              Search engine marketing propels your brand's online visibility <br /> by
-              strategically engaging your target audience and driving  <br />valuable
-              traffic.
+            <p style={{ opacity: "0.45" }}>
+              Search engine marketing propels your brand's online visibility{" "}
+              <br /> by strategically engaging your target audience and driving{" "}
+              <br />
+              valuable traffic.
             </p>
-            <a href='#'>
+            <Link to='/contact-us'>
               <button>Schedule a Call</button>
-            </a>
+            </Link>
           </div>
-            <img src={sem0} alt='header-image' />
+          <img src={sem0} alt='header-image' />
         </div>
       </header>
 
       <div style={{ color: "#266", textAlign: "center" }}>
-        <h1 className="pt-5"> What is Search Engine Marketing?</h1>
+        <h1 className='pt-5'> What is Search Engine Marketing?</h1>
         <p>Understanding the Essence of Search Engine Marketing (SEM)</p>
       </div>
 
       <section className='header-bg' style={{ backgroundColor: "white" }}>
         <div className='header'>
           <div className='content'>
-            <p style={{ width: '38rem', height: '27rem', flexDirection: 'column', justifyContent: 'center'}}>
+            <p
+              style={{
+                width: "38rem",
+                height: "27rem",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
               visibility. By bidding on relevant keywords, businesses position
@@ -113,8 +124,7 @@ export default function Sem() {
                     background: "#EFF3FD",
                     boxShadow:
                       "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                      height: '28.25rem',
-                    
+                    height: "28.25rem",
                   }}
                 >
                   <div className='card-body'>
@@ -137,7 +147,7 @@ export default function Sem() {
                     background: "#EFF3FD",
                     boxShadow:
                       "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                      height: '28.25rem'
+                    height: "28.25rem",
                   }}
                 >
                   <div className='card-body'>
@@ -160,7 +170,7 @@ export default function Sem() {
                     background: "#EFF3FD",
                     boxShadow:
                       "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                      height: '28.25rem'
+                    height: "28.25rem",
                   }}
                 >
                   <div className='card-body'>
@@ -203,7 +213,9 @@ export default function Sem() {
                   search results when potential customers are actively searching
                   for your products or services. Be visible to those in need and
                   be a click away from conversions.
-                </p> <br /> <br /><br />
+                </p>{" "}
+                <br /> <br />
+                <br />
               </div>
 
               <div className='col-md-4'>
@@ -276,7 +288,12 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se1} width='25px' alt='...' style={{ marginLeft: '-140px' }} />
+              <img
+                src={se1}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-140px" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Pay-Per-Click (PPC){" "}
               </a>
@@ -304,7 +321,12 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se4} width='25px' alt='...' style={{ marginLeft: '-100px' }} />
+              <img
+                src={se4}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-100px" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Ad Copywriting
               </a>
@@ -313,7 +335,12 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se5} width='25px' alt='...' style={{ marginLeft: '-110px' }}/>
+              <img
+                src={se5}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-110px" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Ad Campaign Creation{" "}
               </a>
@@ -322,7 +349,12 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={se6} width='25px' alt='...' style={{ marginLeft: '-30px' }} />
+              <img
+                src={se6}
+                width='25px'
+                alt='...'
+                style={{ marginLeft: "-30px" }}
+              />
               <a href='' className='px-2 serv-link'>
                 Performance Analytics
               </a>
@@ -394,7 +426,12 @@ export default function Sem() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 1 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(1)}
               >
                 How does SEM differ from traditional advertising?{" "}
@@ -442,7 +479,12 @@ export default function Sem() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(2)}
               >
                 What are the benefits of using Google Ads for SEM?{" "}
@@ -478,12 +520,6 @@ export default function Sem() {
             </div>
           </div>
 
-
-
-
-
-
-
           <br />
           <br />
           <br />
@@ -496,7 +532,12 @@ export default function Sem() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 3 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(3)}
               >
                 What is the importance of social media optimization (SMO)?{" "}
@@ -532,8 +573,6 @@ export default function Sem() {
             </div>
           </div>
 
-
-
           <br />
           <br />
           <br />
@@ -546,7 +585,12 @@ export default function Sem() {
                 data-target='#collapseExample1'
                 aria-expanded={activeButton === 2 ? "true" : "false"}
                 aria-controls='collapseExample1'
-                style={{ width: "100%", height: "6rem", flexShrink: "0", backgroundColor: primaryBackgroundColor }}
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
                 onClick={() => handleButtonClick(4)}
               >
                 How does social media marketing impact brand visibility?{" "}

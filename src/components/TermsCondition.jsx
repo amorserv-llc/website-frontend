@@ -10,25 +10,25 @@ export default function () {
     <>
       <Navbar />
 
-      <div class='header-bg'>
-        <div class='header'>
-          <div class='content'>
+      <div className='header-bg'>
+        <div className='header'>
+          <div className='content'>
             <h1>Terms & Conditions</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Sagittis est tempus a
               risus quam sed urna mauris id.
             </p>
-            <a href='#' class='btn mt-4 btn-real me-auto w-auto'>
+            <a href='#' className='btn mt-4 btn-real me-auto w-auto'>
               Schedule a Call
             </a>
           </div>
-          <div class='image'>
-            <img src={terms} class='img-fluid' alt='header-image' />
+          <div>
+            <img src={terms} alt='header-image' />
           </div>
         </div>
       </div>
 
-      <section id='terms' class='container-lg my-5'>
+      <section id='terms' className='container-lg  pt-5' style={{ marginTop: '200px' }}>
         <p>
           These terms and conditions ("Terms") govern your use of the Amorserv
           Consulting website and services. By accessing our website or engaging

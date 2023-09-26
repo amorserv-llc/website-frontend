@@ -28,6 +28,7 @@ import forbes from "../Assets/forbes.png";
 import traveller from "../Assets/traveller.png";
 import cnn from "../Assets/cnn.png";
 import samsung from "../Assets/samsung.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -38,14 +39,15 @@ export default function About() {
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
-            <p style={{ opacity: '0.45' }}>Indeed, our journey has been remarkable</p>
-            <a href='#'>
-              <button>Learn More</button>
-            </a>
+            <p style={{ opacity: "0.45" }}>
+              Indeed, our journey has been remarkable
+            </p>
+            <Link  to='/contact-us'>
+            <button>Learn More</button>
+            </Link>
+           
           </div>
-          <div className='abt-img'>
-            <img src={about} className='img-fluid' alt='header-image' />
-          </div>
+          <img src={about} alt='header-image' />
         </div>
       </header>
 
