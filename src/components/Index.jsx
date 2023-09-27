@@ -163,7 +163,7 @@ export default function Index() {
                 As your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-              <Link className='btn-real' to='/contstc-us'>
+              <Link className='btn-real' to='/contact-us'>
                 Get Free Proposal
               </Link>
 
