@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Navbar from "../layout/TopNavbar";
 import smo from "../../Assets/smo.png";
 import oneup from "../../Assets/oneup.png";
-import twoup from "../../Assets/twoup.png";
+import threemob from "../../Assets/threemob.png";
 import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
@@ -298,12 +298,19 @@ export default function Smm() {
             monitoring to <br />
             ensure growth, adapting to your brand journey.
           </p>
-
           <div className='centered-container' style={{ marginTop: "-160px" }}>
             <div className='threestep'>
               <img src={threestep} alt='3-Step' />
             </div>
+            <div className='threemob'>
+              <img src={threemob} alt='3-mobile' />
+            </div>
           </div>
+          {/* <div className='centered-container' style={{ marginTop: "-160px" }}>
+            <div className='threestep'>
+              <img src={threestep} alt='3-Step' />
+            </div>
+          </div> */}
           <div className='text-center' style={{ marginTop: "-170px" }}>
             <Link className='btn mt-4 btn-real' to='/contact-us'>
               Get Started

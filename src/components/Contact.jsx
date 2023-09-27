@@ -23,10 +23,9 @@ export default function () {
               <br />
               top-notch solution to your marketing challenges.
             </p>
-            
           </div>
           <div className=''>
-            <img src={contact}  alt='header-image' />
+            <img src={contact} alt='header-image' />
           </div>
         </div>
       </div>
@@ -62,14 +61,7 @@ export default function () {
                   ></textarea>
                 </div>
 
-                <div
-                  style={{
-                    marginLeft: "390px",
-                    height: " 3.21994rem",
-                    width: "2.93331rem",
-                    flexShrink: "0",
-                  }}
-                >
+                <div className="svgicon">
                   <a href='' className='text-decoration-none text-dark'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -85,19 +77,14 @@ export default function () {
                         stroke-width='0.5'
                       />
                     </svg>
-                    {/* <FontAwesomeIcon
-                      icon={faPaperPlane}
-                      className='fa-2xl my-4'
-                    /> */}
+                  
                   </a>
                 </div>
               </div>
             </div>
 
             <div className='col-md-6'>
-              {/* <div className='rounded-4 card'> */}
               <div className='d-flex align-items-center  px-4 py-4 mt-5 text-dark bg-white rounded  cons'>
-                {/* <FontAwesomeIcon icon={faMobile} className='me-5 fa-2xl' /> */}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='28'

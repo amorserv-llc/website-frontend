@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Navbar from "../layout/TopNavbar";
 import seo from "../../Assets/seo.png";
 import oneup from "../../Assets/oneup.png";
-import twoup from "../../Assets/twoup.png";
+import threemob from "../../Assets/threemob.png";
 import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
@@ -266,12 +266,8 @@ export default function () {
       </section>
 
       <div
-        className='text-center p-5'
-        style={{
-          backgroundColor: " #226666",
-          height: "30.375rem",
-          color: "white",
-        }}
+        className='text-center whyseo p-5'
+       
       >
         <div className='container'>
           <h2>Why you need SEO?</h2>
@@ -282,7 +278,7 @@ export default function () {
           <br />
           <div className='row'>
             <div className='col-md-3'>
-              <h2>70%</h2>
+              <h1>70%</h1>
               <p>of online experiences begin with a search engine</p>
             </div>
             <div className='col-md-3'>
@@ -399,17 +395,17 @@ export default function () {
           </p>
 
           <section id='sec-6'>
-            <div className='container-lg my-4'>
-              <div
-                className='centered-container'
-                style={{ marginTop: "-180px" }}
-              >
-                <div className='threestep'>
-                  <img src={threestep} alt='3-Step' />
-                </div>
-              </div>
+          
+              <div className='centered-container' style={{ marginTop: "-160px" }}>
+            <div className='threestep'>
+              <img src={threestep} alt='3-Step' />
             </div>
+            <div className='threemob'>
+              <img src={threemob} alt='3-mobile' />
+            </div>
+          </div>
           </section>
+          
           <div
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}

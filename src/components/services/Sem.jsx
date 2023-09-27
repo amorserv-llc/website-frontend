@@ -119,16 +119,7 @@ export default function Sem() {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
-                <div
-                  className='card'
-                  style={{
-                    borderRadius: "1.875rem",
-                    background: "#EFF3FD",
-                    boxShadow:
-                      "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                    height: "28.25rem",
-                  }}
-                >
+                <div className='card semcard'>
                   <div className='card-body'>
                     <img src={ff12} alt='image' />
                     <h3>Drive Conversions</h3>
@@ -142,16 +133,7 @@ export default function Sem() {
                 </div>
               </div>
               <div className='col-md-4'>
-                <div
-                  className='card'
-                  style={{
-                    borderRadius: "1.875rem",
-                    background: "#EFF3FD",
-                    boxShadow:
-                      "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                    height: "28.25rem",
-                  }}
-                >
+                <div className='card semcard'>
                   <div className='card-body'>
                     <img src={ff13} alt='image' />
                     <h3>Optimization</h3>
@@ -165,16 +147,7 @@ export default function Sem() {
                 </div>
               </div>
               <div className='col-md-4'>
-                <div
-                  className='card'
-                  style={{
-                    borderRadius: "1.875rem",
-                    background: "#EFF3FD",
-                    boxShadow:
-                      "0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15)",
-                    height: "28.25rem",
-                  }}
-                >
+                <div className='card semcard'>
                   <div className='card-body'>
                     <img src={ff14} alt='image' />
                     <h3>Tracking</h3>
