@@ -23,12 +23,10 @@ export default function () {
               <br />
               top-notch solution to your marketing challenges.
             </p>
-            {/* <a href='#'>
-              <button>Schedule a Call</button>
-            </a> */}
+            
           </div>
           <div className=''>
-            <img src={contact} className='img-fluid' alt='header-image' />
+            <img src={contact}  alt='header-image' />
           </div>
         </div>
       </div>
