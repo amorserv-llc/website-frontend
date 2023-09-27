@@ -24,7 +24,7 @@ import searchop from "../Assets/searchop.png";
 import email from "../Assets/email.png";
 import branding from "../Assets/branding.png";
 
-import oneup from "../Assets/oneup.png";
+import threemob from "../Assets/threemob.png";
 import threestep from "../Assets/threestep.png";
 
 import t1 from "../Assets/t1.png";
@@ -308,6 +308,9 @@ export default function Index() {
           <div className='centered-container' style={{ marginTop: "-160px" }}>
             <div className='threestep'>
               <img src={threestep} alt='3-Step' />
+            </div>
+            <div className='threemob'>
+              <img src={threemob} alt='3-mobile' />
             </div>
           </div>
 

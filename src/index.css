@@ -295,13 +295,15 @@ object-fit: contain; */
   min-height: 100vh; /* Minimum height of the viewport */
 }
 
-.threestep {
-  text-align: center; /* Center the image horizontally within its container */
+.threemob img{
+display: none;
 }
 
 .threestep img {
   max-width: 100%; /* Ensure the .image doesn't exceed its container's width */
-  max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+  max-height: 100%;
+  /* border: 3px solid green */
+
 }
 
 .portfolio p {
@@ -482,6 +484,17 @@ footer ul li a {
     border-radius: 0.25rem;
     background: #d9d9d9;
     margin: 17px;
+  }
+  .threemob{
+    /* border: 2px solid red; */
+    margin: 80px;
+    
+  }
+  .threemob img{
+display: flex;    
+  }
+  .threestep img{
+    display: none;
   }
 }
 
