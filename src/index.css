@@ -95,7 +95,6 @@ object-fit: contain; */
   height: 100%;
   /* background-color: red; */
 }
-
 .control {
   border: 1px solid black;
   float: left;
@@ -458,6 +457,28 @@ footer ul li a {
   flex-direction: column;
   justify-content: center;
   padding-top: 5px;
+}
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
+
+  footer ul li a {
+    font-size: 0.875rem;
+    height: auto;
+  }
 }
 
 .client-wrapper {
