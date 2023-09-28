@@ -195,19 +195,17 @@ export default function Smm() {
         </div>
       </section>
 
-      <div
-        className='text-center'
-        style={{ backgroundColor: " #226666", height: "300px", color: "white" }}
-      >
-        <div className='container p-5'>
+      <div className='text-center whyseo p-5'>
+        <div className='container'>
           <h2>Why you need Social Media Marketing?</h2>
           <p>
             Social media marketing service is essential in expanding your brand
             reach, engagement, <br /> and driving conversions.
           </p>
+          <br />
           <div className='row'>
             <div className='col-md-3'>
-              <h2>65%</h2>
+              <h1>65%</h1>
               <p>of online experiences begin with a search engine</p>
             </div>
             <div className='col-md-3'>

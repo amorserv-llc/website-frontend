@@ -179,24 +179,7 @@ export default function () {
                     fill='#555555'
                   />
                 </svg>
-                {/* <ol className='list-unstyled my-4'>
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    style={{ marginRight: "10px", fontSize: "22px" }}
-                  />
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    style={{ marginRight: "10px", fontSize: "22px" }}
-                  />
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    style={{ marginRight: " 10px", fontSize: "22px" }}
-                  />
-                  <FontAwesomeIcon
-                    icon={faShareAlt}
-                    style={{ marginRight: " 10px", fontSize: "22px" }}
-                  />
-                </ol> */}
+             
               </div>
             </div>
           </div>

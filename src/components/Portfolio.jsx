@@ -81,7 +81,7 @@ export default function Portfolio() {
                   <a href='' className='card-title'>
                     FreshBite Restaurants
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p className='lh-md '>
                     FreshBite Restaurants, a bustling culinary establishment,
                     entrusted Amorserv Consulting to enhance their social media
                     presence and engage their hungry audience. Leveraging
@@ -129,7 +129,7 @@ export default function Portfolio() {
                 <img className='card-img-top' src={port4} alt='...' />
                 <div className='card-portfolio py-3 px-4'>
                   <a href='' className='card-title'>
-                    Quantum Electronics
+                  Quantum Electronics
                   </a>
                   <p className='lh-md pt-2'>
                     Quantum Electronics, a leading player in electronics

@@ -61,7 +61,7 @@ body {
   left: 400px;
 }
 .navItem p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .navItem:hover {
@@ -481,7 +481,7 @@ body {
   color: #696969;
   text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem; /* 150% */
@@ -517,7 +517,7 @@ body {
 
 #sec-5 p {
   color: #555555 !important;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 #sec-5 a {
   text-decoration: none;
@@ -527,7 +527,7 @@ body {
 #sec-5 .btn-serv {
   background-color: #d9d9d9;
   color: #555555;
-  font-size: 17px;
+  font-size: 1.2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
 }
@@ -556,7 +556,7 @@ body {
   color: #555;
   text-align: justify;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5625rem; /* 156.25% */
@@ -571,12 +571,11 @@ body {
   color: #266;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.5rem; /* 100% */
+  line-height: 1.5rem; 
   letter-spacing: 0.01125rem;
-  display: flex;
   width: 16.0625rem;
   height: 2.25rem;
   flex-direction: column;

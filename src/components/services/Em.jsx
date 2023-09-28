@@ -45,15 +45,13 @@ export default function Em() {
         <Navbar />
       </div>
 
-
-
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
-          <h1>How does Email Marketing earn loyalty for your brand?</h1>
+            <h1>How does Email Marketing earn loyalty for your brand?</h1>
 
             <p>
-            Empower your business with our effective email marketing <br />
+              Empower your business with our effective email marketing <br />
               strategies. Elevate engagement, drive conversions, and foster{" "}
               <br />
               lasting customer relationships.
@@ -67,7 +65,7 @@ export default function Em() {
           </div>
         </div>
       </header>
-    
+
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
@@ -175,19 +173,17 @@ export default function Em() {
         </div>
       </section>
 
-      <div
-        className='text-center'
-        style={{ backgroundColor: " #226666", height: "300px", color: "white" }}
-      >
-        <div className='container p-5'>
+      <div className='text-center whyseo p-5'>
+        <div className='container'>
           <h2>Does Email Marketing Still Work?</h2>
           <p>
             Over the years, Email marketing stil remains effective in driving
             engagement <br /> and conversions.
           </p>
+          <br />
           <div className='row'>
             <div className='col-md-3'>
-              <h2>$40</h2>
+              <h1>$40</h1>
               <p>expected average ROI for every $1 spent on email marketing.</p>
             </div>
             <div className='col-md-3'>
