@@ -132,9 +132,12 @@ function Navbar() {
               </Link>
             </li>
             <li className="navItem">
-              <Link className="nav-link" to="/contact-us">
+              <button className="btn btn-real">
+               <Link className="nav-link" to="/contact-us">
                 Contact Us
-              </Link>
+              </Link> 
+              </button>
+              
             </li>
           </ul>
         </div>

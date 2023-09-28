@@ -382,7 +382,9 @@ section.trust-agency .contents .detail .image img {
 }
 .btn {
   border-radius: 0;
-  font-size: 15px;
+  font-size: 1.2rem;
+  border-radius: 0.565rem;
+
 }
 .btn.active-button {
   background-color: #266 !important;

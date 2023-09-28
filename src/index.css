@@ -384,34 +384,33 @@ body {
   line-height: 2.25rem; /* 105.882% */
 }
 #sec-3 p {
-  color: #555;
   text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.6rem; /* 150% */
   letter-spacing: 0.03125rem;
-  display: flex;
   height: 5.1875rem;
   flex-direction: column;
   justify-content: center;
+  margin-top: 2px;
 }
 #sec-4 p {
-  color: #555555 !important;
+  /* color: #555555 !important; */
   font-size: 16px;
   font-weight: 500;
 }
 #sec-0 p {
   color: #226666 !important;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 #sec-0 span {
-  color: #3d3d3d;
+  /* color: #3d3d3d; */
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem; /* 150% */
@@ -448,9 +447,8 @@ body {
 }
 #sec-6 p {
   color: #1a202c;
-  /* text-align: center; */
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 1.5rem */
@@ -618,6 +616,7 @@ display: none;
   border: none !important;
   padding: 10px 30px !important;
   border-radius: 0.36738rem;
+  font-size: 1.2rem;
 }
 .btn-real:hover {
   color: #ffffff !important;
@@ -666,7 +665,7 @@ footer a {
 footer p {
   color: #fff;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 1.5rem */
@@ -678,7 +677,7 @@ footer .border-top {
 footer ul li a {
   color: #fff;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   line-height: 150%;
   letter-spacing: -0.02rem;

@@ -167,7 +167,7 @@ export default function Index() {
                 Get Free Proposal
               </Link>
 
-              <div className='mt-3 h'>
+              <div className='mt-3'>
                 <p className='my-4'>Take control of your online success.</p>
               </div>
             </div>
@@ -315,7 +315,7 @@ export default function Index() {
           </div>
 
           <div className='text-center' style={{ marginTop: "-170px" }}>
-            <p style={{ color: "#266" }}>
+            <p style={{ color: "#266", fontSize: '1.2rem'}}>
               it's Time to take controle of your online presence
             </p>
             <div style={{ marginTop: "-19px" }}>

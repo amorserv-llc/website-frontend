@@ -53,14 +53,13 @@
 }
 
 .header-bg .header .content p {
-  color: #1a202c;
+  color: black;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 1.5rem */
   display: flex;
-  /* height: 16.3125rem; */
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
@@ -74,7 +73,7 @@
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1.2rem;
   box-shadow: 2px 2px 4px gray;
   justify-content: center;
 }
@@ -121,7 +120,7 @@
   }
 
   .header-bg .header .content p.rapp {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .header-bg .header .content button {
@@ -136,7 +135,7 @@
   }
 
   .header-bg .header .content p.rapp {
-    font-size: 0.8em;
+    font-size: 1.2rem;
     text-align: left;
   }
 
@@ -182,7 +181,7 @@
     color: #266;
     text-align: center;
     font-family: Poppins;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem; /* 125% */
@@ -193,7 +192,7 @@
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 150% */
