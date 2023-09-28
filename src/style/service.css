@@ -53,7 +53,7 @@ section.service-feat .contents p {
   color: #696969;
   text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem; /* 150% */
@@ -403,3 +403,20 @@ section.trust-agency .contents .detail .image img {
     0px 8px 12px 6px rgba(0, 0, 0, 0.15);
   height: 28.25rem;
 }
+
+
+/* Add a media query for mobile devices */
+@media (max-width: 768px) {
+  .card-body {
+    /* Adjust properties for smaller screens */
+    border-radius: 0.75rem; /* Example radius for smaller screens */
+    height: auto; /* Let the content determine the height */
+    width: 100%; /* Take up the full width of the container */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3),
+      0px 4px 6px 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
+
+
