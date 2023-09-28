@@ -58,17 +58,20 @@ export default function Sem() {
         <div className='header'>
           <div className='content'>
             <h1>How Search Engine Marketing promotes your brand online?</h1>
-            <p style={{ opacity: "0.45" }}>
+
+            <p>
               Search engine marketing propels your brand's online visibility{" "}
               <br /> by strategically engaging your target audience and driving{" "}
               <br />
               valuable traffic.
             </p>
-            <Link to='/contact-us'>
+            <Link to='/'>
               <button>Schedule a Call</button>
             </Link>
           </div>
-          <img src={sem0} alt='header-image' />
+          <div className='image'>
+            <img src={sem0} className='img-fluid' alt='header-image' />
+          </div>
         </div>
       </header>
 

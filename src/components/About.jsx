@@ -33,24 +33,23 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
-    <div style={{ paddingBottom: "90px" }}>
+      <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>
-
 
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
-            <p style={{ opacity: "0.45" }}>
-              Indeed, our journey has been remarkable
-            </p>
-            <Link  to='/contact-us'>
-            <button>Learn More</button>
+
+            <p>Indeed, our journey has been remarkable</p>
+            <Link to='/'>
+              <button>Learn More</button>
             </Link>
-           
           </div>
-          <img src={about} alt='header-image' />
+          <div className='image'>
+            <img src={about} className='img-fluid' alt='header-image' />
+          </div>
         </div>
       </header>
 

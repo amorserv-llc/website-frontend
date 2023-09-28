@@ -102,6 +102,7 @@
   object-fit: cover;
   position: relative;
   z-index: 2;
+  /* border:  2px solid red; */
 }
 
 /* Media queries */

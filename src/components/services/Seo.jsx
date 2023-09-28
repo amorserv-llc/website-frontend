@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "../layout/TopNavbar";
 import seo from "../../Assets/seo.png";
-import oneup from "../../Assets/oneup.png";
+import seomobi from "../../Assets/seomobi.png";
 import threemob from "../../Assets/threemob.png";
 import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
@@ -57,18 +57,21 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-            <p style={{ opacity: "0.45" }}>
-              SEO is the Definitive Path to Securing Your Place at the Peak of
-              Online Success.
-            </p>
 
-            <Link to='/contact-us'>
+            <p>
+              SEO is the Definitive Path to Securing Your Place at the Peak of
+              Online Success.{" "}
+            </p>
+            <Link to='/'>
               <button>Learn More</button>
             </Link>
           </div>
-          <img src={seo} alt='header-image' />
+          <div className='image'>
+            <img src={seo} className='img-fluid' alt='header-image' />
+          </div>
         </div>
       </header>
+     
 
       <section
         className='service-feat p-5'
@@ -265,10 +268,7 @@ export default function () {
         </div>
       </section>
 
-      <div
-        className='text-center whyseo p-5'
-       
-      >
+      <div className='text-center whyseo p-5'>
         <div className='container'>
           <h2>Why you need SEO?</h2>
           <p>
@@ -395,17 +395,16 @@ export default function () {
           </p>
 
           <section id='sec-6'>
-          
-              <div className='centered-container' style={{ marginTop: "-160px" }}>
-            <div className='threestep'>
-              <img src={threestep} alt='3-Step' />
+            <div className='centered-container' style={{ marginTop: "-160px" }}>
+              <div className='threestep'>
+                <img src={threestep} alt='3-Step' />
+              </div>
+              <div className='threemob'>
+                <img src={threemob} alt='3-mobile' />
+              </div>
             </div>
-            <div className='threemob'>
-              <img src={threemob} alt='3-mobile' />
-            </div>
-          </div>
           </section>
-          
+
           <div
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}

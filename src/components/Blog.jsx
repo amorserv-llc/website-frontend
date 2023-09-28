@@ -23,22 +23,25 @@ export default function () {
         <Navbar />
       </div>
 
-      <div className='header-bg'>
+      <header className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Explore our blog for more information!</h1>
-            <p style={{ opacity: "0.45" }}>
+
+            <p>
               Stay up-to-date on the latest developments in the world of digital
               marketing.
             </p>
-            <Link to='/contact-us'>
+            <Link to='/'>
               <button>Learn More</button>
             </Link>
           </div>
-          <img src={blogpage} className='' alt='header-image' />
+          <div className='image'>
+            <img src={blogpage} className='img-fluid' alt='header-image' />
+          </div>
         </div>
-      </div>
-
+      </header>
+      
       <section className='container-lg pt-5 pb-5'>
         <div className='row g-5 '>
           <div className='col-md-4 d-none d-md-block'>

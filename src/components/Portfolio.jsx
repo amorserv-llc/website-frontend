@@ -23,28 +23,28 @@ export default function Portfolio() {
         <Navbar />
       </div>
 
-      <section>
-        <div className='header-bg'>
-          <div className='header'>
-            <div className='content'>
-              <h1>Explore our portfolio for more insight!</h1>
-              <p style={{ opacity: "0.45" }}>
-                Dive into our portfolio for a closer look at our dynamic
-                projects. <br />
-                Witness how our strategies have transformed businesses. Our{" "}
-                <br /> work is a testament to our expertise, innovation, and{" "}
-                <br /> commitment to driving success.
-              </p>
-              <Link to='/contact-us'>
-                <button className='port-btn'>Free Consultation</button>
-              </Link>
-            </div>
-            <div className=''>
-              <img src={portfolio} className='img-fluid' alt='header-image' />
-            </div>
+      <header className='header-bg'>
+        <div className='header'>
+          <div className='content'>
+            <h1>Explore our portfolio for more insight!</h1>
+
+            <p>
+              {" "}
+              Dive into our portfolio for a closer look at our dynamic projects.{" "}
+              <br />
+              Witness how our strategies have transformed businesses. Our <br />{" "}
+              work is a testament to our expertise, innovation, and <br />{" "}
+              commitment to driving success.
+            </p>
+            <Link to='/'>
+              <button>Free Consultation</button>
+            </Link>
+          </div>
+          <div className='image'>
+            <img src={portfolio} className='img-fluid' alt='header-image' />
           </div>
         </div>
-      </section>
+      </header>
 
       <section id='port-1' className='py-5'>
         <div className='container-lg my-4 portfolio'>

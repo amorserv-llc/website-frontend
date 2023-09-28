@@ -45,25 +45,29 @@ export default function Em() {
         <Navbar />
       </div>
 
-      <header class='header-bg'>
-        <div class='header'>
-          <div class='content'>
-            <h1>How does Email Marketing earn loyalty for your brand?</h1>
-            <p style={{ opacity: "0.45" }}>
-              Empower your business with our effective email marketing <br />
+
+
+      <header className='header-bg'>
+        <div className='header'>
+          <div className='content'>
+          <h1>How does Email Marketing earn loyalty for your brand?</h1>
+
+            <p>
+            Empower your business with our effective email marketing <br />
               strategies. Elevate engagement, drive conversions, and foster{" "}
               <br />
               lasting customer relationships.
             </p>
-
-            <Link to='/contact-us'>
+            <Link to='/'>
               <button>Schedule a Call</button>
             </Link>
           </div>
-          <img src={em0} alt='header-image' />
+          <div className='image'>
+            <img src={em0} className='img-fluid' alt='header-image' />
+          </div>
         </div>
       </header>
-
+    
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}

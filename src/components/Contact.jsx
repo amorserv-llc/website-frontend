@@ -14,22 +14,26 @@ export default function () {
         <Navbar />
       </div>
 
-      <div className='header-bg'>
+
+      <header className='header-bg'>
         <div className='header'>
           <div className='content'>
-            <h1>Contact Information</h1>
-            <p className='ourd' style={{ opacity: "0.45" }}>
-              Our digital marketing experts are always available to give you
+          <h1>Contact Information</h1>
+
+            <p>
+            Our digital marketing experts are always available to give you
               <br />
               top-notch solution to your marketing challenges.
             </p>
+          
           </div>
-          <div className=''>
-            <img src={contact} alt='header-image' />
+          <div className='image'>
+            <img src={contact} className='img-fluid' alt='header-image' />
           </div>
         </div>
-      </div>
+      </header>
 
+  
       <section className='py-5 bg-light'>
         <div className='container-lg my-2'>
           <div className='row'>

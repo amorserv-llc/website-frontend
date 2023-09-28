@@ -54,17 +54,18 @@ export default function Smm() {
           <div className='content'>
             <h1>How SMO builds your brand awareness?</h1>
 
-            <p style={{ opacity: "0.45" }}>
+            <p>
               Social Media Marketing is a cost-effective way to maximize <br />
               brand awareness and witness tangible results as your message{" "}
               <br /> resonates across social channels.
             </p>
-
-            <Link to='/contact-us'>
+            <Link to='/'>
               <button>Schedule a Call</button>
             </Link>
           </div>
-          <img src={smo} alt='header-image' />
+          <div className='image'>
+            <img src={smo} className='img-fluid' alt='header-image' />
+          </div>
         </div>
       </header>
 
@@ -84,12 +85,11 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff} alt='image' className='fram' />
-                    <h4 className='card-title'>
-                    Content Creation
-                    </h4>{" "}
-                    <br />
+                    <h4 className='card-title'>Content Creation</h4> <br />
                     <p className='card-text'>
-                    Our content creation specialist will craft compelling and shareable content that captivates your audience's attention. From posts to visually engaging graphics.
+                      Our content creation specialist will craft compelling and
+                      shareable content that captivates your audience's
+                      attention. From posts to visually engaging graphics.
                     </p>
                   </div>
                 </div>
@@ -99,9 +99,14 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff1} alt='image' />
-                    <h4 className='card-title'>Social Media Advertising</h4> <br />
+                    <h4 className='card-title'>
+                      Social Media Advertising
+                    </h4>{" "}
+                    <br />
                     <p className='card-text'>
-                    Amplify your reach through targeted social media advertising campaigns. We pinpoint your ideal audience, maximizing your ROI and driving meaningful engagement.
+                      Amplify your reach through targeted social media
+                      advertising campaigns. We pinpoint your ideal audience,
+                      maximizing your ROI and driving meaningful engagement.
                     </p>
                   </div>
                 </div>
@@ -113,7 +118,10 @@ export default function Smm() {
                     <img src={ff2} alt='image' />
                     <h4 className='card-title'>Influencer Marketing</h4> <br />
                     <p className='card-text'>
-                    Leverage the influence of thought leaders in your industry to boost brand visibility. Our influencer partnerships amplify your message and connect you with a wider audience.
+                      Leverage the influence of thought leaders in your industry
+                      to boost brand visibility. Our influencer partnerships
+                      amplify your message and connect you with a wider
+                      audience.
                     </p>
                   </div>
                 </div>
@@ -125,7 +133,10 @@ export default function Smm() {
                     <img src={ff3} alt='image' />
                     <h4 className='card-title'>Handle each platform</h4> <br />
                     <p className='card-text'>
-                    Tailor your content for each platform's unique audience and style. Whether it's Facebook, Instagram, Twitter, or LinkedIn, we curate content that speaks to your audience's preferences.
+                      Tailor your content for each platform's unique audience
+                      and style. Whether it's Facebook, Instagram, Twitter, or
+                      LinkedIn, we curate content that speaks to your audience's
+                      preferences.
                     </p>
                   </div>
                 </div>
@@ -134,9 +145,14 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff4} alt='image' />
-                    <h4 className='card-title'>Social Media Contest and Giveaways</h4> <br />
+                    <h4 className='card-title'>
+                      Social Media Contest and Giveaways
+                    </h4>{" "}
+                    <br />
                     <p className='card-text'>
-                    Engage and excite your audience with captivating contests and giveaways. Our strategies drive participation, boost interaction, and ultimately, nurture brand loyalty.
+                      Engage and excite your audience with captivating contests
+                      and giveaways. Our strategies drive participation, boost
+                      interaction, and ultimately, nurture brand loyalty.
                     </p>
                   </div>
                 </div>
@@ -145,9 +161,15 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff5} alt='image' />
-                    <h4 className='card-title'>Instant replies and user engagement</h4> <br />
+                    <h4 className='card-title'>
+                      Instant replies and user engagement
+                    </h4>{" "}
+                    <br />
                     <p className='card-text'>
-                    Create meaningful connections by promptly responding to user queries and comments. Our proactive approach to engagement fosters a positive brand image and fosters customer trust.
+                      Create meaningful connections by promptly responding to
+                      user queries and comments. Our proactive approach to
+                      engagement fosters a positive brand image and fosters
+                      customer trust.
                     </p>
                   </div>
                 </div>
@@ -157,9 +179,13 @@ export default function Smm() {
                 <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff6} alt='image' />
-                    <h4 className='card-title'>Analytics and Reporting</h4> <br />
+                    <h4 className='card-title'>Analytics and Reporting</h4>{" "}
+                    <br />
                     <p className='card-text'>
-                    Access real-time insights into your social media performance. Our detailed analytics and reporting provide a clear view of your strategy's impact, enabling informed decision-making and continuous improvement.
+                      Access real-time insights into your social media
+                      performance. Our detailed analytics and reporting provide
+                      a clear view of your strategy's impact, enabling informed
+                      decision-making and continuous improvement.
                     </p>
                   </div>
                 </div>
