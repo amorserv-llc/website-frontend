@@ -8,6 +8,7 @@ import em from "../../Assets/em.png";
 import smm from "../../Assets/smm.png";
 import sem from "../../Assets/sem.png";
 
+
 function Navbar() {
   const [toggle, setToggle] = useState(false);
 
@@ -31,18 +32,14 @@ function Navbar() {
           <img src={Logo} alt='Logo' />
         </Link>
 
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-          aria-controls='navbarNav'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <ul className='navlinks'>
+  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon1"><span></span><span></span><span></span></div>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+        <ul className='navlinks' id='nav-links'>
           <li
             className='navItem dropdown'
             onClick={() => setToggle((prev) => !prev)}
@@ -134,6 +131,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
+        </div>
       </nav>
     </section>
   );
