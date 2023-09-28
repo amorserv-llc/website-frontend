@@ -267,7 +267,51 @@ body {
 }
 
 
+
+/* navbar.css */
+
+/* Update the CSS for the dropdown menu */
+.navbar-collapse {
+  background-color: white;
+  text-align: left;
+  position: fixed;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  padding: 40px;
+  border-radius: 5px;
 }
+
+
+  .navBarContainer .navDy .navlinks {
+    width: 200px; /* Take up full width */
+    margin-top: 10px; /* Add spacing between items */
+    justify-content: flex-start;
+    display: inline-block;
+
+  }
+
+  .navItem {
+    left: 0;
+    text-align: left; 
+    margin-right: 50px;
+  
+    }
+
+    .navItem ul,li {
+     border: 3px solid white;
+     /* margin: 7px; */
+     /* font-size: 3px; */
+    
+      }
+
+  .dropIn {
+    width: 100%;
+    top: 60px; /* Adjust the top position as needed */
+  }
+
+
 
 
 
