@@ -322,7 +322,6 @@ section.trust-agency .contents .detail .image img {
       0px 8px 12px 6px rgba(0, 0, 0, 0.15);
     height: 18.25rem;
     margin: 16px;
-    
   }
 }
 
@@ -384,7 +383,6 @@ section.trust-agency .contents .detail .image img {
   border-radius: 0;
   font-size: 1.2rem;
   border-radius: 0.565rem;
-
 }
 .btn.active-button {
   background-color: #266 !important;
@@ -404,7 +402,6 @@ section.trust-agency .contents .detail .image img {
   height: 28.25rem;
 }
 
-
 /* Add a media query for mobile devices */
 @media (max-width: 768px) {
   .card-body {
@@ -413,7 +410,7 @@ section.trust-agency .contents .detail .image img {
     width: 100%; /* Take up the full width of the container */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3),
       0px 4px 6px 3px rgba(0, 0, 0, 0.15);
-height: 25.89906rem;
+    height: 25.89906rem;
   }
 
   .custom-card {
@@ -421,14 +418,23 @@ height: 25.89906rem;
       0px 8px 12px 6px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     width: 23.4925rem;
-    height: 25.89906rem;
+    height: 26.89906rem;
     width: 100%;
     border-radius: 1.875rem;
     background: #eff3fd;
     /* border: 3px solid red; */
   }
+
+  #sec-6 button {
+    color: #1a202c;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    height: 4.21356rem;
+    justify-content: center;
+  }
+
+ 
 }
-
-
-
-

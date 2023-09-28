@@ -71,7 +71,6 @@ export default function () {
           </div>
         </div>
       </header>
-     
 
       <section
         className='service-feat p-5'
@@ -439,7 +438,7 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is SEO and why is it important?{" "}
+                What is SEO and why is it important? 
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
