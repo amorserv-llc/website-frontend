@@ -327,13 +327,14 @@ text-align: center;
   .team .members .first-row .member {
     width: calc(50% - 50px); /* Four members in a row for larger screens */
   }
-}
+
 
 .team .members .first-row .member .image {
   background: #eaeaea;
   border-radius: 10px;
   box-shadow: 2px 2px 5px gray;
   /* border: 2px solid red; */
+  height: auto;
   cursor: pointer;
   width: 100%; /* Ensure the image takes full width of its container */
   overflow: hidden; /* Hide overflowing content */
@@ -359,4 +360,20 @@ text-align: center;
   --webkit-filter: brightness(1.1) saturate(100%);
 
   
+}
+
+.team .members .first-row .member .detail h6 {
+  align-items: center;
+}
+
+.team .members .first-row .member .detail p {
+  text-align: center;
+  align-items: center;
+}
+
+
+.partnership ul li {
+  width: calc(16.66% - 10px); /* Adjust width for larger screens */
+  margin: 0 5px; /* Adjust spacing between items */
+}
 }
