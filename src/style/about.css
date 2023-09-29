@@ -107,13 +107,16 @@ text-align: center;
   padding: 10px; /* Optional: Add padding for better spacing within each member */
 }
 
+
 .team .members .first-row .member .image img {
   max-width: 100%; /* Ensure the image scales within its container */
+  
 }
 
 .team .members .first-row .member .detail {
   line-height: 1.2; /* Corrected line-height value */
   margin-top: 10px;
+  
 }
 
 .team .members .first-row .member .detail h6 {
@@ -271,6 +274,7 @@ text-align: center;
 }
 
 @media screen and (max-width: 850px) {
+
   .about-intro .intro h2,
   .team h2,
   .partnership h2,
@@ -302,6 +306,7 @@ text-align: center;
   .vmv .ul div h2 {
     font-size: 18px;
   }
+  
 
   .about-intro {
     padding: 20px;
@@ -316,4 +321,42 @@ text-align: center;
   .team .members .first-row .member .detail {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 750px) {
+  .team .members .first-row .member {
+    width: calc(50% - 50px); /* Four members in a row for larger screens */
+  }
+}
+
+.team .members .first-row .member .image {
+  background: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  /* border: 2px solid red; */
+  cursor: pointer;
+  width: 100%; /* Ensure the image takes full width of its container */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.team .members .first-row .member .image img {
+  width: 100%; /* Make sure the image takes 100% width of its parent */
+  height: auto;
+  object-fit: cover;
+  /* border: 2px solid red; */
+  width: auto;
+
+  filter: brightness(1) saturate(0%);
+  --webkit-filter: brightness(1) saturate(0%);
+}
+
+.team .members .first-row .member:hover {
+  transform: scale(1.1);
+}
+
+.team .members .first-row .member .image img:hover {
+  filter: brightness(1.1) saturate(100%);
+  --webkit-filter: brightness(1.1) saturate(100%);
+
+  
 }

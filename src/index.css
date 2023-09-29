@@ -380,11 +380,14 @@ body {
   background-color: #b13557;
   color: #ffffff;
   font-size: 16px;
+  
 }
 .head .btn:hover {
   color: #ffffff !important;
   background-color: #d15072 !important;
   border-color: none !important;
+    border: 2px solid blue;
+
 }
 #sec-2 h3 {
   color: #226666 !important;
@@ -710,6 +713,11 @@ footer ul li a {
   #sec-0 p {
     text-align: center;
     color: #555;
+  }
+  .card-portfolio {
+    background: #fafafb;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 28rem;
   }
 }
 
