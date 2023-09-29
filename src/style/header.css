@@ -91,9 +91,7 @@
   padding-top: 30px;
   position: relative;
   z-index: 2;
-  /* width: 43.28631rem; */
-  /* height: 37.5625rem; */
-  /* flex-shrink: 0; */
+  /* border: 3px solid red; */
 }
 
 .header-bg .header .image img {
@@ -130,6 +128,17 @@
 }
 
 @media screen and (max-width: 750px) {
+  .header-bg .header .img-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+    /* border: 3px solid red; */
+    width: 700px;
+  }
+
   .header-bg .header .content {
     margin-top: 20px;
     gap: 10px;
