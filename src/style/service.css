@@ -305,8 +305,9 @@ section.trust-agency .contents .detail .image img {
   }
 
   .whyseo {
-    height: 73.25rem;
+    height: 75.25rem;
     flex-shrink: 0;
+    /* border: 2px solid red; */
   }
   .whyseo h1 {
     color: #fff;
