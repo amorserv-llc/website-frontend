@@ -60,10 +60,9 @@ export default function Sem() {
             <h1>How Search Engine Marketing promotes your brand online?</h1>
 
             <p>
-              Search engine marketing propels your brand's online visibility{" "}
-              <br /> by strategically engaging your target audience and driving{" "}
-              <br />
-              valuable traffic.
+              Search engine marketing propels your brand's online visibility by
+              strategically engaging your target audience and driving valuable
+              traffic.
             </p>
             <Link to='/'>
               <button>Schedule a Call</button>
@@ -112,32 +111,21 @@ export default function Sem() {
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2>
-        How does Search Engine Marketing work?
-        </h2>
+        <h2>How does Search Engine Marketing work?</h2>
         <p>
-              Search Engine Marketing is one of the best digital marketing
-              strategy you can leverage for your business growth.
-            </p>
+          Search Engine Marketing is one of the best digital marketing strategy
+          you can leverage for your business growth.
+        </p>
         <div className='contents'>
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
-                <div className='card-body'>
+                  <div className='card-body'>
                     <img src={ff12} alt='image' />
                     <h3>Drive Conversions</h3>
                     <p>
@@ -152,7 +140,7 @@ export default function Sem() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
-                <div className='card-body'>
+                  <div className='card-body'>
                     <img src={ff13} alt='image' />
                     <h3>Optimization</h3>
                     <p>
@@ -167,7 +155,7 @@ export default function Sem() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card custom-card'>
-                <div className='card-body'>
+                  <div className='card-body'>
                     <img src={ff14} alt='image' />
                     <h3>Tracking</h3>
                     <p>
@@ -183,7 +171,6 @@ export default function Sem() {
           </div>
         </div>
       </section>
-
 
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
@@ -208,7 +195,7 @@ export default function Sem() {
                   search results when potential customers are actively searching
                   for your products or services. Be visible to those in need and
                   be a click away from conversions.
-                </p>                
+                </p>
               </div>
 
               <div className='col-md-4'>

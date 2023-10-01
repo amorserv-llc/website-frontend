@@ -155,9 +155,20 @@
     text-align: left;
   }
 
+  .header-bg .header .content p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
   .header-bg .header .content h1 {
-    font-size: 4vw;
+    color: #266;
     text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem; /* 125% */
+    width: 32.4375rem;
   }
 }
 
