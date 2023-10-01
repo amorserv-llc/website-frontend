@@ -53,16 +53,15 @@
 }
 
 .header-bg .header .content p {
-  color: black;
+  width: 48rem;
+  justify-content: center;
   font-family: Poppins;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 1.5rem */
-  display: flex;
-  flex-direction: column;
+  line-height: 150%;
   justify-content: center;
-  flex-shrink: 0;
+  /* border: 3px solid red; */
 }
 
 .header-bg .header .content button {
@@ -128,7 +127,6 @@
 }
 
 @media screen and (max-width: 750px) {
-
   .header-bg .header .content button {
     font-size: 1rem;
     height: 100%;
@@ -158,6 +156,9 @@
   .header-bg .header .content p {
     font-size: 1.2rem;
     text-align: left;
+    width: 38rem;
+    /* height: 27rem; */
+    justify-content: center;
   }
 
   .header-bg .header .content h1 {

@@ -82,14 +82,7 @@ export default function Sem() {
       <section className='header-bg' style={{ backgroundColor: "white" }}>
         <div className='header'>
           <div className='content'>
-            <p
-              style={{
-                width: "38rem",
-                height: "27rem",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
+            <p>
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
               visibility. By bidding on relevant keywords, businesses position
