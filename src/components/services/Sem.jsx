@@ -112,18 +112,32 @@ export default function Sem() {
         </div>
       </section>
 
-      <section id='sec-6' className='py-5'>
-        <div className='text-center service-feat pt-5'>
-          <div className='container-lg my-4'>
-            <h3>How does Search Engine Marketing work?</h3>
-            <p>
+
+
+
+
+
+
+
+
+
+      <section
+        className='service-feat p-5'
+        style={{ backgroundColor: "#eff3fd" }}
+      >
+        <h2>
+        How does Search Engine Marketing work?
+        </h2>
+        <p>
               Search Engine Marketing is one of the best digital marketing
               strategy you can leverage for your business growth.
             </p>
-            <div className='row pt-5'>
-              <div className='col-md-4'>
-                <div className='card semcard'>
-                  <div className='card-body'>
+        <div className='contents'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                <div className='card-body'>
                     <img src={ff12} alt='image' />
                     <h3>Drive Conversions</h3>
                     <p>
@@ -135,9 +149,10 @@ export default function Sem() {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4'>
-                <div className='card semcard'>
-                  <div className='card-body'>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                <div className='card-body'>
                     <img src={ff13} alt='image' />
                     <h3>Optimization</h3>
                     <p>
@@ -149,9 +164,10 @@ export default function Sem() {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4'>
-                <div className='card semcard'>
-                  <div className='card-body'>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card custom-card'>
+                <div className='card-body'>
                     <img src={ff14} alt='image' />
                     <h3>Tracking</h3>
                     <p>
@@ -167,6 +183,7 @@ export default function Sem() {
           </div>
         </div>
       </section>
+
 
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>

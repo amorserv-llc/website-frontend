@@ -24,12 +24,21 @@ section.service-feat h2 {
   font-weight: bold;
 }
 
+section.service-feat p {
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
 section.service-feat .contents {
   max-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 20px;
+}
+section.service-feat .contents h3 {
+  color: #266;
 }
 .card-body {
   border-radius: 1.075rem;

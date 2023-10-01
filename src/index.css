@@ -476,7 +476,6 @@ body {
   line-height: 150%; /* 1.5rem */
   display: flex;
   height: 4.21356rem;
-  flex-direction: column;
   justify-content: center;
 }
 
