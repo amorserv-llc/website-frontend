@@ -467,17 +467,7 @@ body {
   font-weight: 700;
   line-height: 3.125rem; /* 142.857% */
 }
-#sec-6 p {
-  color: #1a202c;
-  font-family: Poppins;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 1.5rem */
-  display: flex;
-  height: 4.21356rem;
-  justify-content: center;
-}
+
 
 #sec-6 .service-feat p {
   color: #696969;
@@ -488,6 +478,7 @@ body {
   font-weight: 400;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.03125rem;
+
 }
 
 #sec-6 h4 {

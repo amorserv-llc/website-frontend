@@ -200,7 +200,7 @@ export default function Sem() {
               actively searching for what you offer.
             </p>
             <div className='row pt-5'>
-              <div className='col-md-4'>
+              <div className='col-md-4 '>
                 <img src={ff1} alt='image' />
                 <h3>Instant Visibility</h3>
                 <p>
@@ -208,9 +208,7 @@ export default function Sem() {
                   search results when potential customers are actively searching
                   for your products or services. Be visible to those in need and
                   be a click away from conversions.
-                </p>{" "}
-                <br /> <br />
-                <br />
+                </p>                
               </div>
 
               <div className='col-md-4'>
@@ -243,7 +241,7 @@ export default function Sem() {
                   audience.
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 '>
                 <img src={ff5} alt='image' />
                 <h3>Competitive Edge</h3>
                 <p>
