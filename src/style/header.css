@@ -124,30 +124,21 @@
 
 @media screen and (max-width: 750px) {
   .header-bg .header {
-    width: 100%;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .header-bg .header .image img.img-fluid {
-    width: 23.23006rem;
-    height: 20.15838rem;
-    flex-shrink: 0;
-    
+  .header-bg .header .image .img-fluid{
+    border: 3px solid red;
+    width: 100%;
   }
   .header-bg .header .content button {
     font-size: 1.2rem;
     height: 100%;
-  }
-  .header-bg .header .img-fluid {
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    position: relative;
-    z-index: 2;
-    /* border: 3px solid red; */
   }
+  
 
   .header-bg .header .content {
     margin-top: 20px;
@@ -170,3 +161,5 @@
     /* width: 32.4375rem; */
   }
 }
+
+
