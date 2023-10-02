@@ -129,7 +129,7 @@
     align-items: center;
   }
   .header-bg .header .image .img-fluid{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
   }
   .header-bg .header .content button {
