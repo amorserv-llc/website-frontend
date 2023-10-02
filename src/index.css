@@ -609,13 +609,17 @@ body {
   letter-spacing: -0.02rem;
 }
 .btn-real {
-  background-color: #b13557 !important;
-  color: #ffffff !important;
-  font-weight: 500 !important;
-  border: none !important;
-  padding: 10px 30px !important;
-  border-radius: 0.36738rem;
+ 
+  width: 150px;
+  height: auto;
+  padding: 10px 10px;
+  background: #b13557;
+  color: white;
+  border: none;
+  border-radius: 5px;
   font-size: 1.2rem;
+  box-shadow: 2px 2px 4px gray;
+  justify-content: center;
 }
 .btn-real:hover {
   color: #ffffff !important;

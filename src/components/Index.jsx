@@ -162,10 +162,7 @@ export default function Index() {
                 your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-              {/* <Link className='btn-real' to='/contact-us'>
-                Get Free Proposal
-              </Link> */}
-
+             
               <Link
                 className='btn-real btn btn-primary mb-3 mobile-center-button'
                 to='/contact-us'
@@ -294,9 +291,11 @@ export default function Index() {
             </button>
             <div className='text-center'>
               <p className='mt-4'>Get free marketing guide</p>
-              <a href='#' className='btn-real'>
-                Download
-              </a>
+             
+              <Link className='btn mt-4 btn-real' to='/' style={{ color: 'white' }}>
+              Download
+              </Link>
+              
             </div>
           </div>
         </div>
