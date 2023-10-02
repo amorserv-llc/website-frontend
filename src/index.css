@@ -712,12 +712,13 @@ footer ul li a {
     letter-spacing: 0.03125rem;
     justify-content: center;
     text-align: center;
+  } 
+  .mobile-center-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  
-
-    
-    
   
 }
 
