@@ -47,6 +47,13 @@ export default function () {
     return activeButton === buttonId ? "up" : "down";
   };
 
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -62,7 +69,7 @@ export default function () {
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.{" "}
             </p>
-            <Link to='/'>
+            <Link onClick={handleCallButtonClick}>
               <button>Learn More</button>
             </Link>
           </div>
@@ -408,7 +415,7 @@ export default function () {
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}
           >
-            <Link className='btn mt-4 btn-real' to='/contact-us'>
+            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
               Get Started
             </Link>
           </div>

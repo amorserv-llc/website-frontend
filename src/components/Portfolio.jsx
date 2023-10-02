@@ -36,7 +36,7 @@ export default function Portfolio() {
               work is a testament to our expertise, innovation, and <br />{" "}
               commitment to driving success.
             </p>
-            <Link to='/'>
+            <Link to='/about-us'>
               <button>Free Consultation</button>
             </Link>
           </div>
@@ -205,7 +205,7 @@ export default function Portfolio() {
           </div>
 
           <div className='text-center'>
-            <button className='mt-1 btn-real'>
+            <button className='btn-real'>
               <Link to='/contact-us' style={{ color: "white" }}>
                 Schedule a Call
               </Link>

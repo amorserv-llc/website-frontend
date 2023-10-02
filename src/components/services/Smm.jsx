@@ -43,6 +43,16 @@ export default function Smm() {
     return activeButton === buttonId ? "up" : "down";
   };
 
+
+  
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -59,7 +69,7 @@ export default function Smm() {
               brand awareness and witness tangible results as your message{" "}
               <br /> resonates across social channels.
             </p>
-            <Link to='/'>
+            <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
             </Link>
           </div>
@@ -336,7 +346,7 @@ export default function Smm() {
             </div>
           </div> */}
           <div className='text-center' style={{ marginTop: "-170px" }}>
-            <Link className='btn mt-4 btn-real' to='/contact-us'>
+            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
               Get Started
             </Link>
           </div>

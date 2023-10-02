@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import nike from "../Assets/nike.png";
@@ -35,6 +35,13 @@ import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
 
 export default function Index() {
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -163,12 +170,11 @@ export default function Index() {
                 strategies that are results-driven, saving you time and effort.
               </span>
              
-              <Link
-                className='btn-real btn btn-primary mb-3 mobile-center-button'
-                to='/contact-us'
-              >
-                Get Free Proposal
-              </Link>
+              <div onClick={handleCallButtonClick}>
+                <Link className='btn-real btn btn-danger mb-3 mobile-center-button'>
+                  Get Free Proposal
+                </Link>
+              </div>
 
               <div className='mt-3'>
                 <p className='my-4'>Take control of your online success.</p>
@@ -291,11 +297,14 @@ export default function Index() {
             </button>
             <div className='text-center'>
               <p className='mt-4'>Get free marketing guide</p>
-             
-              <Link className='btn mt-4 btn-real' to='/' style={{ color: 'white' }}>
-              Download
+
+              <Link
+                className='btn mt-4 btn-real'
+                to='/'
+                style={{ color: "white" }}
+              >
+                Download
               </Link>
-              
             </div>
           </div>
         </div>
@@ -323,8 +332,8 @@ export default function Index() {
             <p style={{ color: "#266", fontSize: "1.2rem" }}>
               it's Time to take controle of your online presence
             </p>
-            <div style={{ marginTop: "-19px" }}>
-              <Link className='btn mt-4 btn-real' to='/contact-us'>
+            <div style={{ marginTop: "-19px" }} onClick={handleCallButtonClick}>
+              <Link className='btn mt-4 btn-real'>
                 Get Free Proposal
               </Link>
             </div>

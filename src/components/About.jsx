@@ -44,7 +44,7 @@ export default function About() {
 
             <p className='rapp'>
               Indeed, our journey has been remarkable</p>
-            <Link to='/'>
+            <Link to='/contact-us'>
               <button>Learn More</button>
             </Link>
           </div>

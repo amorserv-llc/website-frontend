@@ -69,7 +69,7 @@ class ContactForm extends Component {
   render() {
     return (
       <section className="p-5" id='sec-6' style={{ background: "#eff3fd" }}>
-        <div className='container '>
+        <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
               <h3 className='mb-4'>Let’s Grow your Business</h3>

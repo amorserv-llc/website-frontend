@@ -39,6 +39,14 @@ export default function Em() {
     return activeButton === buttonId ? "up" : "down";
   };
 
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -56,7 +64,7 @@ export default function Em() {
               <br />
               lasting customer relationships.
             </p>
-            <Link to='/'>
+            <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
             </Link>
           </div>

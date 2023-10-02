@@ -4,6 +4,13 @@ import React from "react";
 import homeimg from "../../Assets/homeimg.png";
 import { Link } from "react-router-dom";
 export default function () {
+
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className='header-bg'>
       <div className='header'>
@@ -14,7 +21,7 @@ export default function () {
           <p>
             Empower Your Brand, and Drive Results with AmorServ Consulting
           </p>
-          <Link to='/'>
+          <Link onClick={handleCallButtonClick}>
             <button>Get Expert</button>
           </Link>
         </div>
