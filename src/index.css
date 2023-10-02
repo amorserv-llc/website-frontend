@@ -357,15 +357,6 @@ body {
   }
 }
 
-.rapp {
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem;
-  letter-spacing: 0.03125rem;
-  opacity: 0.45;
-  width: 100%;
-}
 .head h5 {
   color: #226666;
 }
@@ -723,6 +714,8 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
+ 
+  
   #sec-5 h3 {
     color: #266;
     margin-left: 33%;

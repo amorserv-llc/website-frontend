@@ -11,7 +11,7 @@ export default function () {
           <h1>
             We're your Partner for <br /> Digital Marketing <br /> Success
           </h1>
-          <p className='rapp'>
+          <p>
             Empower Your Brand, and Drive Results with AmorServ Consulting
           </p>
           <Link to='/'>
