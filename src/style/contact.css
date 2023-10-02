@@ -72,4 +72,43 @@ a {
     /* margin-left: 140px; */
   }
   
+
+
+
+  .contacts,
+  .cons {
+    width: 100%;
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .contacts input,
+  .contacts textarea,
+  .cons {
+    margin-bottom: 15px; /* Add some space between input fields on mobile */
+  }
+
+  .map {
+    padding: 0 10px; /* Add horizontal padding for the map container */
+  }
+}
+
+/* Common CSS for both Desktop and Mobile */
+.contacts,
+.cons {
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px; /* Add padding for better readability */
+}
+
+/* Additional CSS for specific styles */
+.contacts h4,
+.cons h1 {
+  font-size: 1.5rem; /* Adjust heading font size for better mobile display */
+  margin-bottom: 15px; /* Add some space below headings for better readability */
+}
+
+.lh-1 {
+  flex: 1; /* Allow content to take remaining space in flex container */
+
 }
