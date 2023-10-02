@@ -130,8 +130,9 @@
     align-items: center;
   }
   .header-bg .header .image img.img-fluid {
-    width: 20.23006rem;
+    width: 23.23006rem;
     height: 20.15838rem;
+    flex-shrink: 0;
     
   }
   .header-bg .header .content button {
