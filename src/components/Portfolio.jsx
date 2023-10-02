@@ -202,16 +202,15 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className='text-center'>
+          </div>        
+        </div>
+        <div className='text-center'>
             <button className='btn-real'>
               <Link to='/contact-us' style={{ color: "white" }}>
                 Schedule a Call
               </Link>
             </button>
           </div>
-        </div>
       </section>
 
       {/* <section id="sec-7" style="margin-bottom: 10rem;"> */}

@@ -132,7 +132,7 @@ function Navbar() {
               </Link>
             </li> */}
             <li className="navItem">
-              <button className="btn btn-real">
+              <button className="btn-real">
                <Link className="nav-link" to="/contact-us">
                 Contact Us
               </Link> 
