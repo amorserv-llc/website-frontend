@@ -154,14 +154,13 @@ export default function Index() {
             <div className='col-lg-6 align-items-center d-flex justify-content-center'>
               <img src={g1} className='img-fluid' alt='...' />
             </div>
-            <div className='col-lg-6 mt-3 align-items-center col-lg-6 col-md-12'>
+            <div className='col-lg-6 align-items-center col-lg-6 col-md-12'>
               <span className='my-4'>
                 We understand your struggles and are here to help. Let us be
                 your guide and empower your brand with personalized,
-                results-driven digital marketing strategies.
-                <br /> <br />
-                As your trusted digital marketing guide, we offer personalized
-                strategies that are results-driven, saving you time and effort.
+                results-driven digital marketing strategies. As your trusted
+                digital marketing guide, we offer personalized strategies that
+                are results-driven, saving you time and effort.
               </span>
               <Link className='btn-real' to='/contact-us'>
                 Get Free Proposal
@@ -315,7 +314,7 @@ export default function Index() {
           </div>
 
           <div className='text-center' style={{ marginTop: "-170px" }}>
-            <p style={{ color: "#266", fontSize: '1.2rem'}}>
+            <p style={{ color: "#266", fontSize: "1.2rem" }}>
               it's Time to take controle of your online presence
             </p>
             <div style={{ marginTop: "-19px" }}>
