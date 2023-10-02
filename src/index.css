@@ -358,15 +358,13 @@ body {
 }
 
 .rapp {
-  color: #010101;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Roboto;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.5rem;
   letter-spacing: 0.03125rem;
   opacity: 0.45;
+  width: 100%;
 }
 .head h5 {
   color: #226666;
@@ -712,14 +710,12 @@ footer ul li a {
     letter-spacing: 0.03125rem;
     justify-content: center;
     text-align: center;
-  } 
+  }
   .mobile-center-button {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
-
-  
 }
 
 @media screen and (max-width: 768px) {
