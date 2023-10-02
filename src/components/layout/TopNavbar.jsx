@@ -68,7 +68,7 @@ function Navbar() {
                   >
                     <img src={seoIcon} width='20' height='20' alt='...' />
                     <div style={{ marginLeft: "10px" }}>
-                      <h6 className='mb-0'>Search Engine Optimization</h6>
+                      <h6>Search Engine Optimization</h6>
                       <p className='opacity-75'>Get Found Online</p>
                     </div>
                   </Link>
@@ -80,8 +80,8 @@ function Navbar() {
                   >
                     <img src={smm} width='20' height='20' alt='...' />
                     <div style={{ marginLeft: "10px" }}>
-                      <h6 className='mb-0'>Social Media Management</h6>
-                      <p className='mb-0 opacity-75'>
+                      <h6>Social Media Management</h6>
+                      <p className='opacity-75'>
                         {" "}
                         Connect with your Audience
                       </p>
@@ -95,8 +95,8 @@ function Navbar() {
                   >
                     <img src={em} width='20' height='20' alt='...' />
                     <div style={{ marginLeft: "10px" }}>
-                      <h6 className='mb-0'>Email Marketing</h6>
-                      <p className='mb-0 opacity-75'>
+                      <h6>Email Marketing</h6>
+                      <p className='opacity-75'>
                         Reach your Customers' Inboxes
                       </p>
                     </div>
@@ -109,8 +109,8 @@ function Navbar() {
                   >
                     <img src={sem} width='20' height='20' alt='...' />
                     <div style={{ marginLeft: "10px" }}>
-                      <h6 className='mb-0'>Search Engine Marketing</h6>
-                      <p className='mb-0 opacity-75'>Drive Traffic with Ads</p>
+                      <h6>Search Engine Marketing</h6>
+                      <p className='opacity-75'>Drive Traffic with Ads</p>
                     </div>
                   </Link>
                 </div>
