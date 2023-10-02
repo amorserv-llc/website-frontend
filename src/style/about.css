@@ -179,6 +179,7 @@
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 50px;
+  
 }
 
 .partnership div {
@@ -186,6 +187,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .partnership ul {
@@ -198,17 +200,17 @@
 }
 
 .partnership ul li {
-  max-width: 192px;
+  box-sizing: border-box;
+  width: calc(16.666% - 20px); /* 6 items in a row with 20px spacing */
+  margin-right: 20px; /* Spacing between items */
+  margin-bottom: 20px; /* Spacing between rows */
   height: 192px;
   border-radius: 10px;
   background: #dde0e4;
   padding: 15px;
   display: flex;
   justify-content: center;
-  width: calc(
-    16.66% - 10px
-  ); /* 16.66% width for each image with 10px spacing between them */
-  margin-bottom: 20px; /* Add spacing between rows */
+ 
 }
 
 .partnership ul li:hover {
@@ -372,7 +374,16 @@
 
 
   .partnership ul li {
-    width: calc(16.66% - 10px); /* Adjust width for larger screens */
-    margin: 0 5px; /* Adjust spacing between items */
+
+    box-sizing: border-box;
+    margin-right: 20px; /* Spacing between items */
+    margin-bottom: 20px; /* Spacing between rows */
+    height: 192px;
+    border-radius: 10px;
+    background: #dde0e4;
+    padding: 15px;
+    display: flex;
+    /* justify-content: center; */
+    width: calc(50% - 10px); /* Two images in a column with 10px spacing between them */
   }
 }
