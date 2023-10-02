@@ -54,7 +54,7 @@ export default function () {
                 </div>
                 <div className='mb-3'>
                   {/* <label>Email</label> */}
-                  <input type='email' className='control' placeholder='Email' />
+                  <input type='email' className='control' placeholder='Work Email' />
                 </div>
                 <br />
                 <div className='mb-3'>

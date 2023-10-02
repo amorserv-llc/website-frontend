@@ -138,7 +138,7 @@ class ContactForm extends Component {
                         onChange={this.handleChange}
                         className='form-control'
                         required
-                        placeholder='Email Address'
+                        placeholder='Work Email'
                       />
                     </div>
 
