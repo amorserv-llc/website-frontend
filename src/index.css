@@ -435,8 +435,6 @@ body {
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.03125rem;
   display: flex;
-  height: 11rem;
-  justify-content: center;
 }
 
 #sec-5 {
@@ -715,6 +713,12 @@ footer ul li a {
     justify-content: center;
     text-align: center;
   }
+
+  
+
+    
+    
+  
 }
 
 @media screen and (max-width: 768px) {

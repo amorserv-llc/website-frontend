@@ -158,7 +158,7 @@ export default function Index() {
               <span className='my-4'>
                 We understand your struggles and are here to help. Let us be
                 your guide and empower your brand with personalized,
-                results-driven digital marketing strategies. As your trusted
+                results-driven digital marketing strategies. <br /> <br /> As your trusted
                 digital marketing guide, we offer personalized strategies that
                 are results-driven, saving you time and effort.
               </span>
