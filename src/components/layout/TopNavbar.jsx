@@ -126,11 +126,11 @@ function Navbar() {
                 Portfolio
               </Link>
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <Link className="nav-link" to="/blog">
                 Blog
               </Link>
-            </li>
+            </li> */}
             <li className="navItem">
               <button className="btn btn-real">
                <Link className="nav-link" to="/contact-us">
