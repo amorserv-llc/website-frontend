@@ -104,7 +104,7 @@
 
 /* Media queries */
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
   .header-bg .header {
     padding-top: 0px;
   }
@@ -120,7 +120,7 @@
   .header-bg .header .content button {
     font-size: 1.2rem;
   }
-}
+} */
 
 @media screen and (max-width: 750px) {
   .header-bg .header {
@@ -129,21 +129,23 @@
     justify-content: center;
     align-items: center;
   }
-
+  .header-bg .header .image img.img-fluid {
+    width: 20.23006rem;
+    height: 20.15838rem;
+    
+  }
   .header-bg .header .content button {
     font-size: 1.2rem;
     height: 100%;
-   
   }
   .header-bg .header .img-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 50px; */
+    padding-top: 50px;
     position: relative;
-    /* z-index: 2; */
+    z-index: 2;
     /* border: 3px solid red; */
-    /* width: 1500px; */
   }
 
   .header-bg .header .content {
@@ -151,12 +153,11 @@
     gap: 10px;
   }
 
-  .header-bg .header .content p{
+  .header-bg .header .content p {
     font-size: 1.2rem;
     text-align: center;
   }
 
- 
   .header-bg .header .content h1 {
     color: #266;
     text-align: center;
@@ -166,46 +167,5 @@
     font-weight: 700;
     line-height: 2.5rem; /* 125% */
     /* width: 32.4375rem; */
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .header-bg .header {
-    width: 100%;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .header-bg .header .content button {
-    border-radius: 0.25rem;
-    background: #b13557;
-    display: flex;
-    width: 10.375rem;
-    height: 2.75rem;
-    padding: 0rem 1.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    flex-shrink: 0;
-    margin-bottom: 190px;
-  }
-
-  .header-bg .header .content h1 {
-    color: #266;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.5rem; /* 125% */
-  }
-
-  
-
-  .header-bg .header .image img.img-fluid {
-    width: 22.23006rem;
-    height: 21.5rem;
   }
 }
