@@ -48,13 +48,6 @@ export default function Sem() {
     return activeButton === buttonId ? "up" : "down";
   };
 
-  const handleCallButtonClick = () => {
-    const contactFormSection = document.getElementById("contact-form-section");
-    if (contactFormSection) {
-      contactFormSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -71,7 +64,7 @@ export default function Sem() {
               strategically engaging your target audience and driving valuable
               traffic.
             </p>
-            <Link onClick={handleCallButtonClick}>
+            <Link to='/contact-us'>
               <button>Schedule a Call</button>
             </Link>
           </div>

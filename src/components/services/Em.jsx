@@ -64,7 +64,7 @@ export default function Em() {
               <br />
               lasting customer relationships.
             </p>
-            <Link onClick={handleCallButtonClick}>
+            <Link to='/contact-us'>
               <button>Schedule a Call</button>
             </Link>
           </div>

@@ -69,7 +69,7 @@ export default function Smm() {
               brand awareness and witness tangible results as your message{" "}
               <br /> resonates across social channels.
             </p>
-            <Link onClick={handleCallButtonClick}>
+            <Link to={'/contact-us'}>
               <button>Schedule a Call</button>
             </Link>
           </div>

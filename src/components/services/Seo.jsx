@@ -69,7 +69,7 @@ export default function () {
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.{" "}
             </p>
-            <Link onClick={handleCallButtonClick}>
+            <Link to='/contact-us'>
               <button>Learn More</button>
             </Link>
           </div>
