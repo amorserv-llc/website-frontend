@@ -367,7 +367,7 @@ export default function Index() {
                   <h4>Viezh Robert</h4>
                 </div>
                 <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
+                  5.0
                 </p>
               </div>
               <p className='detail'>
@@ -385,7 +385,7 @@ export default function Index() {
                   <h4>Viezh Robert</h4>
                 </div>
                 <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
+                  5.0
                 </p>
               </div>
               <p className='detail'>
@@ -403,7 +403,7 @@ export default function Index() {
                   <h4>Viezh Robert</h4>
                 </div>
                 <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
+                  5.0
                 </p>
               </div>
               <p className='detail'>
@@ -411,114 +411,13 @@ export default function Index() {
                 brand image. Their innovative digital strategies breathed new
                 life into our online platforms.
               </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t1} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t2} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t3} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t1} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t2} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t3} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  4.5
-                </p>
-              </div>
-              <p className='detail'>
-                Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-                potenti tortor nulla. Eget nunc ultricies purus mauris.
-              </p>
-            </li>
+            </li>             
+         
           </ul>
           {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>
       </section>
-      <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
+      {/* <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='135'
@@ -536,7 +435,7 @@ export default function Index() {
             fill='#1A202C'
           />
         </svg>
-      </div>
+      </div> */}
 
       <Form />
       <Footer />

@@ -450,6 +450,11 @@ body {
   line-height: 3.125rem; /* 142.857% */
 }
 
+#sec-6 p {
+font-size: 1.2rem;
+}
+
+
 #sec-6 .service-feat p {
   color: #696969;
   text-align: center;
