@@ -129,7 +129,7 @@ export default function Portfolio() {
                 <img className='card-img-top' src={port4} alt='...' />
                 <div className='card-portfolio py-3 px-4'>
                   <a href='' className='card-title'>
-                  Quantum Electronics
+                    Quantum Electronics
                   </a>
                   <p className='lh-md pt-2'>
                     Quantum Electronics, a leading player in electronics
@@ -240,11 +240,11 @@ export default function Portfolio() {
                 </div>
                 <h4>Viezh Robert</h4>
               </div>
-              <p className='rate'>4.5</p>
+              <p className='rate'>5.0</p>
             </div>
             <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
+              Amorserv's email campaigns delivered outstanding results. Their
+              personalized approach fueled a remarkable boost in conversions.
             </p>
           </li>
           <li className='card'>
@@ -255,11 +255,11 @@ export default function Portfolio() {
                 </div>
                 <h4>Viezh Robert</h4>
               </div>
-              <p className='rate'>4.5</p>
+              <p className='rate'>5.0</p>
             </div>
             <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
+              Amorserv took our social presence to new heights. Their strategies
+              revolutionized engagement and visibility.
             </p>
           </li>
           <li className='card'>
@@ -270,78 +270,18 @@ export default function Portfolio() {
                 </div>
                 <h4>Viezh Robert</h4>
               </div>
-              <p className='rate'>4.5</p>
+              <p className='rate'>5.0</p>
             </div>
             <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t2} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>4.5</p>
-            </div>
-            <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t1} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>4.5</p>
-            </div>
-            <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t3} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>4.5</p>
-            </div>
-            <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t1} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>4.5</p>
-            </div>
-            <p className='detail'>
-              Lorem ipsum dolor sit amet consectetur. Accumsan amet malesuada
-              potenti tortor nulla. Eget nunc ultricies purus mauris.
+              Amorserv's SEM strategies powered our growth. Their data-driven
+              approach catapulted us to the top of search results.
             </p>
           </li>
         </ul>
         {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
       </div>
       {/* </section> */}
-      <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
+      {/* <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='135'
@@ -359,7 +299,7 @@ export default function Portfolio() {
             fill='#1A202C'
           />
         </svg>
-      </div>
+      </div> */}
 
       <Footer />
     </>
