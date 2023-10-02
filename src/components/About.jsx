@@ -55,7 +55,7 @@ export default function About() {
 
       <section className='about-intro container'>
         <div className='intro'>
-          <h2>Who are we?</h2>
+          <h2>Who Is Amorserv Consulting?</h2>
 
           <article>
             Established in 2016, Amorserv Consulting stands as the best digital
@@ -87,7 +87,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className='mission'>
+          <div className='vision'>
             <div className='image'>
               <img src={mission} alt='image mission' />
             </div>
@@ -101,7 +101,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className='value'>
+          <div className='vision'>
             <div className='image'>
               <img src={value} alt='image value' />
             </div>
