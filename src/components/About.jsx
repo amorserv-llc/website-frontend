@@ -42,7 +42,8 @@ export default function About() {
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
 
-            <p>Indeed, our journey has been remarkable</p>
+            <p className='rapp'>
+              Indeed, our journey has been remarkable</p>
             <Link to='/'>
               <button>Learn More</button>
             </Link>

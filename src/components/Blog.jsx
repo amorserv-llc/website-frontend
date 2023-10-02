@@ -28,7 +28,7 @@ export default function () {
           <div className='content'>
             <h1>Explore our blog for more information!</h1>
 
-            <p>
+            <p className='rapp'>
               Stay up-to-date on the latest developments in the world of digital
               marketing.
             </p>

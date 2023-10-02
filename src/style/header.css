@@ -148,19 +148,12 @@
     gap: 10px;
   }
 
-  .header-bg .header .content p.rapp {
+  .header-bg .header .content p{
     font-size: 1.2rem;
     text-align: left;
   }
 
-  .header-bg .header .content p {
-    font-size: 1.2rem;
-    text-align: left;
-    width: 38rem;
-    /* height: 27rem; */
-    justify-content: center;
-  }
-
+ 
   .header-bg .header .content h1 {
     color: #266;
     text-align: center;

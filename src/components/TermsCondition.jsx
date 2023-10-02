@@ -16,7 +16,7 @@ export default function () {
         <div className='header'>
           <div className='content'>
             <h1>Terms & Conditions</h1>
-            <p>
+            <p className='rapp'>
               Lorem ipsum dolor sit amet consectetur. Sagittis est tempus a
               risus quam sed urna mauris id.
             </p>

@@ -20,7 +20,8 @@ export default function () {
           <div className='content'>
           <h1>Contact Information</h1>
 
-            <p>
+          <p className='rapp'>
+
             Our digital marketing experts are always available to give you
               <br />
               top-notch solution to your marketing challenges.

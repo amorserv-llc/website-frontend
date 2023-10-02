@@ -28,7 +28,7 @@ export default function Portfolio() {
           <div className='content'>
             <h1>Explore our portfolio for more insight!</h1>
 
-            <p>
+            <p className='rapp'>
               {" "}
               Dive into our portfolio for a closer look at our dynamic projects.{" "}
               <br />
