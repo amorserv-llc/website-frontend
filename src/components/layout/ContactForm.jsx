@@ -69,6 +69,8 @@ class ContactForm extends Component {
           message: "",
           website_id: 1,
         });
+        // Show alert notification
+        alert("Thanks for contacting us!");
       })
       .catch((error) => {
         console.error(error);
