@@ -4,6 +4,8 @@ import React from "react";
 import Navbar from "./layout/TopNavbar";
 import terms from "../Assets/terms.png";
 import Footer from "./layout/Footer";
+import { Link } from "react-router-dom";
+
 
 export default function () {
   return (
@@ -12,29 +14,27 @@ export default function () {
         <Navbar />
       </div>
 
-      <div className='header-bg'>
+      <header className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Terms & Conditions</h1>
+
             <p className='rapp'>
-              Lorem ipsum dolor sit amet consectetur. Sagittis est tempus a
-              risus quam sed urna mauris id.
+              Transparency and trust are at the heart of our operations. Explore
+              our terms and conditions to discover how we ensure a fair and
+              fruitful partnership.{" "}
             </p>
-            <a href='#' className='btn mt-4 btn-real me-auto w-auto'>
-              Schedule a Call
-            </a>
+            {/* <Link to='/about-us'>
+              <button>Free Consultation</button>
+            </Link> */}
           </div>
-          <div>
-            <img src={terms} alt='header-image' />
+          <div className='image'>
+            <img src={terms} className='img-fluid' alt='header-image' />
           </div>
         </div>
-      </div>
+      </header>
 
-      <section
-        id='terms'
-        className='container-lg  pt-5'
-        style={{ marginTop: "200px" }}
-      >
+      <section className='container terms pt-5'>
         <p>
           These terms and conditions ("Terms") govern your use of the Amorserv
           Consulting website and services. By accessing our website or engaging
