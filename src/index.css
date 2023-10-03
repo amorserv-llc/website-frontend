@@ -376,7 +376,7 @@ body {
 .head .btn {
   background-color: #b13557;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 .head .btn:hover {
   color: #ffffff !important;
@@ -500,7 +500,7 @@ body {
   color: #fff;
   text-align: right;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 1.5rem */
@@ -596,7 +596,7 @@ body {
   text-align: justify;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
@@ -612,7 +612,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 800;
   line-height: 150%; /* 1.5rem */
@@ -920,7 +920,7 @@ footer ul li a {
 .frame .plan-we-understand {
   color: transparent;
   font-family: "Poppins-Bold", Helvetica;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   height: 74px;
   left: 0;
@@ -939,7 +939,7 @@ footer ul li a {
 .frame .span {
   color: #3d3d3d;
   font-family: "Poppins-Regular", Helvetica;
-  font-size: 16px;
+  font-size: 1.2rem;
   letter-spacing: 0.5px;
 }
 
@@ -1021,7 +1021,7 @@ footer ul li a {
 .frame .text-wrapper-4 {
   color: #3d3d3d;
   font-family: "Poppins-Regular", Helvetica;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .frame .edit-note-icon {
