@@ -296,10 +296,20 @@ body {
   }
 
   .dropIn {
-    width: 100%;
-    top: 60px; /* Adjust the top position as needed */
+    width: 220px;
+    height: auto;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    background-color: white;
+    right: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
   /* Media query for screens smaller than 768px */
   .bd-footer {
     height: auto;
@@ -728,7 +738,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
-    
   #sec-5 button {
     height: 5.8rem;
     flex-shrink: 0;
