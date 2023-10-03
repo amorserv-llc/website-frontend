@@ -186,7 +186,7 @@ export default function Index() {
 
       <section id='sec-5' className='py-5'>
         <div className='container-lg'>
-          <div className='col-12 text-center'>
+          <div className='col-12'>
             <h3 className='mb-4'>
               Discover our range of services designed to boost your online
               presence
