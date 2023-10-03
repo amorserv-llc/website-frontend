@@ -24,13 +24,26 @@ class ContactForm extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  validateEmail = () => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@amorservconsulting\.com$/; // Updated regex pattern for the email format
+    const { email } = this.state;
+    if (!emailRegex.test(email)) {
+      // Invalid email format
+      console.log("Invalid email format");
+      return false;
+    }
+    return true;
+  };
+
   handleSubmit = (e) => {
     e.preventDefault();
 
-    // Define the API endpoint URL
-    const apiUrl = "http://127.0.0.1:8000/api/consulting/contacts"; // Update with your actual API endpoint URL
+    if (!this.validateEmail()) {
+      // If email is invalid, do not proceed with form submission
+      return;
+    }
 
-    // Create an object with the form data
+    const apiUrl = "http://127.0.0.1:8000/api/v1/consulting/contacts";
     const formData = {
       full_name: this.state.full_name,
       position: this.state.position,
@@ -39,16 +52,13 @@ class ContactForm extends Component {
       phone: this.state.phone,
       user_website: this.state.user_website,
       message: this.state.message,
-      website_id: this.state.website_id, // Include website_id
+      website_id: this.state.website_id,
     };
 
-    // Make a POST request to the API endpoint
     axios
       .post(apiUrl, formData)
       .then((response) => {
-        // Handle the API response, e.g., show a success message to the user
         console.log(response.data);
-        // You can also reset the form fields here
         this.setState({
           full_name: "",
           position: "",
@@ -57,18 +67,17 @@ class ContactForm extends Component {
           phone: "",
           user_website: "",
           message: "",
-          website_id: "",
+          website_id: 1,
         });
       })
       .catch((error) => {
-        // Handle any errors that occurred during the request
         console.error(error);
       });
   };
 
   render() {
     return (
-      <section className="p-5" id='sec-6' style={{ background: "#eff3fd" }}>
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
@@ -140,6 +149,12 @@ class ContactForm extends Component {
                         required
                         placeholder='Work Email'
                       />
+                      {/* Display validation error */}
+                      {this.state.email && !this.validateEmail() && (
+                        <div className='error-message'>
+                          Invalid email format
+                        </div>
+                      )}
                     </div>
 
                     <div className='form-group'>
