@@ -62,7 +62,6 @@ body {
 }
 .navItem p {
   font-size: 1.2rem;
-  
 }
 
 .navItem:hover {
@@ -273,19 +272,18 @@ body {
 
   /* Update the CSS for the dropdown menu */
   .navbar-collapse {
-    background-color: white;
-    text-align: left;
+    background-color: rgb(238, 238, 238);
     position: fixed;
-    top: 30%;
-    left: 80%;
+    top: 20%;
+    left: 70%;
     transform: translate(-50%, -50%);
     max-width: 200px;
-    padding: 40px;
+    /* padding: 40px; */
     border-radius: 5px;
   }
 
   .navBarContainer .navDy .navlinks {
-    width: 200px; /* Take up full width */
+    width: 150px; /* Take up full width */
     margin-top: 10px; /* Add spacing between items */
     justify-content: flex-start;
     display: inline-block;
@@ -293,8 +291,8 @@ body {
 
   .navItem {
     left: 0;
-    text-align: left;
-    margin-right: 50px;
+    margin: 12px;
+    /* text-align: center; */
   }
 
   .dropIn {
@@ -452,9 +450,13 @@ body {
 }
 
 #sec-6 p {
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
-
+#sec-6 button {
+  font-size: 1.2rem;
+  /* border: 3px solid red; */
+  text-align: left;
+}
 
 #sec-6 .service-feat p {
   color: #696969;
@@ -560,7 +562,6 @@ font-size: 1.2rem;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  
 }
 .card-boo {
   color: #010101;
@@ -607,7 +608,6 @@ font-size: 1.2rem;
   letter-spacing: -0.02rem;
 }
 .btn-real {
- 
   width: 122px;
   height: auto;
   padding: 10px 10px;
@@ -713,6 +713,12 @@ footer ul li a {
     justify-content: center;
     text-align: center;
   }
+
+  #sec-0 {
+    margin: auto;
+    text-align: center;
+  }
+
   .mobile-center-button {
     /* display: block; */
     margin: 0 auto;
@@ -721,8 +727,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
- 
-  
   #sec-5 h3 {
     color: #266;
     margin-left: 33%;
@@ -742,7 +746,6 @@ footer ul li a {
     margin: 17px;
   }
   .threemob {
-    /* border: 2px solid red; */
     margin: 80px;
   }
   .threemob img {
@@ -884,6 +887,10 @@ footer ul li a {
 }
 
 @media (max-width: 990px) {
+  #sec-6 .btn-real {
+    font-size: 1.2rem;
+    color: white;
+  }
   .col-md-aut {
     max-width: 90% !important;
   }

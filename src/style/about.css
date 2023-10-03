@@ -325,7 +325,22 @@
     width: calc(100% - 100px); 
 
   }
- 
+
+  .svgicon {
+    margin-left: 220px;
+    height: 2.21994rem;
+    width: 2.03331rem;
+  }
+ .contacts {
+  width: 100% !important;
+  height: 73.5625rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
   .about-intro .intro article {
     padding-top: 15px;
     font-size: 1.2rem;
