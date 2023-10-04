@@ -321,10 +321,18 @@ body {
     text-align: center;
     /* border: 1px solid green; */
   }
+  .bd-footer .col-lg-5 img{
+    /* text-align: center; */
+    /* border: 1px solid green; */
+    margin-left: -19px;
+
+  }
+
 
   .bd-footer .col-lg-5 div {
     margin-top: 1rem;
     text-align: center;
+    
   }
 
   .bd-footer .col-lg-5 div span {
@@ -352,6 +360,7 @@ body {
   .bd-footer .d-flex.justify-content-between.py-4.border-top {
     flex-direction: column-reverse;
     align-items: center;
+    
   }
 
   /* Add space between copyright and terms links */
