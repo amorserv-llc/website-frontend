@@ -69,7 +69,7 @@ export default function () {
               SEO is the Definitive Path to Securing Your Place at the Peak of
               Online Success.{" "}
             </p>
-            <Link to='/contact-us'>
+            <Link onClick={handleCallButtonClick}>
               <button>Learn More</button>
             </Link>
           </div>
@@ -415,9 +415,7 @@ export default function () {
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}
           >
-            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
-              Get Started
-            </Link>
+            <Link className='btn mt-4 btn-real'>Get Started</Link>
           </div>
         </div>
       </section>
@@ -445,7 +443,7 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is SEO and why is it important? 
+                What is SEO and why is it important?
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

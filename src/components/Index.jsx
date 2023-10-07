@@ -26,13 +26,13 @@ import branding from "../Assets/branding.png";
 
 import threemob from "../Assets/threemob.png";
 import threestep from "../Assets/threestep.png";
-
 import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
+import jsPDF from "jspdf";
 
 export default function Index() {
   const handleCallButtonClick = () => {
@@ -40,6 +40,12 @@ export default function Index() {
     if (contactFormSection) {
       contactFormSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    doc.text("Hello, this is your PDF!", 10, 10); // Add your content here
+    doc.save("downloaded-file.pdf");
   };
 
   return (
@@ -169,7 +175,7 @@ export default function Index() {
                 your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-             
+
               <div onClick={handleCallButtonClick}>
                 <Link className='btn-real btn btn-danger mb-3 mobile-center-button'>
                   Get Free Proposal
@@ -299,6 +305,7 @@ export default function Index() {
               <p className='mt-4'>Get free marketing guide</p>
 
               <Link
+                onClick={generatePDF}
                 className='btn mt-4 btn-real'
                 to='/'
                 style={{ color: "white" }}
@@ -333,9 +340,7 @@ export default function Index() {
               it's Time to take controle of your online presence
             </p>
             <div style={{ marginTop: "-19px" }} onClick={handleCallButtonClick}>
-              <Link className='btn mt-4 btn-real'>
-                Get Free Proposal
-              </Link>
+              <Link className='btn mt-4 btn-real'>Get Free Proposal</Link>
             </div>
           </div>
         </div>
@@ -411,8 +416,7 @@ export default function Index() {
                 brand image. Their innovative digital strategies breathed new
                 life into our online platforms.
               </p>
-            </li>             
-         
+            </li>
           </ul>
           {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>

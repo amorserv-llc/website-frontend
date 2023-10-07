@@ -43,15 +43,12 @@ export default function Smm() {
     return activeButton === buttonId ? "up" : "down";
   };
 
-
-  
   const handleCallButtonClick = () => {
     const contactFormSection = document.getElementById("contact-form-section");
     if (contactFormSection) {
       contactFormSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
 
   return (
     <>
@@ -69,7 +66,7 @@ export default function Smm() {
               brand awareness and witness tangible results as your message{" "}
               <br /> resonates across social channels.
             </p>
-            <Link to={'/contact-us'}>
+            <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
             </Link>
           </div>

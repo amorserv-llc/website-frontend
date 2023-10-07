@@ -1,9 +1,8 @@
 /** @format */
 
-// src/ContactForm.js
-
 import React, { Component } from "react";
 import axios from "axios";
+import Spinner from "./Spinner"; // Make sure to import your Spinner component
 
 class ContactForm extends Component {
   constructor(props) {
@@ -17,6 +16,8 @@ class ContactForm extends Component {
       user_website: "",
       message: "",
       website_id: 1,
+      loading: false, // Add loading property to track form submission loading state
+      showAlert: false, // Add showAlert property to manage alert visibility
     };
   }
 
@@ -25,10 +26,9 @@ class ContactForm extends Component {
   };
 
   validateEmail = () => {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@amorservconsulting\.com$/; // Updated regex pattern for the email format
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@amorservconsulting\.com$/;
     const { email } = this.state;
     if (!emailRegex.test(email)) {
-      // Invalid email format
       console.log("Invalid email format");
       return false;
     }
@@ -39,9 +39,10 @@ class ContactForm extends Component {
     e.preventDefault();
 
     if (!this.validateEmail()) {
-      // If email is invalid, do not proceed with form submission
       return;
     }
+
+    this.setState({ loading: true }); // Set loading state to true when form is being submitted
 
     const apiUrl = "http://127.0.0.1:8000/api/v1/consulting/contacts";
     const formData = {
@@ -68,16 +69,23 @@ class ContactForm extends Component {
           user_website: "",
           message: "",
           website_id: 1,
+          loading: false, // Reset loading state to false after successful submission
         });
-        // Show alert notification
-        alert("Thanks for contacting us!");
+        this.setState({ showAlert: true }); // Show the alert
+        setTimeout(() => {
+          this.setState({ showAlert: false }); // Hide the alert after 3 seconds
+        }, 30000); // 3000 milliseconds (3 seconds)
       })
       .catch((error) => {
         console.error(error);
+
+        this.setState({ loading: false }); // Reset loading state to false if there's an error
       });
   };
 
   render() {
+    const { loading, showAlert } = this.state;
+
     return (
       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
@@ -98,6 +106,11 @@ class ContactForm extends Component {
             >
               <div className='row forminput'>
                 <div className='col-md-6'>
+                  {showAlert && (
+                    <div className='fade-out-alert'>
+                      Thanks for contacting us!
+                    </div>
+                  )}
                   <form onSubmit={this.handleSubmit}>
                     <div className='form-group'>
                       <input
@@ -210,8 +223,13 @@ class ContactForm extends Component {
                     />
 
                     <div className='text-right pb-5'>
-                      <button type='submit' className='btn-real'>
-                        Get Started
+                      <button
+                        className='btn-real'
+                        type='submit'
+                        disabled={loading}
+                      >
+                        {loading && <Spinner />}{" "}
+                        {loading ? "Submitting..." : "Get Started"}
                       </button>
                     </div>
                   </form>

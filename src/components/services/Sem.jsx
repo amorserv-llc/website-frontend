@@ -48,6 +48,13 @@ export default function Sem() {
     return activeButton === buttonId ? "up" : "down";
   };
 
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -64,7 +71,7 @@ export default function Sem() {
               strategically engaging your target audience and driving valuable
               traffic.
             </p>
-            <Link to='/contact-us'>
+            <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
             </Link>
           </div>
@@ -76,7 +83,9 @@ export default function Sem() {
 
       <div style={{ color: "#266", textAlign: "center" }}>
         <h1 className='pt-5'> What is Search Engine Marketing?</h1>
-        <p style={{ fontSize: "1.2rem" }}>Understanding the Essence of Search Engine Marketing (SEM)</p>
+        <p style={{ fontSize: "1.2rem" }}>
+          Understanding the Essence of Search Engine Marketing (SEM)
+        </p>
       </div>
 
       <section className='header-bg' style={{ backgroundColor: "white" }}>
