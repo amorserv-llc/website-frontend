@@ -88,7 +88,7 @@
 .team h2 {
   text-align: center;
   color: #226666;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -124,17 +124,18 @@
   font-weight: 800;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.00938rem;
+  text-align: center;
 }
 
 .team .members .first-row .member .detail p {
   display: flex;
-  width: 4.8125rem;
+  /* width: 4.8125rem; */
   height: 0.9375rem;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   flex-shrink: 0;
   color: #555;
-  font-family: Poppins;
+  text-align: center;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -169,17 +170,16 @@
 .partnership {
   width: 100%;
   position: relative;
-  top: 180px;
+  top: 110px;
   margin-bottom: 250px;
 }
 
 .partnership h2 {
   text-align: center;
   color: #226666;
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 50px;
-  
 }
 
 .partnership div {
@@ -187,7 +187,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .partnership ul {
@@ -210,7 +209,6 @@
   padding: 15px;
   display: flex;
   justify-content: center;
- 
 }
 
 .partnership ul li:hover {
@@ -237,7 +235,7 @@
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  width: 480px;
+  width: 580px;
   margin-top: 30px;
   height: 15px;
   font-size: 11px;
@@ -250,6 +248,7 @@
   margin-left: 440px;
   height: 3.21994rem;
   width: 2.93331rem;
+  padding-top: 4rem;
 }
 /* Media Queries */
 
@@ -322,8 +321,7 @@
 
 @media screen and (max-width: 750px) {
   .team .members .first-row .member {
-    width: calc(100% - 100px); 
-
+    width: calc(100% - 100px);
   }
 
   .svgicon {
@@ -331,28 +329,27 @@
     height: 2.21994rem;
     width: 2.03331rem;
   }
- .contacts {
-  width: 100% !important;
-  height: 73.5625rem;
-  flex-shrink: 0;
-  border-radius: 1.25rem;
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+  .contacts {
+    width: 100% !important;
+    height: 73.5625rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 
-.members .first-row .member .detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  .members .first-row .member .detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-.members .first-row .member .detail h6,
-.members .first-row .member .detail p {
-  margin: 0; /* This removes default margins for <h6> and <p> elements */
-}
-
+  .members .first-row .member .detail h6,
+  .members .first-row .member .detail p {
+    margin: 0; /* This removes default margins for <h6> and <p> elements */
+  }
 
   .about-intro .intro article {
     padding-top: 15px;
@@ -366,7 +363,6 @@
     margin-top: 3rem;
     position: relative;
     top: 40px;
-    
   }
 
   .team .members .first-row .member .image {
@@ -400,9 +396,7 @@
     --webkit-filter: brightness(1.1) saturate(100%);
   }
 
-
   .partnership ul li {
-
     box-sizing: border-box;
     margin-right: 20px; /* Spacing between items */
     margin-bottom: 20px; /* Spacing between rows */
@@ -412,6 +406,8 @@
     padding: 15px;
     display: flex;
     /* justify-content: center; */
-    width: calc(50% - 10px); /* Two images in a column with 10px spacing between them */
+    width: calc(
+      50% - 10px
+    ); /* Two images in a column with 10px spacing between them */
   }
 }

@@ -26,7 +26,9 @@ class ContactForm extends Component {
   };
 
   validateEmail = () => {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@amorservconsulting\.com$/;
+    // const emailRegex = /^[a-zA-Z0-9._%+-]+@\.com$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     const { email } = this.state;
     if (!emailRegex.test(email)) {
       console.log("Invalid email format");
@@ -222,9 +224,19 @@ class ContactForm extends Component {
                       value={this.state.website_id}
                     />
 
-                    <div className='text-right pb-5'>
+                    {/* <div className='text-center ' >
                       <button
                         className='btn-real'
+                        type='submit'
+                        disabled={loading}
+                      >
+                        {loading && <Spinner />}{" "}
+                        {loading ? "Submitting..." : "Get Started"}
+                      </button>
+                    </div> */}
+                    <div className='text-center'>
+                      <button
+                        className='btn-real center-content'
                         type='submit'
                         disabled={loading}
                       >

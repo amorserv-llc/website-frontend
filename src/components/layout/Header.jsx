@@ -18,11 +18,11 @@ export default function () {
           <h1>
             We're your Partner for <br /> Digital Marketing <br /> Success
           </h1>
-          <p>
-            Empower Your Brand, and Drive Results with AmorServ Consulting
+          <p style={{ opacity: '0.45' }}>
+          Empower Your Brand, and Drive Results with AmorServ Consulting
           </p>
           <Link onClick={handleCallButtonClick}>
-            <button>Get Expert</button>
+            <button>Start Today</button>
           </Link>
         </div>
         <div className='image'>

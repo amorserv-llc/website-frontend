@@ -41,15 +41,14 @@
 
 .header-bg .header .content h1 {
   color: #226666;
-  font-size: 3vw;
   font-weight: bold;
   /* width: 42.375rem; */
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Poppins;
   font-size: 3rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 3.5rem;
+  /* border: 2px solid red; */
 }
 
 .header-bg .header .content p {
@@ -58,9 +57,10 @@
   font-family: Poppins;
   font-size: 1.2rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   justify-content: center;
+  opacity: 0.45;
   /* border: 3px solid red; */
 }
 

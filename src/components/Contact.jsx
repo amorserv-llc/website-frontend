@@ -14,19 +14,16 @@ export default function () {
         <Navbar />
       </div>
 
-
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
-          <h1>Contact Information</h1>
+            <h1>Contact Information</h1>
 
-          <p className='rapp'>
-
-            Our digital marketing experts are always available to give you
+            <p className='rapp'>
+              Our digital marketing experts are always available to give you
               <br />
               top-notch solution to your marketing challenges.
             </p>
-          
           </div>
           <div className='image'>
             <img src={contact} className='img-fluid' alt='header-image' />
@@ -34,13 +31,14 @@ export default function () {
         </div>
       </header>
 
-  
       <section className='py-5 bg-light'>
         <div className='container-lg my-2'>
           <div className='row'>
             <div className='col-md-6'>
               <div className='rounded-4 card contacts p-5'>
-                <h4 className='py-3 text-center'>How can we help?</h4>
+                <h4 className='py-3' style={{ fontSize: "3rem" }}>
+                  How can we help?
+                </h4>
 
                 <div className='mb-3'>
                   <input
@@ -54,7 +52,11 @@ export default function () {
                 </div>
                 <div className='mb-3'>
                   {/* <label>Email</label> */}
-                  <input type='email' className='control' placeholder='Work Email' />
+                  <input
+                    type='email'
+                    className='control'
+                    placeholder='Work Email'
+                  />
                 </div>
                 <br />
                 <div className='mb-3'>
@@ -66,7 +68,7 @@ export default function () {
                   ></textarea>
                 </div>
 
-                <div className="svgicon">
+                <div className='svgicon'>
                   <a href='' className='text-decoration-none text-dark'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
@@ -82,7 +84,6 @@ export default function () {
                         stroke-width='0.5'
                       />
                     </svg>
-                  
                   </a>
                 </div>
               </div>

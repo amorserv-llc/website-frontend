@@ -87,32 +87,73 @@
   background: #dde0e4;
   transform: scale(1.05);
 }
+/* Add these styles to your CSS file */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.carousel li {
+  flex: 0 0 100%; /* Each carousel item takes full width */
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.indicator {
+  width: 20px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: black;
+  width: 50px;
+  border-radius: 40px;
+
+}
 
 .card .info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
 }
 
-.card .info .name-img h4 {
+.card .info .name-title h4 {
   color: #226666;
   font-weight: light;
-  font-size: 1.5rem;
+  font-size: .5rem;
+ 
 }
 
 .card .info .name-img {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 30px;
   padding-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .card .info p {
-  color: #b13557;
+  color: rgb(14, 79, 14);
   font-size: 1.2rem;
+  
 }
 
 .card .image img {
@@ -121,6 +162,14 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45%;
+}
+
 
 /* Media Query */
 
