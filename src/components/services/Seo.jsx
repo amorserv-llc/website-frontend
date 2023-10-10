@@ -474,11 +474,11 @@ export default function () {
                 optimizing your website to rank higher on search engine results
                 pages (SERPs). It's crucial because higher rankings mean
                 increased visibility, more organic traffic, and a better chance
-                of reaching your target audience.{" "}
+                of reaching your target audience.
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -496,7 +496,7 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(2)}
               >
-                How long does it take to see SEO results?{" "}
+                How long does it take to see SEO results?
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -523,12 +523,13 @@ export default function () {
               id='collapseExample2'
             >
               <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
+                SEO results vary based on factors like website age, competition,
+                and the effectiveness of your strategies. Typically, noticeable
+                improvements might take a few months.
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -546,7 +547,7 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(3)}
               >
-                Is local SEO important for businesses?{" "}
+                What are keywords and how do they impact SEO?{" "}
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -573,12 +574,15 @@ export default function () {
               id='collapseExample2'
             >
               <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
+                Keywords are search terms users type into search engines.
+                Properly using keywords in your content, titles, and meta
+                descriptions helps search engines understand your content's
+                relevance, boosting your chances of ranking higher for those
+                terms.
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -596,7 +600,7 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                What is the difference between on-page and off-page SEO?{" "}
+                Is local SEO important for businesses?{" "}
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -623,8 +627,59 @@ export default function () {
               id='collapseExample2'
             >
               <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
+                Yes, local SEO is vital for businesses targeting a local
+                audience. It helps your business appear in local searches,
+                improves visibility on Google, and connects you with nearby
+                customers searching for your products or services.
+              </div>
+            </div>
+          </div>
+          <br /> 
+          <div className='container'>
+            <p>
+              <button
+                className={buttonClass(5)}
+                type='button'
+                data-toggle='collapse'
+                data-target='#collapseExample1'
+                aria-expanded={activeButton === 5 ? "true" : "false"}
+                aria-controls='collapseExample1'
+                style={{
+                  width: "100%",
+                  height: "6rem",
+                  flexShrink: "0",
+                  backgroundColor: primaryBackgroundColor,
+                }}
+                onClick={() => handleButtonClick(5)}
+              >
+                What is the difference between on-page and off-page SEO?{" "}
+                <span style={{ float: "right" }}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='45'
+                    height='24'
+                    viewBox='0 0 45 24'
+                    fill='none'
+                    style={{
+                      transform: `rotate(${
+                        getArrowDirection(5) === "down" ? 0 : 180
+                      }deg)`,
+                    }}
+                  >
+                    <path
+                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
+                      fill='#555555'
+                    />
+                  </svg>
+                </span>
+              </button>
+            </p>
+            <div
+              className={`collapse ${activeButton === 5 ? "show" : ""}`}
+              id='collapseExample2'
+            >
+              <div className='card card-boo'>
+              On-page SEO involves optimizing elements within your website, like content and HTML tags. Off-page SEO focuses on external factors, primarily building quality backlinks from reputable sources to increase your site's authority. 
               </div>
             </div>
           </div>
