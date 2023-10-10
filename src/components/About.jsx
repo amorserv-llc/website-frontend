@@ -37,7 +37,7 @@ export default function About() {
         <Navbar />
       </div>
 
-      <header className='header-bg'>
+      <header className='header-bg container'>
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
@@ -49,7 +49,7 @@ export default function About() {
             </Link>
           </div>
           <div className='image'>
-            <img src={about} className='img-fluid' alt='header-image' />
+            <img src={about} className='img-fluid' alt='header-image'/>
           </div>
         </div>
       </header>
