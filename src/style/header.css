@@ -82,25 +82,15 @@
 }
 
 .header-bg .header .image {
-  /* width: 800px; */
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 30px;
-  position: relative;
   z-index: 2;
   /* border: 3px solid red; */
 }
 
-.header-bg .header .image img {
-  max-width: none;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  z-index: 2;
-  /* border:  2px solid red; */
-}
 
 /* Media queries */
 

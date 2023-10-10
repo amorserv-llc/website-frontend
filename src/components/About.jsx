@@ -37,7 +37,7 @@ export default function About() {
         <Navbar />
       </div>
 
-      <header className='header-bg container'>
+      <header className='header-bg'>
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
