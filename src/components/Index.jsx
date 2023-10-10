@@ -122,8 +122,8 @@ export default function Index() {
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Feeling overwhelmed by Digital Marketing?</h3>
           </div>
-          <div className='row'>
-            <div className='col-md-3 mb-5'>
+          <div className='row secview'>
+            <div className='col-md-3 mb-5 hmd'>
               <div>
                 <img
                   src={f1}
@@ -133,19 +133,19 @@ export default function Index() {
               </div>
               <p>Struggling to navigate the complex digital world?</p>
             </div>
-            <div className='col-md-3 mb-5'>
+            <div className='col-md-3 mb-5 hmd'>
               <div className='d-flex'>
                 <img src={f2} />
               </div>
               <p>Feeling frustrated with low online presence?</p>
             </div>
-            <div className='col-md-3 mb-5'>
+            <div className='col-md-3 mb-5 hmd'>
               <div>
                 <img src={f3} />
               </div>
               <p>Feeling held back by digital marketing challenges?</p>
             </div>
-            <div className='col-md-3 mb-5'>
+            <div className='col-md-3 mb-5 hmd'>
               <div>
                 <img src={f4} />
               </div>

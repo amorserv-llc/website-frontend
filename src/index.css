@@ -445,26 +445,30 @@ body {
   font-weight: 700;
   line-height: 2.25rem; /* 105.882% */
 }
-#sec-3 img {
-  margin: 35px;
-  /* border: 3px solid red; */
+
+.secview{
+  width: 100%;
+  /* border: 2px solid green; */
+}
+.hmd {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* border: 2px solid green; */
 }
 #sec-3 p {
   color: #555;
   text-align: center;
-  font-family: Poppins;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.03125rem;
   display: flex;
-  width: 17.5rem;
+  width: 20.0625rem;
   height: 4.5rem;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 90px;
-  margin-top: -30px;
+  margin-left: 50px;
   /* border: 2px solid red; */
 }
 
