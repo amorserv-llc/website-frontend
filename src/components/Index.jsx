@@ -23,7 +23,6 @@ import webop from "../Assets/webop.png";
 import searchop from "../Assets/searchop.png";
 import email from "../Assets/email.png";
 import branding from "../Assets/branding.png";
-
 import threemob from "../Assets/threemob.png";
 import threestep from "../Assets/threestep.png";
 import t1 from "../Assets/t1.png";
@@ -32,8 +31,13 @@ import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
+
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
 import jsPDF from "jspdf";
 import TestimonialCarousel from "./layout/TestimonialCarousel";
+import SectionLogo from "./layout/SectionLogo";
 
 export default function Index() {
   const handleCallButtonClick = () => {
@@ -54,10 +58,8 @@ export default function Index() {
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>
-
       <Header />
-
-      <section id='sec-2' className='py-4'>
+      <section id='sec-2' className='py-5'>
         <div className='container-lg my-4'>
           <div className='row mb-2'>
             <div className='col-12 text-center'>
@@ -67,56 +69,91 @@ export default function Index() {
         </div>
 
         <div className='client-wrapper'>
-          {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
           <div className='client-carousel'>
-            <img
-              src={nike}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='Nike'
-            />
-            <img
-              src={cola}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='Coca-Cola'
-            />
+            <div className='sliding'>
+              <Slide
+                canSwipe={true}
+                infinite={true}
+                duration={2000}
+                autoplay={true}
+                cssClass='slide-show'
+                defaultIndex={1}
+                responsive={[
+                  {
+                    breakpoint: 900,
 
-            <img
-              src={amzon}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={cvs}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={cisco}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={pp}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={mascard}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
+                    settings: {
+                      slidesToShow: 5,
+
+                      slidesToScroll: 2,
+                    },
+                  },
+
+                  {
+                    breakpoint: 700,
+
+                    settings: {
+                      slidesToShow: 4,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 500,
+
+                    settings: {
+                      slidesToShow: 3,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 300,
+
+                    settings: {
+                      slidesToShow: 2,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+                ]}
+              >
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+              </Slide>
+            </div>
           </div>
-          {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>
-      </section>
-
+      </section>{" "}
+      <br />
+      <br />
       <section id='sec-3' className='py-4'>
         <div className='container-lg my-3'>
           <div className='col-12 text-center'>
@@ -157,7 +194,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       <section id='sec-0' className='py-5'>
         <div className='container-lg my-4'>
           <div className='row'>
@@ -190,7 +226,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       <section id='sec-5' className='py-5'>
         <div className='container-lg'>
           <div className='col-12'>
@@ -317,7 +352,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
@@ -346,7 +380,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       <section id='sec-6'>
         <div className='container-lg pt-5 mb-5'>
           <div className='col-12'>
@@ -361,10 +394,8 @@ export default function Index() {
             </p>
           </div>
         </div>
-   <TestimonialCarousel />
+        <TestimonialCarousel />
       </section>
-  
-
       <Form />
       <Footer />
     </>

@@ -446,7 +446,7 @@ body {
   line-height: 2.25rem; /* 105.882% */
 }
 
-.secview{
+.secview {
   width: 100%;
   /* border: 2px solid green; */
 }
@@ -454,7 +454,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+
   /* border: 2px solid green; */
 }
 #sec-3 p {
@@ -637,25 +637,22 @@ body {
   max-height: 100%;
   /* border: 3px solid green */
 }
-.port-card{
-
+.port-card {
   display: flex;
-/* width: 37.26363rem; */
-padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
-flex-direction: column;
-align-items: center;
-gap: 2.5rem;
-height: 63rem;
-/* border: 3px solid red; */
+  /* width: 37.26363rem; */
+  padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  height: 63rem;
+  /* border: 3px solid red; */
 }
-.lh-md{
+.lh-md {
   padding-top: 2rem;
-  
 }
-.card-title a{
-border: 1px solid red;
-/* margin-top: 30px; */
-
+.card-title a {
+  border: 1px solid red;
+  /* margin-top: 30px; */
 }
 .portfolio p {
   color: #555;
@@ -884,80 +881,34 @@ footer ul li a {
 }
 
 .client-wrapper {
-  width: 90%;
-  padding: 0 35px;
-  margin: 0 auto;
   position: relative;
+
 }
 
 .client-wrapper .client-carousel {
+  width: 95%;
+
   display: flex;
+
+  justify-content: space-evenly;
 }
 
-.client-wrapper i {
-  display: none;
+.sliding {
+  width: 90%;
 }
 
-.client-wrapper .client-carousel {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc(100% / 5);
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: 0;
-}
-
-.client-wrapper i {
-  display: inline;
-  top: 20%;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #b13557;
-  color: white;
-  cursor: pointer;
+.slide-show .section-logo {
   text-align: center;
-  line-height: 30px;
-  transform: translateY(-50%);
-}
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  /* border: 2px solid red; */
 
-.client-wrapper i:first-child {
-  left: 20px;
-  z-index: 10;
 }
-
-.client-wrapper i:last-child {
-  right: 25px;
-  z-index: 10;
+.section-logo img{
+  height: 100%;
+  /* border:  4px solid blue; */
 }
-
-.client-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.client-carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-
-.client-carousel.dragging img {
-  cursor: grab;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.client-carousel img {
-  width: 150px;
-  scroll-snap-align: start;
-  padding-left: 30px;
-  padding-right: 30px;
-  cursor: pointer;
-  position: relative;
-}
-
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
