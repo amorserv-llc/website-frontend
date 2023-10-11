@@ -139,14 +139,13 @@
   .header-bg .header .content p {
     font-size: 1.2rem;
     text-align: center;
-    width: 50%;
+    width: 100%;
     /* border: 2px solid red; */
   }
 
   .header-bg .header .content h1 {
     color: #266;
     text-align: center;
-    font-family: Poppins;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
