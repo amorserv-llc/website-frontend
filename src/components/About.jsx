@@ -37,7 +37,7 @@ export default function About() {
         <Navbar />
       </div>
 
-      <header className='header-bg' style={{ height: "34.5rem" }}>
+      <header className='header-bg' style={{ height: "37.5rem" }}>
         <div className='header'>
           <div className='content'>
             <h1>Curious to Know Our Story?</h1>
