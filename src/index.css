@@ -890,6 +890,17 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
+
+  .card {
+    display: flex;
+    /* width: 37.26363rem; */
+    padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    height: 50rem;
+    /* border: 3px solid red; */
+  }
   #sec-5 button {
     height: 5.8rem;
     flex-shrink: 0;
