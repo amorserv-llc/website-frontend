@@ -640,14 +640,14 @@ body {
   max-height: 100%;
   /* border: 3px solid green */
 }
-.port-card {
+.card {
   display: flex;
   /* width: 37.26363rem; */
   padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  height: 63rem;
+  height: 60rem;
   /* border: 3px solid red; */
 }
 .lh-md {
@@ -837,11 +837,7 @@ footer ul li a {
     /* border: 3px solid red; */
     width: 100%;
   }
-  .card-portfolio {
-    background: #fafafb;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 28rem;
-  }
+
 
   #sec-0 span {
     color: #3d3d3d;
