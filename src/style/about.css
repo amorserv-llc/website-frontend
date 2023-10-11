@@ -227,9 +227,8 @@
   filter: brightness(1.1) saturate(100%);
   --webkit-filter: brightness(1.1) saturate(100%);
 }
-.control {
-  border: 1px solid black;
-  float: left;
+.contro {
+  border: 2px solid black;
   margin: 0;
   padding: 0;
   border-top: 0px;

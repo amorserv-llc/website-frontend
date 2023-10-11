@@ -40,7 +40,7 @@ export default function () {
         <div className='container-lg my-2'>
           <div className='row'>
             <div className='col-md-6'>
-              <div className='rounded-4 card contacts p-5'>
+              <div className='rounded-4 contacts p-5'>
                 <h4 className='py-3' style={{ fontSize: "3rem" }}>
                   How can we help?
                 </h4>
@@ -48,25 +48,24 @@ export default function () {
                 <div className='mb-3'>
                   <input
                     type='name'
-                    className='control'
+                    className='contro'
                     placeholder='Full Name'
                   />
                 </div>
                 <div className='mb-3'>
-                  <input type='phone' className='control' placeholder='Phone' />
+                  <input type='phone' className='contro' placeholder='Phone' />
                 </div>
                 <div className='mb-3'>
                   {/* <label>Email</label> */}
                   <input
                     type='email'
-                    className='control'
+                    className='contro'
                     placeholder='Work Email'
                   />
                 </div>
-                <br />
+                <br /> 
                 <div className='mb-3'>
-                  {/* <label>Message</label> */}
-                  <textarea
+                  <textarea 
                     className='form-control'
                     placeholder='Message'
                     rows='13'

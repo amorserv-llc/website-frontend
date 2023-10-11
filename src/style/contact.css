@@ -94,7 +94,8 @@ a {
   .contacts input,
   .contacts textarea,
   .cons {
-    margin-bottom: 15px; /* Add some space between input fields on mobile */
+    margin-bottom: 15px;
+    
   }
 
   .map {
