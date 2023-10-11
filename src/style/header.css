@@ -150,7 +150,7 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.5rem; /* 125% */
+    line-height: 2.5rem;
     width: 70%;
   }
   .header-bg .header .content button {
