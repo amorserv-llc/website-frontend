@@ -10,10 +10,17 @@ import port4 from "../Assets/port4.png";
 import port5 from "../Assets/port5.png";
 import port6 from "../Assets/port6.png";
 import Footer from "./layout/Footer";
+import t1 from "../Assets/t1.png";
+import t2 from "../Assets/t2.png";
+import t3 from "../Assets/t3.png";
 
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "./layout/TestimonialCarousel";
+import CarouselCard from "./layout/CarouselCard";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
 
 export default function Portfolio() {
   return (
@@ -26,7 +33,7 @@ export default function Portfolio() {
         <div className='header'>
           <div className='content'>
             <h1>
-              Explore our portfolio for <br /> more insight!
+              Explore our Portfolio for <br /> More Insight.
             </h1>
 
             <p className='rapp'>
@@ -226,7 +233,127 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-        <TestimonialCarousel />
+        {/* <TestimonialCarousel /> */}
+
+
+
+
+        <Slide
+          duration={15000}
+          indicators={true}
+          autoplay={true}
+          cssClass='carousel-cards'
+          responsive={[
+            {
+              breakpoint: 1200,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 1000,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 850,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            // {
+            //   breakpoint: 800,
+
+            //   settings: {
+            //     slidesToShow: 3,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 700,
+
+            //   settings: {
+            //     slidesToShow: 2,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 400,
+
+            //   settings: {
+            //     slidesToShow: 1,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+          ]}
+        >
+          {/* <CarouselCard
+            img={t3}
+            name='Lizzy '
+            position='CEO Bread talks'
+            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
+            rating='5'
+          /> */}
+
+          <CarouselCard
+            img={t1}
+            name='Lesley Bradley'
+            position='CEO Stripe'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t2}
+            name='John Addams'
+            position='CEO Teeno'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t3}
+            name='Viezh Robert'
+            position='CEO TASK'
+            desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
+            rating='5'
+          />
+
+
+          {/* <CarouselCard
+            img={t2}
+            name='Tega Ovri'
+            position='CMO Oblivion'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t1}
+            name='Katherina Owens'
+            position='Manager, Semetrics'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          /> */}
+        </Slide>
       </section>
       <Footer />
     </>

@@ -89,17 +89,17 @@ class ContactForm extends Component {
     const { loading, showAlert } = this.state;
 
     return (
-      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
-        <div className='container ' id='contact-form-section'>
-          <div className='content text-center'>
-            <div className='col-12 text-center'>
-              <h3 className='mb-4'>Let’s Grow your Business</h3>
-            </div>
-            <p>
-              Empower your business with our unmatched expertise and reach new{" "}
-              <br /> pinnacles of success.
-            </p>
-          </div>
+      // <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+      //   <div className='container ' id='contact-form-section'>
+      //     <div className='content text-center'>
+      //       <div className='col-12 text-center'>
+      //         <h3 className='mb-4'>Let’s Grow your Business</h3>
+      //       </div>
+      //       <p>
+      //         Empower your business with our unmatched expertise and reach new{" "}
+      //         <br /> pinnacles of success.
+      //       </p>
+      //     </div>
 
           <div className='container d-flex justify-content-center align-items-center'>
             <div
@@ -235,8 +235,8 @@ class ContactForm extends Component {
                       </button>
                     </div> */}
                     <div className='text-center'>
-                      <button
-                        className='btn-real center-content'
+                      <button style={{ textAlign:'center' }}
+                        className='btn-real'
                         type='submit'
                         disabled={loading}
                       >
@@ -249,8 +249,8 @@ class ContactForm extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        // </div>
+      // </section>
     );
   }
 }

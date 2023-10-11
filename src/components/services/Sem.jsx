@@ -64,12 +64,15 @@ export default function Sem() {
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
-            <h1>How Search Engine Marketing promotes your brand online?</h1>
+            <h1>
+              How Search Engine <br /> Marketing promotes <br />
+              your brand online?
+            </h1>
 
             <p>
-              Search engine marketing propels your brand's online visibility by
-              strategically engaging your target audience and driving valuable
-              traffic.
+              Search engine marketing propels your brand's online visibility{" "}
+              <br /> by strategically engaging your target audience and driving
+              valuable traffic.
             </p>
             <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
@@ -91,7 +94,9 @@ export default function Sem() {
       <section className='header-bg' style={{ backgroundColor: "white" }}>
         <div className='header'>
           <div className='content'>
-            <p>
+            <p
+              style={{ fontSize: "1.2rem", lineHeight: "2.5rem", opacity: "1" }}
+            >
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
               visibility. By bidding on relevant keywords, businesses position
@@ -117,7 +122,7 @@ export default function Sem() {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2>How does Search Engine Marketing work?</h2>
+        <h2 className='pb-4'>How does Search Engine Marketing work?</h2>
         <p>
           Search Engine Marketing is one of the best digital marketing strategy
           you can leverage for your business growth.
@@ -126,49 +131,34 @@ export default function Sem() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff12} alt='image' />
                     <h3>Drive Conversions</h3>
                     <p>
-                      Utilize Pay-Per-Click (PPC) advertising to put your brand
-                      in front of potential customers. Bid on keywords relevant
-                      to your business, and your ads appear when users search
-                      for them.
+                    Use PPC advertising to reach <br />potential customers. Bid on relevant <br /> keywords, your ads appear in <br /> searches
                     </p>
                   </div>
-                </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff13} alt='image' />
                     <h3>Optimization</h3>
                     <p>
-                      Leverage strategic keyword research to optimize your
-                      online presence. By selecting keywords your audience
-                      searches for, your website gains relevance in search
-                      results.
+                    Leverage strategic keyword research <br /> for online optimization. Select <br /> audience-searched keywords for <br />higher search relevance.
                     </p>
                   </div>
-                </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
                   <div className='card-body'>
                     <img src={ff14} alt='image' />
                     <h3>Tracking</h3>
                     <p>
-                      Track and analyze conversions to measure the impact of
-                      your SEM efforts. Understand which ads drive actual
-                      results, whether it's purchases, sign-ups, or
-                      interactions.
+                    Track and analyze conversions for <br /> SEM impact measurement. Identify <br /> ads driving purchases, sign-ups, or <br /> interactions
                     </p>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -177,77 +167,72 @@ export default function Sem() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3>Why you need Search Engine Marketing?</h3>
+            <h3 style={{ fontSize: "3rem" }}>
+              Why you need Search Engine <br /> Marketing?
+            </h3>
 
             <p>
-              Search engines are the go-to resource for consumers seeking
-              products and services. To thrive in this competitive environment
-              and effectively connect with your target audience, embracing the
-              best Search Engine Marketing (SEM) strategy is crucial. SEM
-              empowers your business to appear prominently on search engine
-              results pages (SERPs), precisely when potential customers are
-              actively searching for what you offer.
+              SEM empowers your business to appear prominently on search engine
+              results pages (SERPs), <br /> precisely when potential customers
+              are actively searching for what you offer.
             </p>
-            <div className='row pt-5'>
-              <div className='col-md-4 '>
+            <div className='row pt-5 '>
+              <div className='col-md-4 pt-5'>
                 <img src={ff1} alt='image' />
                 <h3>Instant Visibility</h3>
                 <p>
-                  Gain immediate exposure as your ads appear on the top of
-                  search results when potential customers are actively searching
-                  for your products or services. Be visible to those in need and
-                  be a click away from conversions.
+                  Get immediate exposure with top <br /> search ads. Be visible
+                  when potential <br />
+                  customers actively search, a click <br /> away from
+                  conversions
                 </p>
               </div>
 
-              <div className='col-md-4'>
+              <div className='col-md-4 pt-5'>
                 <img src={ff2} alt='image' />
                 <h3>Cost Control</h3>
                 <p>
-                  SEM operates on a Pay-Per-Click model, meaning you only pay
-                  when users click on your ads. This cost-effective approach
-                  ensures you're getting value for every dollar spent.
+                  SEM uses a Pay-Per-Click model, <br /> cost-effective with
+                  payment only <br />
+                  when users click on your ads.
                 </p>
               </div>
 
-              <div className='col-md-4'>
+              <div className='col-md-4 pt-5'>
                 <img src={ff3} alt='image' />
                 <h3>Measurable ROI</h3>
                 <p>
-                  Track every click and conversion, enabling you to calculate
-                  your Return on Investment (ROI) accurately. This transparency
-                  assures you that your marketing budget is generating tangible
-                  returns.
+                  Track every click and conversion for <br />
+                  accurate ROI calculation. <br />
+                  Transparently ensure your budget <br /> generates returns.
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 pt-5'>
                 <img src={ff4} alt='image' />
                 <h3>Targeted reach</h3>
                 <p>
-                  With SEM, your ads are shown to users who are already
-                  interested in what you offer. Precise targeting ensures your
-                  investment is directed towards a relevant and receptive
-                  audience.
+                  SEM targets interested users, ensuring <br />
+                  your investment reaches a relevant <br /> and receptive
+                  audience
                 </p>
               </div>
-              <div className='col-md-4 '>
+              <div className='col-md-4 pt-5'>
                 <img src={ff5} alt='image' />
                 <h3>Competitive Edge</h3>
                 <p>
-                  Outshine your competitors by positioning your brand at the
-                  forefront of search results. Be the first choice customers see
-                  when they search, enhancing your credibility and authority.
+                  Outshine competitors by leading <br />
+                  search results. Be the first choice <br />
+                  customers see, enhancing credibility <br /> and authority.
                 </p>
               </div>
 
-              <div className='col-md-4'>
+              <div className='col-md-4 pt-5'>
                 <img src={ff6} alt='image' />
                 <h3>Data-Driven Decisions</h3>
                 <p>
-                  Uncover actionable insights through detailed analytics.
-                  Understand which keywords, ads, and strategies are driving the
-                  best results. This empowers you to optimize for maximum
-                  impact.
+                  Uncover insights with analytics. <br />
+                  Identify top-performing keywords,
+                  <br /> ads, and strategies for maximum <br /> impact."
                 </p>
               </div>
             </div>
@@ -258,11 +243,16 @@ export default function Sem() {
       <section id='sec-5' className='py-5'>
         <div className='container-lg'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4'>Our Comprehensive SEM Services</h3>
+            <h3
+              className='mb-4'
+              style={{ fontSize: "3rem", lineHeight: "3.5rem" }}
+            >
+              Our Comprehensive <br /> SEM Services
+            </h3>
             <p>
               Amplify Your Digital Footprint with Our best SEM Services. Drive
-              targeted traffic, boost engagement, and achieve measurable results
-              through our expert Pay-Per-Click strategies
+              targeted traffic, boost <br /> engagement, and achieve measurable
+              results through our expert Pay-Per-Click strategies
             </p>
           </div>
           <div className='row justify-content-center my-5'>
@@ -348,55 +338,69 @@ export default function Sem() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3>Why Choose Amorserv SEM Services?</h3>
+            <h3 style={{ fontSize: "3rem", lineHeight: "3.5rem" }}>
+              Why Choose Amorserv SEM <br />
+              Services?
+            </h3>
 
             <p>
               With our comprehensive Search Engine Marketing service, we are
-              your best digital marketing partner for success.
+              your best digital <br /> marketing partner for success.
             </p>
             <div className='row pt-5'>
               <div className='col-md-4'>
                 <img src={why1} alt='image' />
-                <h3>Proven Performance</h3>
-                <p>
-                  Our SEM services have a track record of delivering tangible
-                  results, driving increased website traffic, engagement, and
-                  conversions for businesses across diverse industries.
+                <h3 className='pt-4'>Proven Performance</h3>
+                <p className='pt-3'>
+                  Our SEM services deliver tangible <br /> results, driving
+                  increased website <br /> traffic, engagement, and conversions{" "}
+                  <br /> across diverse industries.
                 </p>
               </div>
 
               <div className='col-md-4'>
                 <img src={why2} alt='image' />
-                <h3>Tailored Strategies</h3>
-                <p>
-                  We understand that each business is unique. Our SEM experts
-                  create customized strategies, carefully selecting keywords and
-                  crafting ad campaigns that resonate with your specific
-                  audience and objectives.
+                <h3 className='pt-4'>Tailored Strategies</h3>
+                <p className='pt-3'>
+                  We recognize unique businesses. Our <br /> SEM experts create
+                  custom strategies <br /> with keywords and ad campaigns <br />{" "}
+                  tailored to your audience and goals.
                 </p>
               </div>
 
               <div className='col-md-4'>
                 <img src={why3} alt='image' />
-                <h3>Expert Insight</h3>
-                <p>
-                  With a team of certified SEM professionals, we bring extensive
-                  experience and expertise to the table. From campaign creation
-                  to optimization, our experts are dedicated to driving results
-                  and exceeding expectations.
+                <h3 className='pt-4'>Expert Insight</h3>
+                <p className='pt-3'>
+                  With certified SEM professionals, we <br /> bring extensive
+                  expertise from <br /> campaign creation to optimization,{" "}
+                  <br />
+                  driving exceptional results.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+        <div className='container ' id='contact-form-section'>
+          <div className='content text-center'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4'>Unlock Your Digital Potential Today!</h3>
+            </div>
+            <p>
+            Let our SEM services experts assist you to unleash the power of tailored <br /> digital solutions. Let's connect and bring your vision to life.
+            </p>
+          </div>
 
-      <ContactForm />
+          <ContactForm />
+        </div>
+      </section>
 
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4'>Search Engine Optimization FAQs</h3>
+            <h3 className='mb-4 pb-5' style={{ fontSize: '3rem' }}>Search Engine Optimization FAQs</h3>
           </div>
 
           <div className='container'>
@@ -410,7 +414,7 @@ export default function Sem() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
@@ -450,8 +454,7 @@ export default function Sem() {
             </div>
           </div>
           <br />
-          <br />
-          <br />
+          
           <div className='container'>
             <p>
               <button
@@ -463,7 +466,7 @@ export default function Sem() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
@@ -503,8 +506,7 @@ export default function Sem() {
           </div>
 
           <br />
-          <br />
-          <br />
+        
           <div className='container'>
             <p>
               <button
@@ -516,7 +518,7 @@ export default function Sem() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
@@ -556,8 +558,7 @@ export default function Sem() {
           </div>
 
           <br />
-          <br />
-          <br />
+        
           <div className='container'>
             <p>
               <button
@@ -569,7 +570,7 @@ export default function Sem() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}

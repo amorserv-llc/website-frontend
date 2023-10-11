@@ -6,6 +6,8 @@ import Footer from "./layout/Footer";
 
 import Navbar from "./layout/TopNavbar";
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function () {
   return (
@@ -24,6 +26,9 @@ export default function () {
               <br />
               top-notch solution to your marketing challenges.
             </p>
+            <Link to='/contact-us'>
+              <button>Learn More</button>
+            </Link>
           </div>
           <div className='image'>
             <img src={contact} className='img-fluid' alt='header-image' />

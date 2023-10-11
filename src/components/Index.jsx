@@ -38,7 +38,8 @@ import "react-slideshow-image/dist/styles.css";
 import jsPDF from "jspdf";
 import TestimonialCarousel from "./layout/TestimonialCarousel";
 import SectionLogo from "./layout/SectionLogo";
-import CarouselCard from './layout/CarouselCard'
+import CarouselCard from "./layout/CarouselCard";
+import ContactForm from "./layout/ContactForm";
 
 export default function Index() {
   const handleCallButtonClick = () => {
@@ -395,189 +396,141 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <TestimonialCarousel />
-        
-        {/* <Slide
+        {/* <TestimonialCarousel /> */}
 
-      // nextArrow={<p className="next"><ArrowForwardIosOutlinedIcon /></p>}
+        <Slide
+          duration={15000}
+          indicators={true}
+          autoplay={true}
+          cssClass='carousel-cards'
+          responsive={[
+            {
+              breakpoint: 1200,
 
-      // prevArrow={<p className="prev"><ArrowBackIosNewOutlinedIcon /></p>}
+              settings: {
+                slidesToShow: 3,
 
-        // canSwipe={true}
-
-        duration={15000}
-
-        indicators={true}
-
-        autoplay={true}
-
-        cssClass="carousel-cards"
-
-        responsive={[
-
-          {
-
-            breakpoint: 1200,
-
-            settings: {
-
-              slidesToShow: 3,
-
-              slidesToScroll: 1,
-
+                slidesToScroll: 1,
+              },
             },
 
-          },
+            {
+              breakpoint: 1000,
 
-          {
+              settings: {
+                slidesToShow: 3,
 
-            breakpoint: 1000,
-
-            settings: {
-
-              slidesToShow: 3,
-
-              slidesToScroll: 1,
-
+                slidesToScroll: 1,
+              },
             },
 
-          },
+            {
+              breakpoint: 850,
 
-          {
+              settings: {
+                slidesToShow: 3,
 
-            breakpoint: 850,
-
-            settings: {
-
-              slidesToShow: 3,
-
-              slidesToScroll: 1,
-
+                slidesToScroll: 1,
+              },
             },
 
-          },
+            // {
+            //   breakpoint: 800,
 
-          {
+            //   settings: {
+            //     slidesToShow: 3,
 
-            breakpoint: 800,
+            //     slidesToScroll: 1,
+            //   },
+            // },
 
-            settings: {
+            // {
+            //   breakpoint: 700,
 
-              slidesToShow: 3,
+            //   settings: {
+            //     slidesToShow: 2,
 
-              slidesToScroll: 1,
+            //     slidesToScroll: 1,
+            //   },
+            // },
 
-            },
+            // {
+            //   breakpoint: 400,
 
-          },
+            //   settings: {
+            //     slidesToShow: 1,
 
-          {
+            //     slidesToScroll: 1,
+            //   },
+            // },
+          ]}
+        >
+          {/* <CarouselCard
+            img={t3}
+            name='Lizzy '
+            position='CEO Bread talks'
+            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
+            rating='5'
+          /> */}
 
-            breakpoint: 700,
+          <CarouselCard
+            img={t1}
+            name='Lesley Bradley'
+            position='CEO Stripe'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
 
-            settings: {
+          <CarouselCard
+            img={t2}
+            name='John Addams'
+            position='CEO Teeno'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
 
-              slidesToShow: 2,
+          <CarouselCard
+            img={t3}
+            name='Viezh Robert'
+            position='CEO TASK'
+            desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
+            rating='5'
+          />
 
-              slidesToScroll: 1,
+          {/* <CarouselCard
+            img={t2}
+            name='Tega Ovri'
+            position='CMO Oblivion'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
 
-            },
-
-          },
-
-          {
-
-            breakpoint: 400,
-
-            settings: {
-
-              slidesToShow: 1,
-
-              slidesToScroll: 1,
-
-            },
-
-          },
-
-        ]}
-
-      >
-
-        <CarouselCard
-
-          img={t3}
-
-          name="Adam Benjamin"
-
-          position="CEO Bread talks"
-
-          desc="“AmorServ Talents revolutionized our hiring process. Their dedication to finding the right fit for our team was exceptional.The engineers they sourced have been instrumental in our recent successes.”"
-
-        />
-
-        <CarouselCard
-
-          img={t1}
-
-          name="Lesley Bradley"
-
-          position="CEO Stripe"
-
-          desc="“Partnering with AmorServ Talents was a game-changer. They understood our unique needs and presented us with candidates who exceeded our expectations. We're now working with a skilled remote team that has transformed our productivity.”"
-
-        />
-
-        <CarouselCard
-
-          img={t2}
-
-          name="John Addams"
-
-          position="CEO Teeno"
-
-          desc="“Partnering Efficiency and quality define AmorServ Talents. Their team not only helped us find the perfect engineers but also saved us valuable time. We're impressed with their commitment to delivering top-notch talent.”"
-
-        />
-
-        <CarouselCard
-
-          img={t3}
-
-          name="Adam Benjamin"
-
-          position="CEO Bread talks"
-
-          desc="“AmorServ Talents guided me to the sotware engineering role that perfectly matched my skills and aspirations. The support I received throughout the process was unparalleled. I'm now working with a company that values and rewards my expertise.”"
-
-        />
-
-        <CarouselCard
-
-          img={t2}
-
-          name="Lesley Bradley"
-
-          position="CEO Stripe"
-
-          desc="“Signing up with AmorServ Talents was a turning point in my career. They connected me with a company that aligns with my values, and I'm now part of a dynamic team driving innovation as a data scientist.”"
-
-        />
-
-
-        <CarouselCard
-
-          img={t1}
-
-          name="John Addams"
-
-          position="CEO Teeno"
-
-          desc="“AmorServ Talents helped me explore opportunities that matched my technical prowess. Their personalized approach and attention to my preferences led me to the UIUX  role that challenges and rewards me every day.”"
-
-        />
-      </Slide> */}
+          <CarouselCard
+            img={t1}
+            name='Katherina Owens'
+            position='Manager, Semetrics'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          /> */}
+        </Slide>
       </section>
-      <Form />
+
+
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+        <div className='container ' id='contact-form-section'>
+          <div className='content text-center'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4'>Let’s Grow your Business</h3>
+            </div>
+            <p>
+            Fuel your brand's growth with our best SEO strategies that drive <br /> success.
+            </p>
+          </div>
+      <ContactForm />
+
+
+          </div>
+          </section>
       <Footer />
     </>
   );

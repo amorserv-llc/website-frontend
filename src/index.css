@@ -108,12 +108,15 @@ body {
 .navBarContainer .navDy .navbarLogo {
   width: 185px;
   height: 60px;
+  align-items: center;
+  padding-top: 0.5rem;
 }
 
 .navBarContainer .navDy .navbarLogo img {
   width: 12.62344rem;
   height: 4.30675rem;
   flex-shrink: 0;
+  /* background-color: red; */
 }
 
 .navBarContainer .navDy .navlinks {
@@ -451,7 +454,7 @@ body {
   /* border: 2px solid green; */
 }
 
-.hmd img{
+.hmd img {
   width: 100%;
 }
 #sec-3 p {
@@ -540,6 +543,9 @@ body {
 
 #sec-6 p {
   font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 #sec-6 button {
   font-size: 1.2rem;
@@ -748,8 +754,8 @@ body {
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  text-align: center;
   box-shadow: 2px 2px 4px gray;
-  justify-content: center;
 }
 .btn-real:hover {
   color: #ffffff !important;
@@ -828,8 +834,8 @@ footer ul li a {
     color: #555;
   }
   #sec-0 img {
-   /* border: 3px solid red; */
-   width: 100%;
+    /* border: 3px solid red; */
+    width: 100%;
   }
   .card-portfolio {
     background: #fafafb;
@@ -866,9 +872,10 @@ footer ul li a {
     justify-content: center;
     text-align: center;
     width: 100%;
-  
+
     /* border: 2px solid green; */
   }
+
   #sec-3 p {
     color: #555;
     text-align: center;
@@ -907,7 +914,6 @@ footer ul li a {
 
 .client-wrapper {
   position: relative;
-
 }
 
 .client-wrapper .client-carousel {
@@ -928,18 +934,11 @@ footer ul li a {
   object-fit: cover;
   justify-content: center;
   /* border: 2px solid red; */
-
 }
-.section-logo img{
+.section-logo img {
   height: 100%;
   /* border:  4px solid blue; */
 }
-
-
-
-
-
-
 
 /* Media Queries */
 
