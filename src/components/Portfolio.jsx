@@ -57,7 +57,7 @@ export default function Portfolio() {
       <section id='port-1' className='py-5 '>
         <div className='container-lg my-4 portfolio'>
           <div className='row gx-md-5'>
-            <div className='col-md-6 my-4 pt-5'>
+            <div className='col-md-6 my-4'>
               <div className='card'>
                 <img className='card-img-top' src={port1} alt='...' />
                 <div className='py-3 px-4'>
