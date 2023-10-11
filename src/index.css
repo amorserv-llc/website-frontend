@@ -450,12 +450,9 @@ body {
   width: 100%;
   /* border: 2px solid green; */
 }
-.hmd {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 
-  /* border: 2px solid green; */
+.hmd img{
+  width: 100%;
 }
 #sec-3 p {
   color: #555;
@@ -862,6 +859,30 @@ footer ul li a {
     /* display: block; */
     margin: 0 auto;
     text-align: center;
+  }
+
+  .hmd {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  
+    /* border: 2px solid green; */
+  }
+  #sec-3 p {
+    color: #555;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.03125rem;
+    display: flex;
+    width: 80%;
+    height: 4.5rem;
+    /* margin-left: 40px; */
+    padding-top: 1.5rem;
+    /* border: 2px solid red; */
   }
 }
 
