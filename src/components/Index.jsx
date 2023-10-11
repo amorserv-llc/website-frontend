@@ -245,7 +245,6 @@ export default function Index() {
                 src={digi}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Digital Marketing
@@ -259,7 +258,6 @@ export default function Index() {
                 src={paid}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-100PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Paid Media
@@ -273,7 +271,6 @@ export default function Index() {
                 src={branding}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-110PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Branding
@@ -287,7 +284,6 @@ export default function Index() {
                 src={social}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-85PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Social Media
@@ -319,7 +315,6 @@ export default function Index() {
                 src={searchop}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Search Engine Optimazation
@@ -333,7 +328,6 @@ export default function Index() {
                 src={email}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Email Marketing
