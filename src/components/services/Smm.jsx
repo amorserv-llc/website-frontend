@@ -56,7 +56,7 @@ export default function Smm() {
         <Navbar />
       </div>
 
-      <header className='header-bg' style={{ height: '88vh' }}>
+      <header className='header-bg' style={{ height: '93vh' }}>
         <div className='header'>
           <div className='content'>
             <h1>
