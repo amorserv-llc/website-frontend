@@ -901,6 +901,10 @@ footer ul li a {
     height: 55rem;
     /* border: 3px solid red; */
   }
+  .portfolio{
+    padding-top: 3rem;
+    /* border: 2px solid red; */
+  }
   #sec-5 button {
     height: 5.8rem;
     flex-shrink: 0;
