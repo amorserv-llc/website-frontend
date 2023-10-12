@@ -37,38 +37,34 @@ export default function About() {
         <Navbar />
       </div>
 
-      <header className='header-bg' style={{ height: "38.7rem" }}>
-        <div className='header'>
-          <div className='content'>
-            <h1>Curious to Know Our Story?</h1>
 
-            <p className='rapp'>
-              Indeed, our journey has been remarkable</p>
-            <Link to='/contact-us'>
+      <header className='header-bg' style={{ height: '66vh' }}>
+      <div className='header'>
+        <div className='content'>
+          <h1>
+          Curious to Know Our Story?          </h1>
+          <p style={{ opacity: '0.45' }}>
+          Indeed, our journey has been remarkable.          </p>
+          <Link to='/contact-us'>
               <button>Learn More</button>
             </Link>
-          </div>
-          <div className='image'>
-            <img src={about} className='img-fluid' alt='header-image'/>
-          </div>
         </div>
-      </header>
+        <div className='image'>
+          <img src={about} className='img-fluid' alt='header-image' />
+        </div>
+      </div>
+    </header>
 
       <section className='about-intro container'>
         <div className='intro'>
           <h2>Who Is Amorserv Consulting?</h2>
 
-          <article>
-            Established in 2016, Amorserv Consulting stands as the best digital
-            marketing agency in Chicago. We infuse our expertise into every
-            strategy, driving brands towards digital excellence. As the best
-            digital marketing agency in Chicago, USA, we're committed to
-            delivering unparalleled results.
+          <article style={{ textAlign: 'center' }}>
+          Established in 2016, Amorserv Consulting stands as the best digital marketing agency in Chicago. We infuse our expertise <br />into every strategy, driving brands towards digital excellence. As the best digital marketing agency in Chicago, USA, we're <br /> committed to delivering unparalleled results.
+
+
             <br /> <br />
-            The name “AmorServ ” conveys a strong message of dedication,
-            commitment, and passion for serving customers. The fact that the
-            name literally means “We Love to Serve You” reinforces this message
-            and sets a high standard for the company.
+            The name “AmorServ ” conveys a strong message of dedication, commitment, and passion for serving <br />customers. The fact that the name literally means “We Love to Serve You” reinforces this message and sets a <br />high standard for the company.
           </article>
         </div>
       </section>

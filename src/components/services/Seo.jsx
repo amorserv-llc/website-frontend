@@ -60,7 +60,7 @@ export default function () {
         <Navbar />
       </div>
 
-      <header className='header-bg'>
+      <header className='header-bg' style={{ height: '79vh' }}>
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>

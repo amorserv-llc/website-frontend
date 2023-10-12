@@ -9,58 +9,71 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Updated styles for the header */
 .header-bg {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 50.5625rem;
-  flex-shrink: 0;
   background: #fafafb;
+  padding: 20px 0; 
+  /* height: 67vh;  */
+
 }
 
-.header-bg .header {
-  width: 89%;
-  max-width: none;
-  height: auto;
-  /* padding-top: 50px; */
+.header {
   display: flex;
-  justify-content: space-between;
-  position: relative;
 }
 
-.header-bg .header .content {
-  /* width: 600px; */
-  height: 80%;
-  position: relative;
-  z-index: 0;
+/* Updated styles for the content */
+.content {
+  flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  padding: 0 50px;
+
+}
+
+/* Updated styles for the image */
+.image {
+  flex: 1;
+  /* height: 100%; */
+  display: flex;
   justify-content: center;
-  gap: 20px;
+  /* align-items: center; */
+    /* border: 3px solid red; */
+
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Ensure the image does not exceed the parent container's height */
 }
 
 .header-bg .header .content h1 {
   color: #226666;
   font-weight: bold;
-  width: 62.375rem;
   font-feature-settings: "clig" off, "liga" off;
   font-size: 4rem;
   font-style: normal;
   font-weight: 800;
   line-height: 5rem;
   /* border: 2px solid red; */
+  padding-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 .header-bg .header .content p {
   width: 60rem;
   justify-content: center;
   font-family: Poppins;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   justify-content: center;
   opacity: 0.45;
+  padding-bottom: 2rem;
+
   /* border: 3px solid red; */
 }
 
@@ -80,20 +93,6 @@
 .header-bg .header .content button:hover {
   transform: scale(1.05);
 }
-
-
-.header-bg .header .image {
-  width: 100%;
-  min-width: 300px; /* Adjust the minimum width as needed */
-  height: auto;
-  /* display: flex; */
-  justify-content: center;
-  padding-top: 30px;
-  z-index: 2;
-  /* border: 3px solid red; */
-  max-width: 100%;
-}
-
 
 
 /* Media queries */
