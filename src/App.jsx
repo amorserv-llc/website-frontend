@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link  } from "react-router-dom";
 import About from "./components/About";
 import Index from "./components/Index";
 import Portfolio from "./components/Portfolio";
@@ -18,6 +18,7 @@ import fav from "./Assets/fav.png";
 
 import { Helmet } from "react-helmet";
 import ScrollToTop from "./components/layout/ScrollToTop";
+import ThankYou from "./components/layout/ThankYou";
 
 function App() {
   return (
@@ -36,7 +37,10 @@ function App() {
             <Route path='/about-us' element={<ScrollToTop> <About /> </ScrollToTop >} />
             <Route path='/portfolio' element={<ScrollToTop> <Portfolio /> </ScrollToTop >} />
             <Route path='/blog' element={<ScrollToTop> <Blog /> </ScrollToTop >} />
+
             <Route path='/contact-us' element={<ScrollToTop> <Contact /> </ScrollToTop >} />
+            <Route path='/thankyou' element={<ScrollToTop><ThankYou /></ScrollToTop>} /> 
+
             <Route path='/terms/condition' element={<ScrollToTop> <TermsCondition /> </ScrollToTop >} />
             <Route path='/search-engine-optimization' element={<ScrollToTop> <Seo /> </ScrollToTop >} />
             <Route path='/social-media-marketing' element={<ScrollToTop> <Smm /> </ScrollToTop >} />

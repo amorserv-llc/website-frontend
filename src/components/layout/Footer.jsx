@@ -90,18 +90,42 @@ export default function () {
               <h5>Socials</h5>
               <ul className='list-unstyled'>
                 <li className='mb-2'>
-                  <Link to='/'>Discord</Link>
+                  <a
+                    href='https://www.linkedin.com/company/amorserv-consulting/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    LinkedIn
+                  </a>
                 </li>
                 <li className='mb-2'>
-                  <Link to='/'>Instagram</Link>
+                  <a
+                    href='https://www.instagram.com/amorservconsulting/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Instagram
+                  </a>
                 </li>
                 <li className='mb-2'>
                   <li className='mb-2'>
-                    <Link to='/'>Twitter</Link>
+                    <a
+                      href='https://twitter.com/amor_consulting?s=20/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Twitter
+                    </a>
                   </li>
                 </li>
                 <li className='mb-2'>
-                  <Link to='/'>Facebook</Link>
+                  <a
+                    href='https://web.facebook.com/amorservconsulting/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Facebook
+                  </a>
                 </li>
               </ul>
             </div>
