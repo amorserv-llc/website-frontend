@@ -54,26 +54,27 @@
   color: #226666;
   font-weight: bold;
   font-feature-settings: "clig" off, "liga" off;
-  font-size: 4rem;
+  font-size: 4.2rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 5rem;
+  line-height: 5.5rem;
   /* border: 2px solid red; */
   padding-top: 8rem;
-  padding-bottom: 2rem;
 }
 
 .header-bg .header .content p {
   width: 60rem;
   justify-content: center;
   font-family: Poppins;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   justify-content: center;
   opacity: 0.45;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+margin-bottom: 3rem;
+margin-top: -2rem;
 
   /* border: 3px solid red; */
 }
@@ -86,9 +87,10 @@
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   box-shadow: 2px 2px 4px gray;
   justify-content: center;
+  height: 50px;
 }
 
 .header-bg .header .content button:hover {

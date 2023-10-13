@@ -36,16 +36,11 @@ export default function Portfolio() {
               Explore our Portfolio for <br /> More Insight.
             </h1>
 
-            <p className='rapp'>
-              {" "}
-              Dive into our portfolio for a closer look at our dynamic projects.{" "}
-              <br />
-              Witness how our strategies have transformed businesses. Our <br />{" "}
-              work is a testament to our expertise, innovation, and <br />{" "}
-              commitment to driving success.
+            <p className='rapp' style={{ width: '100%' }}>
+            Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
             </p>
             <Link to='/about-us'>
-              <button>Free Consultation</button>
+              <button style={{ width: '30%' }}>Free Consultation</button>
             </Link>
           </div>
           <div className='image'>
