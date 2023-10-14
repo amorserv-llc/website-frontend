@@ -39,7 +39,7 @@ function App() {
             <Route path='/blog' element={<ScrollToTop> <Blog /> </ScrollToTop >} />
 
             <Route path='/contact-us' element={<ScrollToTop> <Contact /> </ScrollToTop >} />
-            <Route path='/thankyou' element={<ScrollToTop><ThankYou /></ScrollToTop>} /> 
+            <Route path='/thankyou' element={<ScrollToTop><ThankYou /></ScrollToTop>} />
 
             <Route path='/terms/condition' element={<ScrollToTop> <TermsCondition /> </ScrollToTop >} />
             <Route path='/search-engine-optimization' element={<ScrollToTop> <Seo /> </ScrollToTop >} />
