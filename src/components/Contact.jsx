@@ -21,10 +21,8 @@ export default function () {
           <div className='content'>
             <h1>Contact Information</h1>
 
-            <p className='rapp'>
-              Our digital marketing experts are always available to give you
-              <br />
-              top-notch solution to your marketing challenges.
+            <p className='rapp' style={{ width: '100%', fontSize: '1.98rem' }}>
+            Our digital marketing experts are always available to give <br /> you top-notch solutions to your marketing challenges.
             </p>
             <Link to='/contact-us'>
               <button>Learn More</button>

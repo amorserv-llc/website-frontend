@@ -64,10 +64,8 @@ export default function Smm() {
               brand awareness?
             </h1>
 
-            <p>
-              Social Media Marketing is a cost-effective way to maximize <br />
-              brand awareness and witness tangible results as your message{" "}
-              <br /> resonates across social channels.
+            <p style={{ fontSize: '1.99rem'}}>
+            Social Media Marketing is a cost-effective way to maximize <br /> brand awareness and witness tangible results as your <br /> message resonates across social channels.
             </p>
             <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>

@@ -69,10 +69,8 @@ export default function Sem() {
               your brand online?
             </h1>
 
-            <p>
-              Search engine marketing propels your brand's online visibility{" "}
-              <br /> by strategically engaging your target audience and driving
-              valuable traffic.
+            <p style={{ width: '100%', fontSize: '2rem' }}>
+            Search engine marketing propels your brand's online  <br />visibility by strategically engaging your target audience <br /> and driving valuable traffic.
             </p>
             <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>

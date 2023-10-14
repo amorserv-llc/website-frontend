@@ -65,7 +65,7 @@ const validataeEmail = () => {
   };
 
   return (
-    <div className='container d-flex justify-content-center align-items-center'>
+    <div className='container d-flex justify-content-center align-items-center pt-5'>
       <div
         className='form-container'
         style={{ width: "62.5625rem", borderRadius: "0.5rem" }}

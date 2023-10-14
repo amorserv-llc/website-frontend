@@ -370,7 +370,7 @@ export default function Index() {
             <p style={{ color: "#266", fontSize: "1.2rem" }}>
               it's Time to take controle of your online presence
             </p>
-            <div style={{ marginTop: "-19px" }} onClick={handleCallButtonClick}>
+            <div onClick={handleCallButtonClick}>
               <Link className='btn mt-4 btn-real'>Get Free Proposal</Link>
             </div>
           </div>

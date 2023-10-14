@@ -60,7 +60,7 @@ export default function Em() {
               earn loyalty for your <br /> brand?
             </h1>
 
-            <p>
+            <p style={{ width: '100%', fontSize: '1.85rem' }}>
               Empower your business with our effective email marketing <br />
               strategies. Elevate engagement, drive conversions, and foster{" "}
               <br />
