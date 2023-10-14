@@ -186,16 +186,7 @@ const validataeEmail = () => {
                 value={formData.website_id}
               />
 
-              {/* <div className='text-center ' >
-                      <button
-                        className='btn-real'
-                        type='submit'
-                        disabled={loading}
-                      >
-                        {loading && <Spinner />}{" "}
-                        {loading ? "Submitting..." : "Get Started"}
-                      </button>
-                    </div> */}
+             
               <div className='text-center'>
                 <button
                   style={{ textAlign: "center" }}
