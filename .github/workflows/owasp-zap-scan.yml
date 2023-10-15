@@ -12,4 +12,5 @@ jobs:
     - name: OWASP ZAP Full Scan
       uses: zaproxy/action-full-scan@v0.1.0
       with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         target: "https://amorservtech.net/"
