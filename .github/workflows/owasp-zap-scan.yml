@@ -6,11 +6,18 @@ on:
     branches: [ staging ]
 
 jobs:
-  build:
+  zap_scan:
     runs-on: ubuntu-latest
-    steps:     
-    - name: OWASP ZAP Full Scan
-      uses: zaproxy/action-full-scan@v0.1.0
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        target: "https://amorservtech.net/"
+    name: Scan ZAP website
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: staging
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.3.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: 'https://amorservtech.net/'
+          rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'
