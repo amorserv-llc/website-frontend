@@ -366,7 +366,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className='text-center' style={{ marginTop: "-170px" }}>
+          <div className='text-center hp'>
             <p style={{ color: "#266", fontSize: "1.2rem" }}>
               it's Time to take controle of your online presence
             </p>

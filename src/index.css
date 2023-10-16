@@ -826,9 +826,14 @@ footer ul li a {
   justify-content: center;
   padding-top: 5px;
 }
-
+.hp{
+  margin-top: -170px;
+}
 /* Media query for mobile responsiveness */
 @media screen and (max-width: 768px) {
+  .hp{
+    margin-top: -50px;
+  }
   #sec-0 p {
     text-align: center;
     color: #555;
