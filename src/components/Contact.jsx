@@ -1,15 +1,61 @@
 /** @format */
 
 // import React from "react";
+import React, { useState } from "react";
+
 import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
+import { useNavigate } from "react-router-dom";
 
 import Navbar from "./layout/TopNavbar";
-import React from "react";
 import { Link } from "react-router-dom";
 
-
 export default function () {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Post form data to a demo endpoint (replace with your actual endpoint)
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Form data sent:", data);
+        // Reset the form after successful submission
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+
+        // Navigate to the thank you page after successful submission
+        navigate("/thankyou");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
@@ -21,8 +67,9 @@ export default function () {
           <div className='content'>
             <h1>Contact Information</h1>
 
-            <p className='rapp' style={{ width: '100%', fontSize: '1.97rem'}}>
-            Our digital marketing experts are always available to give <br /> you top-notch solutions to your marketing challenges.
+            <p className='rapp' style={{ width: "100%", fontSize: "1.97rem" }}>
+              Our digital marketing experts are always available to give <br />{" "}
+              you top-notch solutions to your marketing challenges.
             </p>
             {/* <Link to='/contact-us'>
               <button>Learn More</button>
@@ -43,51 +90,73 @@ export default function () {
                   How can we help?
                 </h4>
 
-                <div className='mb-3'>
-                  <input
-                    type='name'
-                    className='contro'
-                    placeholder='Full Name'
-                  />
-                </div>
-                <div className='mb-3'>
-                  <input type='phone' className='contro' placeholder='Phone' />
-                </div>
-                <div className='mb-3'>
-                  {/* <label>Email</label> */}
-                  <input
-                    type='email'
-                    className='contro'
-                    placeholder='Work Email'
-                  />
-                </div>
-                <br /> 
-                <div className='mb-3'>
-                  <textarea 
-                    className='form-control'
-                    placeholder='Message'
-                    rows='13'
-                  ></textarea>
-                </div>
-
-                <div className='svgicon'>
-                  <a href='' className='text-decoration-none text-dark'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='63'
-                      height='65'
-                      viewBox='0 0 63 65'
-                      fill='none'
+                <form onSubmit={handleSubmit}>
+                  <div className='mb-3'>
+                    <input
+                      type='text'
+                      name='name'
+                      className='contro'
+                      placeholder='Full Name'
+                      value={formData.name}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className='mb-3'>
+                    <input
+                      type='tel'
+                      name='phone'
+                      className='contro'
+                      placeholder='Phone'
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className='mb-3'>
+                    <input
+                      type='email'
+                      name='email'
+                      className='contro'
+                      placeholder='Work Email'
+                      value={formData.email}
+                      onChange={handleInputChange}
+                    />
+                  </div>
+                  <div className='mb-3'>
+                    <textarea
+                      name='message'
+                      className='form-control'
+                      placeholder='Message'
+                      rows='13'
+                      value={formData.message}
+                      onChange={handleInputChange}
+                    ></textarea>
+                  </div>
+                  <div className='svgicon'>
+                    <button
+                      type='submit'
+                      className='text-decoration-none text-dark'
+                      style={{
+                        background: 'none',  // Remove background color
+                        border: 'none',      // Remove border
+                      }}
                     >
-                      <path
-                        d='M24.0268 37.1543L24.0432 37.2321L28.5649 58.6777L31.9904 59.9605L60.7947 18.8452L24.0268 37.1543ZM24.0268 37.1543L23.9684 37.1002M24.0268 37.1543L23.9684 37.1002M23.9684 37.1002L9.46662 23.6808L10.783 20.1657L59.1377 15.8402L23.9684 37.1002ZM60.9112 16.7849C60.736 16.4706 60.4763 16.2155 60.1627 16.0485C59.8491 15.8815 59.494 15.8092 59.1382 15.8401L60.9112 16.7849ZM60.9112 16.7849C61.085 17.1001 61.1669 17.4611 61.1465 17.8261C61.1261 18.1911 61.0042 18.5444 60.7951 18.8447L60.9112 16.7849ZM30.8975 55.8074L31.0164 56.3711L31.3469 55.8993L56.933 19.3762L57.2415 18.9358L56.706 18.9837L13.4804 22.851L12.9197 22.9011L13.3329 23.2835L25.3912 34.4419L25.5208 34.5619L25.6772 34.4797L46.4136 23.5876L47.6987 26.1729L27.115 36.9853L26.9476 37.0732L26.9866 37.2582L30.8975 55.8074Z'
-                        fill='#555555'
-                        stroke='#555555'
-                        stroke-width='0.5'
-                      />
-                    </svg>
-                  </a>
-                </div>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='63'
+                        height='65'
+                        viewBox='0 0 63 65'
+                        fill='none'
+                      >
+                        <path
+                          d='M24.0268 37.1543L24.0432 37.2321L28.5649 58.6777L31.9904 59.9605L60.7947 18.8452L24.0268 37.1543ZM24.0268 37.1543L23.9684 37.1002M24.0268 37.1543L23.9684 37.1002M23.9684 37.1002L9.46662 23.6808L10.783 20.1657L59.1377 15.8402L23.9684 37.1002ZM60.9112 16.7849C60.736 16.4706 60.4763 16.2155 60.1627 16.0485C59.8491 15.8815 59.494 15.8092 59.1382 15.8401L60.9112 16.7849ZM60.9112 16.7849C61.085 17.1001 61.1669 17.4611 61.1465 17.8261C61.1261 18.1911 61.0042 18.5444 60.7951 18.8447L60.9112 16.7849ZM30.8975 55.8074L31.0164 56.3711L31.3469 55.8993L56.933 19.3762L57.2415 18.9358L56.706 18.9837L13.4804 22.851L12.9197 22.9011L13.3329 23.2835L25.3912 34.4419L25.5208 34.5619L25.6772 34.4797L46.4136 23.5876L47.6987 26.1729L27.115 36.9853L26.9476 37.0732L26.9866 37.2582L30.8975 55.8074Z'
+                          fill='#555555'
+                          stroke='#555555'
+                          stroke-width='0.5'
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
 
