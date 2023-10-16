@@ -60,7 +60,7 @@ export default function Em() {
               earn loyalty for your <br /> brand?
             </h1>
 
-            <p style={{ width: '100%', fontSize: '1.85rem' }}>
+            <p style={{ width: "100%", fontSize: "1.85rem" }}>
               Empower your business with our effective email marketing <br />
               strategies. Elevate engagement, drive conversions, and foster{" "}
               <br />
@@ -80,8 +80,9 @@ export default function Em() {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 style={{ fontSize: '3rem', lineHeight: '3.5rem'}}>
-        Our Success-Driven Email <br /> Marketing Services        </h2>
+        <h2 style={{ fontSize: "3rem", lineHeight: "3.5rem" }}>
+          Our Success-Driven Email <br /> Marketing Services{" "}
+        </h2>
         <p className='text-center pt-4'>
           Your Path to Email Marketing Excellence Starts Here.
         </p>
@@ -89,60 +90,73 @@ export default function Em() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5 '>
-                  <div className='card-body'>
-                    <img src={ff1} alt='image' />
-                    <h4 className='card-title'>Brand Story Emails</h4> <br />
-                    <p className='card-text'>
-                    Craft a captivating brand narrative <br /> with our story emails, infusing your <br />identity for emotional connection and <br /> loyalty
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff1} alt='image' />
+                  <h4 className='card-title'>Brand Story Emails</h4> <br />
+                  <p className='card-text'>
+                    Craft a captivating brand narrative <br /> with our story
+                    emails, infusing your <br />
+                    identity for emotional connection and <br /> loyalty
+                  </p>
+                </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff2} alt='image' />
-                    <h4 className='card-title'>Transactional Emails</h4> <br />
-                    <p className='card-text'>
-                    Blend functionality and engagement <br /> with transactional emails. Elevate <br /> user experience, integrating <br /> personalized content for meaningful <br /> interactions.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff2} alt='image' />
+                  <h4 className='card-title'>Transactional Emails</h4> <br />
+                  <p className='card-text'>
+                    Blend functionality and engagement <br /> with transactional
+                    emails. Elevate <br /> user experience, integrating <br />{" "}
+                    personalized content for meaningful <br /> interactions.
+                  </p>
+                </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff3} alt='image' />
-                    <h4 className='card-title'>Email Newsletters</h4> <br />
-                    <p className='card-text'>
-                    Engage and inform subscribers with <br /> insightful email newsletters. Our <br /> expertly designed content establishes <br /> authority and anticipation.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff3} alt='image' />
+                  <h4 className='card-title'>Email Newsletters</h4> <br />
+                  <p className='card-text'>
+                    Engage and inform subscribers with <br /> insightful email
+                    newsletters. Our <br /> expertly designed content
+                    establishes <br /> authority and anticipation.
+                  </p>
+                </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff4} alt='image' />
-                    <h4 className='card-title'>Dedicated Emails</h4> <br />
-                    <p className='card-text'>
-                    Spotlight offers, events, and <br /> announcements with dedicated <br />emails. Our attention-grabbing <br /> content drives immediate action.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff4} alt='image' />
+                  <h4 className='card-title'>Dedicated Emails</h4> <br />
+                  <p className='card-text'>
+                    Spotlight offers, events, and <br /> announcements with
+                    dedicated <br />
+                    emails. Our attention-grabbing <br /> content drives
+                    immediate action.
+                  </p>
                 </div>
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff5} alt='image' />
-                    <h4 className='card-title'>Lead Nurturing Emails</h4> <br />
-                    <p className='card-text'>
-                    Nurture leads with tailored emails, <br /> converting prospects into loyal <br /> customers, boosting conversion <br /> rates.
-                    </p>
-                  </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff6} alt='image' />
-                    <h4 className='card-title'>Sponsorship Emails</h4> <br />
-                    <p className='card-text'>
-                    Enhance partnerships with impactful <br />sponsorship emails. Create <br /> compelling content fostering mutual <br /> success and engagement.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff5} alt='image' />
+                  <h4 className='card-title'>Lead Nurturing Emails</h4> <br />
+                  <p className='card-text'>
+                    Nurture leads with tailored emails, <br /> converting
+                    prospects into loyal <br /> customers, boosting conversion{" "}
+                    <br /> rates.
+                  </p>
                 </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff6} alt='image' />
+                  <h4 className='card-title'>Sponsorship Emails</h4> <br />
+                  <p className='card-text'>
+                    Enhance partnerships with impactful <br />
+                    sponsorship emails. Create <br /> compelling content
+                    fostering mutual <br /> success and engagement.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,7 +164,9 @@ export default function Em() {
 
       <div className='text-center whyseo pt-5 pb-5'>
         <div className='container'>
-          <h2 style={{ fontSize: '3rem' }}>Does Email Marketing Still <br /> Work?</h2>
+          <h2 style={{ fontSize: "3rem" }}>
+            Does Email Marketing Still <br /> Work?
+          </h2>
           <p>
             Over the years, Email marketing stil remains effective in driving
             engagement <br /> and conversions.
@@ -159,24 +175,31 @@ export default function Em() {
           <div className='row'>
             <div className='col-md-3'>
               <h1>$40</h1>
-              <p>expected average ROI for <br />every $1 spent on email <br /> marketing.</p>
+              <p>
+                expected average ROI for <br />
+                every $1 spent on email <br /> marketing.
+              </p>
             </div>
             <div className='col-md-3'>
               <h1>81%</h1>
               <p>
-                of businesses still rely on email <br />as their primary customer
-                <br />acquisition channel.
+                of businesses still rely on email <br />
+                as their primary customer
+                <br />
+                acquisition channel.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>5hrs</h1>
-              <p>a day spent checking email <br /> (work+personal)</p>
+              <p>
+                a day spent checking email <br /> (work+personal)
+              </p>
             </div>
             <div className='col-md-3'>
               <h1>49%</h1>
               <p>
-                of consumers like to receive <br /> promotional emails <br /> from their
-                favorite brands.
+                of consumers like to receive <br /> promotional emails <br />{" "}
+                from their favorite brands.
               </p>
             </div>
           </div>
@@ -186,53 +209,74 @@ export default function Em() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3 style={{ fontSize: '3rem' }}>Why you need email marketing <br /> services</h3>
+            <h3 style={{ fontSize: "3rem" }}>
+              Why you need email marketing <br /> services
+            </h3>
 
             <p>
-            Email marketing is essential for propelling your business forward. It's a dynamic tool that not only nurtures customer <br /> relationships but also drives conversions. Our  email marketing services are meticulously designed to create <br /> personalized campaigns that resonate with your audience, leading to increased engagement and measurable results.
+              Email marketing is essential for propelling your business forward.
+              It's a dynamic tool that not only nurtures customer <br />{" "}
+              relationships but also drives conversions. Our email marketing
+              services are meticulously designed to create <br /> personalized
+              campaigns that resonate with your audience, leading to increased
+              engagement and measurable results.
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
                 <img src={ff7} alt='image' />
-                <h3 className="pt-4">Build Customer Loyalty</h3>
+                <h3 className='pt-4'>Build Customer Loyalty</h3>
                 <p>
-                Nurture customer relationships with <br /> targeted email campaigns. Our <br /> strategies foster loyalty, repeat <br /> business, and brand advocacy.
+                  Nurture customer relationships with <br /> targeted email
+                  campaigns. Our <br /> strategies foster loyalty, repeat <br />{" "}
+                  business, and brand advocacy.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff8} alt='image' />
-                <h3 className="pt-4">Expand Your Business Reach</h3>
+                <h3 className='pt-4'>Expand Your Business Reach</h3>
                 <p>
-                Expand your market reach with global <br /> email marketing. Connect with <br /> potential customers worldwide, <br /> fostering growth.
+                  Expand your market reach with global <br /> email marketing.
+                  Connect with <br /> potential customers worldwide, <br />{" "}
+                  fostering growth.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff9} alt='image' />
-                <h3 className="pt-4">Connect With Different Audiences</h3>
+                <h3 className='pt-4'>Connect With Different Audiences</h3>
                 <p>
-                Tailor messages for diverse <br />audiences, driving meaningful <br /> interactions with effective <br /> communication.
+                  Tailor messages for diverse <br />
+                  audiences, driving meaningful <br /> interactions with
+                  effective <br /> communication.
                 </p>
               </div>
 
               <div className='col-md-4 pt-5'>
                 <img src={ff10} alt='image' />
-                <h3 className="pt-4">Save Time and Effort</h3>
+                <h3 className='pt-4'>Save Time and Effort</h3>
                 <p>
-                Streamline communication with <br /> automated email campaigns, freeing <br />your time for critical business <br /> aspects.
+                  Streamline communication with <br /> automated email
+                  campaigns, freeing <br />
+                  your time for critical business <br /> aspects.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff11} alt='image' />
-                <h3 className="pt-4">Test Email Campaigns <br /> and Drive Strong Results</h3>
+                <h3 className='pt-4'>
+                  Test Email Campaigns <br /> and Drive Strong Results
+                </h3>
                 <p>
-                Optimize outcomes with well-tested <br />email campaigns. Meticulous data <br /> analysis ensures higher open rates, <br /> click-throughs, conversions.
+                  Optimize outcomes with well-tested <br />
+                  email campaigns. Meticulous data <br /> analysis ensures
+                  higher open rates, <br /> click-throughs, conversions.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff12} alt='image' />
-                <h3 className="pt-4">Track Your Analytics</h3>
+                <h3 className='pt-4'>Track Your Analytics</h3>
                 <p>
-                Harness data-driven decision-making <br /> with our email marketing.  Real-time<br /> analytics refine strategies, maximize <br /> ROI.
+                  Harness data-driven decision-making <br /> with our email
+                  marketing. Real-time
+                  <br /> analytics refine strategies, maximize <br /> ROI.
                 </p>
               </div>
             </div>
@@ -243,80 +287,110 @@ export default function Em() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3 style={{ fontSize: '3rem' }}>Benefits of using our email marketing services</h3>
+            <h3 style={{ fontSize: "3rem" }}>
+              Benefits of using our email marketing services
+            </h3>
 
             <p>
-            Experience heightened customer engagement and amplified conversions with our data-driven email <br /> marketing expertise.
+              Experience heightened customer engagement and amplified
+              conversions with our data-driven email <br /> marketing expertise.
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
                 <img src={ff1} alt='image' />
-                <h3 h3 className="pt-4">Personalized Campaigns</h3>
+                <h3 h3 className='pt-4'>
+                  Personalized Campaigns
+                </h3>
                 <p>
-                Tailored content resonates. Our email <br /> marketing delivers personalized <br /> campaigns, boosting engagement <br /> and conversion rates.
+                  Tailored content resonates. Our email <br /> marketing
+                  delivers personalized <br /> campaigns, boosting engagement{" "}
+                  <br /> and conversion rates.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff2} alt='image' />
-                <h3 h3 className="pt-4">Targeted Audience Engagement</h3>
+                <h3 h3 className='pt-4'>
+                  Targeted Audience Engagement
+                </h3>
                 <p>
-                Reach the right audience with <br /> precision. Our strategies ensure <br /> emails maximize campaign impact.
+                  Reach the right audience with <br /> precision. Our strategies
+                  ensure <br /> emails maximize campaign impact.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff6} alt='image' />
-                <h3 h3 className="pt-4">Measurable ROI</h3>
+                <h3 h3 className='pt-4'>
+                  Measurable ROI
+                </h3>
                 <p>
-                Track every action with <br /> comprehensive analytics. Real-time <br /> insights into open rates, click- <br />throughs, and conversions optimize  <br />ROI
-              </p>
+                  Track every action with <br /> comprehensive analytics.
+                  Real-time <br /> insights into open rates, click- <br />
+                  throughs, and conversions optimize <br />
+                  ROI
+                </p>
               </div>
 
               <div className='col-md-4 pt-5'>
                 <img src={ff3} alt='image' />
-                <h3 h3 className="pt-4">Real-Time Communication</h3>
+                <h3 h3 className='pt-4'>
+                  Real-Time Communication
+                </h3>
                 <p>
-                Stay current with your audience. Email <br /> marketing delivers timely updates to <br /> subscribers' inboxes, keeping your brand <br /> top-of-mind.
+                  Stay current with your audience. Email <br /> marketing
+                  delivers timely updates to <br /> subscribers' inboxes,
+                  keeping your brand <br /> top-of-mind.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff4} alt='image' />
-                <h3 h3 className="pt-4">Flexibility and Versatility</h3>
+                <h3 h3 className='pt-4'>
+                  Flexibility and Versatility
+                </h3>
                 <p>
-                Our services offer promotional <br /> content, educational resources, and <br />personalized recommendations to <br /> suit your goals.
+                  Our services offer promotional <br /> content, educational
+                  resources, and <br />
+                  personalized recommendations to <br /> suit your goals.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff5} alt='image' />
-                <h3 h3 className="pt-4">Lead Nurturing and Conversion</h3>
+                <h3 h3 className='pt-4'>
+                  Lead Nurturing and Conversion
+                </h3>
                 <p>
-                Guide leads through the funnel with <br />nurturing emails. Provide valuable <br /> information for conversions and loyal <br />customers.
+                  Guide leads through the funnel with <br />
+                  nurturing emails. Provide valuable <br /> information for
+                  conversions and loyal <br />
+                  customers.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
-             <div className='col-12 text-center'>
+            <div className='col-12 text-center'>
               <h3 className='mb-4'>Supercharge Your ROI Now</h3>
-             </div>
+            </div>
             <p>
-            Contact us for a free consultation and discover the Email marketing <br />strategies that can skyrocket your return on investment
-             </p>
-           </div>
+              Contact us for a free consultation and discover the Email
+              marketing <br />
+              strategies that can skyrocket your return on investment
+            </p>
+          </div>
 
-      <ContactForm />
-
-
-           </div>
-           </section>
+          <ContactForm />
+        </div>
+      </section>
 
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-5' style={{ fontSize: '3rem' }}>Email Marketing FAQs</h3>
+            <h3 className='mb-5' style={{ fontSize: "3rem" }}>
+              Email Marketing FAQs
+            </h3>
           </div>
 
           <div className='container'>
@@ -336,7 +410,9 @@ export default function Em() {
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is the significance of email marketing for businesses?{" "}
+                <span className='faqspan'>
+                  What is the significance of email marketing for businesses?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -371,7 +447,7 @@ export default function Em() {
             </div>
           </div>
           <br />
-         
+
           <div className='container'>
             <p>
               <button
@@ -389,7 +465,9 @@ export default function Em() {
                 }}
                 onClick={() => handleButtonClick(2)}
               >
-                How can personalized email campaigns benefit my brand?{" "}
+                <span className='faqspan'>
+                  How can personalized email campaigns benefit my brand?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -423,7 +501,7 @@ export default function Em() {
           </div>
 
           <br />
-         
+
           <div className='container'>
             <p>
               <button
@@ -441,7 +519,9 @@ export default function Em() {
                 }}
                 onClick={() => handleButtonClick(3)}
               >
-                Can email marketing help with lead generation?{" "}
+                <span className='faqspan'>
+                  Can email marketing help with lead generation?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -475,7 +555,7 @@ export default function Em() {
           </div>
 
           <br />
-         
+
           <div className='container'>
             <p>
               <button
@@ -493,8 +573,11 @@ export default function Em() {
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                How can automated email campaigns save time and improve
+                                <span className='faqspan'>
+                                                  How can automated email campaigns save time and improve
                 efficiency?{" "}
+                                </span>
+
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

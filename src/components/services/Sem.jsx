@@ -262,7 +262,6 @@ export default function Sem() {
                 src={se1}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-140px" }}
               />
               <a href='' className='px-2 serv-link'>
                 Pay-Per-Click (PPC){" "}
@@ -295,7 +294,6 @@ export default function Sem() {
                 src={se4}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-100px" }}
               />
               <a href='' className='px-2 serv-link'>
                 Ad Copywriting
@@ -309,7 +307,6 @@ export default function Sem() {
                 src={se5}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-110px" }}
               />
               <a href='' className='px-2 serv-link'>
                 Ad Campaign Creation{" "}
@@ -323,7 +320,6 @@ export default function Sem() {
                 src={se6}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-30px" }}
               />
               <a href='' className='px-2 serv-link'>
                 Performance Analytics
