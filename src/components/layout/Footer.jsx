@@ -32,23 +32,23 @@ export default function () {
                   left: "5px",
                 }}
               >
-                <Link to='/'>
+                <a href='https://web.facebook.com/amorservconsulting/'>
                   <span>
                     <img src={image1} alt='image1' style={{ width: "50px" }} />
                   </span>
-                </Link>
+                </a>
 
-                <Link to='/'>
+                <a href='https://twitter.com/amor_consulting?s=20/'>
                   <span>
                     <img src={image2} alt='image2' style={{ width: "50px" }} />
                   </span>
-                </Link>
+                </a>
 
-                <Link to='/'>
+                <a href='https://www.instagram.com/amorservconsulting/'>
                   <span>
                     <img src={image3} alt='image3' style={{ width: "50px" }} />
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
 
