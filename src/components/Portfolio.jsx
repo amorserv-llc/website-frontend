@@ -39,9 +39,12 @@ export default function Portfolio() {
             <p className='rapp' style={{ width: '100%' }}>
             Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
             </p>
-            <Link to='/about-us'>
-              <button style={{ width: '30%' }}>Free Consultation</button>
-            </Link>
+            <div className="pbtn">
+              <Link to='/about-us'>
+              <button  style={{ width: '30%' }}>Free Consultation</button>
+            </Link> 
+            </div>
+           
           </div>
           <div className='image'>
             <img src={portfolio} className='img-fluid' alt='header-image' />
