@@ -60,7 +60,7 @@ export default function () {
         <Navbar />
       </div>
 
-      <header className='header-bg' style={{ height: '80.8vh' }}>
+      <header className='header-bg' style={{ height: "80.8vh" }}>
         <div className='header'>
           <div className='content'>
             <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
@@ -83,136 +83,166 @@ export default function () {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className="pb-4">
-          Our Comprehensive SEO Services{" "}
-        </h2>
+        <h2 className='pb-4'>Our Comprehensive SEO Services </h2>
         <p className='text-center'>
-          Maximize your online presence with our SEO services for <br />visibility
-          and success.
+          Maximize your online presence with our SEO services for <br />
+          visibility and success.
         </p>
         <div className='contents'>
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff} alt='image' />
-                    <h4 className='card-title'>
-                      Keyword Research & Strategy
-                    </h4>{" "}
+                <div className='card-body'>
+                  <img src={ff} alt='image' />
+                  <h4 className='card-title'>
+                    Keyword Research & Strategy
+                  </h4>{" "}
+                  <br />
+                  <p className='card-text'>
+                    Uncover your online potential with our <br /> expert keyword
+                    research and strategy <br /> to boost your digital success.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff1} alt='image' />
+                  <h4 className='card-title'>Link Building</h4> <br />
+                  <p className='card-text'>
+                    Enhance your website's authority <br /> through strategic
+                    link-building <br /> techniques to aid search engine <br />{" "}
+                    rankings.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff2} alt='image' />
+                  <h4 className='card-title'>Technical SEO</h4> <br />
+                  <p className='card-text'>
+                    Enhance website performance and <br /> user experience with
+                    technical <br /> optimizations for effective search <br />{" "}
+                    engine visibility.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff9} alt='image' />
+                  <h4 className='card-title'>Local SEO</h4> <br />
+                  <p className='card-text'>
+                    Dominate your local market with <br /> targeted
+                    optimizations that put your <br /> business on the map,
+                    making it easier <br /> for nearby customers to find you{" "}
+                    <br /> online.
+                  </p>
+                </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff11} alt='image' />
+                  <h4 className='card-title'>On-Page SEO</h4> <br />
+                  <p className='card-text'>
+                    Craft compelling web pages <br /> optimized for search
+                    engines and <br />
+                    users alike, utilizing strategic keyword <br /> placement,
+                    meta tags, and content <br /> enhancements.
+                  </p>
+                </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff10} alt='image' />
+                  <h4 className='card-title'>Off-Page SEO</h4> <br />
+                  <p className='card-text'>
+                    Expand your digital footprint through <br />
+                    off-page strategies like content <br /> outreach and social
+                    media <br /> engagement, enhancing online <br /> authority.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff3} alt='image' />
+                  <h4 className='card-title'>Franchise SEO</h4> <br />
+                  <p className='card-text'>
+                    Tailored strategies support franchise <br /> businesses,
+                    ensuring consistent <br /> online presence across multiple{" "}
                     <br />
-                    <p className='card-text'>
-                    Uncover your online potential with our <br /> expert keyword research and strategy <br /> to boost your digital success.
-                    </p>
+                    locations, maximizing local visibility.
+                  </p>
                 </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff1} alt='image' />
-                    <h4 className='card-title'>Link Building</h4> <br />
-                    <p className='card-text'>
-                    Enhance your website's authority <br /> through strategic link-building <br /> techniques to aid search engine <br /> rankings.
-                    </p>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff2} alt='image' />
-                    <h4 className='card-title'>Technical SEO</h4> <br />
-                    <p className='card-text'>
-                    Enhance website performance and <br /> user experience with technical <br /> optimizations for effective search <br /> engine visibility.
-                    </p>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff9} alt='image' />
-                    <h4 className='card-title'>Local SEO</h4> <br />
-                    <p className='card-text'>
-                    Dominate your local market with <br /> targeted optimizations that put your <br /> business on the map, making it easier <br /> for nearby customers to find you <br /> online. 
-                    </p>
+                <div className='card-body'>
+                  <img src={ff5} alt='image' />
+                  <h4 className='card-title'>Shopify SEO</h4> <br />
+                  <p className='card-text'>
+                    Boost Shopify store visibility and <br /> rankings using
+                    specialized SEO for <br /> product pages, collections, and
+                    site <br /> performance.
+                  </p>
                 </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff11} alt='image' />
-                    <h4 className='card-title'>On-Page SEO</h4> <br />
-                    <p className='card-text'>
-                    Craft compelling web pages <br /> optimized for search engines and <br />users alike, utilizing strategic keyword <br /> placement, meta tags, and content <br /> enhancements.
-                    </p>
-                  </div>
-              </div>
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff10} alt='image' />
-                    <h4 className='card-title'>Off-Page SEO</h4> <br />
-                    <p className='card-text'>
-                    Expand your digital footprint through <br />off-page strategies like content <br /> outreach and social media <br /> engagement, enhancing online <br /> authority.
-                    </p>
-                  </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff3} alt='image' />
-                    <h4 className='card-title'>Franchise SEO</h4> <br />
-                    <p className='card-text'>
-                    Tailored strategies support franchise <br /> businesses, ensuring consistent <br /> online presence across multiple <br />locations, maximizing local visibility.
-                    </p>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff5} alt='image' />
-                    <h4 className='card-title'>Shopify SEO</h4> <br />
-                    <p className='card-text'>
-                    Boost Shopify store visibility and <br /> rankings using specialized SEO for <br /> product pages, collections, and site <br /> performance.
-                    </p>
-                  </div>
-              </div>
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff4} alt='image' />
-                    <h4 className='card-title'>Amazon SEO</h4> <br />
-                    <p className='card-text'>
-                    Stand out in the competitive Amazon <br /> marketplace with Amazon-specific <br /> SEO tactics that drive your products <br />to the top of search results, <br /> increasing visibility and sales.
-                    </p>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff6} alt='image' />
-                    <h4 className='card-title'>eCommerce SEO</h4> <br />
-                    <p className='card-text'>
-                    Transform your online store into a <br />powerhouse with comprehensive SEO <br /> strategies tailored to ecommerce <br /> platforms, driving higher traffic and <br /> boosting sales.
-                    </p>
-                </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff8} alt='image' />
-                    <h4 className='card-title'>Content Writing</h4> <br />
-                    <p className='card-text'>
-                    Ignite your digital journey with SEO- <br />optimized content that resonates, <br /> boosts engagement, and establishes <br />industry leadership
-                    </p>
-                </div>
-              </div>
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff7} alt='image' />
-                    <h4 className='card-title'>
-                      Conversion Rate <br /> Optimization (CRO)
-                    </h4>{" "}
+                <div className='card-body'>
+                  <img src={ff4} alt='image' />
+                  <h4 className='card-title'>Amazon SEO</h4> <br />
+                  <p className='card-text'>
+                    Stand out in the competitive Amazon <br /> marketplace with
+                    Amazon-specific <br /> SEO tactics that drive your products{" "}
                     <br />
-                    <p className='card-text'>
-                    Stand out in the competitive Amazon <br /> marketplace with Amazon-specific <br />SEO tactics that drive your products <br />to the top of search results, <br /> increasing visibility and sales.
-                    </p>
-                  </div>
+                    to the top of search results, <br /> increasing visibility
+                    and sales.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff6} alt='image' />
+                  <h4 className='card-title'>eCommerce SEO</h4> <br />
+                  <p className='card-text'>
+                    Transform your online store into a <br />
+                    powerhouse with comprehensive SEO <br /> strategies tailored
+                    to ecommerce <br /> platforms, driving higher traffic and{" "}
+                    <br /> boosting sales.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff8} alt='image' />
+                  <h4 className='card-title'>Content Writing</h4> <br />
+                  <p className='card-text'>
+                    Ignite your digital journey with SEO- <br />
+                    optimized content that resonates, <br /> boosts engagement,
+                    and establishes <br />
+                    industry leadership
+                  </p>
+                </div>
+              </div>
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff7} alt='image' />
+                  <h4 className='card-title'>
+                    Conversion Rate <br /> Optimization (CRO)
+                  </h4>{" "}
+                  <br />
+                  <p className='card-text'>
+                    Stand out in the competitive Amazon <br /> marketplace with
+                    Amazon-specific <br />
+                    SEO tactics that drive your products <br />
+                    to the top of search results, <br /> increasing visibility
+                    and sales.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -221,7 +251,9 @@ export default function () {
 
       <div className='text-center whyseo p-5'>
         <div className='container'>
-          <h2 className="pb-3" style={{ fontSize: '3rem' }}>Why you need SEO?</h2>
+          <h2 className='pb-3' style={{ fontSize: "3rem" }}>
+            Why you need SEO?
+          </h2>
           <p>
             Enhance Your Brand's Visibility and Success with Our Unmatched SEO
             Expertise.
@@ -230,25 +262,32 @@ export default function () {
           <div className='row'>
             <div className='col-md-3'>
               <h1>70%</h1>
-              <p>of online experiences  begin <br /> with a search engine</p>
+              <p>
+                of online experiences begin <br /> with a search engine
+              </p>
             </div>
             <div className='col-md-3'>
               <h1>90%</h1>
               <p>
-                of global traffic comes from <br /> Google search, Google Images, <br />and
-                Google Maps.
+                of global traffic comes from <br /> Google search, Google
+                Images, <br />
+                and Google Maps.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>53.5%</h1>
               <p>
-                of global traffic comes from <br />Google search, Google <br />Images, and
-                Google Maps.
+                of global traffic comes from <br />
+                Google search, Google <br />
+                Images, and Google Maps.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>0.78%</h1>
-              <p>of Google searchers click on <br />results from the 2nd page.</p>
+              <p>
+                of Google searchers click on <br />
+                results from the 2nd page.
+              </p>
             </div>
           </div>
         </div>
@@ -257,7 +296,9 @@ export default function () {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3 className="pb-4" style={{ fontSize: '3rem' }}>Why Choose Amorserv SEO Services?</h3>
+            <h3 className='pb-4' style={{ fontSize: "3rem" }}>
+              Why Choose Amorserv SEO Services?
+            </h3>
 
             <p>
               Our SEO experts have in-depth knowledge of SEO best practices and
@@ -266,45 +307,59 @@ export default function () {
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
                 <img src={ff12} alt='image' />
-                <h3 className="pt-4">Experience Matters</h3>
+                <h3 className='pt-4'>Experience Matters</h3>
                 <p>
-                Years of SEO expertise bring valuable <br />insights and strategies that adapt to <br />evolving algorithms and industry <br />changes
+                  Years of SEO expertise bring valuable <br />
+                  insights and strategies that adapt to <br />
+                  evolving algorithms and industry <br />
+                  changes
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff13} alt='image' />
-                <h3 className="pt-4">Dedicated SEO Professionals</h3>
+                <h3 className='pt-4'>Dedicated SEO Professionals</h3>
                 <p>
-                Our passionate SEO specialists craft <br /> tailored strategies dedicated to your <br /> brand's unique goals and challenges.
+                  Our passionate SEO specialists craft <br /> tailored
+                  strategies dedicated to your <br /> brand's unique goals and
+                  challenges.
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff14} alt='image' />
-                <h3 className="pt-4">Relationships & Results</h3>
+                <h3 className='pt-4'>Relationships & Results</h3>
                 <p>
-                We build lasting partnerships, your <br /> success is ours, delivering remarkable <br /> outcomes.
+                  We build lasting partnerships, your <br /> success is ours,
+                  delivering remarkable <br /> outcomes.
                 </p>
               </div>
 
               <div className='col-md-4 pt-5'>
                 <img src={ff15} alt='image' />
-                <h3 className="pt-4">We’re Always Getting Better</h3>
+                <h3 className='pt-4'>We’re Always Getting Better</h3>
                 <p>
-                In the dynamic digital landscape, we <br />lead. Continuously refining skills,<br /> staying current with trends, ensuring <br /> cutting-edge strategies
+                  In the dynamic digital landscape, we <br />
+                  lead. Continuously refining skills,
+                  <br /> staying current with trends, ensuring <br />{" "}
+                  cutting-edge strategies
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
                 <img src={ff7} alt='image' />
-                <h3 className="pt-4">We Play Fair</h3>
+                <h3 className='pt-4'>We Play Fair</h3>
                 <p>
-                Ethics are core. Our SEO follows best <br /> practices, safeguarding your online <br /> reputation and ensuring success
+                  Ethics are core. Our SEO follows best <br /> practices,
+                  safeguarding your online <br /> reputation and ensuring
+                  success
                 </p>
               </div>
               <div className='col-md-4 pt-5 '>
                 <img src={ff2} alt='image' />
-                <h3 className="pt-4">Transparent Reporting</h3>
+                <h3 className='pt-4'>Transparent Reporting</h3>
                 <p>
-                Open communication is key. Our <br />reporting offers clear insights into <br />your SEO progress, showcasing <br />tangible results.
+                  Open communication is key. Our <br />
+                  reporting offers clear insights into <br />
+                  your SEO progress, showcasing <br />
+                  tangible results.
                 </p>
               </div>
             </div>
@@ -315,7 +370,9 @@ export default function () {
       <section id='sec-6' className='py-5'>
         <div className='container-lg'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4' style={{ fontSize: '3rem' }}>Amorserv Agile SEO Methodology</h3>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+              Amorserv Agile SEO Methodology
+            </h3>
           </div>
           <p
             className='text-center'
@@ -356,20 +413,20 @@ export default function () {
               <h3 className='mb-4'>Let’s Grow your Business</h3>
             </div>
             <p>
-            Fuel your brand's growth with our best SEO strategies that drive <br /> success.
+              Fuel your brand's growth with our best SEO strategies that drive{" "}
+              <br /> success.
             </p>
           </div>
-      <ContactForm />
-
-
-          </div>
-          </section>
-
+          <ContactForm />
+        </div>
+      </section>
 
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12'>
-            <h3 className='mb-4 pb-5' style={{ fontSize: '3rem' }}>Search Engine Optimization FAQs</h3>
+            <h3 className='mb-4 pb-5' style={{ fontSize: "3rem" }}>
+              Search Engine Optimization FAQs
+            </h3>
           </div>
           <div className='container'>
             <p>
@@ -388,7 +445,9 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is SEO and why is it important?
+                <span className='faqspan'>
+                  What is SEO and why is it important?
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -441,7 +500,9 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(2)}
               >
-                How long does it take to see SEO results?
+                <span className='faqspan'>
+                  How long does it take to see SEO results?
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -492,7 +553,9 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(3)}
               >
-                What are keywords and how do they impact SEO?{" "}
+                <span className='faqspan'>
+                  What are keywords and how do they impact SEO?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -545,7 +608,9 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                Is local SEO important for businesses?{" "}
+                <span className='faqspan'>
+                  Is local SEO important for businesses?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -579,7 +644,7 @@ export default function () {
               </div>
             </div>
           </div>
-          <br /> 
+          <br />
           <div className='container'>
             <p>
               <button
@@ -597,8 +662,10 @@ export default function () {
                 }}
                 onClick={() => handleButtonClick(5)}
               >
-                What is the difference between on-page and off-page SEO?{" "}
-                <span style={{ float: "right" }}>
+                <span className='faqspan'>
+                  What is the difference between on-page and off-page SEO?{" "}
+                </span>
+                <span className='faqsvg' style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     width='45'
@@ -624,7 +691,10 @@ export default function () {
               id='collapseExample2'
             >
               <div className='card card-boo'>
-              On-page SEO involves optimizing elements within your website, like content and HTML tags. Off-page SEO focuses on external factors, primarily building quality backlinks from reputable sources to increase your site's authority. 
+                On-page SEO involves optimizing elements within your website,
+                like content and HTML tags. Off-page SEO focuses on external
+                factors, primarily building quality backlinks from reputable
+                sources to increase your site's authority.
               </div>
             </div>
           </div>

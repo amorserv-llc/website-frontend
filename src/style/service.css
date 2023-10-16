@@ -12,6 +12,7 @@
 section.service-feat {
   width: 100%;
   margin: auto;
+  /* border: 2px solid red; */
 }
 
 section.service-feat h2 {
@@ -241,8 +242,14 @@ section.trust-agency .contents .detail .image img {
   section.service-feat h2 {
     width: 90%;
     font-size: 2.7vw;
+    /* border: 2px solid red; */
   }
+  .lastcard {
+    border: 3px solid red;
+    margin-right:300px;
+    display:none;
 
+  }
   section.service-feat .contents {
     padding-top: 30px;
   }
@@ -439,7 +446,16 @@ section.trust-agency .contents .detail .image img {
     /* border: 3px solid red; */
     width: 30rem;
   }
-
+  .faqspan {
+    /* color: red; */
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+  .faqsvg {
+    /* border: 2px solid red; */
+    /* height: 10px; */
+  }
   .custom-card {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
       0px 8px 12px 6px rgba(0, 0, 0, 0.15);

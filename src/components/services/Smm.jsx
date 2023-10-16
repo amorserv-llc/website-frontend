@@ -56,7 +56,7 @@ export default function Smm() {
         <Navbar />
       </div>
 
-      <header className='header-bg' style={{ height: '93vh' }}>
+      <header className='header-bg' style={{ height: "93vh" }}>
         <div className='header'>
           <div className='content'>
             <h1>
@@ -64,8 +64,10 @@ export default function Smm() {
               brand awareness?
             </h1>
 
-            <p style={{ fontSize: '1.99rem'}}>
-            Social Media Marketing is a cost-effective way to maximize <br /> brand awareness and witness tangible results as your <br /> message resonates across social channels.
+            <p>
+              Social Media Marketing is a cost-effective way to maximize <br />{" "}
+              brand awareness and witness tangible results as your <br />{" "}
+              message resonates across social channels.
             </p>
             <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
@@ -167,7 +169,7 @@ export default function Smm() {
                 </div>
               </div>
               <div className='col-md-4 text-center p-5 center-content'>
-                <div className='card-body'>
+                <div className='card-body lastcard'>
                   <img src={ff6} alt='image' />
                   <h4 className='card-title'>Analytics and Reporting</h4> <br />
                   <p className='card-text'>
@@ -368,7 +370,10 @@ export default function Smm() {
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is social media marketing?{" "}
+                {" "}
+                <span className='faqspan'>
+                  What is social media marketing?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -422,7 +427,9 @@ export default function Smm() {
                 }}
                 onClick={() => handleButtonClick(2)}
               >
-                What are the 5 ways of social media marketing?{" "}
+                <span className='faqspan'>
+                  What are the 5 ways of social media marketing?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -472,7 +479,9 @@ export default function Smm() {
                 }}
                 onClick={() => handleButtonClick(3)}
               >
-                What is the importance of social media optimization (SMO)?{" "}
+                <span className='faqspan'>
+                  What is the importance of social media optimization (SMO)?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -522,7 +531,9 @@ export default function Smm() {
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                How does social media marketing impact brand visibility?{" "}
+                <span className='faqspan'>
+                  How does social media marketing impact brand visibility?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

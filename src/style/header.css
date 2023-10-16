@@ -146,13 +146,18 @@ h1, p {
   .header-bg .header .content {
     margin-top: 40px;
   }
-
+  .header-bg .header .content p{
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    /* width: 100%; */
+  }
   .header-bg .header .content h1 {
-    font-size: 32px;
+    font-size: 100%;
   }
 
   .header-bg .header .content button {
     font-size: 1.2rem;
+
   }
 }
 
