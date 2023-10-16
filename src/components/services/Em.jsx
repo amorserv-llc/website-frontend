@@ -557,8 +557,8 @@ export default function Em() {
           <br />
 
           <div className='container'>
-            <p>
-              <button
+            <p className="child">
+              <button 
                 className={buttonClass(4)}
                 type='button'
                 data-toggle='collapse'
@@ -573,10 +573,9 @@ export default function Em() {
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                                <span className='faqspan'>
-                                                  How can automated email campaigns save time and improve
-                efficiency?{" "}
-                                </span>
+                <span className='faqspan'>
+                  How can automated email  campaigns save time and improve efficiency?{" "}
+                </span>
 
                 <span style={{ float: "right" }}>
                   <svg

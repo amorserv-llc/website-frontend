@@ -168,7 +168,7 @@ export default function Smm() {
                   </p>
                 </div>
               </div>
-              <div className='col-md-4 text-center p-5 center-content'>
+              {/* <div className='col-md-4 text-center p-5 center-content'>
                 <div className='card-body lastcard'>
                   <img src={ff6} alt='image' />
                   <h4 className='card-title'>Analytics and Reporting</h4> <br />
@@ -178,7 +178,7 @@ export default function Smm() {
                     for <br /> informed decision-making.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -239,9 +239,9 @@ export default function Smm() {
               delivers exceptional results
             </p>
             <div className='row pt-5'>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff7} alt='image' />
-                <h3>Data Driven</h3>
+                <h3 className='pt-4'>Data Driven</h3>
                 <p>
                   At Amorserv Consulting, we propel <br /> success with
                   data-driven strategies <br /> for remarkable growth and
@@ -249,9 +249,9 @@ export default function Smm() {
                 </p>{" "}
                 <br /> <br /> <br />
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff8} alt='image' />
-                <h3>Dedicated SM Professionals</h3>
+                <h3 className='pt-4'>Dedicated SM Professionals</h3>
                 <p>
                   We have a devoted team of social <br />
                   media experts elevating your brand's <br /> online presence
@@ -259,9 +259,9 @@ export default function Smm() {
                   audience
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff9} alt='image' />
-                <h3>Certified Experts</h3>
+                <h3 className='pt-4'>Certified Experts</h3>
                 <p>
                   Trust our industry-certified SM <br /> professionals. Our
                   team's expertise <br /> provide a competitive edge backed{" "}
@@ -269,27 +269,27 @@ export default function Smm() {
                 </p>
               </div>
 
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff10} alt='image' />
-                <h3>Industry Insights</h3>
+                <h3 className='pt-4'>Industry Insights</h3>
                 <p>
                   Confidently navigate the digital <br />
                   landscape with insights from years of <br /> experience,
                   propelling your brand to <br /> sustained success.
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff11} alt='image' />
-                <h3>Team Support</h3>
+                <h3 className='pt-4'>Team Support</h3>
                 <p>
                   Collaboration is our core. With a <br /> dedicated SM team,
                   you're a partner <br /> on a growth journey. Your goals are{" "}
                   <br /> ours
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff12} alt='image' />
-                <h3>Transparent Reporting</h3>
+                <h3 className='pt-4'>Transparent Reporting</h3>
                 <p>
                   Transparency is our priority. Our <br /> reporting is a
                   detailed map of your <br /> brand's journey, empowering you{" "}
