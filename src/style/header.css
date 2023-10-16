@@ -222,9 +222,11 @@ h1, p {
   }
 
   .header-bg .header .content {
-    margin-top: 20px;
+    margin-top: -60px;
     gap: 10px;
     align-items: center;
+    /* border: 2px solid red; */
+
   }
 
   .header-bg .header .content p {
@@ -241,7 +243,8 @@ h1, p {
     font-style: normal;
     font-weight: 700;
     line-height: 2.5rem;
-    width: 80%;
+    width: 100%;
+    /* border: 2px solid red; */
   }
   .header-bg .header .content button {
     font-size: 1.2rem;
