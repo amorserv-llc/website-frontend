@@ -436,16 +436,19 @@ section.trust-agency .contents .detail .image img {
 }
 
 /* Add a media query for mobile devices */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card-body {
     border-radius: 0.75rem; /* Example radius for smaller screens */
-    height: auto; /* Let the content determine the height */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3),
       0px 4px 6px 3px rgba(0, 0, 0, 0.15);
-    height: 25.89906rem;
+    /* height: 25.89906rem; */
     /* border: 3px solid red; */
     width: 100%;
+    font-size: 0.8rem;
   }
+
+
+ 
   .faqspan {
     /* color: red; */
     width: 100%;

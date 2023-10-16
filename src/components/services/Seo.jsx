@@ -235,7 +235,7 @@ export default function () {
                     Conversion Rate <br /> Optimization (CRO)
                   </h4>{" "}
                   <br />
-                  <p className='card-text'>
+                  <p className='card-text '>
                     Stand out in the competitive Amazon <br /> marketplace with
                     Amazon-specific <br />
                     SEO tactics that drive your products <br />
