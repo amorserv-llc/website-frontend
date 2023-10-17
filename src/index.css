@@ -362,7 +362,12 @@ body {
   .bd-footer .col-lg-5 img {
     /* text-align: center; */
     /* border: 1px solid green; */
+<<<<<<< HEAD
     margin-left: -19.1px;
+=======
+    margin-left: -19px;
+
+>>>>>>> 191fc751e7902f511c4df872bbcd636692ca36e5
   }
 
   .bd-footer .col-lg-5 div {
