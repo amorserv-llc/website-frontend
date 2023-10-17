@@ -1,0 +1,27 @@
+name: OWASP ZAP Integration with GitHub Actions
+
+on: 
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan the web application
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: staging
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.6.1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'https://amorservtech.net/'
+          rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'

@@ -13,8 +13,14 @@ import Footer from "./layout/Footer";
 import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
+
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
+import TestimonialCarousel from "./layout/TestimonialCarousel";
+import CarouselCard from "./layout/CarouselCard";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
 
 export default function Portfolio() {
   return (
@@ -26,19 +32,19 @@ export default function Portfolio() {
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
-            <h1>Explore our portfolio for more insight!</h1>
+            <h1>
+              Explore our Portfolio for <br /> More Insight.
+            </h1>
 
-            <p className='rapp'>
-              {" "}
-              Dive into our portfolio for a closer look at our dynamic projects.{" "}
-              <br />
-              Witness how our strategies have transformed businesses. Our <br />{" "}
-              work is a testament to our expertise, innovation, and <br />{" "}
-              commitment to driving success.
+            <p className='rapp' style={{ width: '100%' }}>
+            Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
             </p>
-            <Link to='/about-us'>
-              <button>Free Consultation</button>
-            </Link>
+            <div className="pbtn">
+              <Link to='/about-us'>
+              <button  style={{ width: '30%' }}>Free Consultation</button>
+            </Link> 
+            </div>
+           
           </div>
           <div className='image'>
             <img src={portfolio} className='img-fluid' alt='header-image' />
@@ -46,17 +52,17 @@ export default function Portfolio() {
         </div>
       </header>
 
-      <section id='port-1' className='py-5'>
+      <section id='port-1' className='py-5 '>
         <div className='container-lg my-4 portfolio'>
           <div className='row gx-md-5'>
             <div className='col-md-6 my-4'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port1} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     TechNova Solutions
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p>
                     TechNova Solutions, a dynamic player in the IT sector,
                     partnered with Amorserv Consulting to boost their online
                     visibility and reach. Through meticulous keyword research,
@@ -75,13 +81,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className='col-md-6 my-3'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port2} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     FreshBite Restaurants
                   </a>
-                  <p className='lh-md '>
+                  <p>
                     FreshBite Restaurants, a bustling culinary establishment,
                     entrusted Amorserv Consulting to enhance their social media
                     presence and engage their hungry audience. Leveraging
@@ -100,13 +106,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className='col-md-6 my-3'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port3} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     Blossom Beauty
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p>
                     Blossom Beauty, a wellness brand dedicated to self-care,
                     collaborated with Amorserv Consulting to cultivate an
                     authoritative digital voice. Our expert content creators
@@ -125,13 +131,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className='col-md-6 my-3'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port4} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     Quantum Electronics
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p>
                     Quantum Electronics, a leading player in electronics
                     manufacturing, joined forces with Amorserv Consulting to
                     amplify their digital reach through targeted PPC
@@ -151,13 +157,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className='col-md-6 my-3'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port5} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     StyleSphere Boutique
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p>
                     StyleSphere Boutique, an emerging fashion brand, harnessed
                     the power of Amorserv Consulting's email marketing expertise
                     to nurture customer relationships and drive sales growth.
@@ -177,13 +183,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className='col-md-6 my-3'>
-              <div className='card port-card'>
+              <div className='card'>
                 <img className='card-img-top' src={port6} alt='...' />
-                <div className='card-portfolio py-3 px-4'>
+                <div className='py-3 px-4'>
                   <a href='' className='card-title'>
                     ST
                   </a>
-                  <p className='lh-md pt-2'>
+                  <p>
                     ST, a B2B IT service provider, collaborated with Amorserv
                     Consulting to turbocharge their lead generation efforts.
                     Employing a strategic mix of data analysis, targeted
@@ -202,104 +208,151 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
         <div className='text-center'>
-            <button className='btn-real'>
-              <Link to='/contact-us' style={{ color: "white" }}>
-                Schedule a Call
-              </Link>
-            </button>
-          </div>
-      </section>
-
-      {/* <section id="sec-7" style="margin-bottom: 10rem;"> */}
-      <div id='sec-6' className='container-lg pt-5'>
-        <div className='col-12 text-center'>
-          <h3 className='mb-4 fw-bold'>
-            Trusted by Thousands of <br />
-            Happy Customer
-          </h3>
-          <p>
-            Discover the voices of success through the words of our satisfied
-            <br />
-            clients.{" "}
-          </p>
+          <button className='btn-real'>
+            <Link to='/contact-us' style={{ color: "white" }}>
+              Schedule a Call
+            </Link>
+          </button>
         </div>
-      </div>
+      </section>
+      <section id='sec-6'>
+        <div className='container-lg pt-5'>
+          <div className='col-12 text-center'>
+            <h3 className='mb-4 fw-bold'>
+              Trusted by Thousands of <br />
+              Happy Customer
+            </h3>
+            <p>
+              Discover the voices of success through the <br /> words of our
+              satisfied clients.{" "}
+            </p>
+          </div>
+        </div>
+        {/* <TestimonialCarousel /> */}
 
-      <div className='wrapper mt-5'>
-        {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
-        <ul className='carousel'>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t1} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>5.0</p>
-            </div>
-            <p className='detail'>
-              Amorserv's email campaigns delivered outstanding results. Their
-              personalized approach fueled a remarkable boost in conversions.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t2} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>5.0</p>
-            </div>
-            <p className='detail'>
-              Amorserv took our social presence to new heights. Their strategies
-              revolutionized engagement and visibility.
-            </p>
-          </li>
-          <li className='card'>
-            <div className='info'>
-              <div className='name-img'>
-                <div className='image'>
-                  <img src={t3} alt='' draggable='false' />
-                </div>
-                <h4>Viezh Robert</h4>
-              </div>
-              <p className='rate'>5.0</p>
-            </div>
-            <p className='detail'>
-              Amorserv's SEM strategies powered our growth. Their data-driven
-              approach catapulted us to the top of search results.
-            </p>
-          </li>
-        </ul>
-        {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
-      </div>
-      {/* </section> */}
-      {/* <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='135'
-          height='16'
-          viewBox='0 0 135 16'
-          fill='none'
+
+
+
+        <Slide
+          duration={15000}
+          indicators={true}
+          autoplay={true}
+          cssClass='carousel-cards'
+          responsive={[
+            {
+              breakpoint: 1200,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 1000,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 850,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            // {
+            //   breakpoint: 800,
+
+            //   settings: {
+            //     slidesToShow: 3,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 700,
+
+            //   settings: {
+            //     slidesToShow: 2,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 400,
+
+            //   settings: {
+            //     slidesToShow: 1,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+          ]}
         >
-          <circle cx='67.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <circle cx='97.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <circle cx='127.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <path
-            fill-rule='evenodd'
-            clip-rule='evenodd'
-            d='M7.55721 15.949C7.53816 15.9491 7.51909 15.9492 7.5 15.9492C7.48091 15.9492 7.46184 15.9491 7.44279 15.949H6.9469V15.9291C3.06303 15.646 0 12.4053 0 8.44922C0 4.49311 3.06303 1.25241 6.9469 0.969304V0.949219H7.5H37.0841V0.960556C37.2218 0.953031 37.3604 0.949219 37.5 0.949219C41.6421 0.949219 45 4.30708 45 8.44922C45 12.5914 41.6421 15.9492 37.5 15.9492C37.3604 15.9492 37.2218 15.9454 37.0841 15.9379V15.949H7.55721Z'
-            fill='#1A202C'
-          />
-        </svg>
-      </div> */}
+          {/* <CarouselCard
+            img={t3}
+            name='Lizzy '
+            position='CEO Bread talks'
+            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
+            rating='5'
+          /> */}
 
+          <CarouselCard
+            img={t1}
+            name='Lesley Bradley'
+            position='CEO Stripe'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t2}
+            name='John Addams'
+            position='CEO Teeno'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t3}
+            name='Viezh Robert'
+            position='CEO TASK'
+            desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
+            rating='5'
+          />
+
+
+          {/* <CarouselCard
+            img={t2}
+            name='Tega Ovri'
+            position='CMO Oblivion'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t1}
+            name='Katherina Owens'
+            position='Manager, Semetrics'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          /> */}
+        </Slide>
+      </section>
       <Footer />
     </>
   );

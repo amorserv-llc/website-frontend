@@ -12,17 +12,17 @@ export default function () {
     }
   };
   return (
-    <header className='header-bg'>
+    <header className='header-bg' style={{ height: '93vh' }}>
       <div className='header'>
         <div className='content'>
           <h1>
             We're your Partner for <br /> Digital Marketing <br /> Success
           </h1>
-          <p>
-            Empower Your Brand, and Drive Results with AmorServ Consulting
+          <p style={{ opacity: '0.45' }}>
+          Empower Your Brand, and Drive Results with <br />AmorServ Consulting
           </p>
           <Link onClick={handleCallButtonClick}>
-            <button>Get Expert</button>
+            <button>Start Today</button>
           </Link>
         </div>
         <div className='image'>

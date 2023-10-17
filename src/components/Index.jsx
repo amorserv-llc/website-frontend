@@ -23,16 +23,23 @@ import webop from "../Assets/webop.png";
 import searchop from "../Assets/searchop.png";
 import email from "../Assets/email.png";
 import branding from "../Assets/branding.png";
-
 import threemob from "../Assets/threemob.png";
 import threestep from "../Assets/threestep.png";
-
 import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
 import Form from "./layout/ContactForm";
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
+
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+
+import jsPDF from "jspdf";
+import TestimonialCarousel from "./layout/TestimonialCarousel";
+import SectionLogo from "./layout/SectionLogo";
+import CarouselCard from "./layout/CarouselCard";
+import ContactForm from "./layout/ContactForm";
 
 export default function Index() {
   const handleCallButtonClick = () => {
@@ -42,15 +49,19 @@ export default function Index() {
     }
   };
 
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    doc.text("Hello, this is your PDF!", 10, 10); // Add your content here
+    doc.save("downloaded-file.pdf");
+  };
+
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>
-
       <Header />
-
-      <section id='sec-2' className='py-4'>
+      <section id='sec-2' className='py-5'>
         <div className='container-lg my-4'>
           <div className='row mb-2'>
             <div className='col-12 text-center'>
@@ -60,108 +71,143 @@ export default function Index() {
         </div>
 
         <div className='client-wrapper'>
-          {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
           <div className='client-carousel'>
-            <img
-              src={nike}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='Nike'
-            />
-            <img
-              src={cola}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='Coca-Cola'
-            />
+            <div className='sliding'>
+              <Slide
+                canSwipe={true}
+                infinite={true}
+                duration={2000}
+                autoplay={true}
+                cssClass='slide-show'
+                defaultIndex={1}
+                responsive={[
+                  {
+                    breakpoint: 900,
 
-            <img
-              src={amzon}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={cvs}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={cisco}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={pp}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
-            <img
-              src={mascard}
-              width='80px'
-              className='justify-content-center d-flex align-items-center mx-auto img-fluid'
-              alt='...'
-            />
+                    settings: {
+                      slidesToShow: 5,
+
+                      slidesToScroll: 2,
+                    },
+                  },
+
+                  {
+                    breakpoint: 700,
+
+                    settings: {
+                      slidesToShow: 4,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 500,
+
+                    settings: {
+                      slidesToShow: 3,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 300,
+
+                    settings: {
+                      slidesToShow: 2,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+                ]}
+              >
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+              </Slide>
+            </div>
           </div>
-          {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
         </div>
-      </section>
-
+      </section>{" "}
+      <br />
+      <br />
       <section id='sec-3' className='py-4'>
         <div className='container-lg my-3'>
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Feeling overwhelmed by Digital Marketing?</h3>
           </div>
-          <div className='row'>
-            <div className='col-md-3 mb-5'>
-              <div className='d-flex justify-content-center align-items-center'>
-                <img src={f1} className='img-fluid' />
+          <div className='row secview'>
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img
+                  src={f1}
+                  className='
+                homeimg'
+                />
               </div>
-              <p className='fw-md mx-3 text-center'>
-                Struggling to navigate the complex digital world?
-              </p>
+              <p>Struggling to navigate the complex digital world?</p>
             </div>
-            <div className='col-md-3 mb-5'>
-              <div className='d-flex justify-content-center align-items-center'>
-                <img src={f2} className='img-fluid' />
+            <div className='col-md-3 mb-5 hmd'>
+              <div className='d-flex'>
+                <img src={f2} />
               </div>
-              <p className='fw-md mx-3 text-center'>
-                Feeling frustrated with low website traffic, weak search
-                rankings, and lackluster social media presence?
-              </p>
+              <p>Feeling frustrated with low online presence?</p>
             </div>
-            <div className='col-md-3 mb-5'>
-              <div className='d-flex justify-content-center align-items-center'>
-                <img src={f3} className='img-fluid' />
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img src={f3} />
               </div>
-              <p className='fw-md mx-3 text-center'>
-                Believing that your business deserves success but feeling held
-                back by digital marketing challenges?
-              </p>
+              <p>Feeling held back by digital marketing challenges?</p>
             </div>
-            <div className='col-md-3 mb-5'>
-              <div className='d-flex justify-content-center align-items-center'>
-                <img src={f4} className='img-fluid' />
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img src={f4} />
               </div>
-              <p className='fw-md mx-3 text-center'>
-                Worried about missing out on opportunities to connect with your
-                audience and grow your business?
+              <p>
+                Worried about missing opportunities to connect with your
+                audience?
               </p>
             </div>
           </div>
         </div>
       </section>
-
       <section id='sec-0' className='py-5'>
         <div className='container-lg my-4'>
           <div className='row'>
             <div className='col-lg-6 align-items-center d-flex justify-content-center'>
-              <img src={g1} className='img-fluid' alt='...' />
+              <img src={g1} alt='...' />
             </div>
-            <div className='col-lg-6 align-items-center col-lg-6 col-md-12'>
+            <div
+              className='col-lg-6 align-items-center col-lg-6 col-md-12'
+              style={{ marginTop: "80px" }}
+            >
+              <h3 className='mb-4'>Take control of your online success.</h3>
+
               <span className='my-4'>
                 We understand your struggles and are here to help. Let us be
                 your guide and empower your brand with personalized,
@@ -169,27 +215,25 @@ export default function Index() {
                 your trusted digital marketing guide, we offer personalized
                 strategies that are results-driven, saving you time and effort.
               </span>
-             
-              <div onClick={handleCallButtonClick}>
+
+              <div
+                onClick={handleCallButtonClick}
+                style={{ marginTop: "50px" }}
+              >
                 <Link className='btn-real btn btn-danger mb-3 mobile-center-button'>
                   Get Free Proposal
                 </Link>
-              </div>
-
-              <div className='mt-3'>
-                <p className='my-4'>Take control of your online success.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section id='sec-5' className='py-5'>
         <div className='container-lg'>
           <div className='col-12'>
             <h3 className='mb-4'>
-              Discover our range of services designed to boost your online
-              presence
+              Discover our range of services designed to <br /> boost your
+              online presence
             </h3>
           </div>
           <div className='row justify-content-center my-5'>
@@ -201,7 +245,6 @@ export default function Index() {
                 src={digi}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Digital Marketing
@@ -215,7 +258,6 @@ export default function Index() {
                 src={paid}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-100PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Paid Media
@@ -229,7 +271,6 @@ export default function Index() {
                 src={branding}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-110PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Branding
@@ -243,7 +284,6 @@ export default function Index() {
                 src={social}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-85PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Social Media
@@ -275,7 +315,6 @@ export default function Index() {
                 src={searchop}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Search Engine Optimazation
@@ -289,34 +328,33 @@ export default function Index() {
                 src={email}
                 width='25px'
                 alt='...'
-                style={{ marginLeft: "-45PX" }}
               />
               <span href='' className='px-2 serv-link'>
                 Email Marketing
               </span>
             </button>
             <div className='text-center'>
-              <p className='mt-4'>Get free marketing guide</p>
+              <h4 className='downt'>Get free marketing guide</h4>
 
               <Link
+                onClick={generatePDF}
                 className='btn mt-4 btn-real'
                 to='/'
-                style={{ color: "white" }}
+                style={{ color: "white", width: "200px" }}
               >
-                Download
+                Download Our Free Guide{" "}
               </Link>
             </div>
           </div>
         </div>
       </section>
-
       <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
             <h3 className='mb-4'>Our Simplified 3-Step Process</h3>
           </div>
           <h5 className='my-4 text-center'>
-            For Maximizing Your Digital Marketing Success
+            For Maximizing Your Digital Marketing Success{" "}
           </h5>
 
           <div className='centered-container' style={{ marginTop: "-160px" }}>
@@ -328,25 +366,22 @@ export default function Index() {
             </div>
           </div>
 
-          <div className='text-center' style={{ marginTop: "-170px" }}>
+          <div className='text-center hp'>
             <p style={{ color: "#266", fontSize: "1.2rem" }}>
               it's Time to take controle of your online presence
             </p>
-            <div style={{ marginTop: "-19px" }} onClick={handleCallButtonClick}>
-              <Link className='btn mt-4 btn-real'>
-                Get Free Proposal
-              </Link>
+            <div onClick={handleCallButtonClick}>
+              <Link className='btn mt-4 btn-real'>Get Free Proposal</Link>
             </div>
           </div>
         </div>
       </section>
-
       <section id='sec-6'>
         <div className='container-lg pt-5 mb-5'>
           <div className='col-12'>
             <h3 className='mb-4 fw-bold'>
               Trusted by Thousands of <br />
-              Happy Customer
+              Happy Customers
             </h3>
             <p className='text-center'>
               Proudly impacting industries with the best digital strategies.
@@ -355,89 +390,141 @@ export default function Index() {
             </p>
           </div>
         </div>
-        <div className='wrapper mt-5'>
-          {/* <i id='left' className='fa-solid fa-angle-left fa-rotate-180'></i> */}
-          <ul className='carousel'>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t1} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  5.0
-                </p>
-              </div>
-              <p className='detail'>
-                Amorserv's dynamic digital strategies triggered an unprecedented
-                surge in our sales revenue. Their insightful approach reshaped
-                our marketing landscape
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t2} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  5.0
-                </p>
-              </div>
-              <p className='detail'>
-                With Amorserv's digital tactics, our website witnessed a
-                transformation. Visitor traffic soared twofold, with engagement
-                metrics hitting all-time highs
-              </p>
-            </li>
-            <li className='card'>
-              <div className='info'>
-                <div className='name-img'>
-                  <div className='image'>
-                    <img src={t3} alt='' draggable='false' />
-                  </div>
-                  <h4>Viezh Robert</h4>
-                </div>
-                <p className='rate' style={{ color: "#B13557" }}>
-                  5.0
-                </p>
-              </div>
-              <p className='detail'>
-                Amorserv's involvement marked a turning point for our online
-                brand image. Their innovative digital strategies breathed new
-                life into our online platforms.
-              </p>
-            </li>             
-         
-          </ul>
-          {/* <i id='right' className='fa-solid fa-angle-right fa-rotate-180'></i> */}
-        </div>
-      </section>
-      {/* <div className='pt-5 pb-5' style={{ marginLeft: "40px" }}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='135'
-          height='16'
-          viewBox='0 0 135 16'
-          fill='none'
-        >
-          <circle cx='67.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <circle cx='97.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <circle cx='127.5' cy='8.44922' r='7.5' fill='#DDE0E4' />
-          <path
-            fill-rule='evenodd'
-            clip-rule='evenodd'
-            d='M7.55721 15.949C7.53816 15.9491 7.51909 15.9492 7.5 15.9492C7.48091 15.9492 7.46184 15.9491 7.44279 15.949H6.9469V15.9291C3.06303 15.646 0 12.4053 0 8.44922C0 4.49311 3.06303 1.25241 6.9469 0.969304V0.949219H7.5H37.0841V0.960556C37.2218 0.953031 37.3604 0.949219 37.5 0.949219C41.6421 0.949219 45 4.30708 45 8.44922C45 12.5914 41.6421 15.9492 37.5 15.9492C37.3604 15.9492 37.2218 15.9454 37.0841 15.9379V15.949H7.55721Z'
-            fill='#1A202C'
-          />
-        </svg>
-      </div> */}
+        {/* <TestimonialCarousel /> */}
 
-      <Form />
+        <Slide
+          duration={15000}
+          indicators={true}
+          autoplay={true}
+          cssClass='carousel-cards'
+          responsive={[
+            {
+              breakpoint: 1200,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 1000,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 850,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            // {
+            //   breakpoint: 800,
+
+            //   settings: {
+            //     slidesToShow: 3,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 700,
+
+            //   settings: {
+            //     slidesToShow: 2,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+
+            // {
+            //   breakpoint: 400,
+
+            //   settings: {
+            //     slidesToShow: 1,
+
+            //     slidesToScroll: 1,
+            //   },
+            // },
+          ]}
+        >
+          {/* <CarouselCard
+            img={t3}
+            name='Lizzy '
+            position='CEO Bread talks'
+            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
+            rating='5'
+          /> */}
+
+          <CarouselCard
+            img={t1}
+            name='Lesley Bradley'
+            position='CEO Stripe'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t2}
+            name='John Addams'
+            position='CEO Teeno'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t3}
+            name='Viezh Robert'
+            position='CEO TASK'
+            desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
+            rating='5'
+          />
+
+          {/* <CarouselCard
+            img={t2}
+            name='Tega Ovri'
+            position='CMO Oblivion'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t1}
+            name='Katherina Owens'
+            position='Manager, Semetrics'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          /> */}
+        </Slide>
+      </section>
+
+
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+        <div className='container ' id='contact-form-section'>
+          <div className='content text-center'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4'>Let’s Grow your Business</h3>
+            </div>
+            <p>
+            Fuel your brand's growth with our best SEO strategies that drive <br /> success.
+            </p>
+          </div>
+      <ContactForm />
+
+
+          </div>
+          </section>
       <Footer />
     </>
   );

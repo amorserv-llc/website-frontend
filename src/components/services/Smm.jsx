@@ -43,8 +43,6 @@ export default function Smm() {
     return activeButton === buttonId ? "up" : "down";
   };
 
-
-  
   const handleCallButtonClick = () => {
     const contactFormSection = document.getElementById("contact-form-section");
     if (contactFormSection) {
@@ -52,24 +50,26 @@ export default function Smm() {
     }
   };
 
-
   return (
     <>
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
+      <header className='header-bg' style={{ height: "93vh" }}>
         <div className='header'>
           <div className='content'>
-            <h1>How SMO builds your brand awareness?</h1>
+            <h1>
+              How SMO builds your <br />
+              brand awareness?
+            </h1>
 
             <p>
-              Social Media Marketing is a cost-effective way to maximize <br />
-              brand awareness and witness tangible results as your message{" "}
-              <br /> resonates across social channels.
+              Social Media Marketing is a cost-effective way to maximize <br />{" "}
+              brand awareness and witness tangible results as your <br />{" "}
+              message resonates across social channels.
             </p>
-            <Link to={'/contact-us'}>
+            <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
             </Link>
           </div>
@@ -85,121 +85,100 @@ export default function Smm() {
       >
         <h2>Our Comprehensive SEO Services </h2>
         <p className='text-center'>
-          Maximize your online presence with our SEO services for visibility{" "}
-          <br /> and success.
+          Explore our comprehensive social media marketing services list <br />{" "}
+          compiled just for you.
         </p>
         <div className='contents'>
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff} alt='image' className='fram' />
-                    <h4 className='card-title'>Content Creation</h4> <br />
-                    <p className='card-text'>
-                      Our content creation specialist will craft compelling and
-                      shareable content that captivates your audience's
-                      attention. From posts to visually engaging graphics.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff} alt='image' className='fram' />
+                  <h4 className='card-title'>Content Creation</h4> <br />
+                  <p className='card-text'>
+                    Our content specialists create <br /> captivating and
+                    shareable content, <br /> from posts to visually engaging{" "}
+                    <br /> graphics
+                  </p>
                 </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff1} alt='image' />
-                    <h4 className='card-title'>
-                      Social Media Advertising
-                    </h4>{" "}
-                    <br />
-                    <p className='card-text'>
-                      Amplify your reach through targeted social media
-                      advertising campaigns. We pinpoint your ideal audience,
-                      maximizing your ROI and driving meaningful engagement.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff1} alt='image' />
+                  <h4 className='card-title'>Social Media Advertising</h4>{" "}
+                  <br />
+                  <p className='card-text'>
+                    Amplify reach with targeted social <br /> media ads. We
+                    pinpoint your ideal <br /> audience, maximizing engagement.
+                  </p>
                 </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff2} alt='image' />
-                    <h4 className='card-title'>Influencer Marketing</h4> <br />
-                    <p className='card-text'>
-                      Leverage the influence of thought leaders in your industry
-                      to boost brand visibility. Our influencer partnerships
-                      amplify your message and connect you with a wider
-                      audience.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff2} alt='image' />
+                  <h4 className='card-title'>Influencer Marketing</h4> <br />
+                  <p className='card-text'>
+                    Leverage industry thought leaders to <br /> boost
+                    visibility. Our influencer <br /> partnerships amplify your
+                    message <br /> to a wider audience.
+                  </p>
                 </div>
               </div>
 
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff3} alt='image' />
-                    <h4 className='card-title'>Handle each platform</h4> <br />
-                    <p className='card-text'>
-                      Tailor your content for each platform's unique audience
-                      and style. Whether it's Facebook, Instagram, Twitter, or
-                      LinkedIn, we curate content that speaks to your audience's
-                      preferences.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff3} alt='image' />
+                  <h4 className='card-title'>Handle each platform</h4> <br />
+                  <p className='card-text'>
+                    Tailor content for each platform's <br />
+                    unique audience and style. From <br /> Facebook to LinkedIn,
+                    we speak your <br />
+                    audience's language.
+                  </p>
                 </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff4} alt='image' />
-                    <h4 className='card-title'>
-                      Social Media Contest and Giveaways
-                    </h4>{" "}
-                    <br />
-                    <p className='card-text'>
-                      Engage and excite your audience with captivating contests
-                      and giveaways. Our strategies drive participation, boost
-                      interaction, and ultimately, nurture brand loyalty.
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff4} alt='image' />
+                  <h4 className='card-title'>
+                    Social Media Contest and Giveaways
+                  </h4>{" "}
+                  <br />
+                  <p className='card-text'>
+                    Excite your audience with engaging <br />
+                    contests, nurturing brand loyalty <br /> through
+                    interaction.
+                  </p>
                 </div>
               </div>
               <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff5} alt='image' />
-                    <h4 className='card-title'>
-                      Instant replies and user engagement
-                    </h4>{" "}
+                <div className='card-body'>
+                  <img src={ff5} alt='image' />
+                  <h4 className='card-title'>
+                    Instant replies and user engagement
+                  </h4>{" "}
+                  <br />
+                  <p className='card-text'>
+                    Build connections by promptly <br /> responding to user
+                    queries. Our <br /> proactive engagement fosters trust{" "}
                     <br />
-                    <p className='card-text'>
-                      Create meaningful connections by promptly responding to
-                      user queries and comments. Our proactive approach to
-                      engagement fosters a positive brand image and fosters
-                      customer trust.
-                    </p>
-                  </div>
+                    and a positive brand image.
+                  </p>
                 </div>
               </div>
-
-              <div className='col-md-4 text-center p-5'>
-                <div className='card custom-card'>
-                  <div className='card-body'>
-                    <img src={ff6} alt='image' />
-                    <h4 className='card-title'>Analytics and Reporting</h4>{" "}
-                    <br />
-                    <p className='card-text'>
-                      Access real-time insights into your social media
-                      performance. Our detailed analytics and reporting provide
-                      a clear view of your strategy's impact, enabling informed
-                      decision-making and continuous improvement.
-                    </p>
-                  </div>
+              {/* <div className='col-md-4 text-center p-5 center-content'>
+                <div className='card-body lastcard'>
+                  <img src={ff6} alt='image' />
+                  <h4 className='card-title'>Analytics and Reporting</h4> <br />
+                  <p className='card-text'>
+                    Access real-time insights into your <br /> social media
+                    performance with our <br /> detailed analytics and reporting
+                    for <br /> informed decision-making.
+                  </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -207,35 +186,41 @@ export default function Smm() {
 
       <div className='text-center whyseo p-5'>
         <div className='container'>
-          <h2>Why you need Social Media Marketing?</h2>
+          <h2 style={{ fontSize: "3rem" }}>
+            Why you need Social Media <br /> Marketing?
+          </h2>
           <p>
             Social media marketing service is essential in expanding your brand
-            reach, engagement, <br /> and driving conversions.
+            reach, <br /> engagement, and driving conversions.
           </p>
           <br />
           <div className='row'>
             <div className='col-md-3'>
               <h1>65%</h1>
-              <p>of online experiences begin with a search engine</p>
+              <p>
+                of consumers learn about <br /> new brands on social <br />{" "}
+                media.
+              </p>
             </div>
             <div className='col-md-3'>
               <h1>78%</h1>
               <p>
-                of consumers are willing to buy from brands after a positive
-                social media experience.
+                of consumers are willing to buy <br /> from brands after a
+                positive <br /> social media experience.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>91%</h1>
               <p>
-                of executives will increase social media marketing budgets in
-                the next 3 years
+                of executives will increase social <br />
+                media marketing budgets in the <br /> next 3 years.
               </p>
             </div>
             <div className='col-md-3'>
               <h1>72.2%</h1>
               <p>
-                of companies use social media data to inform business decisions
+                of companies use social <br /> media data to inform <br />
+                business decisions.
               </p>
             </div>
           </div>
@@ -245,76 +230,70 @@ export default function Smm() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3>Why Choose Amorserv SM Services?</h3>
+            <h3 style={{ fontSize: "3rem" }}>
+              Why Choose Amorserv SM Services?
+            </h3>
 
             <p>
               Unlock a journey to online success with SEO expertise that
               delivers exceptional results
             </p>
             <div className='row pt-5'>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff7} alt='image' />
-                <h3>Data Driven</h3>
+                <h3 className='pt-4'>Data Driven</h3>
                 <p>
-                  At Amorserv Consulting, we propel your success through
-                  strategies meticulously crafted from data analysis. Every move
-                  we make is rooted in insights, ensuring your campaigns
-                  outperform and drive remarkable growth.
+                  At Amorserv Consulting, we propel <br /> success with
+                  data-driven strategies <br /> for remarkable growth and
+                  campaign <br /> performance.
                 </p>{" "}
                 <br /> <br /> <br />
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff8} alt='image' />
-                <h3>Dedicated SM Professionals</h3>
+                <h3 className='pt-4'>Dedicated SM Professionals</h3>
                 <p>
-                  We boasts of a team of devoted social media experts,
-                  tirelessly working to elevate your brand's online presence.
-                  With unwavering dedication, we bring your vision to life in
-                  the digital space, ensuring your message resonates with your
-                  target audience.
+                  We have a devoted team of social <br />
+                  media experts elevating your brand's <br /> online presence
+                  and bringing your <br /> vision to life for your target
+                  audience
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff9} alt='image' />
-                <h3>Certified Experts</h3>
+                <h3 className='pt-4'>Certified Experts</h3>
                 <p>
-                  Place your trust in our industry-certified SM professionals.
-                  Our team's extensive qualifications and expertise empower
-                  campaigns with specialized skills, providing you with a
-                  competitive edge that's backed by knowledge.
+                  Trust our industry-certified SM <br /> professionals. Our
+                  team's expertise <br /> provide a competitive edge backed{" "}
+                  <br /> by knowledge.
                 </p>
               </div>
 
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff10} alt='image' />
-                <h3>Industry Insights</h3>
+                <h3 className='pt-4'>Industry Insights</h3>
                 <p>
-                  Navigate the digital landscape with unwavering confidence. We
-                  equip you with insights garnered from years of experience.
-                  These insights give your brand an edge, propelling it beyond
-                  competition and into a realm of sustained success.
+                  Confidently navigate the digital <br />
+                  landscape with insights from years of <br /> experience,
+                  propelling your brand to <br /> sustained success.
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff11} alt='image' />
-                <h3>Team Support</h3>
+                <h3 className='pt-4'>Team Support</h3>
                 <p>
-                  Collaboration lies at the heart of our approach. With a
-                  passionate and dedicated SM team by your side, you're not just
-                  another client – you're a partner on a journey toward growth.
-                  Your goals are our goals, and we're committed to your brand's
-                  ascent.
+                  Collaboration is our core. With a <br /> dedicated SM team,
+                  you're a partner <br /> on a growth journey. Your goals are{" "}
+                  <br /> ours
                 </p>
               </div>
-              <div className='col-md-4'>
+              <div className='col-md-4 p-5'>
                 <img src={ff12} alt='image' />
-                <h3>Transparent Reporting</h3>
+                <h3 className='pt-4'>Transparent Reporting</h3>
                 <p>
-                  We prioritize transparency. Our reporting is more than
-                  numbers; it's a detailed map guiding your brand's journey.
-                  Witness the impact of your campaigns as we lay out the
-                  metrics, ensuring you're informed and empowered every step of
-                  the way.
+                  Transparency is our priority. Our <br /> reporting is a
+                  detailed map of your <br /> brand's journey, empowering you{" "}
+                  <br /> every step.
                 </p>
               </div>
             </div>
@@ -353,7 +332,21 @@ export default function Smm() {
         </div>
       </section>
 
-      <ContactForm />
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+        <div className='container ' id='contact-form-section'>
+          <div className='content text-center'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4'>Transform Your Business Today</h3>
+            </div>
+            <p>
+              Let's discuss how our digital marketing expertise can boost your
+              online <br /> presence and revenue.
+            </p>
+          </div>
+
+          <ContactForm />
+        </div>
+      </section>
 
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
@@ -371,13 +364,16 @@ export default function Smm() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
                 onClick={() => handleButtonClick(1)}
               >
-                What is social media marketing?{" "}
+                {" "}
+                <span className='faqspan'>
+                  What is social media marketing?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -413,7 +409,7 @@ export default function Smm() {
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -425,13 +421,15 @@ export default function Smm() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
                 onClick={() => handleButtonClick(2)}
               >
-                What are the 5 ways of social media marketing?{" "}
+                <span className='faqspan'>
+                  What are the 5 ways of social media marketing?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -463,7 +461,7 @@ export default function Smm() {
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -475,13 +473,15 @@ export default function Smm() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
                 onClick={() => handleButtonClick(3)}
               >
-                What is the importance of social media optimization (SMO)?{" "}
+                <span className='faqspan'>
+                  What is the importance of social media optimization (SMO)?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -513,7 +513,7 @@ export default function Smm() {
               </div>
             </div>
           </div>
-          <br /> <br /> <br />
+          <br />
           <div className='container'>
             <p>
               <button
@@ -525,13 +525,15 @@ export default function Smm() {
                 aria-controls='collapseExample1'
                 style={{
                   width: "100%",
-                  height: "6rem",
+                  height: "8rem",
                   flexShrink: "0",
                   backgroundColor: primaryBackgroundColor,
                 }}
                 onClick={() => handleButtonClick(4)}
               >
-                How does social media marketing impact brand visibility?{" "}
+                <span className='faqspan'>
+                  How does social media marketing impact brand visibility?{" "}
+                </span>
                 <span style={{ float: "right" }}>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

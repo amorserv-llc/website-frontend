@@ -12,6 +12,7 @@
 section.service-feat {
   width: 100%;
   margin: auto;
+  /* border: 2px solid red; */
 }
 
 section.service-feat h2 {
@@ -27,7 +28,6 @@ section.service-feat h2 {
 section.service-feat p {
   text-align: center;
   font-size: 1.2rem;
-
 }
 
 section.service-feat .contents {
@@ -40,17 +40,25 @@ section.service-feat .contents {
 section.service-feat .contents h3 {
   color: #266;
 }
+
 .card-body {
   border-radius: 1.075rem;
   background: #eff3fd;
   cursor: pointer;
-  /* width: 25.625rem; */
+  width: 100%;
   height: 28.25rem;
-  flex-shrink: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
     0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 3px solid red; */
 }
-
+.sem{
+  margin-top: 4rem;
+}
 .card-body:hover {
   transform: scale(1.05); /* Increase the size on hover */
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.4),
@@ -67,6 +75,8 @@ section.service-feat .contents p {
   font-weight: 400;
   line-height: 1.5rem; /* 150% */
   letter-spacing: 0.03125rem;
+  line-height: 2rem;
+  width: 100%;
 }
 
 section.service-feat .contents h4 {
@@ -217,13 +227,14 @@ section.trust-agency .contents .detail .image img {
 .whyseo {
   background-color: #226666;
   color: white;
-  height: 30.375rem;
+  height: 37.375rem;
 }
-.whyseo  p{
+.whyseo p {
   font-size: 1.2rem;
   text-align: center;
 }
-.whyseo  h1{
+
+.whyseo h1 {
   font-size: 5rem;
   text-align: center;
 }
@@ -233,8 +244,14 @@ section.trust-agency .contents .detail .image img {
   section.service-feat h2 {
     width: 90%;
     font-size: 2.7vw;
+    /* border: 2px solid red; */
   }
+  .lastcard {
+    border: 3px solid red;
+    margin-right:300px;
+    display:none;
 
+  }
   section.service-feat .contents {
     padding-top: 30px;
   }
@@ -297,7 +314,11 @@ section.trust-agency .contents .detail .image img {
   section.service-feat .contents {
     padding-top: 0px;
   }
-
+.sem{
+  padding-top: 80px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
   section.service-feat .contents .left,
   section.service-feat .contents .right {
     height: 300px;
@@ -314,7 +335,7 @@ section.trust-agency .contents .detail .image img {
   }
 
   .whyseo {
-    height: 80.25rem;
+    height: 82.25rem;
     flex-shrink: 0;
     /* border: 2px solid red; */
   }
@@ -327,7 +348,7 @@ section.trust-agency .contents .detail .image img {
     font-style: normal;
     font-weight: 800;
     line-height: 3.5rem; /* 70% */
-    margin: 39px;
+    margin: 30px;
   }
   .whyseo p {
     position: relative;
@@ -421,16 +442,49 @@ section.trust-agency .contents .detail .image img {
 }
 
 /* Add a media query for mobile devices */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .pbtn{
+    width: 150%;
+    text-align: center;
+  }
   .card-body {
     border-radius: 0.75rem; /* Example radius for smaller screens */
-    height: auto; /* Let the content determine the height */
-    width: 100%; /* Take up the full width of the container */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3),
       0px 4px 6px 3px rgba(0, 0, 0, 0.15);
-    height: 25.89906rem;
+    /* height: 25.89906rem; */
+    /* border: 3px solid red; */
+    width: 100%;
+    font-size: 0.8rem;
   }
 
+  .contents .card-body p{
+    /* border: 1px solid red; */
+  
+  }
+  
+
+  .contents .card-body {
+    /* border: 1px solid red; */
+    font-size: 0.5rem;
+
+  }
+  .contents {
+    /* border: 1px solid red; */
+  
+  }
+  
+
+
+ 
+  .faqspan {
+     
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+  .faqsvg {
+    /* border: 2px solid red; */
+    /* height: 10px; */
+  }
   .custom-card {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
       0px 8px 12px 6px rgba(0, 0, 0, 0.15);
@@ -453,6 +507,4 @@ section.trust-agency .contents .detail .image img {
     height: 4.21356rem;
     justify-content: center;
   }
-
- 
 }
