@@ -19,6 +19,7 @@ import fav from "./Assets/fav.png";
 import { Helmet } from "react-helmet";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import ThankYou from "./components/layout/ThankYou";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -47,6 +48,8 @@ function App() {
             <Route path='/email-marketing' element={<ScrollToTop> <Em /> </ScrollToTop >} />
             <Route path='/search-engine-marketing' element={<ScrollToTop> <Sem /> </ScrollToTop >} />
             <Route path='/branding' element={<ScrollToTop> <Branding /> </ScrollToTop >} />
+            <Route path='/faq' element={<ScrollToTop><Faq /></ScrollToTop>} />
+    
           </Routes>
         </div>
       </Router>

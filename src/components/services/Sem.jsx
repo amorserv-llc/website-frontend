@@ -29,6 +29,7 @@ import se5 from "../../Assets/se5.png";
 import se6 from "../../Assets/se6.png";
 import ContactForm from "../layout/ContactForm";
 import { Link } from "react-router-dom";
+import QuestionAnswer from "../molecules/quest-answer";
 export default function Sem() {
   const [activeButton, setActiveButton] = useState(null);
   const primaryBackgroundColor = "#D3DCE7";
@@ -69,8 +70,10 @@ export default function Sem() {
               your brand online?
             </h1>
 
-            <p style={{ width: '100%', }}>
-            Search engine marketing propels your brand's online  <br />visibility by strategically engaging your target audience <br /> and driving valuable traffic.
+            <p style={{ width: "100%" }}>
+              Search engine marketing propels your brand's online <br />
+              visibility by strategically engaging your target audience <br />{" "}
+              and driving valuable traffic.
             </p>
             <Link onClick={handleCallButtonClick}>
               <button>Schedule a Call</button>
@@ -89,10 +92,14 @@ export default function Sem() {
         </p>
       </div>
 
-      <section className='header-bg container' style={{ backgroundColor: "white" }}>
+      <section
+        className='header-bg container'
+        style={{ backgroundColor: "white" }}
+      >
         <div className='header'>
           <div className='content'>
-            <p className="sem"
+            <p
+              className='sem'
               style={{ fontSize: "1.2rem", lineHeight: "2.5rem", opacity: "1" }}
             >
               Search Engine Marketing (SEM) is a dynamic digital marketing
@@ -129,34 +136,41 @@ export default function Sem() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff12} alt='image' />
-                    <h3>Drive Conversions</h3>
-                    <p>
-                    Use PPC advertising to reach <br />potential customers. Bid on relevant <br /> keywords, your ads appear in <br /> searches
-                    </p>
-                  </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff13} alt='image' />
-                    <h3>Optimization</h3>
-                    <p>
-                    Leverage strategic keyword research <br /> for online optimization. Select <br /> audience-searched keywords for <br />higher search relevance.
-                    </p>
-                  </div>
-              </div>
-
-              <div className='col-md-4 text-center p-5'>
-                  <div className='card-body'>
-                    <img src={ff14} alt='image' />
-                    <h3>Tracking</h3>
-                    <p>
-                    Track and analyze conversions for <br /> SEM impact measurement. Identify <br /> ads driving purchases, sign-ups, or <br /> interactions
-                    </p>
-                  </div>
+                <div className='card-body'>
+                  <img src={ff12} alt='image' />
+                  <h3>Drive Conversions</h3>
+                  <p>
+                    Use PPC advertising to reach <br />
+                    potential customers. Bid on relevant <br /> keywords, your
+                    ads appear in <br /> searches
+                  </p>
                 </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff13} alt='image' />
+                  <h3>Optimization</h3>
+                  <p>
+                    Leverage strategic keyword research <br /> for online
+                    optimization. Select <br /> audience-searched keywords for{" "}
+                    <br />
+                    higher search relevance.
+                  </p>
+                </div>
+              </div>
+
+              <div className='col-md-4 text-center p-5'>
+                <div className='card-body'>
+                  <img src={ff14} alt='image' />
+                  <h3>Tracking</h3>
+                  <p>
+                    Track and analyze conversions for <br /> SEM impact
+                    measurement. Identify <br /> ads driving purchases,
+                    sign-ups, or <br /> interactions
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -258,11 +272,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={se1}
-                width='25px'
-                alt='...'
-              />
+              <img src={se1} width='25px' alt='...' />
               <a href='' className='px-2 serv-link'>
                 Pay-Per-Click (PPC){" "}
               </a>
@@ -290,11 +300,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={se4}
-                width='25px'
-                alt='...'
-              />
+              <img src={se4} width='25px' alt='...' />
               <a href='' className='px-2 serv-link'>
                 Ad Copywriting
               </a>
@@ -303,11 +309,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={se5}
-                width='25px'
-                alt='...'
-              />
+              <img src={se5} width='25px' alt='...' />
               <a href='' className='px-2 serv-link'>
                 Ad Campaign Creation{" "}
               </a>
@@ -316,11 +318,7 @@ export default function Sem() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={se6}
-                width='25px'
-                alt='...'
-              />
+              <img src={se6} width='25px' alt='...' />
               <a href='' className='px-2 serv-link'>
                 Performance Analytics
               </a>
@@ -383,7 +381,9 @@ export default function Sem() {
               <h3 className='mb-4'>Unlock Your Digital Potential Today!</h3>
             </div>
             <p>
-            Let our SEM services experts assist you to unleash the power of tailored <br /> digital solutions. Let's connect and bring your vision to life.
+              Let our SEM services experts assist you to unleash the power of
+              tailored <br /> digital solutions. Let's connect and bring your
+              vision to life.
             </p>
           </div>
 
@@ -394,217 +394,41 @@ export default function Sem() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4 pb-5' style={{ fontSize: '3rem' }}>Search Engine Optimization FAQs</h3>
-          </div>
-
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(1)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 1 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(1)}
-              >
-                How does SEM differ from traditional advertising?{" "}
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(1) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 1 ? "show" : ""}`}
-              id='collapseExample1'
-            >
-              <div className='card card-boo'>
-                SEM focuses on displaying ads to users actively searching for
-                specific keywords, whereas traditional advertising casts a
-                broader net across various platforms.{" "}
-              </div>
-            </div>
-          </div>
-          <br />
-          
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(2)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 2 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(2)}
-              >
-                What are the benefits of using Google Ads for SEM?{" "}
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(2) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 2 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
-          </div>
-
-          <br />
-        
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(3)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 3 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(3)}
-              >
-                What is the importance of social media optimization (SMO)?{" "}
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(3) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 3 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
-          </div>
-
-          <br />
-        
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(4)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 2 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(4)}
-              >
-                How does social media marketing impact brand visibility?{" "}
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(4) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 4 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
+            <h3 style={{ fontSize: "3rem" }}>
+              Search Engine Optimization FAQs
+            </h3>
           </div>
         </div>
       </section>
 
+      <div className='faq-container'>
+        <div className='faq-section-one'>
+          <div className='faqs'>
+            <QuestionAnswer
+              question='How does SEM differ from traditional advertising?'
+              answer='SEM focuses on displaying ads to users actively searching for specific keywords, whereas traditional advertising casts a broader net across various platforms.'
+            />
+
+            <QuestionAnswer
+              question='What are the benefits of using Google Ads for SEM?'
+              answer='Google Ads offers a wide reach, targeting options, and detailed tracking, allowing businesses to tailor their campaigns and monitor performance effectively.'
+            />
+
+            <QuestionAnswer
+              question='What is SEM vs SEO?'
+              answer="SEM involves paid advertising on search engines, while SEO focuses on optimizing your website's content to improve organic search rankings."
+            />
+            <QuestionAnswer
+              question='What type of marketing is search engine marketing?'
+              answer='SEM falls under digital marketing, specifically targeting users searching for products or services on search engines.'
+            />
+            <QuestionAnswer
+              question='What are the two types of search engine marketing?'
+              answer='The two types of SEM are Pay-Per-Click (PPC) advertising, where you pay when users click your ads, and Search Engine Optimization (SEO), where you optimize your website for higher organic rankings.'
+            />
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );

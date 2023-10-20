@@ -35,7 +35,7 @@ const validataeEmail = () => {
     e.preventDefault();
 
      
-    const apiUrl = "http://127.0.0.1:8000/api/v1/consulting/contacts";
+    const apiUrl = "https://api.amorservtech.net/api/v1/consulting/contacts";
 
   
     setLoading(true);
