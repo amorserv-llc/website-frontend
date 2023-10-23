@@ -60,7 +60,8 @@ const validataeEmail = () => {
         setLoading(false);
       });
     if (handleSubmit) {
-      navigate("/thankyou");
+      navigate("/thank-you");
+
     }
   };
 

@@ -93,7 +93,8 @@
 .faq-section-one {
   width: 100%;
 
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
+  background: #dde0e4;
 
   padding: 80px 20px;
 
@@ -102,6 +103,8 @@
   flex-direction: column;
 
   gap: 60px;
+    /* border: 2px solid red; */
+
 }
 
 .faq-section-one .section-heading {
@@ -188,14 +191,15 @@
   right: 10px;
 
   cursor: pointer;
+  
 }
 
 .faq-section-one .faqs .quest-answer .answer {
-  width: 70%;
-
+  width: 80%;
   margin-top: 15px;
-
-  color: #555555;
+    color: #555555;
+  /* border: 2px solid red; */
+  font-size: 1.2rem;
 }
 
 .faq-section-two {
