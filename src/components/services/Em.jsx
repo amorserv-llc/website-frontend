@@ -19,6 +19,7 @@ import ff10 from "../../Assets/ff10.png";
 import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
 import { Link } from "react-router-dom";
+import QuestionAnswer from "../molecules/quest-answer";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
@@ -388,229 +389,42 @@ export default function Em() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-5' style={{ fontSize: "3rem" }}>
+            <h3 style={{ fontSize: "3rem" }}>
               Email Marketing FAQs
             </h3>
-          </div>
-
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(1)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 1 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(1)}
-              >
-                <span className='faqspan'>
-                  What is the significance of email marketing for businesses?{" "}
-                </span>
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(1) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 1 ? "show" : ""}`}
-              id='collapseExample1'
-            >
-              <div className='card card-boo'>
-                Email marketing is a powerful tool that helps businesses engage
-                their audience, nurture leads, and drive conversions. It enables
-                personalized communication, boosts brand loyalty, and delivers
-                measurable ROI.{" "}
-              </div>
-            </div>
-          </div>
-          <br />
-
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(2)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 2 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(2)}
-              >
-                <span className='faqspan'>
-                  How can personalized email campaigns benefit my brand?{" "}
-                </span>
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(2) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 2 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <div className='container'>
-            <p>
-              <button
-                className={buttonClass(3)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 3 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(3)}
-              >
-                <span className='faqspan'>
-                  Can email marketing help with lead generation?{" "}
-                </span>
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(3) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 3 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
-          </div>
-
-          <br />
-
-          <div className='container'>
-            <p className="child">
-              <button 
-                className={buttonClass(4)}
-                type='button'
-                data-toggle='collapse'
-                data-target='#collapseExample1'
-                aria-expanded={activeButton === 4 ? "true" : "false"}
-                aria-controls='collapseExample1'
-                style={{
-                  width: "100%",
-                  height: "8rem",
-                  flexShrink: "0",
-                  backgroundColor: primaryBackgroundColor,
-                }}
-                onClick={() => handleButtonClick(4)}
-              >
-                <span className='faqspan'>
-                  How can automated email  campaigns save time and improve efficiency?{" "}
-                </span>
-
-                <span style={{ float: "right" }}>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='45'
-                    height='24'
-                    viewBox='0 0 45 24'
-                    fill='none'
-                    style={{
-                      transform: `rotate(${
-                        getArrowDirection(4) === "down" ? 0 : 180
-                      }deg)`,
-                    }}
-                  >
-                    <path
-                      d='M39.8879 23.2994C40.8672 24.2499 42.4276 24.2284 43.3781 23.2527C44.3287 22.277 44.3072 20.7131 43.3315 19.7625L23.6778 0.704268L21.956 2.47271L23.6778 0.697096C22.695 -0.253485 21.131 -0.228374 20.1804 0.750902C20.1517 0.779598 20.1266 0.808294 20.1015 0.836992L0.749115 19.7625C-0.230164 20.7131 -0.251686 22.277 0.698895 23.2527C1.64948 24.2284 3.21345 24.2535 4.18914 23.2994L21.9632 5.91632L39.8879 23.2994Z'
-                      fill='#555555'
-                    />
-                  </svg>
-                </span>
-              </button>
-            </p>
-            <div
-              className={`collapse ${activeButton === 4 ? "show" : ""}`}
-              id='collapseExample2'
-            >
-              <div className='card card-boo'>
-                Yes, we offer revisions to the design to ensure it meets your
-                requirements and expectations.
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
+      <div className='faq-container'>
+        <div className='faq-section-one'>
+          <div className='faqs'>
+            <QuestionAnswer
+              question='What is the significance of email marketing for businesses?'
+              answer='Email marketing is a powerful tool that helps businesses engage their audience, nurture leads, and drive conversions. It enables personalized communication, boosts brand loyalty, and delivers measurable ROI.'
+            />
+
+            <QuestionAnswer
+              question='How can personalized email campaigns benefit my brand?  '
+              answer='Personalized email campaigns resonate with recipients on an individual level, increasing open rates and engagement. By tailoring content based on recipient behavior and preferences, brands can foster deeper connections and drive higher conversions.'
+            />
+
+            <QuestionAnswer
+              question='What role do analytics play in email marketing?'
+              answer='Analytics provide crucial insights into campaign performance. They track metrics such as open rates, click-through rates, and conversions, allowing brands to refine strategies for optimal results and higher ROI.'
+            />
+
+            <QuestionAnswer
+              question='Can email marketing help with lead generation?'
+              answer='Absolutely. Email marketing is an effective lead generation tool. Through compelling content and strategically placed CTAs, brands can entice recipients to take desired actions, moving them through the sales funnel.'
+            />
+            <QuestionAnswer
+              question='How can automated email campaigns save time and improve efficiency?'
+              answer='Automated email campaigns streamline communication by sending relevant messages at predetermined intervals or triggered by user actions. This saves time, maintains consistent engagement, and nurtures leads without constant manual intervention.'
+            />
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );
