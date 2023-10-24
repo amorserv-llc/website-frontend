@@ -2,12 +2,14 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import emailValidator from "email-validator";
 import Spinner from "./Spinner";
 import { useNavigate } from "react-router-dom";
 
+const blockedDomains = ["gmail.com", "yahoo.com"];
+
 const ContactForm = () => {
   const navigate = useNavigate();
-
   const [formData, setFormData] = useState({
     full_name: "",
     position: "",
@@ -19,25 +21,40 @@ const ContactForm = () => {
     website_id: 1,
   });
   const [loading, setLoading] = useState(false);
-  const [emailError, setEmailError] = useState(false);
+  const [error, setError] = useState(null);
+
+  const isValidEmail = (email) => {
+    return (
+      emailValidator.validate(email) &&
+      !blockedDomains.includes(email.split("@")[1])
+    );
+  };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    if (e.target.name === "email") {
-      setEmailError(false); // Reset email error when user starts typing again
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+
+    if (name === "email") {
+      if (value === "") {
+        setError(null); // Clear the error if the email field is empty
+      } else if (!isValidEmail(value)) {
+        setError("Business email or a corporate email address");
+      } else {
+        setError(null);
+      }
     }
   };
-const validataeEmail = () => {
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@company\.com$/; // Change 'company.com' to your desired domain
-  return emailRegex.test(formData.email);
-};
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-     
+    if (error) {
+      // If there is an error, prevent form submission
+      return;
+    }
+
     const apiUrl = "https://api.amorservtech.net/api/v1/consulting/contacts";
 
-  
     setLoading(true);
     axios
       .post(apiUrl, formData)
@@ -54,15 +71,12 @@ const validataeEmail = () => {
           website_id: 1,
         });
         setLoading(false);
+        navigate("/thank-you");
       })
       .catch((error) => {
         console.error(error);
         setLoading(false);
       });
-    if (handleSubmit) {
-      navigate("/thank-you");
-
-    }
   };
 
   return (
@@ -118,24 +132,50 @@ const validataeEmail = () => {
 
           <div className='col-md-6'>
             <form onSubmit={handleSubmit}>
-              <div className='form-group'>
+            <div className='form-group' style={{ position: 'relative' }}>
+    {error && (
+        <div
+            className='error-badge'
+            style={{
+                position: 'absolute',
+                top: '-1.5rem',  // Adjust the distance from the top as needed
+                left: 0,
+                // backgroundColor: 'red',
+                color: 'red',
+                padding: '0.2rem 0.5rem',
+                borderRadius: '0.2rem',
+                fontSize: '1.1rem',
+            }}
+        >
+            {error}
+        </div>
+    )}
+    <input
+        type='email'
+        id='email'
+        name='email'
+        value={formData.email}
+        onChange={handleChange}
+        className={`form-control ${error ? 'error-input' : ''}`}
+        required
+        placeholder='Work Email'
+    />
+</div>
+
+            {/* <div className='form-group' style={{ position: 'relative' }}>
+
                 <input
                   type='email'
                   id='email'
                   name='email'
                   value={formData.email}
                   onChange={handleChange}
-                  className='form-control'
+                  className={`form-control ${error ? 'error-input' : ''}`}
                   required
                   placeholder='Work Email'
                 />
-                {/* Display validation error */}
-                {/* {emailError && (
-            <div className="error-message">
-              Invalid email format. Please use @company.com domain.
-            </div>
-          )} */}
-              </div>
+                {error && <p style={{ color: "red", fontSize: "0.7rem" }}>{error}</p>}
+              </div> */}
 
               <div className='form-group'>
                 <input
@@ -187,7 +227,6 @@ const validataeEmail = () => {
                 value={formData.website_id}
               />
 
-             
               <div className='text-center'>
                 <button
                   style={{ textAlign: "center" }}
@@ -204,8 +243,6 @@ const validataeEmail = () => {
         </div>
       </div>
     </div>
-    // </div>
-    // </section>
   );
 };
 
