@@ -45,7 +45,7 @@ export default function () {
       return;
     }
 
-    const apiUrl = "https://api.amorservtech.net/api/v1/consulting/contacts";
+    const apiUrl = "http://127.0.0.1:8000/api/v1/consulting/contacts";
 
     axios
       .post(apiUrl, formData)
@@ -57,7 +57,7 @@ export default function () {
           phone: "",
           message: "",
         });
-        navigate("/thank-you");
+        navigate("/thankyou");
       })
       .catch((error) => {
         console.error(error);
