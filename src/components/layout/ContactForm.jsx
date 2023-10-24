@@ -132,50 +132,35 @@ const ContactForm = () => {
 
           <div className='col-md-6'>
             <form onSubmit={handleSubmit}>
-            <div className='form-group' style={{ position: 'relative' }}>
-    {error && (
-        <div
-            className='error-badge'
-            style={{
-                position: 'absolute',
-                top: '-1.5rem',  // Adjust the distance from the top as needed
-                left: 0,
-                // backgroundColor: 'red',
-                color: 'red',
-                padding: '0.2rem 0.5rem',
-                borderRadius: '0.2rem',
-                fontSize: '1.1rem',
-            }}
-        >
-            {error}
-        </div>
-    )}
-    <input
-        type='email'
-        id='email'
-        name='email'
-        value={formData.email}
-        onChange={handleChange}
-        className={`form-control ${error ? 'error-input' : ''}`}
-        required
-        placeholder='Work Email'
-    />
-</div>
-
-            {/* <div className='form-group' style={{ position: 'relative' }}>
-
+              <div className='form-group' style={{ position: "relative" }}>
+                {error && (
+                  <div
+                    className='error-badge'
+                    style={{
+                      position: "absolute",
+                      top: "-1.5rem", // Adjust the distance from the top as needed
+                      left: 0,
+                      // backgroundColor: 'red',
+                      color: "red",
+                      padding: "0.2rem 0.5rem",
+                      borderRadius: "0.2rem",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {error}
+                  </div>
+                )}
                 <input
                   type='email'
                   id='email'
                   name='email'
                   value={formData.email}
                   onChange={handleChange}
-                  className={`form-control ${error ? 'error-input' : ''}`}
+                  className={`form-control ${error ? "error-input" : ""}`}
                   required
                   placeholder='Work Email'
                 />
-                {error && <p style={{ color: "red", fontSize: "0.7rem" }}>{error}</p>}
-              </div> */}
+              </div>
 
               <div className='form-group'>
                 <input

@@ -363,12 +363,7 @@ body {
   .bd-footer .col-lg-5 img {
     /* text-align: center; */
     /* border: 1px solid green; */
-<<<<<<< HEAD
-    margin-left: -19.1px;
-=======
     margin-left: -19px;
-
->>>>>>> 191fc751e7902f511c4df872bbcd636692ca36e5
   }
 
   .bd-footer .col-lg-5 div {
@@ -659,9 +654,8 @@ body {
 .lh-md {
   padding-top: 2rem;
 }
-.card-title  {
-  /* border: 1px solid red; */
-}
+/* .card-title {
+} */
 
 .portfolio p {
   color: #555;
@@ -832,12 +826,11 @@ footer ul li a {
   justify-content: center;
   padding-top: 5px;
 }
-.hp{
+.hp {
   margin-top: -170px;
 }
 /* Media query for mobile responsiveness */
 @media screen and (max-width: 768px) {
-
   .card-boo {
     color: #010101;
     font-feature-settings: "clig" off, "liga" off;
@@ -857,8 +850,8 @@ footer ul li a {
     /* padding: 15px; */
     /* border: 2px solid red; */
   }
- 
-  .hp{
+
+  .hp {
     margin-top: -50px;
   }
   #sec-0 p {
@@ -869,7 +862,6 @@ footer ul li a {
     /* border: 3px solid red; */
     width: 100%;
   }
-
 
   #sec-0 span {
     color: #3d3d3d;
@@ -922,7 +914,6 @@ footer ul li a {
 }
 
 @media screen and (max-width: 768px) {
-
   .card {
     display: flex;
     /* width: 37.26363rem; */
@@ -936,7 +927,7 @@ footer ul li a {
     /* height: 55rem; */
     /* border: 3px solid red; */
   }
-  .portfolio{
+  .portfolio {
     padding-top: 3rem;
     /* border: 2px solid red; */
   }
@@ -1237,9 +1228,6 @@ footer ul li a {
   opacity: 0.45;
 }
 
-
-
-
 .error-input {
-  border: 1px solid red; /* Add a red border for the input field */
+  border: 1px solid red;
 }
