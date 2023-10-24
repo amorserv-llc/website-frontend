@@ -6,54 +6,62 @@ import React, { useState } from "react";
 import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
-
 export default function () {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     email: "",
+    phone: "",
     message: "",
   });
+  const [error, setError] = useState(null);
+
+ 
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+
+    if (name === "email") {
+      if (value === "") {
+        setError(null); 
+     
+      } else {
+        setError(null);
+      }
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Post form data to a demo endpoint (replace with your actual endpoint)
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Form data sent:", data);
-        // Reset the form after successful submission
+    if (error) {
+      // If there is an error, prevent form submission
+      return;
+    }
+
+    const apiUrl = "https://api.amorservtech.net/api/v1/consulting/contacts";
+
+    axios
+      .post(apiUrl, formData)
+      .then((response) => {
+        console.log(response.data);
         setFormData({
-          name: "",
-          phone: "",
+          full_name: "",
           email: "",
+          phone: "",
           message: "",
         });
-
-        // Navigate to the thank you page after successful submission
-        navigate("/thankyou");
+        navigate("/thank-you");
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error(error);
       });
-  };
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
   };
 
   return (
@@ -97,7 +105,7 @@ export default function () {
                       name='name'
                       className='contro'
                       placeholder='Full Name'
-                      value={formData.name}
+                      value={formData.full_name}
                       onChange={handleInputChange}
                     />
                   </div>
@@ -136,8 +144,8 @@ export default function () {
                       type='submit'
                       className='text-decoration-none text-dark'
                       style={{
-                        background: 'none',  // Remove background color
-                        border: 'none',      // Remove border
+                        background: "none", // Remove background color
+                        border: "none", // Remove border
                       }}
                     >
                       <svg
