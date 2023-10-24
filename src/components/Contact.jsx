@@ -57,7 +57,7 @@ export default function () {
           phone: "",
           message: "",
         });
-        navigate("/thankyou");
+        navigate("/thank-you");
       })
       .catch((error) => {
         console.error(error);
