@@ -9,12 +9,11 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import Navbar from "./layout/TopNavbar";
-import { Link } from "react-router-dom";
 export default function () {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    name: "",
+    full_name: "",
     email: "",
     phone: "",
     message: "",
@@ -102,7 +101,7 @@ export default function () {
                   <div className='mb-3'>
                     <input
                       type='text'
-                      name='name'
+                      name='full_name'
                       className='contro'
                       placeholder='Full Name'
                       value={formData.full_name}
