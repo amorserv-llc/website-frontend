@@ -64,7 +64,7 @@ export default function About() {
 
 
             <br /> <br />
-            The name “AmorServ ” conveys a strong message of dedication, commitment, and passion for serving <br />customers. The fact that the name literally means “We Love to Serve You” reinforces this message and sets a <br />high standard for the company.
+            The name “AmorServ ” conveys a strong message of dedication, commitment, and passion for serving <br />customers. The fact that the name literally means “We Love to Serve You” reinforces this message and sets a <br /> high standard for the company.
           </article>
         </div>
       </section>
