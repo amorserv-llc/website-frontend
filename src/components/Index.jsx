@@ -168,7 +168,7 @@ export default function Index() {
             <div className='col-md-3 mb-5 hmd'>
               <div>
                 <img
-                  src={f1}
+                  src={f1} alt=""
                   className='
                 homeimg'
                 />
@@ -177,19 +177,19 @@ export default function Index() {
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div className='d-flex'>
-                <img src={f2} />
+                <img src={f2} alt="" />
               </div>
               <p>Feeling frustrated with low online presence?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f3} />
+                <img src={f3} alt="" />
               </div>
               <p>Feeling held back by digital marketing challenges?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f4} />
+                <img src={f4} alt="" />
               </div>
               <p>
                 Worried about missing opportunities to connect with your
