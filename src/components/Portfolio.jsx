@@ -40,7 +40,7 @@ export default function Portfolio() {
             Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
             </p>
             <div className="pbtn">
-              <Link to='/about-us'>
+              <Link to='/contact-us'>
               <button  style={{ width: '30%' }}>Free Consultation</button>
             </Link> 
             </div>

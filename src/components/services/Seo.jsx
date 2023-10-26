@@ -403,7 +403,7 @@ export default function () {
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}
           >
-            <Link className='btn mt-4 btn-real'>Get Started</Link>
+            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>Get Started</Link>
           </div>
         </div>
       </section>
