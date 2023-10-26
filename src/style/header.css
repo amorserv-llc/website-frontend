@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+
 }
  
 .header-bg .header .content {
@@ -38,6 +39,7 @@
   justify-content: center;
   gap: 20px;
   background: transparent;
+
 }
  
 .header-bg .header .content h1 {
@@ -48,6 +50,8 @@
   line-height: 58px;
   letter-spacing: 0em;
   text-align: left;
+  /* border: 2px solid red; */
+
 }
  
 .header-bg .header .content p {
