@@ -30,6 +30,7 @@ import se6 from "../../Assets/se6.png";
 import ContactForm from "../layout/ContactForm";
 import { Link } from "react-router-dom";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 export default function Sem() {
   const [activeButton, setActiveButton] = useState(null);
   const primaryBackgroundColor = "#D3DCE7";
@@ -58,32 +59,18 @@ export default function Sem() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              How Search Engine <br /> Marketing promotes <br />
-              your brand online?
-            </h1>
-
-            <p style={{ width: "100%" }}>
-              Search engine marketing propels your brand's online <br />
-              visibility by strategically engaging your target audience <br />{" "}
-              and driving valuable traffic.
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Schedule a Call</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={sem0} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"  How Search Engine Marketing promotes your brand online?".toUpperCase()}
+        desc="Search engine marketing propels your brand's online visibility by strategically engaging your target audience 
+        and driving valuable traffic."
+        link=''
+        linkTitle='Schedule a Call'
+        img={sem0}
+      />
 
       <div style={{ color: "#266", textAlign: "center" }}>
         <h1 className='pt-5'> What is Search Engine Marketing?</h1>
@@ -99,8 +86,12 @@ export default function Sem() {
         <div className='header'>
           <div className='content'>
             <p
-              className='sem'
-              style={{ fontSize: "1.2rem", lineHeight: "2.5rem", opacity: "1" }}
+              style={{
+                fontSize: "1.2rem",
+                lineHeight: "2.5rem",
+                opacity: "1",
+                marginLeft: "1rem",
+              }}
             >
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
@@ -117,7 +108,7 @@ export default function Sem() {
             </p>
           </div>
 
-          <div className=''>
+          <div className='pb-5'>
             <img src={updates} className='img-fluid' alt='header-image' />
           </div>
         </div>

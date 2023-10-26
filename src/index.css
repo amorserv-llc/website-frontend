@@ -65,6 +65,9 @@ body {
   margin: 0 auto;
   align-items: center;
   padding-top: 5px;
+  /* border: 3px solid green; */
+  position: relative;
+
 }
 
 .dropIn {
@@ -78,6 +81,7 @@ body {
   z-index: 99;
   top: 45px;
   background-color: white;
+
 }
 .hoverable-link:hover {
   border-bottom: 3px solid #b13557;
@@ -86,7 +90,7 @@ body {
 }
 .navItem {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
   color: #555;
   /* text-align: center; */
   font-family: Poppins;
@@ -94,7 +98,7 @@ body {
   font-style: normal;
   /* font-weight: bold; */
   font-weight: 600;
-  left: 450px;
+
 }
 .navItem p {
   font-size: 1.2rem;
@@ -121,13 +125,18 @@ body {
 }
 
 .navBarContainer .navDy .navlinks {
-  width: 60%;
-  display: flex;
+  width: 500px;
   list-style: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   /* background-color: red; */
+  right: 0;
 }
 
 /* Media query for mobile responsiveness */
@@ -326,12 +335,25 @@ body {
     margin-top: 10px; /* Add spacing between items */
     justify-content: flex-start;
     display: inline-block;
+    border: 3px solid green;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+
+    position: fixed;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    /* max-width: 200px; */
+    /* padding: 40px; */
+    border-radius: 5px;
+
   }
 
   .navItem {
     left: 0;
     margin: 12px;
     /* text-align: center; */
+    
   }
 
   .dropIn {
@@ -644,7 +666,7 @@ body {
 .card {
   display: flex;
   /* width: 37.26363rem; */
-  padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+  /* padding: 0.1755rem 0.01363rem 4.26481rem 0rem; */
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
@@ -917,11 +939,11 @@ footer ul li a {
   .card {
     display: flex;
     /* width: 37.26363rem; */
-    padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+    /* padding: 0.1755rem 0.01363rem 4.26481rem 0rem; */
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     /* height: 55rem; */

@@ -57,9 +57,12 @@ export default function Index() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
+
+
+      
       <Header />
       <section id='sec-2' className='py-5'>
         <div className='container-lg my-4'>

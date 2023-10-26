@@ -20,6 +20,7 @@ import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
 import { Link } from "react-router-dom";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
@@ -49,10 +50,19 @@ export default function Em() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
-
+      <HeroBg
+        title={" How does Email Marketing  earn loyalty for your brand?".toUpperCase()}
+        desc=' Empower your business with our effective email marketing 
+        strategies. Elevate engagement, drive conversions, and foster
+                lasting customer relationships..'
+        link=''
+        linkTitle='Schedule a Call'
+        img={em0}
+      />
+{/* 
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
@@ -75,7 +85,7 @@ export default function Em() {
             <img src={em0} className='img-fluid' alt='header-image' />
           </div>
         </div>
-      </header>
+      </header> */}
 
       <section
         className='service-feat p-5'

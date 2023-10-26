@@ -28,6 +28,7 @@ import ff15 from "../../Assets/ff15.png";
 import { Link } from "react-router-dom";
 import "../../style/faq.css";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 
 export default function () {
   const [activeButton, setActiveButton] = useState(null);
@@ -58,29 +59,17 @@ export default function () {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
-
-      <header className='header-bg' style={{ height: "80.8vh" }}>
-        <div className='header'>
-          <div className='content'>
-            <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-
-            <p>
-              SEO is the Definitive Path to Securing Your Place at the Peak of
-              Online Success.{" "}
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Learn More</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={seo} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
-
+      <HeroBg
+        title={"Turbocharge Your Online Success with Expert SEO Services".toUpperCase()}
+        desc='   SEO is the Definitive Path to Securing Your Place at the Peak of
+        Online Success.'
+        link=''
+        linkTitle='Schedule a Call'
+        img={seo}
+      />
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
@@ -403,7 +392,9 @@ export default function () {
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}
           >
-            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>Get Started</Link>
+            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
@@ -433,8 +424,6 @@ export default function () {
         </div>
       </section>
 
-
-      
       <div className='faq-container'>
         <div className='faq-section-one'>
           <div className='faqs'>
@@ -449,13 +438,13 @@ export default function () {
             />
 
             <QuestionAnswer
-              question="What are keywords and how do they impact SEO?"
+              question='What are keywords and how do they impact SEO?'
               answer="Keywords are search terms users type into search engines. Properly using keywords in your content, titles, and meta descriptions helps search engines understand your content's relevance, boosting your chances of ranking higher for those terms."
             />
 
             <QuestionAnswer
               question='Is local SEO important for businesses? '
-              answer="Yes, local SEO is vital for businesses targeting a local audience. It helps your business appear in local searches, improves visibility on Google, and connects you with nearby customers searching for your products or services."
+              answer='Yes, local SEO is vital for businesses targeting a local audience. It helps your business appear in local searches, improves visibility on Google, and connects you with nearby customers searching for your products or services.'
             />
             <QuestionAnswer
               question='What is the difference between on-page and off-page SEO?'

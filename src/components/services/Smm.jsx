@@ -27,6 +27,7 @@ import { Link } from "react-router-dom";
 import QuestionAnswer from "../molecules/quest-answer";
 
 import "../../style/faq.css";
+import HeroBg from "../organism/hero-bg";
 
 export default function Smm() {
  
@@ -39,32 +40,19 @@ export default function Smm() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
+      <HeroBg
+        title={" How SMO builds your brand awareness?".toUpperCase()}
+        desc='Social Media Marketing is a cost-effective way to maximize 
+        brand awareness and witness tangible results as your
+        message resonates across social channels.'
+        link=''
+        linkTitle='Schedule a Call'
+        img={smo}
+      />
 
-      <header className='header-bg' style={{ height: "93vh" }}>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              How SMO builds your <br />
-              brand awareness?
-            </h1>
-
-            <p>
-              Social Media Marketing is a cost-effective way to maximize <br />{" "}
-              brand awareness and witness tangible results as your <br />{" "}
-              message resonates across social channels.
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Schedule a Call</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={smo} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
 
       <section
         className='service-feat p-5'

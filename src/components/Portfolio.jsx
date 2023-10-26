@@ -20,37 +20,22 @@ import TestimonialCarousel from "./layout/TestimonialCarousel";
 import CarouselCard from "./layout/CarouselCard";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-
+import HeroBg from "./organism/hero-bg";
 
 export default function Portfolio() {
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              Explore our Portfolio for <br /> More Insight.
-            </h1>
-
-            <p className='rapp' style={{ width: '100%' }}>
-            Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
-            </p>
-            <div className="pbtn">
-              <Link to='/contact-us'>
-              <button  style={{ width: '30%' }}>Free Consultation</button>
-            </Link> 
-            </div>
-           
-          </div>
-          <div className='image'>
-            <img src={portfolio} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"Explore our Portfolio for More Insight".toUpperCase()}
+        desc='Discover, recruit, and oversee top-tier remote African talent, rigorously assessed for both technical expertise and interpersonal skills.'
+        link='/contact-us'
+        linkTitle='Free Consultation'
+        img={portfolio}
+      />
 
       <section id='port-1' className='py-5 '>
         <div className='container-lg my-4 portfolio'>
@@ -233,9 +218,6 @@ export default function Portfolio() {
         </div>
         {/* <TestimonialCarousel /> */}
 
-
-
-
         <Slide
           duration={15000}
           indicators={true}
@@ -334,7 +316,6 @@ export default function Portfolio() {
             desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
             rating='5'
           />
-
 
           {/* <CarouselCard
             img={t2}

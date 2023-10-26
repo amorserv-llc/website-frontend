@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import Navbar from "./layout/TopNavbar";
+import HeroBg from "./organism/hero-bg";
 export default function () {
   const navigate = useNavigate();
 
@@ -20,16 +21,13 @@ export default function () {
   });
   const [error, setError] = useState(null);
 
- 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
     if (name === "email") {
       if (value === "") {
-        setError(null); 
-     
+        setError(null);
       } else {
         setError(null);
       }
@@ -65,28 +63,18 @@ export default function () {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>Contact Information</h1>
-
-            <p className='rapp' style={{ width: "100%", fontSize: "1.97rem" }}>
-              Our digital marketing experts are always available to give <br />{" "}
-              you top-notch solutions to your marketing challenges.
-            </p>
-            {/* <Link to='/contact-us'>
-              <button>Learn More</button>
-            </Link> */}
-          </div>
-          <div className='image'>
-            <img src={contact} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"Contact Information".toUpperCase()}
+        desc='Our digital marketing experts are always available to give
+        you top-notch solutions to your marketing challenges.'
+        link='/contact-us'
+        // linkTitle='Learn More'
+        img={contact}
+      />
 
       <section className='py-5 bg-light'>
         <div className='container-lg my-2'>
