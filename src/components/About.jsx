@@ -48,7 +48,7 @@ export default function About() {
 
       <section className='about-intro container'>
         <div className='intro'>
-          <h2>Who Is Amorserv Consulting?</h2>
+          <h2 style={{ fontSize: '3rem' }}>Who Is Amorserv Consulting?</h2>
 
           <article style={{ textAlign: "center" }}>
             Established in 2016, Amorserv Consulting stands as the best digital

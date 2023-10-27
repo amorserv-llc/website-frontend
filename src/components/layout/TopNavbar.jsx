@@ -1,4 +1,3 @@
-/** @format */
 
 import React, { useState, useEffect } from "react";
 import Logo from "../../Assets/Logo.png";
@@ -30,16 +29,16 @@ function Navbar() {
   }, []);
 
   return (
-    <section className='navBarContainer'>
-      <nav className='navDy'>
-        <Link className='navbarLogo' to='/'>
-          <img src={Logo} alt='Logo' />
+    <section className="navBarContainer">
+      <nav className="navDy">
+        <Link className="navbarLogo" to="/">
+          <img src={Logo} alt="Logo" />
         </Link>
 
         <button
-          className='navbar-toggler first-button'
+          className="navbar-toggler first-button"
           onClick={toggleMenu}
-          type='button'
+          type="button"
         >
           <div className={`animated-icon1 ${isOpen ? "open" : ""}`}>
             <span></span>
@@ -49,17 +48,14 @@ function Navbar() {
         </button>
 
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
-          <ul className='navlinks' id='nav-links'>
-            <li
-              className='navItem dropdown'
-              onClick={() => setToggle((prev) => !prev)}
-            >
+          <ul className="navlinks" id="nav-links">
+            <li className="navItem dropdown" onClick={() => setToggle((prev) => !prev)}>
               <a
-                className='nav-link dropdown-toggle'
-                href='#'
-                role='button'
-                data-bs-toggle='dropdown'
-                aria-expanded='false'
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 Services
               </a>
@@ -85,7 +81,10 @@ function Navbar() {
                     <img src={smm} width='20' height='20' alt='...' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Social Media Management</h6>
-                      <p className='opacity-75'> Connect with your Audience</p>
+                      <p className='opacity-75'>
+                        {" "}
+                        Connect with your Audience
+                      </p>
                     </div>
                   </Link>
 
@@ -117,13 +116,13 @@ function Navbar() {
                 </div>
               )}
             </li>
-            <li className='navItem'>
-              <Link className='nav-link' to='/about-us'>
+            <li className="navItem">
+              <Link className="nav-link" to="/about-us">
                 About Us
               </Link>
             </li>
-            <li className='navItem'>
-              <Link className='nav-link' to='/portfolio'>
+            <li className="navItem">
+              <Link className="nav-link" to="/portfolio">
                 Portfolio
               </Link>
             </li>
@@ -132,12 +131,13 @@ function Navbar() {
                 Blog
               </Link>
             </li> */}
-            <li className='navItem'>
-              <button className='btn-real'>
-                <Link className='nav-link' to='/contact-us'>
-                  Contact Us
-                </Link>
+            <li className="navItem">
+              <button className="btn-real">
+               <Link className="nav-link" to="/contact-us">
+                Contact Us
+              </Link> 
               </button>
+              
             </li>
           </ul>
         </div>

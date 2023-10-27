@@ -31,12 +31,10 @@ export default function Em() {
       activeButton === buttonId ? "active-button" : ""
     }`;
   };
-  // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
   };
 
-  // Determine the arrow direction based on the activeButton state
   const getArrowDirection = (buttonId) => {
     return activeButton === buttonId ? "up" : "down";
   };
@@ -62,30 +60,6 @@ export default function Em() {
         linkTitle='Schedule a Call'
         img={em0}
       />
-{/* 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              How does Email Marketing <br />
-              earn loyalty for your <br /> brand?
-            </h1>
-
-            <p style={{ width: "100%", fontSize: "1.85rem" }}>
-              Empower your business with our effective email marketing <br />
-              strategies. Elevate engagement, drive conversions, and foster{" "}
-              <br />
-              lasting customer relationships.
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Schedule a Call</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={em0} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header> */}
 
       <section
         className='service-feat p-5'
@@ -94,7 +68,7 @@ export default function Em() {
         <h2 style={{ fontSize: "3rem", lineHeight: "3.5rem" }}>
           Our Success-Driven Email <br /> Marketing Services{" "}
         </h2>
-        <p className='text-center pt-4'>
+        <p className='text-center pt-4' style={{ fontSize: "1.5rem" }}>
           Your Path to Email Marketing Excellence Starts Here.
         </p>
         <div className='contents'>
@@ -224,7 +198,7 @@ export default function Em() {
               Why you need email marketing <br /> services
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight:'2rem'}}>
               Email marketing is essential for propelling your business forward.
               It's a dynamic tool that not only nurtures customer <br />{" "}
               relationships but also drives conversions. Our email marketing
@@ -232,7 +206,7 @@ export default function Em() {
               campaigns that resonate with your audience, leading to increased
               engagement and measurable results.
             </p>
-            <div className='row pt-5'>
+            <div className='row pt-5 emp'>
               <div className='col-md-4 pt-5'>
                 <img src={ff7} alt='image' />
                 <h3 className='pt-4'>Build Customer Loyalty</h3>
@@ -273,7 +247,7 @@ export default function Em() {
               <div className='col-md-4 pt-5'>
                 <img src={ff11} alt='image' />
                 <h3 className='pt-4'>
-                  Test Email Campaigns <br /> and Drive Strong Results
+                  Test Email Campaigns and Drive Strong Results
                 </h3>
                 <p>
                   Optimize outcomes with well-tested <br />
@@ -302,7 +276,7 @@ export default function Em() {
               Benefits of using our email marketing services
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight: '2rem' }}>
               Experience heightened customer engagement and amplified
               conversions with our data-driven email <br /> marketing expertise.
             </p>
@@ -383,7 +357,7 @@ export default function Em() {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Supercharge Your ROI Now</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Supercharge Your ROI Now</h3>
             </div>
             <p>
               Contact us for a free consultation and discover the Email
@@ -399,9 +373,7 @@ export default function Em() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 style={{ fontSize: "3rem" }}>
-              Email Marketing FAQs
-            </h3>
+            <h3 style={{ fontSize: "3rem" }}>Email Marketing FAQs</h3>
           </div>
         </div>
       </section>

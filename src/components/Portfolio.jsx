@@ -206,7 +206,7 @@ export default function Portfolio() {
       <section id='sec-6'>
         <div className='container-lg pt-5'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4 fw-bold'>
+            <h3 className='mb-4 fw-bold' style={{ fontSize: "3rem" }}>
               Trusted by Thousands of <br />
               Happy Customer
             </h3>
@@ -253,46 +253,8 @@ export default function Portfolio() {
                 slidesToScroll: 1,
               },
             },
-
-            // {
-            //   breakpoint: 800,
-
-            //   settings: {
-            //     slidesToShow: 3,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 700,
-
-            //   settings: {
-            //     slidesToShow: 2,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 400,
-
-            //   settings: {
-            //     slidesToShow: 1,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
           ]}
         >
-          {/* <CarouselCard
-            img={t3}
-            name='Lizzy '
-            position='CEO Bread talks'
-            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
-            rating='5'
-          /> */}
-
           <CarouselCard
             img={t1}
             name='Lesley Bradley'

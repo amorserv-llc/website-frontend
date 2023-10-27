@@ -1,6 +1,5 @@
 /** @format */
 
-// import React from "react";
 import React, { useState } from "react";
 
 import contact from "../Assets/contact.png";
@@ -38,7 +37,6 @@ export default function () {
     e.preventDefault();
 
     if (error) {
-      // If there is an error, prevent form submission
       return;
     }
 
@@ -72,7 +70,6 @@ export default function () {
         desc='Our digital marketing experts are always available to give
         you top-notch solutions to your marketing challenges.'
         link='/contact-us'
-        // linkTitle='Learn More'
         img={contact}
       />
 
@@ -131,8 +128,8 @@ export default function () {
                       type='submit'
                       className='text-decoration-none text-dark'
                       style={{
-                        background: "none", // Remove background color
-                        border: "none", // Remove border
+                        background: "none",
+                        border: "none",
                       }}
                     >
                       <svg
@@ -226,7 +223,6 @@ export default function () {
               </div>
               <br /> <br />
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded cons'>
-                {/* <FontAwesomeIcon icon={faLocationDot} className='me-5 fa-2xl' /> */}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='34'

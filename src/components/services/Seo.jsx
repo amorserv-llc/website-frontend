@@ -74,8 +74,8 @@ export default function () {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className='pb-4'>Our Comprehensive SEO Services </h2>
-        <p className='text-center'>
+        <h2 className='pb-4' style={{ fontSize: '3rem' }}>Our Comprehensive SEO Services </h2>
+        <p className='text-center' style={{ fontSize:'1.5rem' }}>
           Maximize your online presence with our SEO services for <br />
           visibility and success.
         </p>
@@ -403,7 +403,7 @@ export default function () {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Let’s Grow your Business</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Let’s Grow your Business</h3>
             </div>
             <p>
               Fuel your brand's growth with our best SEO strategies that drive{" "}

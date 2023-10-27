@@ -25,7 +25,7 @@
 
 .about-intro .intro h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #226666;
 }
@@ -34,7 +34,7 @@
   padding-top: 15px;
   /* color: #3d3d3d; */
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .vmv .ul div h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #226666;
 }
@@ -74,7 +74,7 @@
 .vmv .ul div p {
   /* margin: auto; */
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   /* padding-left: 20px; */
 }
@@ -119,7 +119,7 @@
 .team .members .first-row .member .detail h6 {
   color: #555;
   font-family: Poppins;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 800;
   line-height: 1.5rem; /* 150% */
@@ -136,7 +136,7 @@
   flex-shrink: 0;
   color: #555;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem; /* 171.429% */
@@ -261,7 +261,7 @@
   .team h2,
   .partnership h2,
   .vmv .ul div h2 {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 
   .partnership ul li {

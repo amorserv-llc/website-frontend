@@ -30,7 +30,6 @@ import "../../style/faq.css";
 import HeroBg from "../organism/hero-bg";
 
 export default function Smm() {
- 
   const handleCallButtonClick = () => {
     const contactFormSection = document.getElementById("contact-form-section");
     if (contactFormSection) {
@@ -53,13 +52,12 @@ export default function Smm() {
         img={smo}
       />
 
-
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2>Our Comprehensive SEO Services </h2>
-        <p className='text-center'>
+        <h2 style={{ fontSize: '3rem' }} className="pb-4">Our Comprehensive SEO Services </h2>
+        <p className='text-center' style={{ fontSize: '1.5rem' }}>
           Explore our comprehensive social media marketing services list <br />{" "}
           compiled just for you.
         </p>
@@ -143,17 +141,6 @@ export default function Smm() {
                   </p>
                 </div>
               </div>
-              {/* <div className='col-md-4 text-center p-5 center-content'>
-                <div className='card-body lastcard'>
-                  <img src={ff6} alt='image' />
-                  <h4 className='card-title'>Analytics and Reporting</h4> <br />
-                  <p className='card-text'>
-                    Access real-time insights into your <br /> social media
-                    performance with our <br /> detailed analytics and reporting
-                    for <br /> informed decision-making.
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -209,7 +196,7 @@ export default function Smm() {
               Why Choose Amorserv SM Services?
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem" }}>
               Unlock a journey to online success with SEO expertise that
               delivers exceptional results
             </p>
@@ -279,7 +266,7 @@ export default function Smm() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4'>Amorserv Agile SM Methodology</h3>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>Amorserv Agile SM Methodology</h3>
           </div>
           <p className='my-4 text-center' style={{ color: "#3D3D3D" }}>
             We adopt tailored strategies to fuel captivating content. Meticulous
@@ -311,7 +298,7 @@ export default function Smm() {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Transform Your Business Today</h3>
+              <h3 className='mb-4'style={{ fontSize: "3rem" }}>Transform Your Business Today</h3>
             </div>
             <p>
               Let's discuss how our digital marketing expertise can boost your
@@ -326,7 +313,7 @@ export default function Smm() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4'>Social Media Marketing FAQs</h3>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>Social Media Marketing FAQs</h3>
           </div>
         </div>
       </section>
@@ -356,7 +343,7 @@ export default function Smm() {
 
             <QuestionAnswer
               question='How does social media marketing impact brand visibility?'
-              answer="Social media marketing significantly boosts brand visibility by leveraging platforms to connect, engage, and expose your brand to a larger audience, driving recognition and growth. "
+              answer='Social media marketing significantly boosts brand visibility by leveraging platforms to connect, engage, and expose your brand to a larger audience, driving recognition and growth. '
             />
           </div>
         </div>

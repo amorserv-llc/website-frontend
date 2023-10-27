@@ -40,12 +40,10 @@ export default function Sem() {
       activeButton === buttonId ? "active-button" : ""
     }`;
   };
-  // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
   };
 
-  // Determine the arrow direction based on the activeButton state
   const getArrowDirection = (buttonId) => {
     return activeButton === buttonId ? "up" : "down";
   };
@@ -73,8 +71,8 @@ export default function Sem() {
       />
 
       <div style={{ color: "#266", textAlign: "center" }}>
-        <h1 className='pt-5'> What is Search Engine Marketing?</h1>
-        <p style={{ fontSize: "1.2rem" }}>
+        <h1 className='pt-5' style={{ fontSize: "3rem" }}> What is Search Engine Marketing?</h1>
+        <p style={{ fontSize: "1.5rem" }}>
           Understanding the Essence of Search Engine Marketing (SEM)
         </p>
       </div>
@@ -87,10 +85,10 @@ export default function Sem() {
           <div className='content'>
             <p
               style={{
-                fontSize: "1.2rem",
+                fontSize: "1.5rem",
                 lineHeight: "2.5rem",
-                opacity: "1",
-                marginLeft: "1rem",
+                opacity: "0.8",
+                marginLeft: "-1rem",
               }}
             >
               Search Engine Marketing (SEM) is a dynamic digital marketing
@@ -118,8 +116,8 @@ export default function Sem() {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className='pb-4'>How does Search Engine Marketing work?</h2>
-        <p>
+        <h2 className='pb-4'style={{ fontSize: "3rem" }}>How does Search Engine Marketing work?</h2>
+        <p style={{ fontSize: "1.5rem" }}>
           Search Engine Marketing is one of the best digital marketing strategy
           you can leverage for your business growth.
         </p>
@@ -174,7 +172,7 @@ export default function Sem() {
               Why you need Search Engine <br /> Marketing?
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight: '2rem'}}>
               SEM empowers your business to appear prominently on search engine
               results pages (SERPs), <br /> precisely when potential customers
               are actively searching for what you offer.
@@ -252,7 +250,7 @@ export default function Sem() {
             >
               Our Comprehensive <br /> SEM Services
             </h3>
-            <p>
+            <p style={{ fontSize: "1.5rem" }}>
               Amplify Your Digital Footprint with Our best SEM Services. Drive
               targeted traffic, boost <br /> engagement, and achieve measurable
               results through our expert Pay-Per-Click strategies
@@ -326,7 +324,7 @@ export default function Sem() {
               Services?
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight: '2rem' }}>
               With our comprehensive Search Engine Marketing service, we are
               your best digital <br /> marketing partner for success.
             </p>
@@ -369,7 +367,7 @@ export default function Sem() {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Unlock Your Digital Potential Today!</h3>
+              <h3 className='mb-4'style={{ fontSize: "3rem" }}>Unlock Your Digital Potential Today!</h3>
             </div>
             <p>
               Let our SEM services experts assist you to unleash the power of

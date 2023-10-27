@@ -335,7 +335,7 @@ body {
     margin-top: 10px; /* Add spacing between items */
     justify-content: flex-start;
     display: inline-block;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     height: 200px;
     background-color: rgb(238, 238, 238);
 
@@ -453,7 +453,7 @@ body {
 #sec-2 h3 {
   color: #226666 !important;
   font-weight: bold;
-  font-size: 2.125rem;
+  font-size: 3rem;
   line-height: 2.25rem; /* 105.882% */
 }
 #sec-3 {
@@ -466,10 +466,11 @@ body {
   color: #226666 !important;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 2.125rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.25rem; /* 105.882% */
+  line-height: 2.25rem; 
+  padding: 2rem;
 }
 
 .secview {
@@ -483,10 +484,10 @@ body {
 #sec-3 p {
   color: #555;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 2rem; /* 150% */
   letter-spacing: 0.03125rem;
   display: flex;
   width: 20.0625rem;
@@ -498,32 +499,32 @@ body {
 
 #sec-4 p {
   /* color: #555555 !important; */
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 #sec-0 p {
   color: #226666 !important;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 #sec-0 h3 {
   color: #266;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1.5rem;
+  font-size: 2.93rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.5rem; /* 100% */
+  line-height: 2.5rem; /* 100% */
   letter-spacing: 0.03125rem;
 }
 #sec-0 span {
   color: #3d3d3d;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 2rem; /* 150% */
   letter-spacing: 0.03125rem;
 }
 #sec-0 {
@@ -548,24 +549,24 @@ body {
   color: #226666 !important;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 2.125rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.25rem; /* 105.882% */
+  line-height: 3.5rem; /* 105.882% */
 }
 
 #sec-6 h3 {
   color: #266;
   text-align: center;
   font-family: Poppins;
-  font-size: 2.1875rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.125rem; /* 142.857% */
+  line-height: 3.525rem; /* 142.857% */
 }
 
 #sec-6 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   justify-content: center;
   align-items: center;
