@@ -369,8 +369,9 @@ export default function Index() {
 
         <Slide
           duration={15000}
-          indicators={true}
-          autoplay={true}
+          indicators={false}
+          autoplay={false}
+          arrows={false}
           cssClass='carousel-cards'
           responsive={[
             {
@@ -428,21 +429,7 @@ export default function Index() {
             rating='5'
           />
 
-          {/* <CarouselCard
-            img={t2}
-            name='Tega Ovri'
-            position='CMO Oblivion'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          />
-
-          <CarouselCard
-            img={t1}
-            name='Katherina Owens'
-            position='Manager, Semetrics'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          /> */}
+       
         </Slide>
       </section>
       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
