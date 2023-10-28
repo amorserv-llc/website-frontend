@@ -31,7 +31,7 @@ export default function Portfolio() {
 
       <HeroBg
         title={"Explore our Portfolio for More Insight".toUpperCase()}
-        desc='Discover, recruit, and oversee top-tier remote African talent, rigorously assessed for both technical expertise and interpersonal skills.'
+        desc='Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.'
         link='/contact-us'
         linkTitle='Free Consultation'
         img={portfolio}

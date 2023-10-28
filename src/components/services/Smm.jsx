@@ -53,10 +53,10 @@ export default function Smm() {
       />
 
       <section
-        className='service-feat p-5'
+        className='service-feat p-1'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 style={{ fontSize: '3rem' }} className="pb-4">Our Comprehensive SEO Services </h2>
+        <h2 style={{ fontSize: '3rem' }} className="pb-3">Our Social Media Marketing Services</h2>
         <p className='text-center' style={{ fontSize: '1.5rem' }}>
           Explore our comprehensive social media marketing services list <br />{" "}
           compiled just for you.

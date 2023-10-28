@@ -457,7 +457,8 @@ body {
   line-height: 2.25rem; /* 105.882% */
 }
 #sec-3 {
-  background: #fafafb !important;
+  background: rgba(34, 102, 102, 0.12) !important;
+  
   align-items: center;
   gap: 2.9375rem;
   /* border: 3px solid red; */
@@ -541,12 +542,13 @@ body {
 }
 
 #sec-5 {
-  background: #eff3fd !important;
+  background: url('Assets/homel.png') center/cover no-repeat, #eff3fd !important;
+  /* background: #eff3fd !important; */
   text-align: center;
 }
 
 #sec-5 h3 {
-  color: #226666 !important;
+  color: #ffffff !important;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 3rem;
@@ -625,17 +627,18 @@ body {
   font-weight: 500;
 }
 #sec-5 .btn-serv {
-  background-color: #d9d9d9;
-  color: #555555;
+  background-color: #CEEDED;
+  color: #000000;
   font-size: 1.2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   height: 7rem;
   margin: 6px;
+  border-radius: 0.75rem;
 }
 .downt {
   margin-top: 15px;
-  color: #266;
+  color: rgb(255, 255, 255);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 1.5rem;

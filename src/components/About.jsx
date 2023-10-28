@@ -8,16 +8,16 @@ import about from "../Assets/about.png";
 import value from "../Assets/value.png";
 import mission from "../Assets/mission.png";
 import vision from "../Assets/vision.png";
-import person4 from "../Assets/person4.png";
+import siji from "../Assets/siji.png";
 import amazon from "../Assets/amazon.png";
 import visa from "../Assets/visa.png";
-import person6 from "../Assets/person6.png";
-import person3 from "../Assets/person3.png";
-import person5 from "../Assets/person5.png";
-import person2 from "../Assets/person2.png";
-import person7 from "../Assets/person7.png";
-import person1 from "../Assets/person1.png";
-import richard from "../Assets/richard.png";
+import temidayo from "../Assets/temidayo.png";
+import otaabasi from "../Assets/otaabasi.png";
+import valentine from "../Assets/valentine.png";
+import digvijay from "../Assets/digvijay.png";
+import olaide from "../Assets/olaide.png";
+import chiamaka from "../Assets/chiamaka.png";
+import tamara from "../Assets/tamara.png";
 import cox from "../Assets/cox.png";
 import citi from "../Assets/citi.png";
 import gold from "../Assets/gold.png";
@@ -48,7 +48,7 @@ export default function About() {
 
       <section className='about-intro container'>
         <div className='intro'>
-          <h2 style={{ fontSize: '3rem' }}>Who Is Amorserv Consulting?</h2>
+          <h2 style={{ fontSize: "3rem" }}>Who Is Amorserv Consulting?</h2>
 
           <article style={{ textAlign: "center" }}>
             Established in 2016, Amorserv Consulting stands as the best digital
@@ -118,81 +118,81 @@ export default function About() {
           <div className='first-row'>
             <div className='member'>
               <div className='image'>
-                <img src={person4} alt='' />
+                <img src={siji} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Siji Olojola</h6>
+                <p>Marketing Manager</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person5} alt='' />
+                <img src={valentine} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Valentine Okoye</h6>
+                <p>SEO Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person2} alt='' />
+                <img src={digvijay} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Digvijay Ahuja</h6>
+                <p>Data Entry Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person1} alt='' />
+                <img src={chiamaka} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Chiamaka Atuchukwu</h6>
+                <p>Social Media Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={richard} alt='' />
+                <img src={tamara} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Tamaraebi Etifa</h6>
+                <p>Content Writer and Research Analyst</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person7} alt='' />
+                <img src={olaide} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Olaide Opaleke</h6>
+                <p>Content Writer</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person6} alt='' />
+                <img src={temidayo} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Temidayo Akinuli</h6>
+                <p>Multimedia Designer</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person3} alt='' />
+                <img src={otaabasi} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Otoabasi Ekwere</h6>
+                <p>Multimedia Designer</p>
               </div>
             </div>
           </div>
