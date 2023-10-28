@@ -104,16 +104,20 @@
 .team .members .first-row .member {
   width: calc(25% - 15px);
   margin-bottom: 20px; /* Add spacing between rows */
-  padding: 10px; /* Optional: Add padding for better spacing within each member */
+  padding: 10px; 
+  /* border: 2px solid red; */
+
 }
 
 .team .members .first-row .member .image img {
-  max-width: 100%; /* Ensure the image scales within its container */
+  border-radius: 8px;
+
 }
 
 .team .members .first-row .member .detail {
   line-height: 1.2; /* Corrected line-height value */
   margin-top: 10px;
+
 }
 
 .team .members .first-row .member .detail h6 {
