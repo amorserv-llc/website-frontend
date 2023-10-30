@@ -71,7 +71,7 @@ body {
 }
 
 .dropIn {
-  width: 220px;
+  width: 240px;
   height: auto;
   padding: 10px 5px;
   display: flex;
@@ -81,6 +81,12 @@ body {
   z-index: 99;
   top: 45px;
   background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px 0 20px 0; 
+
+}
+.dropInLinks{
+  padding: 1rem 0.2rem 1.5rem;
 
 }
 .hoverable-link:hover {
