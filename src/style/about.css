@@ -25,17 +25,19 @@
 
 .about-intro .intro h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: bold;
   color: #226666;
 }
 
 .about-intro .intro article {
-  padding-top: 15px;
-  /* color: #3d3d3d; */
-  text-align: justify;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  padding-top: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+
+  font-weight: 400;
+  margin: 0 auto; /* Center the element in the container and provide space on left and right */
+  max-width: 900px; /* Set a maximum width to limit the content width */
 }
 
 .vmv {
@@ -61,7 +63,7 @@
 }
 
 .vmv .ul div h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #226666;
 }
@@ -74,7 +76,7 @@
 .vmv .ul div p {
   /* margin: auto; */
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   /* padding-left: 20px; */
 }
@@ -104,11 +106,12 @@
 .team .members .first-row .member {
   width: calc(25% - 15px);
   margin-bottom: 20px; /* Add spacing between rows */
-  padding: 10px; /* Optional: Add padding for better spacing within each member */
+  padding: 10px;
+  /* border: 2px solid red; */
 }
 
 .team .members .first-row .member .image img {
-  max-width: 100%; /* Ensure the image scales within its container */
+  border-radius: 8px;
 }
 
 .team .members .first-row .member .detail {
@@ -119,7 +122,7 @@
 .team .members .first-row .member .detail h6 {
   color: #555;
   font-family: Poppins;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 800;
   line-height: 1.5rem; /* 150% */
@@ -136,7 +139,7 @@
   flex-shrink: 0;
   color: #555;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem; /* 171.429% */
@@ -261,7 +264,7 @@
   .team h2,
   .partnership h2,
   .vmv .ul div h2 {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 
   .partnership ul li {
@@ -302,11 +305,23 @@
   .vmv .ul div h2 {
     font-size: 18px;
   }
+  .vmv {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 0;
+  }
 
   .about-intro {
     padding: 20px;
   }
-
+  .about-intro .intro article {
+    /* text-align: justify; */
+    font-size: 1.5rem;
+    line-height: 2.6;
+    width: 100%;
+    text-align: center;
+  }
   .vmv .ul {
     display: flex;
     align-items: center;
@@ -323,7 +338,7 @@
     width: calc(100% - 100px);
   }
   .contro {
-    width: 315px;
+    width: 285px;
   }
 
   .svgicon {

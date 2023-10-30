@@ -22,9 +22,7 @@ export default function () {
             <p>
             Transparency and trust are at the heart of our operations. Explore our terms and conditions to discover how we ensure a fair and fruitful partnership.
             </p>
-            {/* <Link to='/about-us'>
-              <button>Free Consultation</button>
-            </Link> */}
+          
           </div>
           <div className='image'>
             <img src={terms} className='img-fluid' alt='header-image' />

@@ -30,6 +30,7 @@ import se6 from "../../Assets/se6.png";
 import ContactForm from "../layout/ContactForm";
 import { Link } from "react-router-dom";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 export default function Sem() {
   const [activeButton, setActiveButton] = useState(null);
   const primaryBackgroundColor = "#D3DCE7";
@@ -39,12 +40,10 @@ export default function Sem() {
       activeButton === buttonId ? "active-button" : ""
     }`;
   };
-  // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
   };
 
-  // Determine the arrow direction based on the activeButton state
   const getArrowDirection = (buttonId) => {
     return activeButton === buttonId ? "up" : "down";
   };
@@ -58,36 +57,25 @@ export default function Sem() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              How Search Engine <br /> Marketing promotes <br />
-              your brand online?
-            </h1>
-
-            <p style={{ width: "100%" }}>
-              Search engine marketing propels your brand's online <br />
-              visibility by strategically engaging your target audience <br />{" "}
-              and driving valuable traffic.
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Schedule a Call</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={sem0} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"  How Search Engine Marketing promotes your brand online?".toUpperCase()}
+        desc="Search engine marketing propels your brand's online visibility by strategically engaging your target audience 
+        and driving valuable traffic."
+        link=''
+        linkTitle='Schedule a Call'
+        img={sem0}
+      />
 
       <div style={{ color: "#266", textAlign: "center" }}>
-        <h1 className='pt-5'> What is Search Engine Marketing?</h1>
-        <p style={{ fontSize: "1.2rem" }}>
+        <h1 className='pt-5' style={{ fontSize: "3rem" }}>
+          {" "}
+          What is Search Engine Marketing?
+        </h1>
+        <p style={{ fontSize: "1.5rem" }}>
           Understanding the Essence of Search Engine Marketing (SEM)
         </p>
       </div>
@@ -97,11 +85,8 @@ export default function Sem() {
         style={{ backgroundColor: "white" }}
       >
         <div className='header'>
-          <div className='content'>
-            <p
-              className='sem'
-              style={{ fontSize: "1.2rem", lineHeight: "2.5rem", opacity: "1" }}
-            >
+          <div className='content semp'>
+            <p>
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
               visibility. By bidding on relevant keywords, businesses position
@@ -117,7 +102,9 @@ export default function Sem() {
             </p>
           </div>
 
-          <div className=''>
+          <div
+            className='pb-5 semimg'
+          >
             <img src={updates} className='img-fluid' alt='header-image' />
           </div>
         </div>
@@ -127,8 +114,10 @@ export default function Sem() {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className='pb-4'>How does Search Engine Marketing work?</h2>
-        <p>
+        <h2 className='pb-4' style={{ fontSize: "3rem" }}>
+          How does Search Engine Marketing work?
+        </h2>
+        <p style={{ fontSize: "1.5rem" }}>
           Search Engine Marketing is one of the best digital marketing strategy
           you can leverage for your business growth.
         </p>
@@ -141,8 +130,9 @@ export default function Sem() {
                   <h3>Drive Conversions</h3>
                   <p>
                     Use PPC advertising to reach <br />
-                    potential customers. Bid on relevant <br /> keywords, your
-                    ads appear in <br /> searches
+                    potential customers. Bid on <br />
+                    relevant keywords, your ads <br />
+                    appear in searches
                   </p>
                 </div>
               </div>
@@ -152,10 +142,11 @@ export default function Sem() {
                   <img src={ff13} alt='image' />
                   <h3>Optimization</h3>
                   <p>
-                    Leverage strategic keyword research <br /> for online
-                    optimization. Select <br /> audience-searched keywords for{" "}
-                    <br />
-                    higher search relevance.
+                    Leverage strategic keyword <br />
+                    research for online optimization. <br />
+                    Select audience-searched
+                    <br /> keywords for higher search
+                    <br /> relevance.
                   </p>
                 </div>
               </div>
@@ -165,9 +156,10 @@ export default function Sem() {
                   <img src={ff14} alt='image' />
                   <h3>Tracking</h3>
                   <p>
-                    Track and analyze conversions for <br /> SEM impact
-                    measurement. Identify <br /> ads driving purchases,
-                    sign-ups, or <br /> interactions
+                    Track and analyze conversions
+                    <br /> for SEM impact measurement.
+                    <br /> Identify ads driving purchases,
+                    <br /> sign-ups, or interactions
                   </p>
                 </div>
               </div>
@@ -179,7 +171,7 @@ export default function Sem() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3 style={{ fontSize: "3rem" }}>
+            <h3 className="chief">
               Why you need Search Engine <br /> Marketing?
             </h3>
 
@@ -261,7 +253,7 @@ export default function Sem() {
             >
               Our Comprehensive <br /> SEM Services
             </h3>
-            <p>
+            <p style={{ fontSize: "1.5rem" }}>
               Amplify Your Digital Footprint with Our best SEM Services. Drive
               targeted traffic, boost <br /> engagement, and achieve measurable
               results through our expert Pay-Per-Click strategies
@@ -335,7 +327,7 @@ export default function Sem() {
               Services?
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight: "2rem" }}>
               With our comprehensive Search Engine Marketing service, we are
               your best digital <br /> marketing partner for success.
             </p>
@@ -378,7 +370,9 @@ export default function Sem() {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Unlock Your Digital Potential Today!</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Unlock Your Digital Potential Today!
+              </h3>
             </div>
             <p>
               Let our SEM services experts assist you to unleash the power of

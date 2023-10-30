@@ -1,6 +1,5 @@
 /** @format */
 
-// import React from "react";
 import React, { useState } from "react";
 
 import contact from "../Assets/contact.png";
@@ -9,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import Navbar from "./layout/TopNavbar";
+import HeroBg from "./organism/hero-bg";
 export default function () {
   const navigate = useNavigate();
 
@@ -20,16 +20,13 @@ export default function () {
   });
   const [error, setError] = useState(null);
 
- 
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
     if (name === "email") {
       if (value === "") {
-        setError(null); 
-     
+        setError(null);
       } else {
         setError(null);
       }
@@ -40,7 +37,6 @@ export default function () {
     e.preventDefault();
 
     if (error) {
-      // If there is an error, prevent form submission
       return;
     }
 
@@ -65,28 +61,17 @@ export default function () {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>Contact Information</h1>
-
-            <p className='rapp' style={{ width: "100%", fontSize: "1.97rem" }}>
-              Our digital marketing experts are always available to give <br />{" "}
-              you top-notch solutions to your marketing challenges.
-            </p>
-            {/* <Link to='/contact-us'>
-              <button>Learn More</button>
-            </Link> */}
-          </div>
-          <div className='image'>
-            <img src={contact} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"Contact Information".toUpperCase()}
+        desc='Our digital marketing experts are always available to give
+        you top-notch solutions to your marketing challenges.'
+        link='/contact-us'
+        img={contact}
+      />
 
       <section className='py-5 bg-light'>
         <div className='container-lg my-2'>
@@ -143,8 +128,8 @@ export default function () {
                       type='submit'
                       className='text-decoration-none text-dark'
                       style={{
-                        background: "none", // Remove background color
-                        border: "none", // Remove border
+                        background: "none",
+                        border: "none",
                       }}
                     >
                       <svg
@@ -238,7 +223,6 @@ export default function () {
               </div>
               <br /> <br />
               <div className='d-flex align-items-center px-4 py-4 my-3 text-dark bg-white rounded cons'>
-                {/* <FontAwesomeIcon icon={faLocationDot} className='me-5 fa-2xl' /> */}
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='34'

@@ -10,9 +10,12 @@ import "../src/style/about.css";
 import "../src/style/blog.css";
 import "../src/style/contact.css";
 import "../src/style/service.css";
+import HttpsRedirect from 'react-https-redirect';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <HttpsRedirect>
       <App />
+    </HttpsRedirect>
   </React.StrictMode>
 );

@@ -20,6 +20,7 @@ import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
 import { Link } from "react-router-dom";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 
 export default function Em() {
   const [activeButton, setActiveButton] = useState(null);
@@ -30,12 +31,10 @@ export default function Em() {
       activeButton === buttonId ? "active-button" : ""
     }`;
   };
-  // Function to handle button click and set the active button
   const handleButtonClick = (buttonId) => {
     setActiveButton(activeButton === buttonId ? null : buttonId);
   };
 
-  // Determine the arrow direction based on the activeButton state
   const getArrowDirection = (buttonId) => {
     return activeButton === buttonId ? "up" : "down";
   };
@@ -49,33 +48,18 @@ export default function Em() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
-
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              How does Email Marketing <br />
-              earn loyalty for your <br /> brand?
-            </h1>
-
-            <p style={{ width: "100%", fontSize: "1.85rem" }}>
-              Empower your business with our effective email marketing <br />
-              strategies. Elevate engagement, drive conversions, and foster{" "}
-              <br />
-              lasting customer relationships.
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Schedule a Call</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={em0} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={" How does Email Marketing  earn loyalty for your brand?".toUpperCase()}
+        desc=' Empower your business with our effective email marketing 
+        strategies. Elevate engagement, drive conversions, and foster
+                lasting customer relationships..'
+        link=''
+        linkTitle='Schedule a Call'
+        img={em0}
+      />
 
       <section
         className='service-feat p-5'
@@ -84,7 +68,7 @@ export default function Em() {
         <h2 style={{ fontSize: "3rem", lineHeight: "3.5rem" }}>
           Our Success-Driven Email <br /> Marketing Services{" "}
         </h2>
-        <p className='text-center pt-4'>
+        <p className='text-center pt-4' style={{ fontSize: "1.5rem" }}>
           Your Path to Email Marketing Excellence Starts Here.
         </p>
         <div className='contents'>
@@ -97,7 +81,7 @@ export default function Em() {
                   <p className='card-text'>
                     Craft a captivating brand narrative <br /> with our story
                     emails, infusing your <br />
-                    identity for emotional connection and <br /> loyalty
+                    identity for emotional connection  <br /> andloyalty
                   </p>
                 </div>
               </div>
@@ -106,9 +90,9 @@ export default function Em() {
                   <img src={ff2} alt='image' />
                   <h4 className='card-title'>Transactional Emails</h4> <br />
                   <p className='card-text'>
-                    Blend functionality and engagement <br /> with transactional
-                    emails. Elevate <br /> user experience, integrating <br />{" "}
-                    personalized content for meaningful <br /> interactions.
+                    Blend functionality and<br /> engagement  with transactional
+                 <br />    emails. Elevate user experience, <br />integrating 
+                    personalized content <br />for meaningful  interactions.
                   </p>
                 </div>
               </div>
@@ -119,7 +103,7 @@ export default function Em() {
                   <p className='card-text'>
                     Engage and inform subscribers with <br /> insightful email
                     newsletters. Our <br /> expertly designed content
-                    establishes <br /> authority and anticipation.
+                     <br />establishes authority and <br />anticipation.
                   </p>
                 </div>
               </div>
@@ -152,9 +136,9 @@ export default function Em() {
                   <img src={ff6} alt='image' />
                   <h4 className='card-title'>Sponsorship Emails</h4> <br />
                   <p className='card-text'>
-                    Enhance partnerships with impactful <br />
-                    sponsorship emails. Create <br /> compelling content
-                    fostering mutual <br /> success and engagement.
+                    Enhance partnerships with <br />impactful 
+                    sponsorship emails. <br />Create  compelling content
+                   <br />  fostering mutual success and <br />engagement.
                   </p>
                 </div>
               </div>
@@ -214,7 +198,7 @@ export default function Em() {
               Why you need email marketing <br /> services
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight:'2rem'}}>
               Email marketing is essential for propelling your business forward.
               It's a dynamic tool that not only nurtures customer <br />{" "}
               relationships but also drives conversions. Our email marketing
@@ -222,7 +206,7 @@ export default function Em() {
               campaigns that resonate with your audience, leading to increased
               engagement and measurable results.
             </p>
-            <div className='row pt-5'>
+            <div className='row pt-5 emp'>
               <div className='col-md-4 pt-5'>
                 <img src={ff7} alt='image' />
                 <h3 className='pt-4'>Build Customer Loyalty</h3>
@@ -263,7 +247,7 @@ export default function Em() {
               <div className='col-md-4 pt-5'>
                 <img src={ff11} alt='image' />
                 <h3 className='pt-4'>
-                  Test Email Campaigns <br /> and Drive Strong Results
+                  Test Email Campaigns and Drive Strong Results
                 </h3>
                 <p>
                   Optimize outcomes with well-tested <br />
@@ -292,7 +276,7 @@ export default function Em() {
               Benefits of using our email marketing services
             </h3>
 
-            <p>
+            <p style={{ fontSize: "1.5rem", lineHeight: '2rem' }}>
               Experience heightened customer engagement and amplified
               conversions with our data-driven email <br /> marketing expertise.
             </p>
@@ -373,7 +357,7 @@ export default function Em() {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Supercharge Your ROI Now</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Supercharge Your ROI Now</h3>
             </div>
             <p>
               Contact us for a free consultation and discover the Email
@@ -389,9 +373,7 @@ export default function Em() {
       <section id='sec-6' className='py-5'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 style={{ fontSize: "3rem" }}>
-              Email Marketing FAQs
-            </h3>
+            <h3 style={{ fontSize: "3rem" }}>Email Marketing FAQs</h3>
           </div>
         </div>
       </section>

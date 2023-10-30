@@ -28,6 +28,7 @@ import ff15 from "../../Assets/ff15.png";
 import { Link } from "react-router-dom";
 import "../../style/faq.css";
 import QuestionAnswer from "../molecules/quest-answer";
+import HeroBg from "../organism/hero-bg";
 
 export default function () {
   const [activeButton, setActiveButton] = useState(null);
@@ -58,35 +59,25 @@ export default function () {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
-
-      <header className='header-bg' style={{ height: "80.8vh" }}>
-        <div className='header'>
-          <div className='content'>
-            <h1>Turbocharge Your Online Success with Expert SEO Services</h1>
-
-            <p>
-              SEO is the Definitive Path to Securing Your Place at the Peak of
-              Online Success.{" "}
-            </p>
-            <Link onClick={handleCallButtonClick}>
-              <button>Learn More</button>
-            </Link>
-          </div>
-          <div className='image'>
-            <img src={seo} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
-
+      <HeroBg
+        title={"Turbocharge Your Online Success with Expert SEO Services".toUpperCase()}
+        desc='   SEO is the Definitive Path to Securing Your Place at the Peak of
+        Online Success.'
+        link=''
+        linkTitle='Schedule a Call'
+        img={seo}
+      />
       <section
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className='pb-4'>Our Comprehensive SEO Services </h2>
-        <p className='text-center'>
+        <h2 className='pb-4' style={{ fontSize: "3rem" }}>
+          Our Comprehensive SEO Services{" "}
+        </h2>
+        <p className='text-center' style={{ fontSize: "1.5rem" }}>
           Maximize your online presence with our SEO services for <br />
           visibility and success.
         </p>
@@ -101,8 +92,9 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text'>
-                    Uncover your online potential with our <br /> expert keyword
-                    research and strategy <br /> to boost your digital success.
+                    Uncover your online potential with <br />
+                    our expert keyword research and <br />
+                    strategy to boost your digital <br /> success.
                   </p>
                 </div>
               </div>
@@ -137,9 +129,9 @@ export default function () {
                   <h4 className='card-title'>Local SEO</h4> <br />
                   <p className='card-text'>
                     Dominate your local market with <br /> targeted
-                    optimizations that put your <br /> business on the map,
-                    making it easier <br /> for nearby customers to find you{" "}
-                    <br /> online.
+                    optimizations that put <br /> your business on the map,
+                    making <br />
+                    it easier for nearby customers to <br /> find you online.
                   </p>
                 </div>
               </div>
@@ -150,8 +142,9 @@ export default function () {
                   <p className='card-text'>
                     Craft compelling web pages <br /> optimized for search
                     engines and <br />
-                    users alike, utilizing strategic keyword <br /> placement,
-                    meta tags, and content <br /> enhancements.
+                    users alike, utilizing strategic <br /> keyword placement,
+                    meta tags,
+                    <br /> and content enhancements.
                   </p>
                 </div>
               </div>
@@ -160,9 +153,10 @@ export default function () {
                   <img src={ff10} alt='image' />
                   <h4 className='card-title'>Off-Page SEO</h4> <br />
                   <p className='card-text'>
-                    Expand your digital footprint through <br />
-                    off-page strategies like content <br /> outreach and social
-                    media <br /> engagement, enhancing online <br /> authority.
+                    Expand your digital footprint <br />
+                    through off-page strategies like <br />
+                    content outreach and social media <br /> engagement,
+                    enhancing online <br /> authority.
                   </p>
                 </div>
               </div>
@@ -172,10 +166,10 @@ export default function () {
                   <img src={ff3} alt='image' />
                   <h4 className='card-title'>Franchise SEO</h4> <br />
                   <p className='card-text'>
-                    Tailored strategies support franchise <br /> businesses,
-                    ensuring consistent <br /> online presence across multiple{" "}
-                    <br />
-                    locations, maximizing local visibility.
+                    Tailored strategies support <br />
+                    franchise businesses, ensuring <br />
+                    consistent online presence across <br />
+                    multiple locations, maximizing <br /> local visibility.
                   </p>
                 </div>
               </div>
@@ -196,11 +190,13 @@ export default function () {
                   <img src={ff4} alt='image' />
                   <h4 className='card-title'>Amazon SEO</h4> <br />
                   <p className='card-text'>
-                    Stand out in the competitive Amazon <br /> marketplace with
-                    Amazon-specific <br /> SEO tactics that drive your products{" "}
+                    Stand out in the competitive <br />
+                    Amazon marketplace with Amazon
                     <br />
-                    to the top of search results, <br /> increasing visibility
-                    and sales.
+                    -specific SEO tactics that drive your <br /> products to the
+                    top of search <br />
+                    results, increasing visibility
+                    <br /> and sales.
                   </p>
                 </div>
               </div>
@@ -211,9 +207,10 @@ export default function () {
                   <h4 className='card-title'>eCommerce SEO</h4> <br />
                   <p className='card-text'>
                     Transform your online store into a <br />
-                    powerhouse with comprehensive SEO <br /> strategies tailored
-                    to ecommerce <br /> platforms, driving higher traffic and{" "}
-                    <br /> boosting sales.
+                    powerhouse with comprehensive
+                    <br /> SEO strategies tailored to <br /> ecommerce
+                    platforms, driving <br />
+                    higher traffic and boosting sales.
                   </p>
                 </div>
               </div>
@@ -225,8 +222,7 @@ export default function () {
                   <p className='card-text'>
                     Ignite your digital journey with SEO- <br />
                     optimized content that resonates, <br /> boosts engagement,
-                    and establishes <br />
-                    industry leadership
+                    and <br /> establishes industry leadership
                   </p>
                 </div>
               </div>
@@ -238,11 +234,13 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text '>
-                    Stand out in the competitive Amazon <br /> marketplace with
-                    Amazon-specific <br />
-                    SEO tactics that drive your products <br />
-                    to the top of search results, <br /> increasing visibility
-                    and sales.
+                    Stand out in the competitive <br />
+                    Amazon marketplace with Amazon
+                    <br />
+                    -specific SEO tactics that drive your <br />
+                    products to the top of search
+                    <br /> results, increasing visibility and <br />
+                    sales.
                   </p>
                 </div>
               </div>
@@ -376,16 +374,9 @@ export default function () {
               Amorserv Agile SEO Methodology
             </h3>
           </div>
-          <p
-            className='text-center'
-            style={{
-              color: "#3D3D3D",
-              fontWeight: "400",
-              paddingBottom: "30px",
-            }}
-          >
+          <p className='seopage'>
             We adopt tailored strategies to fuel captivating content. Meticulous
-            monitoring to <br /> ensure growth, adapting to your brand journey.
+            monitoring to ensure growth, adapting to your brand journey.
           </p>
 
           <section id='sec-6'>
@@ -403,7 +394,9 @@ export default function () {
             className='text-center'
             style={{ marginTop: "-160px", marginBottom: "80px" }}
           >
-            <Link className='btn mt-4 btn-real'>Get Started</Link>
+            <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
@@ -412,7 +405,9 @@ export default function () {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Let’s Grow your Business</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Let’s Grow your Business
+              </h3>
             </div>
             <p>
               Fuel your brand's growth with our best SEO strategies that drive{" "}
@@ -433,8 +428,6 @@ export default function () {
         </div>
       </section>
 
-
-      
       <div className='faq-container'>
         <div className='faq-section-one'>
           <div className='faqs'>
@@ -449,13 +442,13 @@ export default function () {
             />
 
             <QuestionAnswer
-              question="What are keywords and how do they impact SEO?"
+              question='What are keywords and how do they impact SEO?'
               answer="Keywords are search terms users type into search engines. Properly using keywords in your content, titles, and meta descriptions helps search engines understand your content's relevance, boosting your chances of ranking higher for those terms."
             />
 
             <QuestionAnswer
               question='Is local SEO important for businesses? '
-              answer="Yes, local SEO is vital for businesses targeting a local audience. It helps your business appear in local searches, improves visibility on Google, and connects you with nearby customers searching for your products or services."
+              answer='Yes, local SEO is vital for businesses targeting a local audience. It helps your business appear in local searches, improves visibility on Google, and connects you with nearby customers searching for your products or services.'
             />
             <QuestionAnswer
               question='What is the difference between on-page and off-page SEO?'

@@ -8,16 +8,16 @@ import about from "../Assets/about.png";
 import value from "../Assets/value.png";
 import mission from "../Assets/mission.png";
 import vision from "../Assets/vision.png";
-import person4 from "../Assets/person4.png";
+import siji from "../Assets/siji.png";
 import amazon from "../Assets/amazon.png";
 import visa from "../Assets/visa.png";
-import person6 from "../Assets/person6.png";
-import person3 from "../Assets/person3.png";
-import person5 from "../Assets/person5.png";
-import person2 from "../Assets/person2.png";
-import person7 from "../Assets/person7.png";
-import person1 from "../Assets/person1.png";
-import richard from "../Assets/richard.png";
+import temidayo from "../Assets/temidayo.png";
+import otaabasi from "../Assets/otaabasi.png";
+import valentine from "../Assets/valentine.png";
+import digvijay from "../Assets/digvijay.png";
+import olaide from "../Assets/olaide.png";
+import chiamaka from "../Assets/chiamaka.png";
+import tamara from "../Assets/tamara.png";
 import cox from "../Assets/cox.png";
 import citi from "../Assets/citi.png";
 import gold from "../Assets/gold.png";
@@ -29,42 +29,39 @@ import traveller from "../Assets/traveller.png";
 import cnn from "../Assets/cnn.png";
 import samsung from "../Assets/samsung.png";
 import { Link } from "react-router-dom";
+import HeroBg from "./organism/hero-bg";
 
 export default function About() {
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-
-      <header className='header-bg' style={{ height: '66vh' }}>
-      <div className='header'>
-        <div className='content'>
-          <h1>
-          Curious to Know Our Story?          </h1>
-          <p style={{ opacity: '0.45' }}>
-          Indeed, our journey has been remarkable.          </p>
-          <Link to='/contact-us'>
-              <button>Learn More</button>
-            </Link>
-        </div>
-        <div className='image'>
-          <img src={about} className='img-fluid' alt='header-image' />
-        </div>
-      </div>
-    </header>
+      <HeroBg
+        title={" Curious to Know Our Story?".toUpperCase()}
+        desc='          Indeed, our journey has been remarkable.'
+        link='/contact-us'
+        linkTitle='Learn More'
+        img={about}
+      />
 
       <section className='about-intro container'>
         <div className='intro'>
           <h2>Who Is Amorserv Consulting?</h2>
 
-          <article style={{ textAlign: 'center' }}>
-          Established in 2016, Amorserv Consulting stands as the best digital marketing agency in Chicago. We infuse our expertise <br />into every strategy, driving brands towards digital excellence. As the best digital marketing agency in Chicago, USA, we're <br /> committed to delivering unparalleled results.
-
-
-            <br /> <br />
-            The name “AmorServ ” conveys a strong message of dedication, commitment, and passion for serving <br />customers. The fact that the name literally means “We Love to Serve You” reinforces this message and sets a <br />high standard for the company.
+          <article>
+            Established in 2016, Amorserv Consulting stands as the best digital
+            marketing agency in Chicago. We infuse our expertise 
+            into every strategy, driving brands towards digital excellence. As
+            the best digital marketing agency in Chicago, USA, we're 
+            committed to delivering unparalleled results.
+            
+            The name “AmorServ ” conveys a strong message of dedication,
+            commitment, and passion for serving 
+            customers. The fact that the name literally means “We Love to Serve
+            You” reinforces this message and sets a high standard for the
+            company.
           </article>
         </div>
       </section>
@@ -121,81 +118,81 @@ export default function About() {
           <div className='first-row'>
             <div className='member'>
               <div className='image'>
-                <img src={person4} alt='' />
+                <img src={siji} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Siji Olojola</h6>
+                <p>Marketing Manager</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person5} alt='' />
+                <img src={valentine} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Valentine Okoye</h6>
+                <p>SEO Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person2} alt='' />
+                <img src={digvijay} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Digvijay Ahuja</h6>
+                <p>Data Entry Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person1} alt='' />
+                <img src={chiamaka} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Chiamaka Atuchukwu</h6>
+                <p>Social Media Specialist</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={richard} alt='' />
+                <img src={tamara} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Tamaraebi Etifa</h6>
+                <p>Content Writer and Research Analyst</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person7} alt='' />
+                <img src={olaide} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Olaide Opaleke</h6>
+                <p>Content Writer</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person6} alt='' />
+                <img src={temidayo} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Temidayo Akinuli</h6>
+                <p>Multimedia Designer</p>
               </div>
             </div>
 
             <div className='member'>
               <div className='image'>
-                <img src={person3} alt='' />
+                <img src={otaabasi} alt='' />
               </div>
               <div className='detail'>
-                <h6>John Doe</h6>
-                <p>President</p>
+                <h6 className='pb-3'>Otoabasi Ekwere</h6>
+                <p>Multimedia Designer</p>
               </div>
             </div>
           </div>

@@ -65,10 +65,13 @@ body {
   margin: 0 auto;
   align-items: center;
   padding-top: 5px;
+  /* border: 3px solid green; */
+  position: relative;
+
 }
 
 .dropIn {
-  width: 220px;
+  width: 240px;
   height: auto;
   padding: 10px 5px;
   display: flex;
@@ -78,6 +81,13 @@ body {
   z-index: 99;
   top: 45px;
   background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px 0 20px 0; 
+
+}
+.dropInLinks{
+  padding: 1rem 0.2rem 0.5rem;
+
 }
 .hoverable-link:hover {
   border-bottom: 3px solid #b13557;
@@ -86,7 +96,7 @@ body {
 }
 .navItem {
   position: relative;
-  height: 100%;
+  /* height: 100%; */
   color: #555;
   /* text-align: center; */
   font-family: Poppins;
@@ -94,7 +104,7 @@ body {
   font-style: normal;
   /* font-weight: bold; */
   font-weight: 600;
-  left: 450px;
+
 }
 .navItem p {
   font-size: 1.2rem;
@@ -121,13 +131,18 @@ body {
 }
 
 .navBarContainer .navDy .navlinks {
-  width: 60%;
-  display: flex;
+  width: 500px;
   list-style: none;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   /* background-color: red; */
+  right: 0;
 }
 
 /* Media query for mobile responsiveness */
@@ -326,12 +341,25 @@ body {
     margin-top: 10px; /* Add spacing between items */
     justify-content: flex-start;
     display: inline-block;
+    /* border: 3px solid green; */
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+
+    position: fixed;
+    top: 20%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    /* max-width: 200px; */
+    /* padding: 40px; */
+    border-radius: 5px;
+
   }
 
   .navItem {
     left: 0;
     margin: 12px;
     /* text-align: center; */
+    
   }
 
   .dropIn {
@@ -431,11 +459,12 @@ body {
 #sec-2 h3 {
   color: #226666 !important;
   font-weight: bold;
-  font-size: 2.125rem;
+  font-size: 3rem;
   line-height: 2.25rem; /* 105.882% */
 }
 #sec-3 {
-  background: #fafafb !important;
+  background: rgba(34, 102, 102, 0.12) !important;
+  
   align-items: center;
   gap: 2.9375rem;
   /* border: 3px solid red; */
@@ -444,10 +473,11 @@ body {
   color: #226666 !important;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 2.125rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.25rem; /* 105.882% */
+  line-height: 2.25rem; 
+  padding: 2rem;
 }
 
 .secview {
@@ -461,10 +491,10 @@ body {
 #sec-3 p {
   color: #555;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 2rem; /* 150% */
   letter-spacing: 0.03125rem;
   display: flex;
   width: 20.0625rem;
@@ -476,32 +506,32 @@ body {
 
 #sec-4 p {
   /* color: #555555 !important; */
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 #sec-0 p {
   color: #226666 !important;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 #sec-0 h3 {
   color: #266;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1.5rem;
+  font-size: 2.93rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.5rem; /* 100% */
+  line-height: 2.5rem; /* 100% */
   letter-spacing: 0.03125rem;
 }
 #sec-0 span {
   color: #3d3d3d;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 2rem; /* 150% */
   letter-spacing: 0.03125rem;
 }
 #sec-0 {
@@ -518,32 +548,33 @@ body {
 }
 
 #sec-5 {
-  background: #eff3fd !important;
+  background: url('Assets/homel.png') center/cover no-repeat, #eff3fd !important;
+  /* background: #eff3fd !important; */
   text-align: center;
 }
 
 #sec-5 h3 {
-  color: #226666 !important;
+  color: #ffffff !important;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
-  font-size: 2.125rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.25rem; /* 105.882% */
+  line-height: 3.5rem; /* 105.882% */
 }
 
 #sec-6 h3 {
   color: #266;
   text-align: center;
   font-family: Poppins;
-  font-size: 2.1875rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.125rem; /* 142.857% */
+  line-height: 3.525rem;
 }
 
 #sec-6 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -593,7 +624,7 @@ body {
 }
 
 #sec-5 p {
-  color: #555555 !important;
+  color: rgb(255, 255, 255) !important;
   font-size: 1.2rem;
 }
 #sec-5 a {
@@ -602,17 +633,18 @@ body {
   font-weight: 500;
 }
 #sec-5 .btn-serv {
-  background-color: #d9d9d9;
-  color: #555555;
+  background-color: #CEEDED;
+  color: #000000;
   font-size: 1.2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   height: 7rem;
   margin: 6px;
+  border-radius: 0.75rem;
 }
 .downt {
   margin-top: 15px;
-  color: #266;
+  color: rgb(255, 255, 255);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 1.5rem;
@@ -644,7 +676,7 @@ body {
 .card {
   display: flex;
   /* width: 37.26363rem; */
-  padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+  /* padding: 0.1755rem 0.01363rem 4.26481rem 0rem; */
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
@@ -850,7 +882,35 @@ footer ul li a {
     /* padding: 15px; */
     /* border: 2px solid red; */
   }
+  #sec-0 h3 {
+    color: #266;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 100% */
+    letter-spacing: 0.03125rem;
+  }
+  #sec-6 h3 {
+    color: #266;
+    text-align: center;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 142.857% */
+  }
 
+  #sec-3 h3 {
+    color: #226666 !important;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.9rem; 
+    padding: 2rem;
+  }
+  
   .hp {
     margin-top: -50px;
   }
@@ -917,11 +977,11 @@ footer ul li a {
   .card {
     display: flex;
     /* width: 37.26363rem; */
-    padding: 0.1755rem 0.01363rem 4.26481rem 0rem;
+    /* padding: 0.1755rem 0.01363rem 4.26481rem 0rem; */
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     /* height: 55rem; */
@@ -938,6 +998,7 @@ footer ul li a {
     background: #d9d9d9;
     margin: 17px;
   }
+  
   .threemob {
     margin: 80px;
   }

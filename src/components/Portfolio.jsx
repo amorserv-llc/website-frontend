@@ -20,37 +20,22 @@ import TestimonialCarousel from "./layout/TestimonialCarousel";
 import CarouselCard from "./layout/CarouselCard";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-
+import HeroBg from "./organism/hero-bg";
 
 export default function Portfolio() {
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
 
-      <header className='header-bg'>
-        <div className='header'>
-          <div className='content'>
-            <h1>
-              Explore our Portfolio for <br /> More Insight.
-            </h1>
-
-            <p className='rapp' style={{ width: '100%' }}>
-            Dive into our portfolio for a closer look at our dynamic <br /> projects. Witness how our strategies have transformed <br /> businesses. Our work is a testament to our expertise, <br />innovation, and commitment to driving success.
-            </p>
-            <div className="pbtn">
-              <Link to='/about-us'>
-              <button  style={{ width: '30%' }}>Free Consultation</button>
-            </Link> 
-            </div>
-           
-          </div>
-          <div className='image'>
-            <img src={portfolio} className='img-fluid' alt='header-image' />
-          </div>
-        </div>
-      </header>
+      <HeroBg
+        title={"Explore our Portfolio for More Insight".toUpperCase()}
+        desc='Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.'
+        link='/contact-us'
+        linkTitle='Free Consultation'
+        img={portfolio}
+      />
 
       <section id='port-1' className='py-5 '>
         <div className='container-lg my-4 portfolio'>
@@ -231,15 +216,12 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-        {/* <TestimonialCarousel /> */}
-
-
-
 
         <Slide
           duration={15000}
-          indicators={true}
-          autoplay={true}
+          indicators={false}
+          arrows={false}
+          autoplay={false}
           cssClass='carousel-cards'
           responsive={[
             {
@@ -271,46 +253,8 @@ export default function Portfolio() {
                 slidesToScroll: 1,
               },
             },
-
-            // {
-            //   breakpoint: 800,
-
-            //   settings: {
-            //     slidesToShow: 3,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 700,
-
-            //   settings: {
-            //     slidesToShow: 2,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 400,
-
-            //   settings: {
-            //     slidesToShow: 1,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
           ]}
         >
-          {/* <CarouselCard
-            img={t3}
-            name='Lizzy '
-            position='CEO Bread talks'
-            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
-            rating='5'
-          /> */}
-
           <CarouselCard
             img={t1}
             name='Lesley Bradley'
@@ -335,22 +279,7 @@ export default function Portfolio() {
             rating='5'
           />
 
-
-          {/* <CarouselCard
-            img={t2}
-            name='Tega Ovri'
-            position='CMO Oblivion'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          />
-
-          <CarouselCard
-            img={t1}
-            name='Katherina Owens'
-            position='Manager, Semetrics'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          /> */}
+        
         </Slide>
       </section>
       <Footer />

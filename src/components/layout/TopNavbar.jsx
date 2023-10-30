@@ -62,7 +62,7 @@ function Navbar() {
               {toggle && (
                 <div className='dropIn'>
                   <Link
-                    className='nav-link hoverable-link'
+                    className='nav-link dropInLinks hoverable-link'
                     to='/search-engine-optimization'
                     style={{ display: "flex", alignItems: "center" }}
                   >
@@ -74,7 +74,7 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    className='nav-link hoverable-link'
+                    className='nav-link dropInLinks hoverable-link'
                     to='/social-media-marketing'
                     style={{ display: "flex", alignItems: "center" }}
                   >
@@ -89,7 +89,7 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    className='nav-link hoverable-link'
+                    className='nav-link dropInLinks hoverable-link'
                     to='/email-marketing'
                     style={{ display: "flex", alignItems: "center" }}
                   >
@@ -103,7 +103,7 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    className='nav-link hoverable-link'
+                    className='nav-link dropInLinks hoverable-link'
                     to='/search-engine-marketing'
                     style={{ display: "flex", alignItems: "center" }}
                   >

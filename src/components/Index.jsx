@@ -28,7 +28,6 @@ import threestep from "../Assets/threestep.png";
 import t1 from "../Assets/t1.png";
 import t2 from "../Assets/t2.png";
 import t3 from "../Assets/t3.png";
-import Form from "./layout/ContactForm";
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
 
@@ -36,7 +35,6 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 import jsPDF from "jspdf";
-import TestimonialCarousel from "./layout/TestimonialCarousel";
 import SectionLogo from "./layout/SectionLogo";
 import CarouselCard from "./layout/CarouselCard";
 import ContactForm from "./layout/ContactForm";
@@ -57,7 +55,7 @@ export default function Index() {
 
   return (
     <>
-      <div style={{ paddingBottom: "90px" }}>
+      <div>
         <Navbar />
       </div>
       <Header />
@@ -65,7 +63,7 @@ export default function Index() {
         <div className='container-lg my-4'>
           <div className='row mb-2'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Some of our Clients</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Some of our Clients</h3>
             </div>
           </div>
         </div>
@@ -166,6 +164,7 @@ export default function Index() {
               <div>
                 <img
                   src={f1}
+                  alt=''
                   className='
                 homeimg'
                 />
@@ -174,19 +173,19 @@ export default function Index() {
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div className='d-flex'>
-                <img src={f2} />
+                <img src={f2} alt='' />
               </div>
               <p>Feeling frustrated with low online presence?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f3} />
+                <img src={f3} alt='' />
               </div>
               <p>Feeling held back by digital marketing challenges?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f4} />
+                <img src={f4} alt='' />
               </div>
               <p>
                 Worried about missing opportunities to connect with your
@@ -241,11 +240,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={digi}
-                width='25px'
-                alt='...'
-              />
+              <img src={digi} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Digital Marketing
               </span>
@@ -254,11 +249,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={paid}
-                width='25px'
-                alt='...'
-              />
+              <img src={paid} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Paid Media
               </span>
@@ -267,11 +258,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={branding}
-                width='25px'
-                alt='...'
-              />
+              <img src={branding} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Branding
               </span>
@@ -280,11 +267,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={social}
-                width='25px'
-                alt='...'
-              />
+              <img src={social} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Social Media
               </span>
@@ -311,11 +294,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={searchop}
-                width='25px'
-                alt='...'
-              />
+              <img src={searchop} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Search Engine Optimazation
               </span>
@@ -324,11 +303,7 @@ export default function Index() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img
-                src={email}
-                width='25px'
-                alt='...'
-              />
+              <img src={email} width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Email Marketing
               </span>
@@ -351,9 +326,9 @@ export default function Index() {
       <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4'>Our Simplified 3-Step Process</h3>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>Our Simplified 3-Step Process</h3>
           </div>
-          <h5 className='my-4 text-center'>
+          <h5 className='my-4 text-center' style={{ fontSize: '1.5rem' }}>
             For Maximizing Your Digital Marketing Success{" "}
           </h5>
 
@@ -367,7 +342,7 @@ export default function Index() {
           </div>
 
           <div className='text-center hp'>
-            <p style={{ color: "#266", fontSize: "1.2rem" }}>
+            <p style={{ color: "#266", fontSize: "1.5rem" }}>
               it's Time to take controle of your online presence
             </p>
             <div onClick={handleCallButtonClick}>
@@ -390,12 +365,12 @@ export default function Index() {
             </p>
           </div>
         </div>
-        {/* <TestimonialCarousel /> */}
 
         <Slide
           duration={15000}
-          indicators={true}
-          autoplay={true}
+          indicators={false}
+          autoplay={false}
+          arrows={false}
           cssClass='carousel-cards'
           responsive={[
             {
@@ -427,46 +402,8 @@ export default function Index() {
                 slidesToScroll: 1,
               },
             },
-
-            // {
-            //   breakpoint: 800,
-
-            //   settings: {
-            //     slidesToShow: 3,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 700,
-
-            //   settings: {
-            //     slidesToShow: 2,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
-
-            // {
-            //   breakpoint: 400,
-
-            //   settings: {
-            //     slidesToShow: 1,
-
-            //     slidesToScroll: 1,
-            //   },
-            // },
           ]}
         >
-          {/* <CarouselCard
-            img={t3}
-            name='Lizzy '
-            position='CEO Bread talks'
-            desc="“ Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape ”"
-            rating='5'
-          /> */}
-
           <CarouselCard
             img={t1}
             name='Lesley Bradley'
@@ -491,40 +428,23 @@ export default function Index() {
             rating='5'
           />
 
-          {/* <CarouselCard
-            img={t2}
-            name='Tega Ovri'
-            position='CMO Oblivion'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          />
-
-          <CarouselCard
-            img={t1}
-            name='Katherina Owens'
-            position='Manager, Semetrics'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          /> */}
+       
         </Slide>
       </section>
-
-
       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4'>Let’s Grow your Business</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Let’s Grow your Business</h3>
             </div>
             <p>
-            Fuel your brand's growth with our best SEO strategies that drive <br /> success.
+              Fuel your brand's growth with our best SEO strategies that drive{" "}
+              <br /> success.
             </p>
           </div>
-      <ContactForm />
-
-
-          </div>
-          </section>
+          <ContactForm />
+        </div>
+      </section>
       <Footer />
     </>
   );
