@@ -31,6 +31,8 @@ section.service-feat p {
   font-size: 1.2rem;
 }
 
+
+
 section.service-feat .contents {
   max-width: 100%;
   display: flex;
@@ -237,6 +239,17 @@ section.trust-agency .contents .detail .image img {
   font-size: 5rem;
   text-align: center;
 }
+.semp{
+  font-size: 1.2rem;
+line-height: 2.5rem; 
+opacity: 0.8;
+width: 800px;
+margin-top: -10px;
+box-sizing: border-box;
+white-space: normal;
+margin: 0;
+
+}
 /* Media Queries */
 
 @media screen and (max-width: 1050px) {
@@ -256,8 +269,12 @@ section.trust-agency .contents .detail .image img {
   }
   .semp p {
     /* border: 3px solid red; */
-    padding: 13rem;
-  }
+    width: 100%; /* Set the width to a specific value, adjust as needed */
+    margin: 0 auto; /* Center the element horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+
   .lastcard {
     /* border: 3px solid red; */
     margin-right: 300px;
@@ -457,10 +474,9 @@ section.trust-agency .contents .detail .image img {
     /* border: 2px solid red; */
   }
   .contents .card-body p{
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
-    text-overflow: ellipsis; /* Displays an ellipsis (...) for truncated text */
-   
+    /* text-overflow: break;  */
   }
 }
 /* Add a media query for mobile devices */

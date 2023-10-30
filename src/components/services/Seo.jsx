@@ -90,8 +90,8 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text'>
-                    Uncover your online potential with our <br /> expert keyword
-                    research and strategy <br /> to boost your digital success.
+                    Uncover your online potential with <br />our  expert keyword
+                    research and <br />strategy  to boost your digital <br /> success.
                   </p>
                 </div>
               </div>
@@ -126,9 +126,9 @@ export default function () {
                   <h4 className='card-title'>Local SEO</h4> <br />
                   <p className='card-text'>
                     Dominate your local market with <br /> targeted
-                    optimizations that put your <br /> business on the map,
-                    making it easier <br /> for nearby customers to find you{" "}
-                    <br /> online.
+                    optimizations that put <br /> your business on the map,
+                    making  <br />it easier for nearby customers to <br /> find you
+                     online.
                   </p>
                 </div>
               </div>
@@ -139,8 +139,8 @@ export default function () {
                   <p className='card-text'>
                     Craft compelling web pages <br /> optimized for search
                     engines and <br />
-                    users alike, utilizing strategic keyword <br /> placement,
-                    meta tags, and content <br /> enhancements.
+                    users alike, utilizing strategic <br /> keyword placement,
+                    meta tags,<br />  and content enhancements.
                   </p>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export default function () {
                   <img src={ff10} alt='image' />
                   <h4 className='card-title'>Off-Page SEO</h4> <br />
                   <p className='card-text'>
-                    Expand your digital footprint through <br />
-                    off-page strategies like content <br /> outreach and social
+                    Expand your digital footprint <br />through 
+                    off-page strategies like <br />content  outreach and social
                     media <br /> engagement, enhancing online <br /> authority.
                   </p>
                 </div>
@@ -161,10 +161,10 @@ export default function () {
                   <img src={ff3} alt='image' />
                   <h4 className='card-title'>Franchise SEO</h4> <br />
                   <p className='card-text'>
-                    Tailored strategies support franchise <br /> businesses,
-                    ensuring consistent <br /> online presence across multiple{" "}
-                    <br />
-                    locations, maximizing local visibility.
+                    Tailored strategies support <br />franchise  businesses,
+                    ensuring <br />consistent  online presence across <br />multiple
+                    
+                    locations, maximizing <br /> local visibility.
                   </p>
                 </div>
               </div>
@@ -185,11 +185,11 @@ export default function () {
                   <img src={ff4} alt='image' />
                   <h4 className='card-title'>Amazon SEO</h4> <br />
                   <p className='card-text'>
-                    Stand out in the competitive Amazon <br /> marketplace with
-                    Amazon-specific <br /> SEO tactics that drive your products{" "}
-                    <br />
-                    to the top of search results, <br /> increasing visibility
-                    and sales.
+                    Stand out in the competitive <br />Amazon  marketplace with
+                    Amazon<br />-specific  SEO tactics that drive your <br /> products{" "}
+                    
+                    to the top of search <br />results,  increasing visibility
+                  <br />  and sales.
                   </p>
                 </div>
               </div>
@@ -200,9 +200,9 @@ export default function () {
                   <h4 className='card-title'>eCommerce SEO</h4> <br />
                   <p className='card-text'>
                     Transform your online store into a <br />
-                    powerhouse with comprehensive SEO <br /> strategies tailored
-                    to ecommerce <br /> platforms, driving higher traffic and{" "}
-                    <br /> boosting sales.
+                    powerhouse with comprehensive<br /> SEO  strategies tailored
+                    to <br /> ecommerce platforms, driving <br />higher traffic and{" "}
+                    boosting sales.
                   </p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function () {
                   <p className='card-text'>
                     Ignite your digital journey with SEO- <br />
                     optimized content that resonates, <br /> boosts engagement,
-                    and establishes <br />
+                    and <br /> establishes
                     industry leadership
                   </p>
                 </div>
@@ -227,11 +227,11 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text '>
-                    Stand out in the competitive Amazon <br /> marketplace with
-                    Amazon-specific <br />
-                    SEO tactics that drive your products <br />
-                    to the top of search results, <br /> increasing visibility
-                    and sales.
+                    Stand out in the competitive <br />Amazon  marketplace with
+                    Amazon<br />-specific 
+                    SEO tactics that drive your <br />products 
+                    to the top of search<br /> results,  increasing visibility
+                    and <br />sales.
                   </p>
                 </div>
               </div>

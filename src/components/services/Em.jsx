@@ -81,7 +81,7 @@ export default function Em() {
                   <p className='card-text'>
                     Craft a captivating brand narrative <br /> with our story
                     emails, infusing your <br />
-                    identity for emotional connection and <br /> loyalty
+                    identity for emotional connection  <br /> andloyalty
                   </p>
                 </div>
               </div>
@@ -90,9 +90,9 @@ export default function Em() {
                   <img src={ff2} alt='image' />
                   <h4 className='card-title'>Transactional Emails</h4> <br />
                   <p className='card-text'>
-                    Blend functionality and engagement <br /> with transactional
-                    emails. Elevate <br /> user experience, integrating <br />{" "}
-                    personalized content for meaningful <br /> interactions.
+                    Blend functionality and<br /> engagement  with transactional
+                 <br />    emails. Elevate user experience, <br />integrating 
+                    personalized content <br />for meaningful  interactions.
                   </p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function Em() {
                   <p className='card-text'>
                     Engage and inform subscribers with <br /> insightful email
                     newsletters. Our <br /> expertly designed content
-                    establishes <br /> authority and anticipation.
+                     <br />establishes authority and <br />anticipation.
                   </p>
                 </div>
               </div>
@@ -136,9 +136,9 @@ export default function Em() {
                   <img src={ff6} alt='image' />
                   <h4 className='card-title'>Sponsorship Emails</h4> <br />
                   <p className='card-text'>
-                    Enhance partnerships with impactful <br />
-                    sponsorship emails. Create <br /> compelling content
-                    fostering mutual <br /> success and engagement.
+                    Enhance partnerships with <br />impactful 
+                    sponsorship emails. <br />Create  compelling content
+                   <br />  fostering mutual success and <br />engagement.
                   </p>
                 </div>
               </div>

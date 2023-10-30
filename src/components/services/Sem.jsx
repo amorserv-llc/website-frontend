@@ -86,19 +86,7 @@ export default function Sem() {
       >
         <div className='header'>
           <div className='content semp'>
-            <p
-              style={{
-                fontSize: "1.5rem",
-                lineHeight: "2.5rem",
-                opacity: "0.8",
-                width: "600px",
-                marginTop: "-10rem",
-                boxSizing: 'border-box',
-                whiteSpace: 'normal',
-                overflow: 'hidden',
-                margin: '0'
-              }}
-            >
+            <p>
               Search Engine Marketing (SEM) is a dynamic digital marketing
               strategy that leverages paid advertising to maximize online
               visibility. By bidding on relevant keywords, businesses position
@@ -143,8 +131,9 @@ export default function Sem() {
                   <h3>Drive Conversions</h3>
                   <p>
                     Use PPC advertising to reach <br />
-                    potential customers. Bid on relevant <br /> keywords, your
-                    ads appear in <br /> searches
+                    potential customers. Bid on <br />
+                    relevant keywords, your ads <br />
+                    appear in searches
                   </p>
                 </div>
               </div>
@@ -154,10 +143,11 @@ export default function Sem() {
                   <img src={ff13} alt='image' />
                   <h3>Optimization</h3>
                   <p>
-                    Leverage strategic keyword research <br /> for online
-                    optimization. Select <br /> audience-searched keywords for{" "}
-                    <br />
-                    higher search relevance.
+                    Leverage strategic keyword <br />
+                    research for online optimization. <br />
+                    Select audience-searched
+                    <br /> keywords for higher search
+                    <br /> relevance.
                   </p>
                 </div>
               </div>
@@ -167,9 +157,10 @@ export default function Sem() {
                   <img src={ff14} alt='image' />
                   <h3>Tracking</h3>
                   <p>
-                    Track and analyze conversions for <br /> SEM impact
-                    measurement. Identify <br /> ads driving purchases,
-                    sign-ups, or <br /> interactions
+                    Track and analyze conversions
+                    <br /> for SEM impact measurement.
+                    <br /> Identify ads driving purchases,
+                    <br /> sign-ups, or interactions
                   </p>
                 </div>
               </div>
