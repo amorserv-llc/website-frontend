@@ -74,8 +74,10 @@ export default function () {
         className='service-feat p-5'
         style={{ backgroundColor: "#eff3fd" }}
       >
-        <h2 className='pb-4' style={{ fontSize: '3rem' }}>Our Comprehensive SEO Services </h2>
-        <p className='text-center' style={{ fontSize:'1.5rem' }}>
+        <h2 className='pb-4' style={{ fontSize: "3rem" }}>
+          Our Comprehensive SEO Services{" "}
+        </h2>
+        <p className='text-center' style={{ fontSize: "1.5rem" }}>
           Maximize your online presence with our SEO services for <br />
           visibility and success.
         </p>
@@ -90,8 +92,9 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text'>
-                    Uncover your online potential with <br />our  expert keyword
-                    research and <br />strategy  to boost your digital <br /> success.
+                    Uncover your online potential with <br />
+                    our expert keyword research and <br />
+                    strategy to boost your digital <br /> success.
                   </p>
                 </div>
               </div>
@@ -127,8 +130,8 @@ export default function () {
                   <p className='card-text'>
                     Dominate your local market with <br /> targeted
                     optimizations that put <br /> your business on the map,
-                    making  <br />it easier for nearby customers to <br /> find you
-                     online.
+                    making <br />
+                    it easier for nearby customers to <br /> find you online.
                   </p>
                 </div>
               </div>
@@ -140,7 +143,8 @@ export default function () {
                     Craft compelling web pages <br /> optimized for search
                     engines and <br />
                     users alike, utilizing strategic <br /> keyword placement,
-                    meta tags,<br />  and content enhancements.
+                    meta tags,
+                    <br /> and content enhancements.
                   </p>
                 </div>
               </div>
@@ -149,9 +153,10 @@ export default function () {
                   <img src={ff10} alt='image' />
                   <h4 className='card-title'>Off-Page SEO</h4> <br />
                   <p className='card-text'>
-                    Expand your digital footprint <br />through 
-                    off-page strategies like <br />content  outreach and social
-                    media <br /> engagement, enhancing online <br /> authority.
+                    Expand your digital footprint <br />
+                    through off-page strategies like <br />
+                    content outreach and social media <br /> engagement,
+                    enhancing online <br /> authority.
                   </p>
                 </div>
               </div>
@@ -161,10 +166,10 @@ export default function () {
                   <img src={ff3} alt='image' />
                   <h4 className='card-title'>Franchise SEO</h4> <br />
                   <p className='card-text'>
-                    Tailored strategies support <br />franchise  businesses,
-                    ensuring <br />consistent  online presence across <br />multiple
-                    
-                    locations, maximizing <br /> local visibility.
+                    Tailored strategies support <br />
+                    franchise businesses, ensuring <br />
+                    consistent online presence across <br />
+                    multiple locations, maximizing <br /> local visibility.
                   </p>
                 </div>
               </div>
@@ -185,11 +190,13 @@ export default function () {
                   <img src={ff4} alt='image' />
                   <h4 className='card-title'>Amazon SEO</h4> <br />
                   <p className='card-text'>
-                    Stand out in the competitive <br />Amazon  marketplace with
-                    Amazon<br />-specific  SEO tactics that drive your <br /> products{" "}
-                    
-                    to the top of search <br />results,  increasing visibility
-                  <br />  and sales.
+                    Stand out in the competitive <br />
+                    Amazon marketplace with Amazon
+                    <br />
+                    -specific SEO tactics that drive your <br /> products to the
+                    top of search <br />
+                    results, increasing visibility
+                    <br /> and sales.
                   </p>
                 </div>
               </div>
@@ -200,9 +207,10 @@ export default function () {
                   <h4 className='card-title'>eCommerce SEO</h4> <br />
                   <p className='card-text'>
                     Transform your online store into a <br />
-                    powerhouse with comprehensive<br /> SEO  strategies tailored
-                    to <br /> ecommerce platforms, driving <br />higher traffic and{" "}
-                    boosting sales.
+                    powerhouse with comprehensive
+                    <br /> SEO strategies tailored to <br /> ecommerce
+                    platforms, driving <br />
+                    higher traffic and boosting sales.
                   </p>
                 </div>
               </div>
@@ -214,8 +222,7 @@ export default function () {
                   <p className='card-text'>
                     Ignite your digital journey with SEO- <br />
                     optimized content that resonates, <br /> boosts engagement,
-                    and <br /> establishes
-                    industry leadership
+                    and <br /> establishes industry leadership
                   </p>
                 </div>
               </div>
@@ -227,11 +234,13 @@ export default function () {
                   </h4>{" "}
                   <br />
                   <p className='card-text '>
-                    Stand out in the competitive <br />Amazon  marketplace with
-                    Amazon<br />-specific 
-                    SEO tactics that drive your <br />products 
-                    to the top of search<br /> results,  increasing visibility
-                    and <br />sales.
+                    Stand out in the competitive <br />
+                    Amazon marketplace with Amazon
+                    <br />
+                    -specific SEO tactics that drive your <br />
+                    products to the top of search
+                    <br /> results, increasing visibility and <br />
+                    sales.
                   </p>
                 </div>
               </div>
@@ -365,16 +374,9 @@ export default function () {
               Amorserv Agile SEO Methodology
             </h3>
           </div>
-          <p
-            className='text-center'
-            style={{
-              color: "#3D3D3D",
-              fontWeight: "400",
-              paddingBottom: "30px",
-            }}
-          >
+          <p className='seopage'>
             We adopt tailored strategies to fuel captivating content. Meticulous
-            monitoring to <br /> ensure growth, adapting to your brand journey.
+            monitoring to ensure growth, adapting to your brand journey.
           </p>
 
           <section id='sec-6'>
@@ -403,7 +405,9 @@ export default function () {
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Let’s Grow your Business</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Let’s Grow your Business
+              </h3>
             </div>
             <p>
               Fuel your brand's growth with our best SEO strategies that drive{" "}

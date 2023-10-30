@@ -15,6 +15,14 @@ section.service-feat {
   
   /* border: 2px solid red; */
 }
+.seopage {
+  color: #3D3D3D;
+  font-weight: 400;
+  padding-bottom: 30px;
+  text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the element in the container and provide space on left and right */
+  max-width: 600px; /* Set a maximum width to limit the content width */
+}
 
 section.service-feat h2 {
   width: 60%;

@@ -31,14 +31,13 @@
 }
 
 .about-intro .intro article {
-  padding-top: 15px;
-  /* color: #3d3d3d; */
-  text-align: justify;
+  padding-top: 10px;
   font-size: 1.5rem;
-  line-height: 1.5;
-  align-items: center;
   text-align: center;
-  /* width: 80%; */
+
+  font-weight: 400;
+  margin: 0 auto; /* Center the element in the container and provide space on left and right */
+  max-width: 900px; /* Set a maximum width to limit the content width */
 }
 
 .vmv {
@@ -107,20 +106,17 @@
 .team .members .first-row .member {
   width: calc(25% - 15px);
   margin-bottom: 20px; /* Add spacing between rows */
-  padding: 10px; 
+  padding: 10px;
   /* border: 2px solid red; */
-
 }
 
 .team .members .first-row .member .image img {
   border-radius: 8px;
-
 }
 
 .team .members .first-row .member .detail {
   line-height: 1.2; /* Corrected line-height value */
   margin-top: 10px;
-
 }
 
 .team .members .first-row .member .detail h6 {
