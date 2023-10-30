@@ -354,7 +354,7 @@ export default function Index() {
       <section id='sec-6'>
         <div className='container-lg pt-5 mb-5'>
           <div className='col-12'>
-            <h3 className='mb-4 fw-bold' style={{ fontSize: "3rem" }}>
+            <h3 className='mb-4 fw-bold'>
               Trusted by Thousands of <br />
               Happy Customers
             </h3>

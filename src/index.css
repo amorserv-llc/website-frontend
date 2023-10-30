@@ -567,7 +567,7 @@ body {
   color: #266;
   text-align: center;
   font-family: Poppins;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.525rem; /* 142.857% */
@@ -882,14 +882,31 @@ footer ul li a {
     /* padding: 15px; */
     /* border: 2px solid red; */
   }
+  #sec-0 h3 {
+    color: #266;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 100% */
+    letter-spacing: 0.03125rem;
+  }
+  #sec-6 h3 {
+    color: #266;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 142.857% */
+  }
   #sec-3 h3 {
     color: #226666 !important;
     font-feature-settings: "clig" off, "liga" off;
     font-family: Poppins;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 3.5rem; 
+    line-height: 3.9rem; 
     padding: 2rem;
   }
   

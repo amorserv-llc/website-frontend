@@ -206,7 +206,7 @@ export default function Portfolio() {
       <section id='sec-6'>
         <div className='container-lg pt-5'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4 fw-bold' style={{ fontSize: "3rem" }}>
+            <h3 className='mb-4 fw-bold'>
               Trusted by Thousands of <br />
               Happy Customer
             </h3>
