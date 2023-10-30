@@ -86,7 +86,7 @@ body {
 
 }
 .dropInLinks{
-  padding: 1rem 0.2rem 1.5rem;
+  padding: 1rem 0.2rem 0.5rem;
 
 }
 .hoverable-link:hover {
@@ -882,7 +882,17 @@ footer ul li a {
     /* padding: 15px; */
     /* border: 2px solid red; */
   }
-
+  #sec-3 h3 {
+    color: #226666 !important;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; 
+    padding: 2rem;
+  }
+  
   .hp {
     margin-top: -50px;
   }
@@ -970,6 +980,7 @@ footer ul li a {
     background: #d9d9d9;
     margin: 17px;
   }
+  
   .threemob {
     margin: 80px;
   }

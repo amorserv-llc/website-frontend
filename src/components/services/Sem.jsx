@@ -85,7 +85,7 @@ export default function Sem() {
         style={{ backgroundColor: "white" }}
       >
         <div className='header'>
-          <div className='content'>
+          <div className='content semp'>
             <p
               style={{
                 fontSize: "1.5rem",
@@ -93,6 +93,10 @@ export default function Sem() {
                 opacity: "0.8",
                 width: "600px",
                 marginTop: "-10rem",
+                boxSizing: 'border-box',
+                whiteSpace: 'normal',
+                overflow: 'hidden',
+                margin: '0'
               }}
             >
               Search Engine Marketing (SEM) is a dynamic digital marketing
@@ -111,7 +115,7 @@ export default function Sem() {
           </div>
 
           <div
-            className='pb-5'
+            className='pb-5 semimg'
             style={{ padding: "30px", marginTop: "-10rem" }}
           >
             <img src={updates} className='img-fluid' alt='header-image' />

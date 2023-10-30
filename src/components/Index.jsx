@@ -365,7 +365,6 @@ export default function Index() {
             </p>
           </div>
         </div>
-        {/* <TestimonialCarousel /> */}
 
         <Slide
           duration={15000}

@@ -216,12 +216,12 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-        {/* <TestimonialCarousel /> */}
 
         <Slide
           duration={15000}
-          indicators={true}
-          autoplay={true}
+          indicators={false}
+          arrows={false}
+          autoplay={false}
           cssClass='carousel-cards'
           responsive={[
             {
@@ -279,21 +279,7 @@ export default function Portfolio() {
             rating='5'
           />
 
-          {/* <CarouselCard
-            img={t2}
-            name='Tega Ovri'
-            position='CMO Oblivion'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          />
-
-          <CarouselCard
-            img={t1}
-            name='Katherina Owens'
-            position='Manager, Semetrics'
-            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
-            rating='5'
-          /> */}
+        
         </Slide>
       </section>
       <Footer />

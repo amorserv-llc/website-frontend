@@ -64,7 +64,6 @@ section.service-feat .contents h3 {
   background: #dbe4ff; /* Change background color on hover */
 }
 
-
 section.service-feat .contents p {
   color: #696969;
   text-align: center;
@@ -88,6 +87,75 @@ section.service-feat .contents h4 {
   font-weight: 800;
   line-height: 3.5rem; /* 280% */
 }
+
+
+
+.header-bg {
+  width: 100%;
+  padding-top: 100px;
+  background: #fafafb;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+ 
+.header-bg .header {
+  width: 90%;
+  height: auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+ 
+.sec-15 .heading .contenting {
+  width: 700px;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: transparent;
+  border: 2px solid red;
+
+}
+ 
+.header-bg .header .content h1 {
+  width: 100%;
+  color: #266;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* border: 2px solid red; */
+
+}
+ 
+.header-bg .header .content p {
+  color: #1a202c;
+  /* font-size: 16px; */
+  font-weight: 500;
+  /* line-height: 26px; */
+  /* letter-spacing: -0.02em; */
+  text-align: left;
+  opacity: 0.6;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 section.service-feat .contents .left,
 section.service-feat .contents .right {
@@ -260,11 +328,26 @@ section.trust-agency .contents .detail .image img {
     text-align: center;
     padding: 1rem;
   }
+  .card-body p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid red; */
+  }
+  .semimg{
+    border: 2px solid red;
+    margin-bottom: 12rem;
+  }
+  .semp p{
+    border: 3px solid red;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 3rem;
+  }
   .lastcard {
     border: 3px solid red;
-    margin-right:300px;
-    display:none;
-
+    margin-right: 300px;
+    display: none;
   }
   section.service-feat .contents {
     padding-top: 30px;
@@ -328,11 +411,11 @@ section.trust-agency .contents .detail .image img {
   section.service-feat .contents {
     padding-top: 0px;
   }
-.sem{
-  padding-top: 80px;
-  width: 100%;
-  /* border: 2px solid red; */
-}
+  .sem {
+    padding-top: 80px;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
   section.service-feat .contents .left,
   section.service-feat .contents .right {
     height: 300px;
@@ -457,7 +540,7 @@ section.trust-agency .contents .detail .image img {
 
 /* Add a media query for mobile devices */
 @media only screen and (max-width: 768px) {
-  .pbtn{
+  .pbtn {
     width: 150%;
     text-align: center;
   }
@@ -471,31 +554,23 @@ section.trust-agency .contents .detail .image img {
     font-size: 0.8rem;
   }
 
-  .contents .card-body p{
+  .contents .card-body p {
     /* border: 1px solid red; */
-  
   }
-  
 
   .contents .card-body {
     /* border: 1px solid red; */
     font-size: 0.5rem;
-
   }
   .contents {
     /* border: 1px solid red; */
-  
   }
-  
 
-
- 
   .faqspan {
-     
     font-size: 0.8rem;
     font-weight: bolder;
   }
- 
+
   .custom-card {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
       0px 8px 12px 6px rgba(0, 0, 0, 0.15);
