@@ -48,19 +48,19 @@ export default function About() {
 
       <section className='about-intro container'>
         <div className='intro'>
-          <h2 style={{ fontSize: "3rem" }}>Who Is Amorserv Consulting?</h2>
+          <h2>Who Is Amorserv Consulting?</h2>
 
-          <article style={{ textAlign: "center" }}>
+          <article>
             Established in 2016, Amorserv Consulting stands as the best digital
-            marketing agency in Chicago. We infuse our expertise <br />
+            marketing agency in Chicago. We infuse our expertise 
             into every strategy, driving brands towards digital excellence. As
-            the best digital marketing agency in Chicago, USA, we're <br />{" "}
+            the best digital marketing agency in Chicago, USA, we're 
             committed to delivering unparalleled results.
-            <br /> <br />
+            
             The name “AmorServ ” conveys a strong message of dedication,
-            commitment, and passion for serving <br />
+            commitment, and passion for serving 
             customers. The fact that the name literally means “We Love to Serve
-            You” reinforces this message and sets a <br /> high standard for the
+            You” reinforces this message and sets a high standard for the
             company.
           </article>
         </div>
