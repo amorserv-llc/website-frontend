@@ -172,7 +172,7 @@ export default function Sem() {
       <section id='sec-6' className='py-5'>
         <div className='text-center service-feat pt-5'>
           <div className='container-lg my-4'>
-            <h3 style={{ fontSize: "3rem" }}>
+            <h3 className="chief">
               Why you need Search Engine <br /> Marketing?
             </h3>
 
