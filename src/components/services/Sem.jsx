@@ -104,7 +104,6 @@ export default function Sem() {
 
           <div
             className='pb-5 semimg'
-            style={{ padding: "30px", marginTop: "-10rem" }}
           >
             <img src={updates} className='img-fluid' alt='header-image' />
           </div>
@@ -176,7 +175,7 @@ export default function Sem() {
               Why you need Search Engine <br /> Marketing?
             </h3>
 
-            <p style={{ fontSize: "1.5rem", lineHeight: "2rem" }}>
+            <p>
               SEM empowers your business to appear prominently on search engine
               results pages (SERPs), <br /> precisely when potential customers
               are actively searching for what you offer.
