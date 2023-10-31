@@ -9,7 +9,7 @@ import threestep from "../../Assets/threestep.png";
 import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 import ff from "../../Assets/ff.png";
-
+import { Helmet } from "react-helmet";
 import ff1 from "../../Assets/ff1.png";
 import ff2 from "../../Assets/ff2.png";
 import ff3 from "../../Assets/ff3.png";
@@ -59,6 +59,10 @@ export default function () {
 
   return (
     <>
+      <Helmet>
+        <title>SEO - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting SEO Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>

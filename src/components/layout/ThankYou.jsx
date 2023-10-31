@@ -6,6 +6,10 @@ import thankyou from '../../Assets/thankyou.png';
 export default function ThankYou() {
   return (
     <>
+     <Helmet>
+        <title>Thank-You - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Thank-You Page' />
+      </Helmet>
       <Navbar />
       <div className="thank-you-container">
         <img className="thankyou" src={thankyou} alt="Thank You Image" />

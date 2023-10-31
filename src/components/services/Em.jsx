@@ -18,7 +18,7 @@ import ff9 from "../../Assets/ff9.png";
 import ff10 from "../../Assets/ff10.png";
 import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
-import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import QuestionAnswer from "../molecules/quest-answer";
 import HeroBg from "../organism/hero-bg";
 
@@ -48,6 +48,10 @@ export default function Em() {
 
   return (
     <>
+      <Helmet>
+        <title>EM - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting EM Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>

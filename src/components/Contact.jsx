@@ -6,7 +6,7 @@ import contact from "../Assets/contact.png";
 import Footer from "./layout/Footer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-
+import { Helmet } from "react-helmet";
 import Navbar from "./layout/TopNavbar";
 import HeroBg from "./organism/hero-bg";
 export default function () {
@@ -61,6 +61,10 @@ export default function () {
 
   return (
     <>
+      <Helmet>
+        <title>Contact - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Contact Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>

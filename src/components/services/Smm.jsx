@@ -10,7 +10,7 @@ import ContactForm from "../layout/ContactForm";
 import Footer from "../layout/Footer";
 
 import ff from "../../Assets/ff.png";
-
+import { Helmet } from "react-helmet";
 import ff1 from "../../Assets/ff1.png";
 import ff2 from "../../Assets/ff2.png";
 import ff3 from "../../Assets/ff3.png";
@@ -39,6 +39,10 @@ export default function Smm() {
 
   return (
     <>
+      <Helmet>
+        <title>SMM - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting SMM Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>

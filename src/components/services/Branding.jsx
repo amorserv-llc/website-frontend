@@ -2,11 +2,16 @@
 
 import React from "react";
 import TopNavbar from "../../components/layout/TopNavbar";
+import { Helmet } from "react-helmet";
 
 import braimage from "../../Assets/braimage.png";
 export default function Branding() {
   return (
     <>
+      <Helmet>
+        <title>Branding - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Branding Page' />
+      </Helmet>
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>

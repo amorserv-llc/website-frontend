@@ -16,15 +16,19 @@ import t3 from "../Assets/t3.png";
 
 import Navbar from "./layout/TopNavbar";
 import { Link } from "react-router-dom";
-import TestimonialCarousel from "./layout/TestimonialCarousel";
 import CarouselCard from "./layout/CarouselCard";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import HeroBg from "./organism/hero-bg";
+import { Helmet } from "react-helmet";
 
 export default function Portfolio() {
   return (
     <>
+      <Helmet>
+        <title>Portfolio - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Portfolio Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>
@@ -278,8 +282,6 @@ export default function Portfolio() {
             desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
             rating='5'
           />
-
-        
         </Slide>
       </section>
       <Footer />

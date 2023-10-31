@@ -4,12 +4,15 @@ import React from "react";
 import Navbar from "./layout/TopNavbar";
 import terms from "../Assets/terms.png";
 import Footer from "./layout/Footer";
-import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 
 export default function () {
   return (
     <>
+      <Helmet>
+        <title>TC- Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting TC Page' />
+      </Helmet>
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>

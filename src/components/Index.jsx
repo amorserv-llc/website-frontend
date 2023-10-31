@@ -38,6 +38,7 @@ import jsPDF from "jspdf";
 import SectionLogo from "./layout/SectionLogo";
 import CarouselCard from "./layout/CarouselCard";
 import ContactForm from "./layout/ContactForm";
+import { Helmet } from "react-helmet";
 
 export default function Index() {
   const handleCallButtonClick = () => {
@@ -55,6 +56,10 @@ export default function Index() {
 
   return (
     <>
+      <Helmet>
+        <title>Home - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Home Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>
@@ -63,7 +68,9 @@ export default function Index() {
         <div className='container-lg my-4'>
           <div className='row mb-2'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Some of our Clients</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Some of our Clients
+              </h3>
             </div>
           </div>
         </div>
@@ -326,9 +333,11 @@ export default function Index() {
       <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
-            <h3 className='mb-4' style={{ fontSize: "3rem" }}>Our Simplified 3-Step Process</h3>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+              Our Simplified 3-Step Process
+            </h3>
           </div>
-          <h5 className='my-4 text-center' style={{ fontSize: '1.5rem' }}>
+          <h5 className='my-4 text-center' style={{ fontSize: "1.5rem" }}>
             For Maximizing Your Digital Marketing Success{" "}
           </h5>
 
@@ -427,15 +436,15 @@ export default function Index() {
             desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
             rating='5'
           />
-
-       
         </Slide>
       </section>
       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
             <div className='col-12 text-center'>
-              <h3 className='mb-4' style={{ fontSize: "3rem" }}>Let’s Grow your Business</h3>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Let’s Grow your Business
+              </h3>
             </div>
             <p>
               Fuel your brand's growth with our best SEO strategies that drive{" "}

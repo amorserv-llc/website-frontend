@@ -13,7 +13,7 @@ import ff14 from "../../Assets/ff14.png";
 import why3 from "../../Assets/why3.png";
 import why2 from "../../Assets/why2.png";
 import why1 from "../../Assets/why1.png";
-
+import { Helmet } from "react-helmet";
 import ff1 from "../../Assets/ff1.png";
 import ff2 from "../../Assets/ff2.png";
 import ff3 from "../../Assets/ff3.png";
@@ -57,6 +57,10 @@ export default function Sem() {
 
   return (
     <>
+      <Helmet>
+        <title>SEM - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting SEM Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>

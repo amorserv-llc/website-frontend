@@ -30,17 +30,21 @@ import cnn from "../Assets/cnn.png";
 import samsung from "../Assets/samsung.png";
 import { Link } from "react-router-dom";
 import HeroBg from "./organism/hero-bg";
-
+import { Helmet } from "react-helmet";
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting About-Us Page' />
+      </Helmet>
       <div>
         <Navbar />
       </div>
 
       <HeroBg
-        title={" Curious to Know Our Story?".toUpperCase()}
-        desc='          Indeed, our journey has been remarkable.'
+        title={"Curious to Know Our Story?".toUpperCase()}
+        desc='Indeed, our journey has been remarkable.'
         link='/contact-us'
         linkTitle='Learn More'
         img={about}
@@ -52,13 +56,11 @@ export default function About() {
 
           <article>
             Established in 2016, Amorserv Consulting stands as the best digital
-            marketing agency in Chicago. We infuse our expertise 
-            into every strategy, driving brands towards digital excellence. As
-            the best digital marketing agency in Chicago, USA, we're 
-            committed to delivering unparalleled results.
-            
-            The name “AmorServ ” conveys a strong message of dedication,
-            commitment, and passion for serving 
+            marketing agency in Chicago. We infuse our expertise into every
+            strategy, driving brands towards digital excellence. As the best
+            digital marketing agency in Chicago, USA, we're committed to
+            delivering unparalleled results. The name “AmorServ ” conveys a
+            strong message of dedication, commitment, and passion for serving
             customers. The fact that the name literally means “We Love to Serve
             You” reinforces this message and sets a high standard for the
             company.

@@ -12,13 +12,17 @@ import b4 from "../Assets/b4.png";
 import love from "../Assets/love.png";
 import shear from "../Assets/shear.png";
 import comment from "../Assets/comment.png";
-
+import { Helmet } from "react-helmet";
 import Footer from "./layout/Footer";
 import { Link } from "react-router-dom";
 
 export default function () {
   return (
     <>
+      <Helmet>
+        <title>Blog - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting Blog Page' />
+      </Helmet>
       <div style={{ paddingBottom: "90px" }}>
         <Navbar />
       </div>
