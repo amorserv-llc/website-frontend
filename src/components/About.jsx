@@ -29,6 +29,7 @@ import cnn from "../Assets/cnn.png";
 import ceo from "../Assets/ceo.png";
 import samsung from "../Assets/samsung.png";
 import HeroBg from "./organism/hero-bg";
+
 import { Helmet } from "react-helmet";
 export default function About() {
   return (
