@@ -22,6 +22,7 @@ import citi from "../Assets/citi.png";
 import gold from "../Assets/gold.png";
 import flock from "../Assets/flock.png";
 import google from "../Assets/google.png";
+
 import star from "../Assets/star.png";
 import forbes from "../Assets/forbes.png";
 import traveller from "../Assets/traveller.png";
