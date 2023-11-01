@@ -3,7 +3,6 @@
 import React from "react";
 import Navbar from "./layout/TopNavbar";
 import Footer from "./layout/Footer";
-
 import about from "../Assets/about.png";
 import value from "../Assets/value.png";
 import mission from "../Assets/mission.png";
@@ -27,8 +26,8 @@ import star from "../Assets/star.png";
 import forbes from "../Assets/forbes.png";
 import traveller from "../Assets/traveller.png";
 import cnn from "../Assets/cnn.png";
+import ceo from "../Assets/ceo.png";
 import samsung from "../Assets/samsung.png";
-import { Link } from "react-router-dom";
 import HeroBg from "./organism/hero-bg";
 import { Helmet } from "react-helmet";
 export default function About() {
@@ -118,6 +117,16 @@ export default function About() {
 
         <div className='members'>
           <div className='first-row'>
+            <div className='member'>
+              <div className='image'>
+                <img src={ceo} alt='' />
+              </div>
+              <div className='detail'>
+                <h6 className='pb-3'>Otse Amorighoye</h6>
+                <p>Founder - CEO</p>
+              </div>
+            </div>
+
             <div className='member'>
               <div className='image'>
                 <img src={siji} alt='' />

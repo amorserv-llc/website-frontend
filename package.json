@@ -42,7 +42,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "react-snap": "^1.23.0",
-    "vite": "^4.4.5"
+    "vite": "^4.5.0"
   },
   "reactSnap": {
     "debug": "yes",
@@ -50,6 +50,10 @@
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
+      
     ]
+ 
+
+    
   }
 }
