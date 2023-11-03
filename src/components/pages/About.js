@@ -247,6 +247,7 @@ export default function About() {
               <img src={google} alt='google' />
             </li>
             <li>
+              
               <img src={flock} alt='flock' />
             </li>
           </ul>
