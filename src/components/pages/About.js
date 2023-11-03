@@ -40,7 +40,6 @@ export default function About() {
         <meta name='description' content='Amorserv Consulting About-Us Page' />
       </Helmet>
       <Navbar />
-
       <HeroBg
         title={"Curious to Know Our Story?".toUpperCase()}
         desc='Indeed, our journey has been remarkable.'
