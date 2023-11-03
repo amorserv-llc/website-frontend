@@ -11,7 +11,6 @@
     "@mui/material": "^5.14.16",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
-    "@babel/plugin-proposal-private-property-in-object": "^latest",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.0",
     "email-validator": "^2.0.4",
@@ -74,5 +73,8 @@
       "/branding"
     ],
     "notFound": "404.html"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
