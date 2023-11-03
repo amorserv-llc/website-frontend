@@ -172,42 +172,48 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section id='sec-3' className='py-4'>
-      <div className='my-3'>
-        <div className=''>
-          <h3 className='mb-4'>Feeling overwhelmed by Digital Marketing?</h3>
+        <div className='container-lg my-3'>
+          <div className='col-12 text-center'>
+            <h3 className='mb-4'>Feeling overwhelmed by Digital Marketing?</h3>
+          </div>
+          <div className='row secview'>
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img
+                  src={f1}
+                  alt=''
+                  className='
+                homeimg'
+                />
+              </div>
+              <p>Struggling to navigate the complex digital world?</p>
+            </div>
+            <div className='col-md-3 mb-5 hmd'>
+              <div className='d-flex'>
+                <img src={f2} alt='' />
+              </div>
+              <p>Feeling frustrated with low online presence?</p>
+            </div>
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img src={f3} alt='' />
+              </div>
+              <p>Feeling held back by digital marketing challenges?</p>
+            </div>
+            <div className='col-md-3 mb-5 hmd'>
+              <div>
+                <img src={f4} alt='' />
+              </div>
+              <p>
+                Worried about missing opportunities to connect with your
+                audience?
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div className='row secview'>
-          <div className='column'>
-            <div className='image-container'>
-              <img src={f1} alt='' className='homeimg' />
-            </div>
-            <p>Struggling to navigate the complex digital world?</p>
-          </div>
-          <div className='column'>
-            <div className='image-container'>
-              <img src={f2} alt='' className='homeimg' />
-            </div>
-            <p>Feeling frustrated with low online presence?</p>
-          </div>
-          <div className='column'>
-            <div className='image-container'>
-              <img src={f3} alt='' className='homeimg' />
-            </div>
-            <p>Feeling held back by digital marketing challenges?</p>
-          </div>
-          <div className='column'>
-            <div className='image-container'>
-              <img src={f4} alt='' className='homeimg' />
-            </div>
-            <p>Worried about missing opportunities to connect with your audience?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
+      </section>
 
 
 
