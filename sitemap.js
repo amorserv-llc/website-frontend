@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const outputFolder = path.join(__dirname, "public");
-const baseUrl = "https://amorservconsulting.com";
+const baseUrl = "https://staging.amorservconsulting.com";
 
 const pages = [
   { url: "/", changefreq: "weekly", priority: 0.9 },
