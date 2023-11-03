@@ -1,44 +1,77 @@
 {
   "name": "amorservconsulting",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@mui/icons-material": "^5.14.8",
-    "@mui/material": "^5.14.8",
-    "axios": "^1.5.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.16",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.0",
     "email-validator": "^2.0.4",
     "jspdf": "^2.5.1",
+    "pigeon-maps": "^0.21.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
-    "react-hamburger-menus": "^1.0.16",
     "react-helmet": "^6.1.0",
     "react-https-redirect": "^1.1.0",
-    "react-icons": "^4.11.0",
-    "react-router-dom": "^6.16.0",
-    "react-slideshow-image": "^4.2.1",
-    "sitemap": "^7.1.1"
+    "react-router-dom": "^6.18.0",
+    "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.3.0",
+    "react-snap": "^1.23.0",
+    "sitemap": "^7.1.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sitemap": "node sitemap.js",
+    "postbuild": "react-snap"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "reactSnap": {
+    "debug": "yes",
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "source": "build",
+    "include": [
+      "/",
+      "/about-us",
+      "/contact-us",
+      "/search-engine-optimization",
+      "/social-media-marketing",
+      "/email-marketing",
+      "/search-engine-marketing",
+      "/thank-you",
+      "/branding"
+    ],
+    "notFound": "404.html"
   }
 }

@@ -1,0 +1,154 @@
+/** @format */
+
+import React, { useState, useEffect } from "react";
+import "../../styles/NavBar.css";
+import Logo from "../../Assets/Logo.png";
+import { Link } from "react-router-dom";
+
+import seoIcon from "../../Assets/seoIcon.png";
+import em from "../../Assets/em.png";
+import smm from "../../Assets/smm.png";
+import sem from "../../Assets/sem.png";
+
+export default function Navbar() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+
+  const [toggle, setToggle] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
+  useEffect(() => {
+    const closeDropdown = (event) => {
+      if (!event.target.closest(".navItem")) {
+        setToggle(false);
+      }
+    };
+    document.addEventListener("click", closeDropdown);
+
+    return () => {
+      document.removeEventListener("click", closeDropdown);
+    };
+  }, []);
+
+  return (
+    <div className='navBarContainer'>
+      <nav className='navigation'>
+        <a href='/' className='brand-name'>
+          <img src={Logo} alt='Logo' />
+        </a>
+        <button
+          className='hamburger'
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='h-5 w-5'
+            viewBox='0 0 20 20'
+            fill='white'
+          >
+            <path
+              fillRule='evenodd'
+              d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z'
+              clipRule='evenodd'
+            />
+          </svg>
+        </button>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
+          <ul>
+          <li className="navItem dropdown" onClick={() => setToggle((prev) => !prev)}>
+            <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >Services</Link>
+              {toggle && (
+                <div className='dropIn'>
+                  <Link
+                    className='nav-link dropInLinks hoverable-link'
+                    to='/search-engine-optimization'
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <img src={seoIcon} width='20' height='20' alt='...' />
+                    <div style={{ marginLeft: "10px" }}>
+                      <h6>Search Engine Optimization</h6>
+                      <p className='opacity-75'>Get Found Online</p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    className='nav-link dropInLinks hoverable-link'
+                    to='/social-media-marketing'
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <img src={smm} width='20' height='20' alt='...' />
+                    <div style={{ marginLeft: "10px" }}>
+                      <h6>Social Media Management</h6>
+                      <p className='opacity-75'>
+                        {" "}
+                        Connect with your Audience
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    className='nav-link dropInLinks hoverable-link'
+                    to='/email-marketing'
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <img src={em} width='20' height='20' alt='...' />
+                    <div style={{ marginLeft: "10px" }}>
+                      <h6>Email Marketing</h6>
+                      <p className='opacity-75'>
+                        Reach your Customers' Inboxes
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    className='nav-link dropInLinks hoverable-link'
+                    to='/search-engine-marketing'
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <img src={sem} width='20' height='20' alt='...' />
+                    <div style={{ marginLeft: "10px" }}>
+                      <h6>Search Engine Marketing</h6>
+                      <p className='opacity-75'>Drive Traffic with Ads</p>
+                    </div>
+                  </Link>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link className='nav-link' to='/about-us'>
+                About Us
+              </Link>{" "}
+            </li>
+            <li>
+              <Link className='nav-link' to='/portfolio'>
+                Portfolio
+              </Link>{" "}
+            </li>
+            <li>
+               <Link className="nav-link navtopbtn" to="/contact-us">
+                Contact Us
+              </Link> 
+              
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+}

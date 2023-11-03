@@ -1,0 +1,511 @@
+/** @format */
+
+import React from "react";
+import Navbar from "../layouts/NavBar";
+import { Outlet } from "react-router";
+import { Helmet } from "react-helmet";
+import homeimg from "../../Assets/homeimg.png";
+import HeroBg from "../organism/hero-bg";
+import SectionLogo from "../layouts/SectionLogo";
+import { Slide } from "react-slideshow-image";
+import { Link } from "react-router-dom";
+import "react-slideshow-image/dist/styles.css";
+import jsPDF from "jspdf";
+
+import cola from "../../Assets/cola.png";
+import amzon from "../../Assets/amzon.png";
+import cvs from "../../Assets/cvs.png";
+import cisco from "../../Assets/cisco.png";
+import pp from "../../Assets/pp.png";
+import mascard from "../../Assets/mascard.png";
+import nike from "../../Assets/nike.png";
+
+import f1 from "../../Assets/f1.png";
+import f2 from "../../Assets/f2.png";
+import f3 from "../../Assets/f3.png";
+import f4 from "../../Assets/f4.png";
+import g1 from "../../Assets/g1.png";
+
+import digi from "../../Assets/digi.png";
+import paid from "../../Assets/paid.png";
+import branding from "../../Assets/branding.png";
+import social from "../../Assets/social.png";
+import website from "../../Assets/website.png";
+import webop from "../../Assets/webop.png";
+import searchop from "../../Assets/searchop.png";
+import email from "../../Assets/email.png";
+
+import threestep from "../../Assets/threestep.png";
+import threemob from "../../Assets/threemob.png";
+import t1 from "../../Assets/t1.png";
+import t2 from "../../Assets/t2.png";
+import t3 from "../../Assets/t3.png";
+import CarouselCard from "../layouts/CarouselCard";
+import ContactForm from "../layouts/ContactForm";
+import Footer from "../layouts/Footer";
+
+
+
+export default function Home() {
+  const handleCallButtonClick = () => {
+    const contactFormSection = document.getElementById("contact-form-section");
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    doc.text("Hello, this is your PDF!", 10, 10); // Add your content here
+    doc.save("downloaded-file.pdf");
+  };
+
+  return (
+    <>
+      {" "}
+      <Navbar />
+      <Outlet />
+      <Helmet>
+        <title>Home - Amorserv Consulting</title>
+        <meta name='description' content='Amorserv Consulting About-Us Page' />
+      </Helmet>
+      <HeroBg
+        title={"We're your Partner for Digital Marketing Success".toUpperCase()}
+        desc='Empower Your Brand, and Drive Results with AmorServ Consulting'
+        link='/'
+        linkTitle='Start Today'
+        img={homeimg}
+      />
+      <section id='sec-2' className='py-5'>
+        <div className='container-lg my-4'>
+          <div className='row mb-2'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Some of our Clients
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div className='client-wrapper'>
+          <div className='client-carousel'>
+            <div className='sliding'>
+              <Slide
+                canSwipe={true}
+                infinite={true}
+                duration={2000}
+                autoplay={true}
+                arrows={false}
+                cssClass='slide-show'
+                defaultIndex={1}
+                responsive={[
+                  {
+                    breakpoint: 900,
+
+                    settings: {
+                      slidesToShow: 5,
+
+                      slidesToScroll: 2,
+                    },
+                  },
+
+                  {
+                    breakpoint: 700,
+
+                    settings: {
+                      slidesToShow: 4,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 500,
+
+                    settings: {
+                      slidesToShow: 3,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+
+                  {
+                    breakpoint: 300,
+
+                    settings: {
+                      slidesToShow: 2,
+
+                      slidesToScroll: 1,
+                    },
+                  },
+                ]}
+              >
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+
+                <SectionLogo img={nike} />
+
+                <SectionLogo img={cola} />
+
+                <SectionLogo img={amzon} />
+
+                <SectionLogo img={cvs} />
+
+                <SectionLogo img={cisco} />
+
+                <SectionLogo img={pp} />
+
+                <SectionLogo img={mascard} />
+              </Slide>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='sec-3' className='py-4'>
+      <div className='my-3'>
+        <div className=''>
+          <h3 className='mb-4'>Feeling overwhelmed by Digital Marketing?</h3>
+        </div>
+
+        <div className='row secview'>
+          <div className='column'>
+            <div className='image-container'>
+              <img src={f1} alt='' className='homeimg' />
+            </div>
+            <p>Struggling to navigate the complex digital world?</p>
+          </div>
+          <div className='column'>
+            <div className='image-container'>
+              <img src={f2} alt='' className='homeimg' />
+            </div>
+            <p>Feeling frustrated with low online presence?</p>
+          </div>
+          <div className='column'>
+            <div className='image-container'>
+              <img src={f3} alt='' className='homeimg' />
+            </div>
+            <p>Feeling held back by digital marketing challenges?</p>
+          </div>
+          <div className='column'>
+            <div className='image-container'>
+              <img src={f4} alt='' className='homeimg' />
+            </div>
+            <p>Worried about missing opportunities to connect with your audience?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    
+    <section id='sec-0' className='py-5'>
+        <div className='container-lg my-4'>
+          <div className='row'>
+            <div className='col-lg-6 align-items-center d-flex justify-content-center'>
+              <img src={g1} alt='...' />
+            </div>
+            <div
+              className='col-lg-6 align-items-center col-lg-6 col-md-12'
+              style={{ marginTop: "80px" }}
+            >
+              <h3 className='mb-4'>Take control of your online success.</h3>
+
+              <span className='my-4'>
+                We understand your struggles and are here to help. Let us be
+                your guide and empower your brand with personalized,
+                results-driven digital marketing strategies. <br /> <br /> As
+                your trusted digital marketing guide, we offer personalized
+                strategies that are results-driven, saving you time and effort.
+              </span>
+
+              <div
+                onClick={handleCallButtonClick}
+                style={{ marginTop: "50px" }}
+              >
+                <Link className='btn-real btn btn-danger mb-3 mobile-center-button'>
+                  Get Free Proposal
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      
+      <section id='sec-5' className='py-5'>
+        <div className='container-lg'>
+          <div className='col-12'>
+            <h3 className='mb-4'>
+              Discover our range of services designed to <br /> boost your
+              online presence
+            </h3>
+          </div>
+          <div className='row justify-content-center my-5'>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={digi} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Digital Marketing
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={paid} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Paid Media
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={branding} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Branding
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={social} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Social Media
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={website} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Website Development
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={webop} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Website Optimization
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={searchop} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Search Engine Optimazation
+              </span>
+            </button>
+            <button
+              type='button'
+              className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
+            >
+              <img src={email} width='25px' alt='...' />
+              <span href='' className='px-2 serv-link'>
+                Email Marketing
+              </span>
+            </button>
+            <div className='text-center'>
+              <h4 className='downt'>Get free marketing guide</h4>
+
+              <Link
+                onClick={generatePDF}
+                className='btn mt-4 btn-real'
+                to='/'
+                style={{ color: "white", width: "200px" }}
+              >
+                Download Our Free Guide{" "}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section id='sec-6'>
+        <div className='container-lg my-4'>
+          <div className='col-12 text-center'>
+            <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+              Our Simplified 3-Step Process
+            </h3>
+          </div>
+          <h5 className='my-4 text-center' style={{ fontSize: "1.5rem" }}>
+            For Maximizing Your Digital Marketing Success{" "}
+          </h5>
+
+          <div className='centered-container' style={{ marginTop: "-160px" }}>
+            <div className='threestep'>
+              <img src={threestep} alt='3-Step' />
+            </div>
+            <div className='threemob'>
+              <img src={threemob} alt='3-mobile' />
+            </div>
+          </div>
+
+          <div className='text-center hp'>
+            <p style={{ color: "#266", fontSize: "1.5rem" }}>
+              it's Time to take controle of your online presence
+            </p>
+            <div onClick={handleCallButtonClick}>
+              <Link className='btn mt-4 btn-real'>Get Free Proposal</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <section id='sec-6'>
+        <div className='container-lg pt-5 mb-5'>
+          <div className='col-12'>
+            <h3 className='mb-4 fw-bold'>
+              Trusted by Thousands of <br />
+              Happy Customers
+            </h3>
+            <p className='text-center'>
+              Proudly impacting industries with the best digital strategies.
+              Hear <br />
+              from our valued clients, not just us.
+            </p>
+          </div>
+        </div>
+
+        <Slide
+          duration={15000}
+          indicators={false}
+          autoplay={false}
+          arrows={false}
+          cssClass='carousel-cards'
+          responsive={[
+            {
+              breakpoint: 1200,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 1000,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+
+            {
+              breakpoint: 850,
+
+              settings: {
+                slidesToShow: 3,
+
+                slidesToScroll: 1,
+              },
+            },
+          ]}
+        >
+          <CarouselCard
+            img={t1}
+            name='Lesley Bradley'
+            position='CEO Stripe'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t2}
+            name='John Addams'
+            position='CEO Teeno'
+            desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
+            rating='5'
+          />
+
+          <CarouselCard
+            img={t3}
+            name='Viezh Robert'
+            position='CEO TASK'
+            desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"
+            rating='5'
+          />
+        </Slide>
+      </section>
+
+
+
+
+
+
+
+
+
+      <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
+        <div className='container ' id='contact-form-section'>
+          <div className='content text-center'>
+            <div className='col-12 text-center'>
+              <h3 className='mb-4' style={{ fontSize: "3rem" }}>
+                Let’s Grow your Business
+              </h3>
+            </div>
+            <p>
+              Fuel your brand's growth with our best SEO strategies that drive{" "}
+              <br /> success.
+            </p>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
