@@ -1,5 +1,4 @@
 import './index.css';
-import './styles/home.css';
 import './styles/about.css';
 import './styles/faq.css';
 import './styles/service.css';

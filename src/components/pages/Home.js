@@ -214,16 +214,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-    
-    <section id='sec-0' className='py-5'>
+      <section id='sec-0' className='py-5'>
         <div className='container-lg my-4'>
           <div className='row'>
             <div className='col-lg-6 align-items-center d-flex justify-content-center'>
@@ -255,9 +246,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
 
 
 
