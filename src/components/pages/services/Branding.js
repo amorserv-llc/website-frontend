@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Navbar from '../../layouts/NavBar'
 import braimage from "../../../Assets/braimage.png"
+import { Link } from 'react-router-dom'
 
 export default function Branding() {
   return (
@@ -20,15 +21,15 @@ export default function Branding() {
               Crafting Authentic, Memorable Brands for Lasting Impressions{" "}
               <br /> and Business Growth.
             </p>
-            <a href=''>
+            <Link to=''>
               <button>Schedule a Call</button>
-            </a>
+            </Link>
           </div>
           <div className=''>
             <img
               src={braimage}
               className='img-fluid'
-              alt='header-image'
+              alt='header'
               style={{}}
             />
           </div>
@@ -51,50 +52,50 @@ export default function Branding() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Brand Guidelines Creation{" "}
-              </a>
+              </Link>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Visual Branding
-              </a>
+              </Link>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Brand Strategy
-              </a>
+              </Link>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Brand Identity Development
-              </a>
+              </Link>
             </button>
 
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Marketing Collateral Design{" "}
-              </a>
+              </Link>
             </button>
             <button
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <a href='' className='px-2 serv-link'>
+              <Link to='' className='px-2 serv-link'>
                 Logo Design{" "}
-              </a>
+              </Link>
             </button>
           </div>
         </div>
@@ -103,7 +104,7 @@ export default function Branding() {
       <div class='container'>
         <div class='row'>
           <div class='col-md-6'>
-            <img src={braimage} class='img-fluid' alt='header-image' />
+            <img src={braimage} class='img-fluid' alt='header' />
           </div>
           <div class='col-md-6'>
             <ul>

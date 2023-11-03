@@ -90,7 +90,7 @@ export default function Sem() {
         <div
           className='pb-5 semimg'
         >
-          <img src={updates} className='img-fluid' alt='header-image' />
+          <img src={updates} className='img-fluid' alt='header' />
         </div>
       </div>
     </section>
@@ -111,7 +111,7 @@ export default function Sem() {
           <div className='row'>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff12} alt='image' />
+                <img src={ff12} alt='sem' />
                 <h3>Drive Conversions</h3>
                 <p>
                   Use PPC advertising to reach <br />
@@ -124,7 +124,7 @@ export default function Sem() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff13} alt='image' />
+                <img src={ff13} alt='sem' />
                 <h3>Optimization</h3>
                 <p>
                   Leverage strategic keyword <br />
@@ -138,7 +138,7 @@ export default function Sem() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff14} alt='image' />
+                <img src={ff14} alt='sem' />
                 <h3>Tracking</h3>
                 <p>
                   Track and analyze conversions
@@ -167,7 +167,7 @@ export default function Sem() {
           </p>
           <div className='row pt-5 '>
             <div className='col-md-4 pt-5'>
-              <img src={ff1} alt='image' />
+              <img src={ff1} alt='sem' />
               <h3>Instant Visibility</h3>
               <p>
                 Get immediate exposure with top <br /> search ads. Be visible
@@ -178,7 +178,7 @@ export default function Sem() {
             </div>
 
             <div className='col-md-4 pt-5'>
-              <img src={ff2} alt='image' />
+              <img src={ff2} alt='sem' />
               <h3>Cost Control</h3>
               <p>
                 SEM uses a Pay-Per-Click model, <br /> cost-effective with
@@ -188,7 +188,7 @@ export default function Sem() {
             </div>
 
             <div className='col-md-4 pt-5'>
-              <img src={ff3} alt='image' />
+              <img src={ff3} alt='sem' />
               <h3>Measurable ROI</h3>
               <p>
                 Track every click and conversion for <br />
@@ -197,7 +197,7 @@ export default function Sem() {
               </p>
             </div>
             <div className='col-md-4 pt-5'>
-              <img src={ff4} alt='image' />
+              <img src={ff4} alt='sem' />
               <h3>Targeted reach</h3>
               <p>
                 SEM targets interested users, ensuring <br />
@@ -206,7 +206,7 @@ export default function Sem() {
               </p>
             </div>
             <div className='col-md-4 pt-5'>
-              <img src={ff5} alt='image' />
+              <img src={ff5} alt='sem' />
               <h3>Competitive Edge</h3>
               <p>
                 Outshine competitors by leading <br />
@@ -216,7 +216,7 @@ export default function Sem() {
             </div>
 
             <div className='col-md-4 pt-5'>
-              <img src={ff6} alt='image' />
+              <img src={ff6} alt='sem' />
               <h3>Data-Driven Decisions</h3>
               <p>
                 Uncover insights with analytics. <br />
@@ -318,7 +318,7 @@ export default function Sem() {
           </p>
           <div className='row pt-5'>
             <div className='col-md-4'>
-              <img src={why1} alt='image' />
+              <img src={why1} alt='sem' />
               <h3 className='pt-4'>Proven Performance</h3>
               <p className='pt-3'>
                 Our SEM services deliver tangible <br /> results, driving
@@ -328,7 +328,7 @@ export default function Sem() {
             </div>
 
             <div className='col-md-4'>
-              <img src={why2} alt='image' />
+              <img src={why2} alt='sem' />
               <h3 className='pt-4'>Tailored Strategies</h3>
               <p className='pt-3'>
                 We recognize unique businesses. Our <br /> SEM experts create
@@ -338,7 +338,7 @@ export default function Sem() {
             </div>
 
             <div className='col-md-4'>
-              <img src={why3} alt='image' />
+              <img src={why3} alt='sem' />
               <h3 className='pt-4'>Expert Insight</h3>
               <p className='pt-3'>
                 With certified SEM professionals, we <br /> bring extensive

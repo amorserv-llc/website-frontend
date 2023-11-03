@@ -70,7 +70,7 @@ export default function Seo() {
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff} alt='image' />
+                  <img src={ff} alt='ff' />
                   <h4 className='card-title'>
                     Keyword Research & Strategy
                   </h4>{" "}
@@ -85,7 +85,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff1} alt='image' />
+                  <img src={ff1} alt='seo' />
                   <h4 className='card-title'>Link Building</h4> <br />
                   <p className='card-text'>
                     Enhance your website's authority <br /> through strategic
@@ -97,7 +97,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff2} alt='image' />
+                  <img src={ff2} alt='ff2' />
                   <h4 className='card-title'>Technical SEO</h4> <br />
                   <p className='card-text'>
                     Enhance website performance and <br /> user experience with
@@ -109,7 +109,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff9} alt='image' />
+                  <img src={ff9} alt='ff9' />
                   <h4 className='card-title'>Local SEO</h4> <br />
                   <p className='card-text'>
                     Dominate your local market with <br /> targeted
@@ -121,7 +121,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff11} alt='image' />
+                  <img src={ff11} alt='seo' />
                   <h4 className='card-title'>On-Page SEO</h4> <br />
                   <p className='card-text'>
                     Craft compelling web pages <br /> optimized for search
@@ -134,7 +134,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff10} alt='image' />
+                  <img src={ff10} alt='seo' />
                   <h4 className='card-title'>Off-Page SEO</h4> <br />
                   <p className='card-text'>
                     Expand your digital footprint <br />
@@ -147,7 +147,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff3} alt='image' />
+                  <img src={ff3} alt='seo' />
                   <h4 className='card-title'>Franchise SEO</h4> <br />
                   <p className='card-text'>
                     Tailored strategies support <br />
@@ -160,7 +160,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff5} alt='image' />
+                  <img src={ff5} alt='seo' />
                   <h4 className='card-title'>Shopify SEO</h4> <br />
                   <p className='card-text'>
                     Boost Shopify store visibility and <br /> rankings using
@@ -171,7 +171,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff4} alt='image' />
+                  <img src={ff4} alt='seo' />
                   <h4 className='card-title'>Amazon SEO</h4> <br />
                   <p className='card-text'>
                     Stand out in the competitive <br />
@@ -187,7 +187,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff6} alt='image' />
+                  <img src={ff6} alt='seo' />
                   <h4 className='card-title'>eCommerce SEO</h4> <br />
                   <p className='card-text'>
                     Transform your online store into a <br />
@@ -201,7 +201,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff8} alt='image' />
+                  <img src={ff8} alt='seo' />
                   <h4 className='card-title'>Content Writing</h4> <br />
                   <p className='card-text'>
                     Ignite your digital journey with SEO- <br />
@@ -212,7 +212,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff7} alt='image' />
+                  <img src={ff7} alt='seo' />
                   <h4 className='card-title'>
                     Conversion Rate <br /> Optimization (CRO)
                   </h4>{" "}
@@ -290,7 +290,7 @@ export default function Seo() {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
-                <img src={ff12} alt='image' />
+                <img src={ff12} alt='seo' />
                 <h3 className='pt-4'>Experience Matters</h3>
                 <p>
                   Years of SEO expertise bring valuable <br />
@@ -300,7 +300,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff13} alt='image' />
+                <img src={ff13} alt='seo' />
                 <h3 className='pt-4'>Dedicated SEO Professionals</h3>
                 <p>
                   Our passionate SEO specialists craft <br /> tailored
@@ -309,7 +309,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff14} alt='image' />
+                <img src={ff14} alt='seo' />
                 <h3 className='pt-4'>Relationships & Results</h3>
                 <p>
                   We build lasting partnerships, your <br /> success is ours,
@@ -318,7 +318,7 @@ export default function Seo() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff15} alt='image' />
+                <img src={ff15} alt='seo' />
                 <h3 className='pt-4'>We’re Always Getting Better</h3>
                 <p>
                   In the dynamic digital landscape, we <br />
@@ -328,7 +328,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff7} alt='image' />
+                <img src={ff7} alt='seo' />
                 <h3 className='pt-4'>We Play Fair</h3>
                 <p>
                   Ethics are core. Our SEO follows best <br /> practices,
@@ -337,7 +337,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5 '>
-                <img src={ff2} alt='image' />
+                <img src={ff2} alt='seo' />
                 <h3 className='pt-4'>Transparent Reporting</h3>
                 <p>
                   Open communication is key. Our <br />

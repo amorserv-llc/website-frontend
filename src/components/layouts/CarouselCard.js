@@ -6,7 +6,7 @@ const CarouselCard = (values) => {
     <section className="seventh-section container" >
       <div className='carousel-card'>
         <div className='info'>
-          <img src={values.img} alt='Customer Image' draggable='false' />
+          <img src={values.img} alt='Customer' draggable='false' />
 
 
 

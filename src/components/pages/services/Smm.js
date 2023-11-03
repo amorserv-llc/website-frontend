@@ -65,7 +65,7 @@ export default function Sm() {
           <div className='row'>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff} alt='image' className='fram' />
+                <img src={ff} alt='smm' className='fram' />
                 <h4 className='card-title'>Content Creation</h4> <br />
                 <p className='card-text'>
                   Our content specialists create <br /> captivating and
@@ -77,7 +77,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff1} alt='image' />
+                <img src={ff1} alt='smm' />
                 <h4 className='card-title'>Social Media Advertising</h4>{" "}
                 <br />
                 <p className='card-text'>
@@ -89,7 +89,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff2} alt='image' />
+                <img src={ff2} alt='smm' />
                 <h4 className='card-title'>Influencer Marketing</h4> <br />
                 <p className='card-text'>
                   Leverage industry thought leaders to <br /> boost
@@ -101,7 +101,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff3} alt='image' />
+                <img src={ff3} alt='smm' />
                 <h4 className='card-title'>Handle each platform</h4> <br />
                 <p className='card-text'>
                   Tailor content for each platform's <br />
@@ -113,7 +113,7 @@ export default function Sm() {
             </div>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff4} alt='image' />
+                <img src={ff4} alt='smm' />
                 <h4 className='card-title'>
                   Social Media Contest and Giveaways
                 </h4>{" "}
@@ -127,7 +127,7 @@ export default function Sm() {
             </div>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff5} alt='image' />
+                <img src={ff5} alt='smm' />
                 <h4 className='card-title'>
                   Instant replies and user engagement
                 </h4>{" "}
@@ -201,7 +201,7 @@ export default function Sm() {
           </p>
           <div className='row pt-5'>
             <div className='col-md-4 p-5'>
-              <img src={ff7} alt='image' />
+              <img src={ff7} alt='smm' />
               <h3 className='pt-4'>Data Driven</h3>
               <p>
                 At Amorserv Consulting, we propel <br /> success with
@@ -211,7 +211,7 @@ export default function Sm() {
               <br /> <br /> <br />
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff8} alt='image' />
+              <img src={ff8} alt='smm' />
               <h3 className='pt-4'>Dedicated SM Professionals</h3>
               <p>
                 We have a devoted team of social <br />
@@ -221,7 +221,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff9} alt='image' />
+              <img src={ff9} alt='smm' />
               <h3 className='pt-4'>Certified Experts</h3>
               <p>
                 Trust our industry-certified SM <br /> professionals. Our
@@ -231,7 +231,7 @@ export default function Sm() {
             </div>
 
             <div className='col-md-4 p-5'>
-              <img src={ff10} alt='image' />
+              <img src={ff10} alt='smm' />
               <h3 className='pt-4'>Industry Insights</h3>
               <p>
                 Confidently navigate the digital <br />
@@ -240,7 +240,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff11} alt='image' />
+              <img src={ff11} alt='smm' />
               <h3 className='pt-4'>Team Support</h3>
               <p>
                 Collaboration is our core. With a <br /> dedicated SM team,
@@ -249,7 +249,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff12} alt='image' />
+              <img src={ff12} alt='smm' />
               <h3 className='pt-4'>Transparent Reporting</h3>
               <p>
                 Transparency is our priority. Our <br /> reporting is a

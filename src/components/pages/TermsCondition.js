@@ -26,7 +26,7 @@ export default function TermsCondition() {
         
         </div>
         <div className='image'>
-          <img src={terms} className='img-fluid' alt='header-image' />
+          <img src={terms} className='img-fluid' alt='header' />
         </div>
       </div>
     </header>

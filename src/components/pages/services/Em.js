@@ -58,7 +58,7 @@ export default function Em() {
             <div className='row'>
               <div className='col-md-4 text-center p-5 '>
                 <div className='card-body'>
-                  <img src={ff1} alt='image' />
+                  <img src={ff1} alt='em' />
                   <h4 className='card-title'>Brand Story Emails</h4> <br />
                   <p className='card-text'>
                     Craft a captivating brand narrative <br /> with our story
@@ -69,7 +69,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff2} alt='image' />
+                  <img src={ff2} alt='em' />
                   <h4 className='card-title'>Transactional Emails</h4> <br />
                   <p className='card-text'>
                     Blend functionality and<br /> engagement  with transactional
@@ -80,7 +80,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff3} alt='image' />
+                  <img src={ff3} alt='em' />
                   <h4 className='card-title'>Email Newsletters</h4> <br />
                   <p className='card-text'>
                     Engage and inform subscribers with <br /> insightful email
@@ -92,7 +92,7 @@ export default function Em() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff4} alt='image' />
+                  <img src={ff4} alt='em' />
                   <h4 className='card-title'>Dedicated Emails</h4> <br />
                   <p className='card-text'>
                     Spotlight offers, events, and <br /> announcements with
@@ -104,7 +104,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff5} alt='image' />
+                  <img src={ff5} alt='em' />
                   <h4 className='card-title'>Lead Nurturing Emails</h4> <br />
                   <p className='card-text'>
                     Nurture leads with tailored emails, <br /> converting
@@ -115,7 +115,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff6} alt='image' />
+                  <img src={ff6} alt='em' />
                   <h4 className='card-title'>Sponsorship Emails</h4> <br />
                   <p className='card-text'>
                     Enhance partnerships with <br />impactful 
@@ -190,7 +190,7 @@ export default function Em() {
             </p>
             <div className='row pt-5 emp'>
               <div className='col-md-4 pt-5'>
-                <img src={ff7} alt='image' />
+                <img src={ff7} alt='em' />
                 <h3 className='pt-4'>Build Customer Loyalty</h3>
                 <p>
                   Nurture customer relationships with <br /> targeted email
@@ -199,7 +199,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff8} alt='image' />
+                <img src={ff8} alt='em' />
                 <h3 className='pt-4'>Expand Your Business Reach</h3>
                 <p>
                   Expand your market reach with global <br /> email marketing.
@@ -208,7 +208,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff9} alt='image' />
+                <img src={ff9} alt='em' />
                 <h3 className='pt-4'>Connect With Different Audiences</h3>
                 <p>
                   Tailor messages for diverse <br />
@@ -218,7 +218,7 @@ export default function Em() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff10} alt='image' />
+                <img src={ff10} alt='em' />
                 <h3 className='pt-4'>Save Time and Effort</h3>
                 <p>
                   Streamline communication with <br /> automated email
@@ -227,7 +227,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff11} alt='image' />
+                <img src={ff11} alt='em' />
                 <h3 className='pt-4'>
                   Test Email Campaigns and Drive Strong Results
                 </h3>
@@ -238,7 +238,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff12} alt='image' />
+                <img src={ff12} alt='em' />
                 <h3 className='pt-4'>Track Your Analytics</h3>
                 <p>
                   Harness data-driven decision-making <br /> with our email
@@ -264,7 +264,7 @@ export default function Em() {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
-                <img src={ff1} alt='image' />
+                <img src={ff1} alt='em' />
                 <h3 h3 className='pt-4'>
                   Personalized Campaigns
                 </h3>
@@ -275,7 +275,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff2} alt='image' />
+                <img src={ff2} alt='em' />
                 <h3 h3 className='pt-4'>
                   Targeted Audience Engagement
                 </h3>
@@ -285,7 +285,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff6} alt='image' />
+                <img src={ff6} alt='em' />
                 <h3 h3 className='pt-4'>
                   Measurable ROI
                 </h3>
@@ -298,7 +298,7 @@ export default function Em() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff3} alt='image' />
+                <img src={ff3} alt='em' />
                 <h3 h3 className='pt-4'>
                   Real-Time Communication
                 </h3>
@@ -309,7 +309,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff4} alt='image' />
+                <img src={ff4} alt='em' />
                 <h3 h3 className='pt-4'>
                   Flexibility and Versatility
                 </h3>
@@ -320,7 +320,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff5} alt='image' />
+                <img src={ff5} alt='em' />
                 <h3 h3 className='pt-4'>
                   Lead Nurturing and Conversion
                 </h3>

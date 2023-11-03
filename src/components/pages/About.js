@@ -70,7 +70,7 @@ export default function About() {
         <div className='ul'>
           <div className='vision'>
             <div className='image'>
-              <img src={vision} alt='image vision' />
+              <img src={vision} alt='vision' />
             </div>
 
             <h2>Our Vision</h2>
@@ -83,7 +83,7 @@ export default function About() {
 
           <div className='vision'>
             <div className='image'>
-              <img src={mission} alt='image mission' />
+              <img src={mission} alt='mission' />
             </div>
 
             <h2>Our Mission</h2>
@@ -97,7 +97,7 @@ export default function About() {
 
           <div className='vision'>
             <div className='image'>
-              <img src={value} alt='image value' />
+              <img src={value} alt='value' />
             </div>
 
             <h2>Our Value</h2>
@@ -118,7 +118,7 @@ export default function About() {
           <div className='first-row'>
             <div className='member'>
               <div className='image'>
-                <img src={ceo} alt='' />
+                <img src={ceo} alt='ceo' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Otse Amorighoye</h6>
@@ -128,7 +128,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={siji} alt='' />
+                <img src={siji} alt='siji' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Siji Olojola</h6>
@@ -138,7 +138,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={valentine} alt='' />
+                <img src={valentine} alt='valentine' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Valentine Okoye</h6>
@@ -148,7 +148,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={digvijay} alt='' />
+                <img src={digvijay} alt='dig' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Digvijay Ahuja</h6>
@@ -158,7 +158,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={chiamaka} alt='' />
+                <img src={chiamaka} alt='chiamaka' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Chiamaka Atuchukwu</h6>
@@ -168,7 +168,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={tamara} alt='' />
+                <img src={tamara} alt='tamara' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Tamaraebi Etifa</h6>
@@ -178,7 +178,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={olaide} alt='' />
+                <img src={olaide} alt='olaide' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Olaide Opaleke</h6>
@@ -188,7 +188,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={temidayo} alt='' />
+                <img src={temidayo} alt='temidayo' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Temidayo Akinuli</h6>
@@ -198,7 +198,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={otaabasi} alt='' />
+                <img src={otaabasi} alt='otaabasi' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Otoabasi Ekwere</h6>
@@ -214,40 +214,40 @@ export default function About() {
         <div className='partner-images'>
           <ul className='container p-5'>
             <li>
-              <img src={visa} alt='' />
+              <img src={visa} alt='visi' />
             </li>
             <li>
-              <img src={amazon} alt='' />
+              <img src={amazon} alt='amazon' />
             </li>
             <li>
-              <img src={cox} alt='' />
+              <img src={cox} alt='cox' />
             </li>
             <li>
-              <img src={citi} alt='' />
+              <img src={citi} alt='citi' />
             </li>
             <li>
-              <img src={samsung} alt='' />
+              <img src={samsung} alt='smasung' />
             </li>
             <li>
-              <img src={cnn} alt='' />
+              <img src={cnn} alt='cnn' />
             </li>
             <li>
-              <img src={traveller} alt='' />
+              <img src={traveller} alt='traveller' />
             </li>
             <li>
-              <img src={gold} alt='' />
+              <img src={gold} alt='gold' />
             </li>
             <li>
-              <img src={forbes} alt='' />
+              <img src={forbes} alt='forbe' />
             </li>
             <li>
-              <img src={star} alt='' />
+              <img src={star} alt='star' />
             </li>
             <li>
-              <img src={google} alt='' />
+              <img src={google} alt='google' />
             </li>
             <li>
-              <img src={flock} alt='' />
+              <img src={flock} alt='flock' />
             </li>
           </ul>
         </div>
