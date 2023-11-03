@@ -73,7 +73,7 @@
 }
 
 .carousel .card {
-  scroll-snap-align: start;
+  scroll-snap-align: flex-start;
   height: 242px;
   list-style: none;
   background: #d3dce7;

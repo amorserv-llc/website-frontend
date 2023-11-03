@@ -202,7 +202,7 @@ section.trust-agency .contents .detail ul li::before {
 section.trust-agency .contents .detail div div {
   width: 90%;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding-left: 2px;
   position: relative;
 }
@@ -223,7 +223,7 @@ section.trust-agency .contents .detail div div button {
 section.trust-agency .contents .detail .image {
   height: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
   z-index: 100;
 }
