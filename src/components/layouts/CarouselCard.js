@@ -7,9 +7,6 @@ const CarouselCard = (values) => {
       <div className='carousel-card'>
         <div className='info'>
           <img src={values.img} alt='Customer' draggable='false' />
-
-
-
           <div className='rating'>
           <svg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'>
             <path
