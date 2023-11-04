@@ -1,7 +1,6 @@
 {
   "name": "amorservconsulting",
   "version": "0.1.0",
-  "homepage": "https://staging.amorservconsulting.com/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -77,8 +76,5 @@
       "/branding"
     ],
     "notFound": "404.html"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
