@@ -35,7 +35,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sitemap": "node sitemap.js",
-    "postbuild": "react-snap & react-snap-sitemap --base-url=http://staging.amorservconsulting.com/ "
+    "postbuild": "react-snap --base-url=http://staging.amorservconsulting.com/ "
   },
   "eslintConfig": {
     "extends": [
