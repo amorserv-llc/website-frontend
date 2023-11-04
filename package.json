@@ -64,17 +64,16 @@
     "include": [
       "/",
       "/about-us",
-      "/Portfolio",
+      "/Portfolio/",
       "/blog",
       "/contact-us",
       "/thank-you",
-      "/terms-condition",
+      "/terms-conditions",
       "/search-engine-optimization",
       "/social-media-marketing",
       "/email-marketing",
       "/search-engine-marketing",
       "/branding"
-    ],
-    "notFound": "404.html"
+    ]
   }
 }
