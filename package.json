@@ -63,11 +63,11 @@
     "source": "build",
     "include": [
       "/",
-      "/blog", 
-       "/contact-us",
+      "/blog",
+      "/contact-us",
       "/about-us",
       "/Portfolio",
-      "/terms-condition",   
+      "/terms-condition",
       "/search-engine-optimization",
       "/social-media-marketing",
       "/email-marketing",
@@ -80,8 +80,4 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
- 
-  
-
-  
 }

@@ -1,124 +1,128 @@
 /** @format */
 
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+const Home = lazy(() => import("./components/pages/Home"));
+const About = lazy(() => import("./components/pages/About"));
+const Portfolio = lazy(() => import("./components/pages/Portfolio"));
+const Blog = lazy(() => import("./components/pages/Blog"));
+const Contact = lazy(() => import("./components/pages/Contact"));
+const TermsCondition = lazy(() => import("./components/pages/TermsCondition"));
+const Seo = lazy(() => import("./components/pages/Seo"));
+const Smm = lazy(() => import("./components/pages/services/Smm"));
+const Em = lazy(() => import("./components/pages/services/Em"));
+const Sem = lazy(() => import("./components/pages/services/Sem"));
+const Branding = lazy(() => import("./components/pages/services/Branding"));
+const ScrollToTop = lazy(() => import("./components/layouts/ScrollToTop"));
+const ThankYou = lazy(() => import("./components/pages/ThankYou"));
 
-import Home from "./components/pages/Home";
-import Blog from "./components/pages/Blog";
-import Contact from "./components/pages/Contact";
-import Portfolio from "./components/pages/Portfolio";
-import About from "./components/pages/About";
-import Smm from "./components/pages/services/Smm";
-import Em from "./components/pages/services/Em";
-import Seo from "./components/pages/Seo";
-import Sem from "./components/pages/services/Sem";
-import TermsCondition from "./components/pages/TermsCondition";
-import ScrollToTop from "../src/components/layouts/ScrollToTop";
-import ThankYou from "./components/pages/ThankYou";
-import Branding from "./components/pages/services/Branding";
-import ErrorPage from "./components/pages/errorpage";
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <ScrollToTop>
+          <Home />
+        </ScrollToTop>
+      ),
+      index: true,
+    },
+    {
+      path: "/about-us",
+      element: (
+        <ScrollToTop>
+          <About />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/portfolio",
+      element: (
+        <ScrollToTop>
+          <Portfolio />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/blog",
+      element: (
+        <ScrollToTop>
+          <Blog />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/contact-us",
+      element: (
+        <ScrollToTop>
+          <Contact />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/thank-you",
+      element: (
+        <ScrollToTop>
+          <ThankYou />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/terms/condition",
+      element: (
+        <ScrollToTop>
+          <TermsCondition />
+        </ScrollToTop>
+      ),
+    },
 
-export default function App() {
+    {
+      path: "/search-engine-optimization",
+      element: (
+        <ScrollToTop>
+          <Seo />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/social-media-marketing",
+      element: (
+        <ScrollToTop>
+          <Smm />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/email-marketing",
+      element: (
+        <ScrollToTop>
+          <Em />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/search-engine-marketing",
+      element: (
+        <ScrollToTop>
+          <Sem />
+        </ScrollToTop>
+      ),
+    },
+    {
+      path: "/branding",
+      element: (
+        <ScrollToTop>
+          <Branding />
+        </ScrollToTop>
+      ),
+    },
+  ]);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' errorElement={<ErrorPage />}>
-          <Route index element={<Home />} />
-          <Route
-            path='/blog'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Blog />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/contact-us'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Contact />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/about-us'
-            element={
-              <ScrollToTop>
-                {" "}
-                <About />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/portfolio'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Portfolio />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route path='/terms-conditions' element={<TermsCondition />} />
-          <Route
-            path='/search-engine-optimization'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Seo />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/social-media-marketing'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Smm />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/email-marketing'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Em />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/search-engine-marketing'
-            element={
-              <ScrollToTop>
-                {" "}
-                <Sem />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/thank-you'
-            element={
-              <ScrollToTop>
-                {" "}
-                <ThankYou />{" "}
-              </ScrollToTop>
-            }
-          />
-          <Route
-            path='/branding'
-            element={
-              <ScrollToTop>
-                <Branding />
-              </ScrollToTop>
-            }
-          />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Suspense fallback={<div></div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default App;
