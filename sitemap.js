@@ -1,10 +1,11 @@
 /** @format */
 
-const { SitemapStream, streamToPromise } = require("sitemap");
-const fs = require("fs");
-const path = require("path");
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { writeFileSync } from 'fs';
+import { join } from "path";
 
-const outputFolder = path.join(__dirname, "public");
+
+const outputFolder = join(__dirname, "public");
 const baseUrl = "https://staging.amorservconsulting.com/";
 
 const pages = [
@@ -29,6 +30,6 @@ const sitemapStream = new SitemapStream({ hostname: baseUrl });
   const sitemapXml = await streamToPromise(sitemapStream).then((data) =>
     data.toString()
   );
-  fs.writeFileSync(path.join(outputFolder, "sitemap.xml"), sitemapXml);
+  writeFileSync(join(outputFolder, "sitemap.xml"), sitemapXml);
   console.log(`Sitemap generated and saved to ${outputFolder}/sitemap.xml`);
 })();
