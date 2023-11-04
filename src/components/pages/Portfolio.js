@@ -72,7 +72,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port1} alt='many things' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     TechNova Solutions
                   </Link>
                   <p>
@@ -97,7 +97,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port2} alt='man of war' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     FreshBite Restaurants
                   </Link>
                   <p>
@@ -122,7 +122,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port3} alt='peace of mind' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     Blossom Beauty
                   </Link>
                   <p>
@@ -147,7 +147,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port4} alt='searching' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     Quantum Electronics
                   </Link>
                   <p>
@@ -173,7 +173,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port5} alt='place to be' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     StyleSphere Boutique
                   </Link>
                   <p>
@@ -199,7 +199,7 @@ export default function Portfolio() {
               <div className='card'>
                 <img className='card-img-top' src={port6} alt='come to man' />
                 <div className='py-3 px-4'>
-                  <Link to='' className='card-title'>
+                  <Link to='/portfolio' className='card-title'>
                     ST
                   </Link>
                   <p>
