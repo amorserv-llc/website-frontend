@@ -41,7 +41,7 @@ function App() {
           ),
         },
         {
-          path: "/portfolio",
+          path: "/portfolio-page",
           element: (
             <ScrollToTop>
               <Portfolio />

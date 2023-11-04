@@ -136,7 +136,7 @@ export default function Navbar() {
               </Link>{" "}
             </li>
             <li>
-              <Link className='nav-link' to='/portfolio'>
+              <Link className='nav-link' to='/portfolio-page'>
                 Portfolio
               </Link>{" "}
             </li>

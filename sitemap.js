@@ -10,7 +10,7 @@ const baseUrl = "https://staging.amorservconsulting.com/";
 const pages = [
   { url: "/", changefreq: "weekly", priority: 0.9 },
   { url: "/about-us", changefreq: "weekly", priority: 0.8 },
-  { url: "/portfolio/", changefreq: "weekly", priority: 0.7 },
+  { url: "/portfolio-page", changefreq: "weekly", priority: 0.7 },
   { url: "/blog", changefreq: "weekly", priority: 0.9 }, 
   { url: "/contact-us", changefreq: "weekly", priority: 0.7 },
   { url: "/thank-you", changefreq: "weekly", priority: 0.7 },
