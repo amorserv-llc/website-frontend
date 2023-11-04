@@ -61,17 +61,7 @@
       "--disable-setuid-sandbox"
     ],
     "source": "build",
-    "include": [
-      "/",
-      "/about-us",
-      "/contact-us",
-      "/search-engine-optimization",
-      "/social-media-marketing",
-      "/email-marketing",
-      "/search-engine-marketing",
-      "/thank-you",
-      "/branding"
-    ],
+ 
     "notFound": "404.html"
   },
   "devDependencies": {
