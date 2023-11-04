@@ -4,7 +4,7 @@ import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Home = lazy(() => import("./components/pages/Home"));
 const About = lazy(() => import("./components/pages/About"));
-const Portfolio = lazy(() => import("./components/pages/Portfolio"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
 const Blog = lazy(() => import("./components/pages/Blog"));
 const Contact = lazy(() => import("./components/pages/Contact"));
 const TermsCondition = lazy(() => import("./components/pages/TermsCondition"));
