@@ -68,7 +68,7 @@ function App() {
       ),
     },
     {
-      path: "/terms/condition",
+      path: "/terms-conditions",
       element: (
         <ScrollToTop>
           <TermsCondition />

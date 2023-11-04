@@ -63,16 +63,16 @@
     "source": "build",
     "include": [
       "/",
-      "/blog",
-      "/contact-us",
       "/about-us",
       "/Portfolio",
+      "/blog",
+      "/contact-us",
+      "/thank-you",
       "/terms-condition",
       "/search-engine-optimization",
       "/social-media-marketing",
       "/email-marketing",
       "/search-engine-marketing",
-      "/thank-you",
       "/branding"
     ],
     "notFound": "404.html"
