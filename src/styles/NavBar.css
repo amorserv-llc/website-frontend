@@ -122,6 +122,12 @@ body {
     .hamburger {
       display: block;
     }
+    .brand-name img{
+      width: 12.62344rem;
+      height: 4.30675rem;
+      flex-shrink: 0;
+      margin-left: 2rem;
+    }
   }
   
   
