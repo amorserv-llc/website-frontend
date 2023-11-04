@@ -1,11 +1,10 @@
 /** @format */
 
-const { SitemapStream, streamToPromise } = require("sitemap");
-const fs = require("fs");
-const path = require("path");
-
+const { SitemapStream, streamToPromise } = require('sitemap');
+const fs = require('fs');
+const path = require('path');
+const baseUrl = 'https://staging.amorservconsulting.com';
 const outputFolder = path.join(__dirname, "public");
-const baseUrl = "https://staging.amorservconsulting.com/";
 
 const pages = [
   { url: "/", changefreq: "weekly", priority: 0.9 },
