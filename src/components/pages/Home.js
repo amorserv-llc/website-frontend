@@ -1,8 +1,7 @@
 /** @format */
 
 import React from "react";
-import Navbar from "../layouts/NavBar";
-import { Outlet } from "react-router";
+
 import { Helmet } from "react-helmet";
 import homeimg from "../../Assets/homeimg.png";
 import HeroBg from "../organism/hero-bg";
@@ -42,9 +41,6 @@ import t2 from "../../Assets/t2.png";
 import t3 from "../../Assets/t3.png";
 import CarouselCard from "../layouts/CarouselCard";
 import ContactForm from "../layouts/ContactForm";
-import Footer from "../layouts/Footer";
-
-
 
 export default function Home() {
   const handleCallButtonClick = () => {
@@ -63,11 +59,10 @@ export default function Home() {
   return (
     <>
       {" "}
-      <Navbar />
-      <Outlet />
+     
       <Helmet>
         <title>Home - Amorserv Consulting</title>
-        <meta name='description' content='Amorserv Consulting About-Us Page' />
+        <meta name='description' content='Amorserv Consulting Home Page' />
       </Helmet>
       <HeroBg
         title={"We're your Partner for Digital Marketing Success".toUpperCase()}
@@ -172,7 +167,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id='sec-3' className='py-4'>
         <div className='container-lg my-3'>
           <div className='col-12 text-center'>
@@ -246,14 +240,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-      
       <section id='sec-5' className='py-5'>
         <div className='container-lg'>
           <div className='col-12'>
@@ -350,14 +336,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
       <section id='sec-6'>
         <div className='container-lg my-4'>
           <div className='col-12 text-center'>
@@ -388,13 +366,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
       <section id='sec-6'>
         <div className='container-lg pt-5 mb-5'>
           <div className='col-12'>
@@ -473,15 +444,6 @@ export default function Home() {
           />
         </Slide>
       </section>
-
-
-
-
-
-
-
-
-
       <section className='p-5' id='sec-6' style={{ background: "#eff3fd" }}>
         <div className='container ' id='contact-form-section'>
           <div className='content text-center'>
@@ -498,8 +460,6 @@ export default function Home() {
           <ContactForm />
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

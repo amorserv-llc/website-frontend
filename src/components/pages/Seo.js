@@ -1,9 +1,7 @@
 /** @format */
 
 import React from "react";
-import Footer from "../layouts/Footer";
 import ContactForm from "../layouts/ContactForm";
-import Navbar from "../layouts/NavBar";
 import HeroBg from "../organism/hero-bg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -43,9 +41,7 @@ export default function Seo() {
         <title>SEO - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting SEO Page' />
       </Helmet>
-      <div>
-        <Navbar />
-      </div>
+   
       <HeroBg
         title={"Turbocharge Your Online Success with Expert SEO Services".toUpperCase()}
         desc='   SEO is the Definitive Path to Securing Your Place at the Peak of
@@ -442,7 +438,6 @@ export default function Seo() {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../layouts/Footer'
-import Navbar from '../layouts/NavBar'
 import { Helmet } from 'react-helmet'
 import thankyou from "../../Assets/thankyou.png"
 
@@ -11,7 +9,6 @@ export default function ThankYou() {
        <title>Thank-You - Amorserv Consulting</title>
        <meta name='description' content='Amorserv Consulting Thank-You Page' />
      </Helmet>
-     <Navbar />
      <div className="thank-you-container">
        <img className="thankyou" src={thankyou} alt="Thank You" />
        <div className="text-container">
@@ -19,7 +16,6 @@ export default function ThankYou() {
          <p>Thank you for reaching out to AmorServ <br /> Consulting. We have received your <br /> message and will get back to you as soon <br />as possible. </p>
        </div>
      </div>
-     <Footer />
    </>
   )
 }

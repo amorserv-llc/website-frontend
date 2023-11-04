@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import Navbar from "../layouts/NavBar";
 import { Helmet } from "react-helmet";
 import HeroBg from "../organism/hero-bg";
 import about from "../../Assets/about.png";
@@ -30,7 +29,6 @@ import traveller from "../../Assets/traveller.png";
 import cnn from "../../Assets/cnn.png";
 import ceo from "../../Assets/ceo.png";
 import samsung from "../../Assets/samsung.png";
-import Footer from "../layouts/Footer";
 
 export default function About() {
   return (
@@ -39,7 +37,6 @@ export default function About() {
         <title>About - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting About-Us Page' />
       </Helmet>
-      <Navbar />
       <HeroBg
         title={"Curious to Know Our Story?".toUpperCase()}
         desc='Indeed, our journey has been remarkable.'
@@ -247,14 +244,12 @@ export default function About() {
               <img src={google} alt='google' />
             </li>
             <li>
-              
               <img src={flock} alt='flock' />
             </li>
           </ul>
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

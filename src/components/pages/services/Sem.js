@@ -1,9 +1,7 @@
 import React from "react";
-import Footer from '../../layouts/Footer';
 import QuestionAnswer from '../../molecules/quest-answer';
 import ContactForm from '../../layouts/ContactForm';
 import HeroBg from '../../organism/hero-bg';
-import Navbar from '../../layouts/NavBar';
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 
@@ -42,9 +40,7 @@ export default function Sem() {
       <title>SEM - Amorserv Consulting</title>
       <meta name='description' content='Amorserv Consulting SEM Page' />
     </Helmet>
-    <div>
-      <Navbar />
-    </div>
+   
 
     <HeroBg
       title={"  How Search Engine Marketing promotes your brand online?".toUpperCase()}
@@ -408,7 +404,6 @@ export default function Sem() {
         </div>
       </div>
     </div>
-    <Footer />
   </>
   )
 }

@@ -1,8 +1,6 @@
 import React from "react";
-import Footer from '../../layouts/Footer'
 import ContactForm from '../../layouts/ContactForm'
 import HeroBg from '../../organism/hero-bg'
-import Navbar from '../../layouts/NavBar'
 import { Helmet } from 'react-helmet';
 import QuestionAnswer from "../../molecules/quest-answer"
 
@@ -30,9 +28,7 @@ export default function Em() {
         <title>EM - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting EM Page' />
       </Helmet>
-      <div>
-        <Navbar />
-      </div>
+      
       <HeroBg
         title={" How does Email Marketing  earn loyalty for your brand?".toUpperCase()}
         desc=' Empower your business with our effective email marketing 
@@ -389,7 +385,6 @@ export default function Em() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

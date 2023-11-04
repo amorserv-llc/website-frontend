@@ -1,14 +1,12 @@
 /** @format */
 
 import React from "react";
-import Navbar from "../layouts/NavBar";
 
 import portfolio from "../../Assets/portfolio.png";
 import HeroBg from "../organism/hero-bg";
 import { Helmet } from "react-helmet";
 import CarouselCard from "../layouts/CarouselCard";
 import { Link } from "react-router-dom";
-import Footer from "../layouts/Footer";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import port1 from "../../Assets/port1.png";
@@ -29,10 +27,7 @@ export default function Portfolio() {
         <title>Portfolio - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Portfolio Page' />
       </Helmet>
-      <div>
-        <Navbar />
-      </div>
-
+     
       <HeroBg
         title={"Explore our Portfolio for More Insight".toUpperCase()}
         desc='Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.'
@@ -41,31 +36,7 @@ export default function Portfolio() {
         img={portfolio}
       />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id='port-1' className='py-5 '>
+      <section id='port-1' className='py-5 '>
         <div className='container-lg my-4 portfolio'>
           <div className='row gx-md-5'>
             <div className='col-md-6 my-4'>
@@ -308,9 +279,6 @@ export default function Portfolio() {
           />
         </Slide>
       </section>
-      <Footer />
-
-
     </>
   );
 }

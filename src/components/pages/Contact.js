@@ -1,6 +1,5 @@
 /** @format */
 
-import Footer from "../layouts/Footer";
 import HeroBg from "../organism/hero-bg";
 import { Helmet } from "react-helmet";
 import contact from "../../Assets/contact.png";
@@ -9,7 +8,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-import Navbar from "../layouts/NavBar";
 import MyMap from "../layouts/MyMap";
 export default function Contact() {
   const navigate = useNavigate();
@@ -65,11 +63,9 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact - Amorserv Consulting</title>
-        <meta name='description' content='Amorserv Consulting Contact Page' />
+        <meta name='description' content='Amorserv Consulting Contact-Us Page' />
       </Helmet>
-      <div>
-        <Navbar />
-      </div>
+      
 
       <HeroBg
         title={"Contact Information".toUpperCase()}
@@ -272,7 +268,6 @@ export default function Contact() {
           />
         </div> */}
       </section>
-      <Footer />
     </>
   );
 }

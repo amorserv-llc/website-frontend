@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../layouts/Footer'
-import Navbar from '../layouts/NavBar'
 import { Helmet } from 'react-helmet'
 import terms from "../../Assets/terms.png"
 
@@ -9,12 +7,9 @@ export default function TermsCondition() {
     <>
     <Helmet>
       <title>T&C- Amorserv Consulting</title>
-      <meta name='description' content='Amorserv Consulting TC Page' />
+      <meta name='description' content='Amorserv Consulting T&C Page' />
     </Helmet>
-    <div style={{ paddingBottom: "90px" }}>
-      <Navbar />
-    </div>
-
+ 
     <header className='header-bg'>
       <div className='header'>
         <div className='content'>
@@ -107,7 +102,6 @@ By using our website or services, you acknowledge that you have read, understood
 </section>
 
 
-    <Footer />
   </>
   )
 }

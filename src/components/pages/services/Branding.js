@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Navbar from '../../layouts/NavBar'
 import braimage from "../../../Assets/braimage.png"
 import { Link } from 'react-router-dom'
 
@@ -11,7 +10,6 @@ export default function Branding() {
         <title>Branding - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Branding Page' />
       </Helmet>
-        <Navbar />
 
       <header className='header-bg'>
         <div className='header'>

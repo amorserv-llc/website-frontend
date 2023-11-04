@@ -1,11 +1,9 @@
 import React from 'react'
-import Footer from '../../layouts/Footer'
 import QuestionAnswer from '../../molecules/quest-answer'
 import ContactForm from '../../layouts/ContactForm'
 import { Link } from 'react-router-dom'
 import HeroBg from '../../organism/hero-bg'
 import { Helmet } from 'react-helmet'
-import Navbar from '../../layouts/NavBar'
 
 import ff1 from "../../../Assets/ff1.png";
 import ff2 from "../../../Assets/ff2.png";
@@ -38,9 +36,7 @@ export default function Sm() {
       <title>SMM - Amorserv Consulting</title>
       <meta name='description' content='Amorserv Consulting SMM Page' />
     </Helmet>
-    <div>
-      <Navbar />
-    </div>
+ 
     <HeroBg
       title={" How SMO builds your brand awareness?".toUpperCase()}
       desc='Social Media Marketing is a cost-effective way to maximize 
@@ -348,7 +344,6 @@ export default function Sm() {
       </div>
     </div>
 
-    <Footer />
   </>
   )
 }
