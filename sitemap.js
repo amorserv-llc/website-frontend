@@ -1,20 +1,20 @@
 /** @format */
 
-import { SitemapStream, streamToPromise } from "sitemap";
-import { writeFileSync } from "fs";
-import { join } from "path";
+const { SitemapStream, streamToPromise } = require("sitemap");
+const fs = require("fs");
+const path = require("path");
 
-const outputFolder = join(__dirname, "public");
+const outputFolder = path.join(__dirname, "public");
 const baseUrl = "https://staging.amorservconsulting.com/";
 
 const pages = [
   { url: "/", changefreq: "weekly", priority: 0.9 },
   { url: "/about-us", changefreq: "weekly", priority: 0.8 },
-  { url: "/portfolio-page", changefreq: "weekly", priority: 0.7 },
+  { url: "/portfolio", changefreq: "weekly", priority: 0.7 },
   { url: "/blog", changefreq: "weekly", priority: 0.9 }, 
   { url: "/contact-us", changefreq: "weekly", priority: 0.7 },
   { url: "/thank-you", changefreq: "weekly", priority: 0.7 },
-  { url: "/terms-conditions", changefreq: "monthly", priority: 0.6 },
+  { url: "/terms-condition", changefreq: "monthly", priority: 0.6 },
   { url: "/search-engine-optimization", changefreq: "weekly", priority: 0.7 },
   { url: "/social-media-marketing", changefreq: "weekly", priority: 0.7 },
   { url: "/email-marketing", changefreq: "weekly", priority: 0.7 },
@@ -29,6 +29,6 @@ const sitemapStream = new SitemapStream({ hostname: baseUrl });
   const sitemapXml = await streamToPromise(sitemapStream).then((data) =>
     data.toString()
   );
-  writeFileSync(join(outputFolder, "sitemap.xml"), sitemapXml);
+  fs.writeFileSync(path.join(outputFolder, "sitemap.xml"), sitemapXml);
   console.log(`Sitemap generated and saved to ${outputFolder}/sitemap.xml`);
 })();
