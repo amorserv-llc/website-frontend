@@ -3,7 +3,7 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Home = lazy(() => import("./Pages/Home/Home"));
-const About = lazy(() => import("./Pages/About/About"));
+const About = lazy(() => import("./Pt65 q`1ages/About/About"));
 const Portfolio = lazy(() => import("./Pages/Portfolio/Portfolio"));
 const Blog = lazy(() => import("./Pages/Blog/Blog"));
 const Contact = lazy(() => import("./Pages/Contact/Contact"));
