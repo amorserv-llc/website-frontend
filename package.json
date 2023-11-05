@@ -76,8 +76,6 @@
       "/thank-you",     
       "/branding"
     ]
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0"
   }
+  
 }

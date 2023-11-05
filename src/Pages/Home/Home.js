@@ -67,7 +67,7 @@ export default function Home() {
       <HeroBg
         title={"We're your Partner for Digital Marketing Success".toUpperCase()}
         desc='Empower Your Brand, and Drive Results with AmorServ Consulting'
-        link='/'
+        link=''
         linkTitle='Start Today'
         img={homeimg}
       />
