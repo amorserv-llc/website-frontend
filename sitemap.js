@@ -17,7 +17,7 @@ const pages = [
   { url: "/portfolio", changefreq: "weekly", priority: 0.7 },
   { url: "/blog", changefreq: "weekly", priority: 0.9 }, 
   { url: "/contact-us", changefreq: "weekly", priority: 0.7 },
-  { url: "/thank-you", changefreq: "weekly", priority: 0.7 }, 
+  { url: "/thank-you", changefreq: "weekly", priority: 0.7 },
   { url: "/branding", changefreq: "weekly", priority: 0.7 },
 
 ];
