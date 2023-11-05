@@ -1,6 +1,6 @@
 /** @format */
 
-import HeroBg from "../organism/hero-bg";
+import HeroBg from "../../components/organism/hero-bg";
 import { Helmet } from "react-helmet";
 import contact from "../../Assets/contact.png";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-import MyMap from "../layouts/MyMap";
+import MyMap from "../../components/layouts/MyMap";
 export default function Contact() {
   const navigate = useNavigate();
 

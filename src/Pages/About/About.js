@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeroBg from "../organism/hero-bg";
+import HeroBg from "../../components/organism/hero-bg";
 import about from "../../Assets/about.png";
 
 import vision from "../../Assets/vision.png";

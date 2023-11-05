@@ -2,23 +2,24 @@
 
 import React from "react";
 
-import portfolio from "../Assets/portfolio.png";
-import HeroBg from "./organism/hero-bg";
+import portfolio from "../../Assets/portfolio.png";
+import HeroBg from "../../components/organism/hero-bg";
 import { Helmet } from "react-helmet";
-import CarouselCard from "./layouts/CarouselCard";
+import CarouselCard from "../../components/layouts/CarouselCard";
 import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import port1 from "../Assets/port1.png";
-import port2 from "../Assets/port2.png";
-import port3 from "../Assets/port3.png";
-import port4 from "../Assets/port4.png";
-import port5 from "../Assets/port5.png";
-import port6 from "../Assets/port6.png";
+import port1 from "../../Assets/port1.png";
+import port2 from "../../Assets/port2.png";
+import port3 from "../../Assets/port3.png";
+import port4 from "../../Assets/port4.png";
+import port5 from "../../Assets/port5.png";
+import port6 from "../../Assets/port6.png";
 
-import t1 from "../Assets/t1.png";
-import t2 from "../Assets/t2.png";
-import t3 from "../Assets/t3.png";
+
+import t1 from "../../Assets/t1.png";
+import t2 from "../../Assets/t2.png";
+import t3 from "../../Assets/t3.png";
 
 export default function Portfolio() {
   return (

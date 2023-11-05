@@ -2,19 +2,19 @@
 
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-const Home = lazy(() => import("./components/pages/Home"));
-const About = lazy(() => import("./components/pages/About"));
-const Portfolio = lazy(() => import("./components/Portfolio"));
-const Blog = lazy(() => import("./components/pages/Blog"));
-const Contact = lazy(() => import("./components/pages/Contact"));
-const TermsCondition = lazy(() => import("./components/pages/TermsCondition"));
-const Seo = lazy(() => import("./components/pages/Seo"));
-const Smm = lazy(() => import("./components/pages/services/Smm"));
-const Em = lazy(() => import("./components/pages/services/Em"));
-const Sem = lazy(() => import("./components/pages/services/Sem"));
-const Branding = lazy(() => import("./components/pages/services/Branding"));
+const Home = lazy(() => import("./Pages/Home/Home"));
+const About = lazy(() => import("./Pages/About/About"));
+const Portfolio = lazy(() => import("./Pages/Portfolio/Portfolio"));
+const Blog = lazy(() => import("./Pages/Blog/Blog"));
+const Contact = lazy(() => import("./Pages/Contact/Contact"));
+const TermsCondition = lazy(() => import("./Pages/TermsCondition/TermsCondition"));
+const Seo = lazy(() => import("./Pages/Seo/Seo"));
+const Smm = lazy(() => import("./Pages/Smm/Smm"));
+const Em = lazy(() => import("./Pages/Em/Em"));
+const Sem = lazy(() => import("./Pages/Sem/Sem"));
+const Branding = lazy(() => import("./Pages/Branding/Branding"));
 const ScrollToTop = lazy(() => import("./components/layouts/ScrollToTop"));
-const ThankYou = lazy(() => import("./components/pages/ThankYou"));
+const ThankYou = lazy(() => import("./Pages/Thanks/ThankYou"));
 const Layout = lazy(() => import("./components/layouts/layout"));
 
 function App() {

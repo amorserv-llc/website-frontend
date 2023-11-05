@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import braimage from "../../../Assets/braimage.png"
+import braimage from "../../Assets/braimage.png"
 import { Link } from 'react-router-dom'
 
 export default function Branding() {

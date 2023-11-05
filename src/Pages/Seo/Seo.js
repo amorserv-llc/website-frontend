@@ -1,11 +1,11 @@
 /** @format */
 
 import React from "react";
-import ContactForm from "../layouts/ContactForm";
-import HeroBg from "../organism/hero-bg";
+import ContactForm from "../../components/layouts/ContactForm";
+import HeroBg from "../../components/organism/hero-bg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import QuestionAnswer from "../molecules/quest-answer";
+import QuestionAnswer from "../../components/molecules/quest-answer";
 
 import ff1 from "../../Assets/ff1.png";
 import ff2 from "../../Assets/ff2.png";

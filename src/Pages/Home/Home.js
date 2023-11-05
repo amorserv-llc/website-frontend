@@ -4,8 +4,8 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 import homeimg from "../../Assets/homeimg.png";
-import HeroBg from "../organism/hero-bg";
-import SectionLogo from "../layouts/SectionLogo";
+import HeroBg from "../../components/organism/hero-bg";
+import SectionLogo from "../../components/layouts/SectionLogo";
 import { Slide } from "react-slideshow-image";
 import { Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
@@ -39,8 +39,8 @@ import threemob from "../../Assets/threemob.png";
 import t1 from "../../Assets/t1.png";
 import t2 from "../../Assets/t2.png";
 import t3 from "../../Assets/t3.png";
-import CarouselCard from "../layouts/CarouselCard";
-import ContactForm from "../layouts/ContactForm";
+import CarouselCard from "../../components/layouts/CarouselCard";
+import ContactForm from "../../components/layouts/ContactForm";
 
 export default function Home() {
   const handleCallButtonClick = () => {

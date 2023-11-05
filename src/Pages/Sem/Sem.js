@@ -1,34 +1,34 @@
 import React from "react";
-import QuestionAnswer from '../../molecules/quest-answer';
-import ContactForm from '../../layouts/ContactForm';
-import HeroBg from '../../organism/hero-bg';
+import QuestionAnswer from '../../components/molecules/quest-answer';
+import ContactForm from '../../components/layouts/ContactForm';
+import HeroBg from '../../components/organism/hero-bg';
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 
 
-import sem0 from "../../../Assets/sem0.png";
-import updates from "../../../Assets/updates.png";
+import sem0 from "../../Assets/sem0.png";
+import updates from "../../Assets/updates.png";
 
-import ff12 from "../../../Assets/ff12.png";
-import ff13 from "../../../Assets/ff13.png";
-import ff14 from "../../../Assets/ff14.png";
+import ff12 from "../../Assets/ff12.png";
+import ff13 from "../../Assets/ff13.png";
+import ff14 from "../../Assets/ff14.png";
 
-import why3 from "../../../Assets/why3.png";
-import why2 from "../../../Assets/why2.png";
-import why1 from "../../../Assets/why1.png";
-import ff1 from "../../../Assets/ff1.png";
-import ff2 from "../../../Assets/ff2.png";
-import ff3 from "../../../Assets/ff3.png";
-import ff4 from "../../../Assets/ff4.png";
-import ff5 from "../../../Assets/ff5.png";
-import ff6 from "../../../Assets/ff6.png";
+import why3 from "../../Assets/why3.png";
+import why2 from "../../Assets/why2.png";
+import why1 from "../../Assets/why1.png";
+import ff1 from "../../Assets/ff1.png";
+import ff2 from "../../Assets/ff2.png";
+import ff3 from "../../Assets/ff3.png";
+import ff4 from "../../Assets/ff4.png";
+import ff5 from "../../Assets/ff5.png";
+import ff6 from "../../Assets/ff6.png";
 
-import se1 from "../../../Assets/se1.png";
-import se2 from "../../../Assets/se2.png";
-import se3 from "../../../Assets/se3.png";
-import se4 from "../../../Assets/se4.png";
-import se5 from "../../../Assets/se5.png";
-import se6 from "../../../Assets/se6.png";
+import se1 from "../../Assets/se1.png";
+import se2 from "../../Assets/se2.png";
+import se3 from "../../Assets/se3.png";
+import se4 from "../../Assets/se4.png";
+import se5 from "../../Assets/se5.png";
+import se6 from "../../Assets/se6.png";
 
 
 export default function Sem() {

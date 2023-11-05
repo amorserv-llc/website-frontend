@@ -1,23 +1,23 @@
 import React from "react";
-import ContactForm from '../../layouts/ContactForm'
-import HeroBg from '../../organism/hero-bg'
+import ContactForm from '../../components/layouts/ContactForm'
+import HeroBg from '../../components/organism/hero-bg'
 import { Helmet } from 'react-helmet';
-import QuestionAnswer from "../../molecules/quest-answer"
+import QuestionAnswer from "../../components/molecules/quest-answer"
 
 
-import ff1 from "../../../Assets/ff1.png";
-import ff2 from "../../../Assets/ff2.png";
-import ff3 from "../../../Assets/ff3.png";
-import ff4 from "../../../Assets/ff4.png";
-import ff5 from "../../../Assets/ff5.png";
-import ff6 from "../../../Assets/ff6.png";
-import ff7 from "../../../Assets/ff7.png";
-import ff8 from "../../../Assets/ff8.png";
-import ff9 from "../../../Assets/ff9.png";
-import ff10 from "../../../Assets/ff10.png";
-import ff11 from "../../../Assets/ff11.png";
-import ff12 from "../../../Assets/ff12.png";
-import em0 from "../../../Assets/em0.png";
+import ff1 from "../../Assets/ff1.png";
+import ff2 from "../../Assets/ff2.png";
+import ff3 from "../../Assets/ff3.png";
+import ff4 from "../../Assets/ff4.png";
+import ff5 from "../../Assets/ff5.png";
+import ff6 from "../../Assets/ff6.png";
+import ff7 from "../../Assets/ff7.png";
+import ff8 from "../../Assets/ff8.png";
+import ff9 from "../../Assets/ff9.png";
+import ff10 from "../../Assets/ff10.png";
+import ff11 from "../../Assets/ff11.png";
+import ff12 from "../../Assets/ff12.png";
+import em0 from "../../Assets/em0.png";
 
 
 
