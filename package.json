@@ -64,16 +64,16 @@
     "source": "build",
     "include": [
       "/",
-      "/about-us",
-      "/Portfolio-page",
-      "/blog",
-      "/contact-us",
-      "/thank-you",
       "/terms-conditions",
       "/search-engine-optimization",
       "/social-media-marketing",
       "/email-marketing",
       "/search-engine-marketing",
+      "/about-us",
+      "/Portfolio-page",
+      "/blog",
+      "/contact-us",
+      "/thank-you",     
       "/branding"
     ]
   },
