@@ -9,6 +9,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 import MyMap from "../../components/layouts/MyMap";
+import Navbar from "../../components/layouts/NavBar";
+import Footer from "../../components/layouts/Footer";
 export default function Contact() {
   const navigate = useNavigate();
 
@@ -65,7 +67,7 @@ export default function Contact() {
         <title>Contact - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Contact-Us Page' />
       </Helmet>
-      
+      <Navbar />
 
       <HeroBg
         title={"Contact Information".toUpperCase()}
@@ -268,6 +270,7 @@ export default function Contact() {
           />
         </div> */}
       </section>
+      <Footer />
     </>
   );
 }

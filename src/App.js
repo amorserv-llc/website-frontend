@@ -1,7 +1,8 @@
-/** @format */
-
 import React, { lazy, Suspense } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/layouts/layout";
+import ScrollToTop from "./components/layouts/ScrollToTop";
+
 const Home = lazy(() => import("./Pages/Home/Home"));
 const About = lazy(() => import("./Pages/About/About"));
 const Portfolio = lazy(() => import("./Pages/Portfolio/Portfolio"));
@@ -13,122 +14,137 @@ const Smm = lazy(() => import("./Pages/Smm/Smm"));
 const Em = lazy(() => import("./Pages/Em/Em"));
 const Sem = lazy(() => import("./Pages/Sem/Sem"));
 const Branding = lazy(() => import("./Pages/Branding/Branding"));
-const ScrollToTop = lazy(() => import("./components/layouts/ScrollToTop"));
 const ThankYou = lazy(() => import("./Pages/Thanks/ThankYou"));
-const Layout = lazy(() => import("./components/layouts/layout"));
 
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          element: (
-            <ScrollToTop>
-              <Home />
-            </ScrollToTop>
-          ),
-
-          index: true,
-        },
-        {
-          path: "/about-us",
-          element: (
-            <ScrollToTop>
-              <About />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/portfolio-page",
-          element: (
-            <ScrollToTop>
-              <Portfolio />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/blog",
-          element: (
-            <ScrollToTop>
-              <Blog />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/contact-us",
-          element: (
-            <ScrollToTop>
-              <Contact />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/thank-you",
-          element: (
-            <ScrollToTop>
-              <ThankYou />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/terms-conditions",
-          element: (
-            <ScrollToTop>
-              <TermsCondition />
-            </ScrollToTop>
-          ),
-        },
-
-        {
-          path: "/search-engine-optimization",
-          element: (
-            <ScrollToTop>
-              <Seo />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/social-media-marketing",
-          element: (
-            <ScrollToTop>
-              <Smm />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/email-marketing",
-          element: (
-            <ScrollToTop>
-              <Em />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/search-engine-marketing",
-          element: (
-            <ScrollToTop>
-              <Sem />
-            </ScrollToTop>
-          ),
-        },
-        {
-          path: "/branding",
-          element: (
-            <ScrollToTop>
-              <Branding />
-            </ScrollToTop>
-          ),
-        },
-      ],
-    },
-  ]);
-
+const App = () => {
   return (
-    <Suspense fallback={<div></div>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+        <Route
+            path="/"
+            element={
+              <Suspense fallback={<div>Loading Home...</div>}>
+                <ScrollToTop>
+                  <Home />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/about-us"
+
+            element={
+              <Suspense fallback={<div>Loading About...</div>}>
+                <ScrollToTop>
+                  <About />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/portfolio-page"
+            element={
+              <Suspense fallback={<div>Loading Portfolio...</div>}>
+                <ScrollToTop>
+                  <Portfolio />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <Suspense fallback={<div>Loading Blog...</div>}>
+                <ScrollToTop>
+                  <Blog />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/contact-us"
+            element={
+              <Suspense fallback={<div>Loading Contact...</div>}>
+                <ScrollToTop>
+                  <Contact />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/terms-conditions"
+            element={
+              <Suspense fallback={<div>Loading Terms and Conditions...</div>}>
+                <ScrollToTop>
+                  <TermsCondition />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/search-engine-optimization"
+            element={
+              <Suspense fallback={<div>Loading SEO...</div>}>
+                <ScrollToTop>
+                  <Seo />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/social-media-marketing"
+            element={
+              <Suspense fallback={<div>Loading SMM...</div>}>
+                <ScrollToTop>
+                  <Smm />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/email-marketing"
+            element={
+              <Suspense fallback={<div>Loading Email Marketing...</div>}>
+                <ScrollToTop>
+                  <Em />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/search-engine-marketing"
+            element={
+              <Suspense fallback={<div>Loading Search Engine Marketing...</div>}>
+                <ScrollToTop>
+                  <Sem />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/branding"
+            element={
+              <Suspense fallback={<div>Loading Branding...</div>}>
+                <ScrollToTop>
+                  <Branding />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/thank-you"
+            element={
+              <Suspense fallback={<div>Loading Thank You Page...</div>}>
+                <ScrollToTop>
+                  <ThankYou />
+                </ScrollToTop>
+              </Suspense>
+            }
+          />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 

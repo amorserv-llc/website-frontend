@@ -29,6 +29,8 @@ import traveller from "../../Assets/traveller.png";
 import cnn from "../../Assets/cnn.png";
 import ceo from "../../Assets/ceo.png";
 import samsung from "../../Assets/samsung.png";
+import Navbar from "../../components/layouts/NavBar";
+import Footer from "../../components/layouts/Footer";
 
 export default function About() {
   return (
@@ -37,6 +39,7 @@ export default function About() {
         <title>About - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting About-Us Page' />
       </Helmet>
+      <Navbar />
       <HeroBg
         title={"Curious to Know Our Story?".toUpperCase()}
         desc='Indeed, our journey has been remarkable.'
@@ -249,7 +252,7 @@ export default function About() {
           </ul>
         </div>
       </section>
-
+<Footer />
     </>
   );
 }

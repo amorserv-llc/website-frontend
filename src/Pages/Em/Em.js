@@ -18,6 +18,8 @@ import ff10 from "../../Assets/ff10.png";
 import ff11 from "../../Assets/ff11.png";
 import ff12 from "../../Assets/ff12.png";
 import em0 from "../../Assets/em0.png";
+import Navbar from "../../components/layouts/NavBar";
+import Footer from "../../components/layouts/Footer";
 
 
 
@@ -28,7 +30,7 @@ export default function Em() {
         <title>EM - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting EM Page' />
       </Helmet>
-      
+      <Navbar />
       <HeroBg
         title={" How does Email Marketing  earn loyalty for your brand?".toUpperCase()}
         desc=' Empower your business with our effective email marketing 
@@ -385,6 +387,7 @@ export default function Em() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
