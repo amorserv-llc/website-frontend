@@ -3,7 +3,7 @@
 const { SitemapStream, streamToPromise } = require('sitemap');
 const fs = require('fs');
 const path = require('path');
-const baseUrl = 'https://staging.amorservconsulting.com';
+const baseUrl = 'https://amorservconsulting.com';
 const outputFolder = path.join(__dirname, "public");
 
 const pages = [
@@ -14,7 +14,7 @@ const pages = [
   { url: "/email-marketing", changefreq: "weekly", priority: 0.7 },
   { url: "/search-engine-marketing", changefreq: "weekly", priority: 0.7 },
   { url: "/about-us", changefreq: "weekly", priority: 0.8 },
-  { url: "/portfolio", changefreq: "weekly", priority: 0.7 },
+  { url: "/portfolio-page", changefreq: "weekly", priority: 0.7 },
   { url: "/blog", changefreq: "weekly", priority: 0.9 }, 
   { url: "/contact-us", changefreq: "weekly", priority: 0.7 },
   { url: "/thank-you", changefreq: "weekly", priority: 0.7 },
