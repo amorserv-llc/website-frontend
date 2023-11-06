@@ -84,7 +84,7 @@ export default function Navbar() {
                     to='/search-engine-optimization' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={seoIcon} width='20' height='20' alt='...' />
+                    <img src={seoIcon} width='20' height='20' alt='making amor' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Search Engine Optimization</h6>
                       <p className='opacity-75'>Get Found Online</p>
@@ -96,7 +96,7 @@ export default function Navbar() {
                     to='/social-media-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={smm} width='20' height='20' alt='...' />
+                    <img src={smm} width='20' height='20' alt='serve' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Social Media Management</h6>
                       <p className='opacity-75'>
@@ -111,7 +111,7 @@ export default function Navbar() {
                     to='/email-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={em} width='20' height='20' alt='...' />
+                    <img src={em} width='20' height='20' alt='email' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Email Marketing</h6>
                       <p className='opacity-75'>
@@ -125,7 +125,7 @@ export default function Navbar() {
                     to='/search-engine-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={sem} width='20' height='20' alt='...' />
+                    <img src={sem} width='20' height='20' alt='searching dell' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Search Engine Marketing</h6>
                       <p className='opacity-75'>Drive Traffic with Ads</p>
