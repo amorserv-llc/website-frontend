@@ -20,8 +20,6 @@ import threemob from "../../Assets/threemob.png";
 import threestep from "../../Assets/threestep.png";
 import smo from "../../Assets/smo.png";
 import ff from "../../Assets/ff.png";
-import Navbar from '../../components/layouts/NavBar'
-import Footer from '../../components/layouts/Footer'
 
 
 export default function Sm() {
@@ -38,7 +36,6 @@ export default function Sm() {
       <title>SMM - Amorserv Consulting</title>
       <meta name='description' content='Amorserv Consulting SMM Page' />
     </Helmet>
- <Navbar />
     <HeroBg
       title={" How SMO builds your brand awareness?".toUpperCase()}
       desc='Social Media Marketing is a cost-effective way to maximize 
@@ -345,7 +342,6 @@ export default function Sm() {
         </div>
       </div>
     </div>
-<Footer />
   </>
   )
 }

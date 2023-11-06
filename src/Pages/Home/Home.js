@@ -41,8 +41,6 @@ import t2 from "../../Assets/t2.png";
 import t3 from "../../Assets/t3.png";
 import CarouselCard from "../../components/layouts/CarouselCard";
 import ContactForm from "../../components/layouts/ContactForm";
-import Navbar from "../../components/layouts/NavBar";
-import Footer from "../../components/layouts/Footer";
 
 export default function Home() {
   const handleCallButtonClick = () => {
@@ -66,7 +64,6 @@ export default function Home() {
         <title>Home - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Home Page' />
       </Helmet>
-      <Navbar />
       <HeroBg
         title={"We're your Partner for Digital Marketing Success".toUpperCase()}
         desc='Empower Your Brand, and Drive Results with AmorServ Consulting'
@@ -463,7 +460,6 @@ export default function Home() {
           <ContactForm />
         </div>
       </section>
-      <Footer />
     </>
   );
 }

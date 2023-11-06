@@ -20,8 +20,6 @@ import port6 from "../../Assets/port6.png";
 import t1 from "../../Assets/t1.png";
 import t2 from "../../Assets/t2.png";
 import t3 from "../../Assets/t3.png";
-import Navbar from "../../components/layouts/NavBar";
-import Footer from "../../components/layouts/Footer";
 
 export default function Portfolio() {
   return (
@@ -30,7 +28,6 @@ export default function Portfolio() {
         <title>Portfolio - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Portfolio Page' />
       </Helmet>
-     <Navbar />
       <HeroBg
         title={"Explore our Portfolio for More Insight".toUpperCase()}
         desc='Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.'
@@ -282,7 +279,6 @@ export default function Portfolio() {
           />
         </Slide>
       </section>
-      <Footer />
     </>
   );
 }

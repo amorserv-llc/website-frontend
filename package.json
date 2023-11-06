@@ -75,7 +75,8 @@
       "/contact-us",
       "/thank-you",
       "/branding"
-    ]
+    ],
+    "notFound": "404.html"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"

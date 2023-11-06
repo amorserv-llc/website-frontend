@@ -2,8 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import braimage from "../../Assets/braimage.png"
 import { Link } from 'react-router-dom'
-import Navbar from '../../components/layouts/NavBar'
-import Footer from '../../components/layouts/Footer'
 
 export default function Branding() {
   return (
@@ -12,7 +10,6 @@ export default function Branding() {
         <title>Branding - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Branding Page' />
       </Helmet>
-<Navbar />
       <header className='header-bg'>
         <div className='header'>
           <div className='content'>
@@ -115,7 +112,6 @@ export default function Branding() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 }

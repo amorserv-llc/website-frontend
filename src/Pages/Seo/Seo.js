@@ -26,8 +26,6 @@ import seo from "../../Assets/seo.png";
 import threemob from "../../Assets/threemob.png";
 import threestep from "../../Assets/threestep.png";
 import ff from "../../Assets/ff.png";
-import Navbar from "../../components/layouts/NavBar";
-import Footer from "../../components/layouts/Footer";
 
 export default function Seo() {
   const handleCallButtonClick = () => {
@@ -43,7 +41,6 @@ export default function Seo() {
         <title>SEO - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting SEO Page' />
       </Helmet>
-   <Navbar />
       <HeroBg
         title={"Turbocharge Your Online Success with Expert SEO Services".toUpperCase()}
         desc='   SEO is the Definitive Path to Securing Your Place at the Peak of
@@ -439,7 +436,6 @@ export default function Seo() {
           </div>
         </div>
       </div>
-<Footer />
     </>
   );
 }

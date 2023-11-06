@@ -9,8 +9,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 import MyMap from "../../components/layouts/MyMap";
-import Navbar from "../../components/layouts/NavBar";
-import Footer from "../../components/layouts/Footer";
+
 export default function Contact() {
   const navigate = useNavigate();
 
@@ -67,7 +66,6 @@ export default function Contact() {
         <title>Contact - Amorserv Consulting</title>
         <meta name='description' content='Amorserv Consulting Contact-Us Page' />
       </Helmet>
-      <Navbar />
 
       <HeroBg
         title={"Contact Information".toUpperCase()}
@@ -258,19 +256,8 @@ export default function Contact() {
         </div>
 
         <MyMap />
-        {/* 
-        <div className='map pt-5'>
-          <iframe
-            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11857.730915050573!2d-87.6892034!3d42.0124485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd1d25c85d765%3A0xc8937225a569d22d!2sAmorServ!5e0!3m2!1sen!2sng!4v1687767429390!5m2!1sen!2sng'
-            width='100%'
-            height='450'
-            allowFullScreen=''
-            referrerPolicy='no-referrer-when-downgrade'
-            loading='lazy'
-          />
-        </div> */}
+    
       </section>
-      <Footer />
     </>
   );
 }

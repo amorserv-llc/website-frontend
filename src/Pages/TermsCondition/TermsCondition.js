@@ -1,8 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import terms from "../../Assets/terms.png"
-import Footer from '../../components/layouts/Footer'
-import Navbar from '../../components/layouts/NavBar'
 
 export default function TermsCondition() {
   return (
@@ -11,7 +9,6 @@ export default function TermsCondition() {
       <title>T&C- Amorserv Consulting</title>
       <meta name='description' content='Amorserv Consulting T&C Page' />
     </Helmet>
- <Navbar />
     <header className='header-bg'>
       <div className='header'>
         <div className='content'>
@@ -102,7 +99,6 @@ By using our website or services, you acknowledge that you have read, understood
 By using our website or services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
       </p>
 </section>
-<Footer />
 
   </>
   )

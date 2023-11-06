@@ -29,8 +29,6 @@ import se3 from "../../Assets/se3.png";
 import se4 from "../../Assets/se4.png";
 import se5 from "../../Assets/se5.png";
 import se6 from "../../Assets/se6.png";
-import Navbar from "../../components/layouts/NavBar";
-import Footer from "../../components/layouts/Footer";
 
 
 export default function Sem() {
@@ -42,7 +40,6 @@ export default function Sem() {
       <title>SEM - Amorserv Consulting</title>
       <meta name='description' content='Amorserv Consulting SEM Page' />
     </Helmet>
-   <Navbar />
 
     <HeroBg
       title={"  How Search Engine Marketing promotes your brand online?".toUpperCase()}
@@ -406,7 +403,6 @@ export default function Sem() {
         </div>
       </div>
     </div>
-    <Footer />
   </>
   )
 }
