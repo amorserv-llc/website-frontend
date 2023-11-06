@@ -1,14 +1,6 @@
 /** @format */
 
-import React from "react";
-import logo2 from "../../Assets/logo2.png";
-
-import image1 from "../../Assets/image1.png";
-import image2 from "../../Assets/image2.png";
-import image3 from "../../Assets/image3.png";
-
 import { Link } from "react-router-dom";
-
 export default function Footer () {
   return (
     <>
@@ -20,7 +12,7 @@ export default function Footer () {
                 to='/'
                 className='d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none navbar-brand'
               >
-                <img src={logo2} alt='logo' style={{ width: "120px" }} />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/logo2.png' alt='logo' style={{ width: "120px" }} />
               </Link>
 
               <div
@@ -34,19 +26,19 @@ export default function Footer () {
               >
                 <a href='https://web.facebook.com/amorservconsulting/'>
                   <span>
-                    <img src={image1} alt='image1' style={{ width: "50px" }} />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/image1.png' alt='footerin' style={{ width: "50px" }} />
                   </span>
                 </a>
 
                 <a href='https://twitter.com/amor_consulting?s=20/'>
                   <span>
-                    <img src={image2} alt='image2' style={{ width: "50px" }} />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/image2.png' alt='image2' style={{ width: "50px" }} />
                   </span>
                 </a>
 
                 <a href='https://www.instagram.com/amorservconsulting/'>
                   <span>
-                    <img src={image3} alt='image3' style={{ width: "50px" }} />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/image3.png' alt='image3' style={{ width: "50px" }} />
                   </span>
                 </a>
               </div>

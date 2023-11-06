@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import braimage from "../../Assets/braimage.png"
 import { Link } from 'react-router-dom'
 
 export default function Branding() {
@@ -24,10 +23,10 @@ export default function Branding() {
           </div>
           <div className=''>
             <img
-              src={braimage}
+              src='https://amoserv.s3.amazonaws.com/amorservconsulting/braimage.png'
               className='img-fluid'
               alt='header'
-              style={{}}
+              
             />
           </div>
         </div>
@@ -101,7 +100,7 @@ export default function Branding() {
       <div class='container'>
         <div class='row'>
           <div class='col-md-6'>
-            <img src={braimage} class='img-fluid' alt='header' />
+            <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/braimage.png' class='img-fluid' alt='header' />
           </div>
           <div class='col-md-6'>
             <ul>

@@ -1,26 +1,12 @@
 /** @format */
 
 import React from "react";
-
-import portfolio from "../../Assets/portfolio.png";
 import HeroBg from "../../components/organism/hero-bg";
 import { Helmet } from "react-helmet";
 import CarouselCard from "../../components/layouts/CarouselCard";
 import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import port1 from "../../Assets/port1.png";
-import port2 from "../../Assets/port2.png";
-import port3 from "../../Assets/port3.png";
-import port4 from "../../Assets/port4.png";
-import port5 from "../../Assets/port5.png";
-import port6 from "../../Assets/port6.png";
-
-
-import t1 from "../../Assets/t1.png";
-import t2 from "../../Assets/t2.png";
-import t3 from "../../Assets/t3.png";
-
 export default function Portfolio() {
   return (
     <>
@@ -33,7 +19,7 @@ export default function Portfolio() {
         desc='Dive into our portfolio for a closer look at our dynamic projects. Witness how our strategies have transformed businesses. Our work is a testament to our expertise, innovation, and commitment to driving success.'
         link='/contact-us'
         linkTitle='Free Consultation'
-        img={portfolio}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/portfolio.png'
       />
 
       <section id='port-1' className='py-5 '>
@@ -41,7 +27,7 @@ export default function Portfolio() {
           <div className='row gx-md-5'>
             <div className='col-md-6 my-4'>
               <div className='card'>
-                <img className='card-img-top' src={port1} alt='many things' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port1.png' alt='many things' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     TechNova Solutions
@@ -66,7 +52,7 @@ export default function Portfolio() {
             </div>
             <div className='col-md-6 my-3'>
               <div className='card'>
-                <img className='card-img-top' src={port2} alt='man of war' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port2.png' alt='man of war' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     FreshBite Restaurants
@@ -91,7 +77,7 @@ export default function Portfolio() {
             </div>
             <div className='col-md-6 my-3'>
               <div className='card'>
-                <img className='card-img-top' src={port3} alt='peace of mind' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port3.png' alt='peace of mind' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     Blossom Beauty
@@ -116,7 +102,7 @@ export default function Portfolio() {
             </div>
             <div className='col-md-6 my-3'>
               <div className='card'>
-                <img className='card-img-top' src={port4} alt='searching' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port4.png' alt='searching' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     Quantum Electronics
@@ -142,7 +128,7 @@ export default function Portfolio() {
             </div>
             <div className='col-md-6 my-3'>
               <div className='card'>
-                <img className='card-img-top' src={port5} alt='place to be' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port5.png' alt='place to be' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     StyleSphere Boutique
@@ -168,7 +154,7 @@ export default function Portfolio() {
             </div>
             <div className='col-md-6 my-3'>
               <div className='card'>
-                <img className='card-img-top' src={port6} alt='come to man' />
+                <img className='card-img-top' src='https://amoserv.s3.amazonaws.com/amorservconsulting/port6.png' alt='come to man' />
                 <div className='py-3 px-4'>
                   <Link to='/portfolio' className='card-title'>
                     ST
@@ -255,7 +241,7 @@ export default function Portfolio() {
           ]}
         >
           <CarouselCard
-            img={t1}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t1.png'
             name='Lesley Bradley'
             position='CEO Stripe'
             desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
@@ -263,7 +249,7 @@ export default function Portfolio() {
           />
 
           <CarouselCard
-            img={t2}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t2.png'
             name='John Addams'
             position='CEO Teeno'
             desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
@@ -271,7 +257,7 @@ export default function Portfolio() {
           />
 
           <CarouselCard
-            img={t3}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t3.png'
             name='Viezh Robert'
             position='CEO TASK'
             desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"

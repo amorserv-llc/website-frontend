@@ -2,7 +2,6 @@
 
 import HeroBg from "../../components/organism/hero-bg";
 import { Helmet } from "react-helmet";
-import contact from "../../Assets/contact.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import axios from "axios";
@@ -72,7 +71,7 @@ export default function Contact() {
         desc='Our digital marketing experts are always available to give
         you top-notch solutions to your marketing challenges.'
         link='/contact-us'
-        img={contact}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/contact.png'
       />
 
       <section className='py-5 bg-light'>

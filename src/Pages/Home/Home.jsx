@@ -1,44 +1,13 @@
 /** @format */
 
 import React from "react";
-
 import { Helmet } from "react-helmet";
-import homeimg from "../../Assets/homeimg.png";
 import HeroBg from "../../components/organism/hero-bg";
 import SectionLogo from "../../components/layouts/SectionLogo";
 import { Slide } from "react-slideshow-image";
 import { Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
 import jsPDF from "jspdf";
-
-import cola from "../../Assets/cola.png";
-import amzon from "../../Assets/amzon.png";
-import cvs from "../../Assets/cvs.png";
-import cisco from "../../Assets/cisco.png";
-import pp from "../../Assets/pp.png";
-import mascard from "../../Assets/mascard.png";
-import nike from "../../Assets/nike.png";
-
-import f1 from "../../Assets/f1.png";
-import f2 from "../../Assets/f2.png";
-import f3 from "../../Assets/f3.png";
-import f4 from "../../Assets/f4.png";
-import g1 from "../../Assets/g1.png";
-
-import digi from "../../Assets/digi.png";
-import paid from "../../Assets/paid.png";
-import branding from "../../Assets/branding.png";
-import social from "../../Assets/social.png";
-import website from "../../Assets/website.png";
-import webop from "../../Assets/webop.png";
-import searchop from "../../Assets/searchop.png";
-import email from "../../Assets/email.png";
-
-import threestep from "../../Assets/threestep.png";
-import threemob from "../../Assets/threemob.png";
-import t1 from "../../Assets/t1.png";
-import t2 from "../../Assets/t2.png";
-import t3 from "../../Assets/t3.png";
 import CarouselCard from "../../components/layouts/CarouselCard";
 import ContactForm from "../../components/layouts/ContactForm";
 
@@ -69,7 +38,7 @@ export default function Home() {
         desc='Empower Your Brand, and Drive Results with AmorServ Consulting'
         link=''
         linkTitle='Start Today'
-        img={homeimg}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/homeimg.png'
       />
       <section id='sec-2' className='py-5'>
         <div className='container-lg my-4'>
@@ -135,33 +104,34 @@ export default function Home() {
                   },
                 ]}
               >
-                <SectionLogo img={nike} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/nike.png' alt="nike" />
 
-                <SectionLogo img={cola} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cola.png' alt="cola" />
 
-                <SectionLogo img={amzon} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/amzon.png' alt="amazon"/>
 
-                <SectionLogo img={cvs} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cvs.png' alt="cvs" />
 
-                <SectionLogo img={cisco} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cisco.png' alt="cisco" />
 
-                <SectionLogo img={pp} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/pp.png' alt="pp" />
 
-                <SectionLogo img={mascard} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/mascard.png' alt="master" />
 
-                <SectionLogo img={nike} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/nike.png' alt="nike" />
 
-                <SectionLogo img={cola} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cola.png' alt="cola" />
 
-                <SectionLogo img={amzon} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/amzon.png' alt="amazon"/>
 
-                <SectionLogo img={cvs} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cvs.png' alt="cvs" />
 
-                <SectionLogo img={cisco} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/cisco.png' alt="cisco" />
 
-                <SectionLogo img={pp} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/pp.png' alt="pp" />
 
-                <SectionLogo img={mascard} />
+                <SectionLogo img='https://amoserv.s3.amazonaws.com/amorservconsulting/mascard.png' alt="master" />
+
               </Slide>
             </div>
           </div>
@@ -176,8 +146,8 @@ export default function Home() {
             <div className='col-md-3 mb-5 hmd'>
               <div>
                 <img
-                  src={f1}
-                  alt=''
+                  src='https://amoserv.s3.amazonaws.com/amorservconsulting/f1.png'
+                  alt='f1'
                   className='
                 homeimg'
                 />
@@ -186,19 +156,19 @@ export default function Home() {
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div className='d-flex'>
-                <img src={f2} alt='' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/f2.png' alt='f2' />
               </div>
               <p>Feeling frustrated with low online presence?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f3} alt='' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/f3.png' alt='f3' />
               </div>
               <p>Feeling held back by digital marketing challenges?</p>
             </div>
             <div className='col-md-3 mb-5 hmd'>
               <div>
-                <img src={f4} alt='' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/f4.png' alt='f4' />
               </div>
               <p>
                 Worried about missing opportunities to connect with your
@@ -212,7 +182,7 @@ export default function Home() {
         <div className='container-lg my-4'>
           <div className='row'>
             <div className='col-lg-6 align-items-center d-flex justify-content-center'>
-              <img src={g1} alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/g1.png' alt='g1' />
             </div>
             <div
               className='col-lg-6 align-items-center col-lg-6 col-md-12'
@@ -253,7 +223,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={digi} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/digi.png' width='25px' alt='digi' />
               <span href='' className='px-2 serv-link'>
                 Digital Marketing
               </span>
@@ -262,7 +232,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={paid} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/paid.png' width='25px' alt='paid' />
               <span href='' className='px-2 serv-link'>
                 Paid Media
               </span>
@@ -271,7 +241,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={branding} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/branding.png' width='25px' alt='brading' />
               <span href='' className='px-2 serv-link'>
                 Branding
               </span>
@@ -280,7 +250,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={social} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/social.png' width='25px' alt='...' />
               <span href='' className='px-2 serv-link'>
                 Social Media
               </span>
@@ -289,7 +259,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={website} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/website.png' width='25px' alt='website' />
               <span href='' className='px-2 serv-link'>
                 Website Development
               </span>
@@ -298,7 +268,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={webop} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/webop.png' width='25px' alt='webop' />
               <span href='' className='px-2 serv-link'>
                 Website Optimization
               </span>
@@ -307,7 +277,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={searchop} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/searchop.png' width='25px' alt='seacrh' />
               <span href='' className='px-2 serv-link'>
                 Search Engine Optimazation
               </span>
@@ -316,7 +286,7 @@ export default function Home() {
               type='button'
               className='btn btn-serv col-lg-4 col-md-aut py-3 mb-3 mx-3'
             >
-              <img src={email} width='25px' alt='...' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/email.png' width='25px' alt='email' />
               <span href='' className='px-2 serv-link'>
                 Email Marketing
               </span>
@@ -349,10 +319,10 @@ export default function Home() {
 
           <div className='centered-container' style={{ marginTop: "-160px" }}>
             <div className='threestep'>
-              <img src={threestep} alt='3-Step' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threestep.png' alt='3-Step' />
             </div>
             <div className='threemob'>
-              <img src={threemob} alt='3-mobile' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threemob.png' alt='3-mobile' />
             </div>
           </div>
 
@@ -420,7 +390,7 @@ export default function Home() {
           ]}
         >
           <CarouselCard
-            img={t1}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t1.png' alt="t1"
             name='Lesley Bradley'
             position='CEO Stripe'
             desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
@@ -428,7 +398,7 @@ export default function Home() {
           />
 
           <CarouselCard
-            img={t2}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t2.png' alt="t2"
             name='John Addams'
             position='CEO Teeno'
             desc="“With Amorserv's digital tactics, our website witnessed a transformation. Visitor traffic soared twofold, with engagement metrics hitting all-time highs”"
@@ -436,7 +406,7 @@ export default function Home() {
           />
 
           <CarouselCard
-            img={t3}
+            img='https://amoserv.s3.amazonaws.com/amorservconsulting/t3.png' alt="t3"
             name='Viezh Robert'
             position='CEO TASK'
             desc="“Amorserv's dynamic digital strategies triggered an unprecedented surge in our sales revenue. Their insightful approach reshaped our marketing landscape”"

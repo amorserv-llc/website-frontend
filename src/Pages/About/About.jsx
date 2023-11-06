@@ -3,32 +3,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import HeroBg from "../../components/organism/hero-bg";
-import about from "../../Assets/about.png";
-
-import vision from "../../Assets/vision.png";
-import mission from "../../Assets/mission.png";
-import value from "../../Assets/value.png";
-import siji from "../../Assets/siji.png";
-import amazon from "../../Assets/amazon.png";
-import visa from "../../Assets/visa.png";
-import temidayo from "../../Assets/temidayo.png";
-import otaabasi from "../../Assets/otaabasi.png";
-import valentine from "../../Assets/valentine.png";
-import digvijay from "../../Assets/digvijay.png";
-import olaide from "../../Assets/olaide.png";
-import chiamaka from "../../Assets/chiamaka.png";
-import tamara from "../../Assets/tamara.png";
-import cox from "../../Assets/cox.png";
-import citi from "../../Assets/citi.png";
-import gold from "../../Assets/gold.png";
-import flock from "../../Assets/flock.png";
-import google from "../../Assets/google.png";
-import star from "../../Assets/star.png";
-import forbes from "../../Assets/forbes.png";
-import traveller from "../../Assets/traveller.png";
-import cnn from "../../Assets/cnn.png";
-import ceo from "../../Assets/ceo.png";
-import samsung from "../../Assets/samsung.png";
 
 export default function About() {
   return (
@@ -42,7 +16,7 @@ export default function About() {
         desc='Indeed, our journey has been remarkable.'
         link='/contact-us'
         linkTitle='Learn More'
-        img={about}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/about.png'
       />
 
       <section className='about-intro container'>
@@ -67,7 +41,7 @@ export default function About() {
         <div className='ul'>
           <div className='vision'>
             <div className='image'>
-              <img src={vision} alt='vision' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/vision.png' alt='vision' />
             </div>
 
             <h2>Our Vision</h2>
@@ -80,7 +54,7 @@ export default function About() {
 
           <div className='vision'>
             <div className='image'>
-              <img src={mission} alt='mission' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/mission.png' alt='mission' />
             </div>
 
             <h2>Our Mission</h2>
@@ -94,7 +68,7 @@ export default function About() {
 
           <div className='vision'>
             <div className='image'>
-              <img src={value} alt='value' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/value.png' alt='value' />
             </div>
 
             <h2>Our Value</h2>
@@ -115,7 +89,7 @@ export default function About() {
           <div className='first-row'>
             <div className='member'>
               <div className='image'>
-                <img src={ceo} alt='ceo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ceo.png' alt='ceo' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Otse Amorighoye</h6>
@@ -125,7 +99,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={siji} alt='siji' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/siji.png' alt='siji' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Siji Olojola</h6>
@@ -135,7 +109,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={valentine} alt='valentine' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/valentine.png' alt='valentine' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Valentine Okoye</h6>
@@ -145,7 +119,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={digvijay} alt='dig' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/digvijay.png' alt='dig' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Digvijay Ahuja</h6>
@@ -155,7 +129,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={chiamaka} alt='chiamaka' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/chiamaka.png' alt='chiamaka' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Chiamaka Atuchukwu</h6>
@@ -165,7 +139,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={tamara} alt='tamara' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/tamara.png' alt='tamara' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Tamaraebi Etifa</h6>
@@ -175,7 +149,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={olaide} alt='olaide' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/olaide.png' alt='olaide' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Olaide Opaleke</h6>
@@ -185,7 +159,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={temidayo} alt='temidayo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/temidayo.png' alt='temidayo' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Temidayo Akinuli</h6>
@@ -195,7 +169,7 @@ export default function About() {
 
             <div className='member'>
               <div className='image'>
-                <img src={otaabasi} alt='otaabasi' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/otaabasi.png' alt='otaabasi' />
               </div>
               <div className='detail'>
                 <h6 className='pb-3'>Otoabasi Ekwere</h6>
@@ -211,40 +185,40 @@ export default function About() {
         <div className='partner-images'>
           <ul className='container p-5'>
             <li>
-              <img src={visa} alt='visi' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/visa.png' alt='visi' />
             </li>
             <li>
-              <img src={amazon} alt='amazon' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/amzon.png' alt='amazon' />
             </li>
             <li>
-              <img src={cox} alt='cox' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/cox.png' alt='cox' />
             </li>
             <li>
-              <img src={citi} alt='citi' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/citi.png' alt='citi' />
             </li>
             <li>
-              <img src={samsung} alt='smasung' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/samsung.png' alt='smasung' />
             </li>
             <li>
-              <img src={cnn} alt='cnn' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/cnn.png' alt='cnn' />
             </li>
             <li>
-              <img src={traveller} alt='traveller' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/traveller.png' alt='traveller' />
             </li>
             <li>
-              <img src={gold} alt='gold' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/gold.png' alt='gold' />
             </li>
             <li>
-              <img src={forbes} alt='forbe' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/forbes.png' alt='forbe' />
             </li>
             <li>
-              <img src={star} alt='star' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/star.png' alt='star' />
             </li>
             <li>
-              <img src={google} alt='google' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/google.png' alt='google' />
             </li>
             <li>
-              <img src={flock} alt='flock' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/flock.png' alt='flock' />
             </li>
           </ul>
         </div>

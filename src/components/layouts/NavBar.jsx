@@ -2,18 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import "../../styles/NavBar.css";
-import Logo from "../../Assets/Logo.png";
 import { Link } from "react-router-dom";
-
-import seoIcon from "../../Assets/seoIcon.png";
-import em from "../../Assets/em.png";
-import smm from "../../Assets/smm.png";
-import sem from "../../Assets/sem.png";
-
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [toggle, setToggle] = useState(false);
-
 
   const closeUlDropdown = () => {
     setIsNavExpanded(false);
@@ -36,7 +28,7 @@ export default function Navbar() {
     <div className='navBarContainer'>
       <nav className='navigation'>
         <a href='/' className='brand-name'>
-          <img src={Logo} alt='Logo' />
+          <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/Logo.png' alt='Logo' />
         </a>
         <button
           className='hamburger'
@@ -80,7 +72,7 @@ export default function Navbar() {
                     to='/search-engine-optimization' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={seoIcon} width='20' height='20' alt='making amor' />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/seoIcon.png' width='20' height='20' alt='making amor' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Search Engine Optimization</h6>
                       <p className='opacity-75'>Get Found Online</p>
@@ -92,7 +84,7 @@ export default function Navbar() {
                     to='/social-media-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={smm} width='20' height='20' alt='serve' />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/smm.png' width='20' height='20' alt='serve' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Social Media Management</h6>
                       <p className='opacity-75'>
@@ -107,7 +99,7 @@ export default function Navbar() {
                     to='/email-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={em} width='20' height='20' alt='email' />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/em.png' width='20' height='20' alt='email' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Email Marketing</h6>
                       <p className='opacity-75'>
@@ -121,7 +113,7 @@ export default function Navbar() {
                     to='/search-engine-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
-                    <img src={sem} width='20' height='20' alt='searching dell' />
+                    <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/sem.png' width='20' height='20' alt='searching dell' />
                     <div style={{ marginLeft: "10px" }}>
                       <h6>Search Engine Marketing</h6>
                       <p className='opacity-75'>Drive Traffic with Ads</p>

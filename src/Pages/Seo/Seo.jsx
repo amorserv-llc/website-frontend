@@ -6,27 +6,6 @@ import HeroBg from "../../components/organism/hero-bg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import QuestionAnswer from "../../components/molecules/quest-answer";
-
-import ff1 from "../../Assets/ff1.png";
-import ff2 from "../../Assets/ff2.png";
-import ff3 from "../../Assets/ff3.png";
-import ff4 from "../../Assets/ff4.png";
-import ff5 from "../../Assets/ff5.png";
-import ff6 from "../../Assets/ff6.png";
-import ff7 from "../../Assets/ff7.png";
-import ff8 from "../../Assets/ff8.png";
-import ff9 from "../../Assets/ff9.png";
-import ff10 from "../../Assets/ff10.png";
-import ff11 from "../../Assets/ff11.png";
-import ff12 from "../../Assets/ff12.png";
-import ff13 from "../../Assets/ff13.png";
-import ff14 from "../../Assets/ff14.png";
-import ff15 from "../../Assets/ff15.png";
-import seo from "../../Assets/seo.png";
-import threemob from "../../Assets/threemob.png";
-import threestep from "../../Assets/threestep.png";
-import ff from "../../Assets/ff.png";
-
 export default function Seo() {
   const handleCallButtonClick = () => {
     const contactFormSection = document.getElementById("contact-form-section");
@@ -47,7 +26,7 @@ export default function Seo() {
         Online Success.'
         link=''
         linkTitle='Schedule a Call'
-        img={seo}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/seo.png' alt="seo"
       />
       <section
         className='service-feat p-5'
@@ -65,7 +44,7 @@ export default function Seo() {
             <div className='row'>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff} alt='ff' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff.png' alt='ff' />
                   <h4 className='card-title'>
                     Keyword Research & Strategy
                   </h4>{" "}
@@ -80,7 +59,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff1} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff1.png' alt='seo' />
                   <h4 className='card-title'>Link Building</h4> <br />
                   <p className='card-text'>
                     Enhance your website's authority <br /> through strategic
@@ -92,7 +71,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff2} alt='ff2' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff2.png' alt='ff2' />
                   <h4 className='card-title'>Technical SEO</h4> <br />
                   <p className='card-text'>
                     Enhance website performance and <br /> user experience with
@@ -104,7 +83,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff9} alt='ff9' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff9.png' alt='ff9' />
                   <h4 className='card-title'>Local SEO</h4> <br />
                   <p className='card-text'>
                     Dominate your local market with <br /> targeted
@@ -116,7 +95,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff11} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff11.png' alt='seo' />
                   <h4 className='card-title'>On-Page SEO</h4> <br />
                   <p className='card-text'>
                     Craft compelling web pages <br /> optimized for search
@@ -129,7 +108,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff10} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff10.png' alt='seop' />
                   <h4 className='card-title'>Off-Page SEO</h4> <br />
                   <p className='card-text'>
                     Expand your digital footprint <br />
@@ -142,7 +121,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff3} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff3.png' alt='seoj' />
                   <h4 className='card-title'>Franchise SEO</h4> <br />
                   <p className='card-text'>
                     Tailored strategies support <br />
@@ -155,7 +134,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff5} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff5.png' alt='seod' />
                   <h4 className='card-title'>Shopify SEO</h4> <br />
                   <p className='card-text'>
                     Boost Shopify store visibility and <br /> rankings using
@@ -166,7 +145,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff4} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff4.png' alt='sreo' />
                   <h4 className='card-title'>Amazon SEO</h4> <br />
                   <p className='card-text'>
                     Stand out in the competitive <br />
@@ -182,7 +161,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff6} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff6.png' alt='sjkeo' />
                   <h4 className='card-title'>eCommerce SEO</h4> <br />
                   <p className='card-text'>
                     Transform your online store into a <br />
@@ -196,7 +175,7 @@ export default function Seo() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff8} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff8.png' alt='sejho' />
                   <h4 className='card-title'>Content Writing</h4> <br />
                   <p className='card-text'>
                     Ignite your digital journey with SEO- <br />
@@ -207,7 +186,7 @@ export default function Seo() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff7} alt='seo' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff7.png' alt='seo' />
                   <h4 className='card-title'>
                     Conversion Rate <br /> Optimization (CRO)
                   </h4>{" "}
@@ -285,7 +264,7 @@ export default function Seo() {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
-                <img src={ff12} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff12.png' alt='skleo' />
                 <h3 className='pt-4'>Experience Matters</h3>
                 <p>
                   Years of SEO expertise bring valuable <br />
@@ -295,7 +274,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff13} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff13.png' alt='sesao' />
                 <h3 className='pt-4'>Dedicated SEO Professionals</h3>
                 <p>
                   Our passionate SEO specialists craft <br /> tailored
@@ -304,7 +283,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff14} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff14.png' alt='siiuyeo' />
                 <h3 className='pt-4'>Relationships & Results</h3>
                 <p>
                   We build lasting partnerships, your <br /> success is ours,
@@ -313,7 +292,7 @@ export default function Seo() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff15} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff15.png' alt='siueo' />
                 <h3 className='pt-4'>We’re Always Getting Better</h3>
                 <p>
                   In the dynamic digital landscape, we <br />
@@ -323,7 +302,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff7} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff7.png' alt='sgeo' />
                 <h3 className='pt-4'>We Play Fair</h3>
                 <p>
                   Ethics are core. Our SEO follows best <br /> practices,
@@ -332,7 +311,7 @@ export default function Seo() {
                 </p>
               </div>
               <div className='col-md-4 pt-5 '>
-                <img src={ff2} alt='seo' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff2.png' alt='seo' />
                 <h3 className='pt-4'>Transparent Reporting</h3>
                 <p>
                   Open communication is key. Our <br />
@@ -361,10 +340,10 @@ export default function Seo() {
           <section id='sec-6'>
             <div className='centered-container' style={{ marginTop: "-160px" }}>
               <div className='threestep'>
-                <img src={threestep} alt='3-Step' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threestep.png' alt='3-Step' />
               </div>
               <div className='threemob'>
-                <img src={threemob} alt='3-mobile' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threemob.png' alt='3-mobile' />
               </div>
             </div>
           </section>

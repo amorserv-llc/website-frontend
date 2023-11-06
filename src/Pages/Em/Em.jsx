@@ -4,22 +4,6 @@ import HeroBg from '../../components/organism/hero-bg'
 import { Helmet } from 'react-helmet';
 import QuestionAnswer from "../../components/molecules/quest-answer"
 
-
-import ff1 from "../../Assets/ff1.png";
-import ff2 from "../../Assets/ff2.png";
-import ff3 from "../../Assets/ff3.png";
-import ff4 from "../../Assets/ff4.png";
-import ff5 from "../../Assets/ff5.png";
-import ff6 from "../../Assets/ff6.png";
-import ff7 from "../../Assets/ff7.png";
-import ff8 from "../../Assets/ff8.png";
-import ff9 from "../../Assets/ff9.png";
-import ff10 from "../../Assets/ff10.png";
-import ff11 from "../../Assets/ff11.png";
-import ff12 from "../../Assets/ff12.png";
-import em0 from "../../Assets/em0.png";
-
-
 export default function Em() {
   return (
     <>
@@ -34,7 +18,7 @@ export default function Em() {
                 lasting customer relationships..'
         link=''
         linkTitle='Schedule a Call'
-        img={em0}
+        img='https://amoserv.s3.amazonaws.com/amorservconsulting/em0.png' alt="homage"
       />
 
       <section
@@ -52,7 +36,7 @@ export default function Em() {
             <div className='row'>
               <div className='col-md-4 text-center p-5 '>
                 <div className='card-body'>
-                  <img src={ff1} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff1.png' alt='em' />
                   <h4 className='card-title'>Brand Story Emails</h4> <br />
                   <p className='card-text'>
                     Craft a captivating brand narrative <br /> with our story
@@ -63,7 +47,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff2} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff2.png' alt='emjh' />
                   <h4 className='card-title'>Transactional Emails</h4> <br />
                   <p className='card-text'>
                     Blend functionality and<br /> engagement  with transactional
@@ -74,7 +58,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff3} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff3.png' alt='eiuhm' />
                   <h4 className='card-title'>Email Newsletters</h4> <br />
                   <p className='card-text'>
                     Engage and inform subscribers with <br /> insightful email
@@ -86,7 +70,7 @@ export default function Em() {
 
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff4} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff4.png' alt='ebcm' />
                   <h4 className='card-title'>Dedicated Emails</h4> <br />
                   <p className='card-text'>
                     Spotlight offers, events, and <br /> announcements with
@@ -98,7 +82,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff5} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff5.png' alt='emjhgf' />
                   <h4 className='card-title'>Lead Nurturing Emails</h4> <br />
                   <p className='card-text'>
                     Nurture leads with tailored emails, <br /> converting
@@ -109,7 +93,7 @@ export default function Em() {
               </div>
               <div className='col-md-4 text-center p-5'>
                 <div className='card-body'>
-                  <img src={ff6} alt='em' />
+                  <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff6.png' alt='nnem' />
                   <h4 className='card-title'>Sponsorship Emails</h4> <br />
                   <p className='card-text'>
                     Enhance partnerships with <br />impactful 
@@ -184,7 +168,7 @@ export default function Em() {
             </p>
             <div className='row pt-5 emp'>
               <div className='col-md-4 pt-5'>
-                <img src={ff7} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff7.png' alt='ikkm' />
                 <h3 className='pt-4'>Build Customer Loyalty</h3>
                 <p>
                   Nurture customer relationships with <br /> targeted email
@@ -193,7 +177,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff8} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff8.png' alt='eiihm' />
                 <h3 className='pt-4'>Expand Your Business Reach</h3>
                 <p>
                   Expand your market reach with global <br /> email marketing.
@@ -202,7 +186,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff9} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff9.png' alt='enbvm' />
                 <h3 className='pt-4'>Connect With Different Audiences</h3>
                 <p>
                   Tailor messages for diverse <br />
@@ -212,7 +196,7 @@ export default function Em() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff10} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff10.png' alt='ehhhm' />
                 <h3 className='pt-4'>Save Time and Effort</h3>
                 <p>
                   Streamline communication with <br /> automated email
@@ -221,7 +205,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff11} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff11.png' alt='ejgfm' />
                 <h3 className='pt-4'>
                   Test Email Campaigns and Drive Strong Results
                 </h3>
@@ -232,7 +216,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff12} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff12.png' alt='ejhnhgm' />
                 <h3 className='pt-4'>Track Your Analytics</h3>
                 <p>
                   Harness data-driven decision-making <br /> with our email
@@ -258,7 +242,7 @@ export default function Em() {
             </p>
             <div className='row pt-5'>
               <div className='col-md-4 pt-5'>
-                <img src={ff1} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff1.png' alt='emff' />
                 <h3 h3 className='pt-4'>
                   Personalized Campaigns
                 </h3>
@@ -269,7 +253,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff2} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff2.png' alt='etrfm' />
                 <h3 h3 className='pt-4'>
                   Targeted Audience Engagement
                 </h3>
@@ -279,7 +263,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff6} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff6.png' alt='eggm' />
                 <h3 h3 className='pt-4'>
                   Measurable ROI
                 </h3>
@@ -292,7 +276,7 @@ export default function Em() {
               </div>
 
               <div className='col-md-4 pt-5'>
-                <img src={ff3} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff3.png' alt='eujhgm' />
                 <h3 h3 className='pt-4'>
                   Real-Time Communication
                 </h3>
@@ -303,7 +287,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff4} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff4.png' alt='ehshm' />
                 <h3 h3 className='pt-4'>
                   Flexibility and Versatility
                 </h3>
@@ -314,7 +298,7 @@ export default function Em() {
                 </p>
               </div>
               <div className='col-md-4 pt-5'>
-                <img src={ff5} alt='em' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff5.png' alt='emjds' />
                 <h3 h3 className='pt-4'>
                   Lead Nurturing and Conversion
                 </h3>

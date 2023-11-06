@@ -5,23 +5,6 @@ import { Link } from 'react-router-dom'
 import HeroBg from '../../components/organism/hero-bg'
 import { Helmet } from 'react-helmet'
 
-import ff1 from "../../Assets/ff1.png";
-import ff2 from "../../Assets/ff2.png";
-import ff3 from "../../Assets/ff3.png";
-import ff4 from "../../Assets/ff4.png";
-import ff5 from "../../Assets/ff5.png";
-import ff7 from "../../Assets/ff7.png";
-import ff8 from "../../Assets/ff8.png";
-import ff9 from "../../Assets/ff9.png";
-import ff10 from "../../Assets/ff10.png";
-import ff11 from "../../Assets/ff11.png";
-import ff12 from "../../Assets/ff12.png";
-import threemob from "../../Assets/threemob.png";
-import threestep from "../../Assets/threestep.png";
-import smo from "../../Assets/smo.png";
-import ff from "../../Assets/ff.png";
-
-
 export default function Sm() {
   const handleCallButtonClick = () => {
     const contactFormSection = document.getElementById("contact-form-section");
@@ -43,7 +26,7 @@ export default function Sm() {
       message resonates across social channels.'
       link=''
       linkTitle='Schedule a Call'
-      img={smo}
+      img='https://amoserv.s3.amazonaws.com/amorservconsulting/smo.png' alt="semm"
     />
 
     <section
@@ -60,7 +43,7 @@ export default function Sm() {
           <div className='row'>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff} alt='smm' className='fram' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff.png' alt='smm' className='fram' />
                 <h4 className='card-title'>Content Creation</h4> <br />
                 <p className='card-text'>
                   Our content specialists create <br /> captivating and
@@ -72,7 +55,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff1} alt='smm' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff1.png' alt='smm' />
                 <h4 className='card-title'>Social Media Advertising</h4>{" "}
                 <br />
                 <p className='card-text'>
@@ -84,7 +67,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff2} alt='smm' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff2.png' alt='skmm' />
                 <h4 className='card-title'>Influencer Marketing</h4> <br />
                 <p className='card-text'>
                   Leverage industry thought leaders to <br /> boost
@@ -96,7 +79,7 @@ export default function Sm() {
 
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff3} alt='smm' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff3.png' alt='smm' />
                 <h4 className='card-title'>Handle each platform</h4> <br />
                 <p className='card-text'>
                   Tailor content for each platform's <br />
@@ -108,7 +91,7 @@ export default function Sm() {
             </div>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff4} alt='smm' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff4.png' alt='smjjm' />
                 <h4 className='card-title'>
                   Social Media Contest and Giveaways
                 </h4>{" "}
@@ -122,7 +105,7 @@ export default function Sm() {
             </div>
             <div className='col-md-4 text-center p-5'>
               <div className='card-body'>
-                <img src={ff5} alt='smm' />
+                <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff5.png' alt='smm' />
                 <h4 className='card-title'>
                   Instant replies and user engagement
                 </h4>{" "}
@@ -196,7 +179,7 @@ export default function Sm() {
           </p>
           <div className='row pt-5'>
             <div className='col-md-4 p-5'>
-              <img src={ff7} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff7.png' alt='smm' />
               <h3 className='pt-4'>Data Driven</h3>
               <p>
                 At Amorserv Consulting, we propel <br /> success with
@@ -206,7 +189,7 @@ export default function Sm() {
               <br /> <br /> <br />
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff8} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff8.png' alt='smm' />
               <h3 className='pt-4'>Dedicated SM Professionals</h3>
               <p>
                 We have a devoted team of social <br />
@@ -216,7 +199,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff9} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff9.png' alt='smm' />
               <h3 className='pt-4'>Certified Experts</h3>
               <p>
                 Trust our industry-certified SM <br /> professionals. Our
@@ -226,7 +209,7 @@ export default function Sm() {
             </div>
 
             <div className='col-md-4 p-5'>
-              <img src={ff10} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff10.png' alt='smm' />
               <h3 className='pt-4'>Industry Insights</h3>
               <p>
                 Confidently navigate the digital <br />
@@ -235,7 +218,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff11} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff11.png' alt='smm' />
               <h3 className='pt-4'>Team Support</h3>
               <p>
                 Collaboration is our core. With a <br /> dedicated SM team,
@@ -244,7 +227,7 @@ export default function Sm() {
               </p>
             </div>
             <div className='col-md-4 p-5'>
-              <img src={ff12} alt='smm' />
+              <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/ff12.png' alt='smm' />
               <h3 className='pt-4'>Transparent Reporting</h3>
               <p>
                 Transparency is our priority. Our <br /> reporting is a
@@ -269,17 +252,13 @@ export default function Sm() {
         </p>
         <div className='centered-container' style={{ marginTop: "-160px" }}>
           <div className='threestep'>
-            <img src={threestep} alt='3-Step' />
+            <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threestep.png' alt='3-Step' />
           </div>
           <div className='threemob'>
-            <img src={threemob} alt='3-mobile' />
+            <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/threemob.png' alt='3-mobile' />
           </div>
         </div>
-        {/* <div className='centered-container' style={{ marginTop: "-160px" }}>
-          <div className='threestep'>
-            <img src={threestep} alt='3-Step' />
-          </div>
-        </div> */}
+       
         <div className='text-center' style={{ marginTop: "-170px" }}>
           <Link className='btn mt-4 btn-real' onClick={handleCallButtonClick}>
             Get Started

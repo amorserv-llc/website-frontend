@@ -1,6 +1,4 @@
-import React from 'react'
 import { Helmet } from 'react-helmet'
-import terms from "../../Assets/terms.png"
 
 export default function TermsCondition() {
   return (
@@ -20,7 +18,7 @@ export default function TermsCondition() {
         
         </div>
         <div className='image'>
-          <img src={terms} className='img-fluid' alt='header' />
+          <img src='https://amoserv.s3.amazonaws.com/amorservconsulting/terms.png' className='img-fluid' alt='header' />
         </div>
       </div>
     </header>
