@@ -35,90 +35,68 @@ function App() {
         {
           path: "/about-us",
           element: (
-            <ScrollToTop>
               <About />
-            </ScrollToTop>
           ),
         },
         {
           path: "/portfolio-page",
           element: (
-            <ScrollToTop>
               <Portfolio />
-            </ScrollToTop>
           ),
         },
         {
           path: "/blog",
           element: (
-            <ScrollToTop>
               <Blog />
-            </ScrollToTop>
           ),
         },
         {
           path: "/contact-us",
           element: (
-            <ScrollToTop>
               <Contact />
-            </ScrollToTop>
           ),
         },
         {
           path: "/thank-you",
           element: (
-            <ScrollToTop>
               <ThankYou />
-            </ScrollToTop>
           ),
         },
         {
           path: "/terms-conditions",
           element: (
-            <ScrollToTop>
               <TermsCondition />
-            </ScrollToTop>
           ),
         },
 
         {
           path: "/search-engine-optimization",
           element: (
-            <ScrollToTop>
               <Seo />
-            </ScrollToTop>
           ),
         },
         {
           path: "/social-media-marketing",
           element: (
-            <ScrollToTop>
               <Smm />
-            </ScrollToTop>
           ),
         },
         {
           path: "/email-marketing",
           element: (
-            <ScrollToTop>
               <Em />
-            </ScrollToTop>
           ),
         },
         {
           path: "/search-engine-marketing",
           element: (
-            <ScrollToTop>
               <Sem />
-            </ScrollToTop>
           ),
         },
         {
           path: "/branding",
           element: (
-            <ScrollToTop>
               <Branding />
-            </ScrollToTop>
           ),
         },
       ],
