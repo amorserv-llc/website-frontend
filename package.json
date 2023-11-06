@@ -73,9 +73,11 @@
       "/Portfolio-page",
       "/blog",
       "/contact-us",
-      "/thank-you",     
+      "/thank-you",
       "/branding"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
-  
 }
