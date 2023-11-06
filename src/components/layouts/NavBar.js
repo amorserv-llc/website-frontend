@@ -14,11 +14,7 @@ export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const closeServicesDropdown = () => {
-    setToggle(false);
-  };
 
-  // Close the UL dropdown when "Portfolio" link is clicked
   const closeUlDropdown = () => {
     setIsNavExpanded(false);
   };
