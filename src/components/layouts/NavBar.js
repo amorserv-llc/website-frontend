@@ -66,9 +66,8 @@ export default function Navbar() {
 
           <ul>
           <li className="navItem dropdown" onClick={() => setToggle((prev) => !prev)}>
-            <a
-                className="nav-link dropdown-toggle"
-                href="#"
+            <a href="#"
+                className="nav-link dropdown-toggle"                
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
