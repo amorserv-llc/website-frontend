@@ -33,7 +33,7 @@ function App() {
           index: true,
         },
         {
-          path: "about-us",
+          path: "/about-us",
           element: (
             <ScrollToTop>
               <About />
@@ -41,7 +41,7 @@ function App() {
           ),
         },
         {
-          path: "portfolio-page",
+          path: "/portfolio-page",
           element: (
             <ScrollToTop>
               <Portfolio />
@@ -49,7 +49,7 @@ function App() {
           ),
         },
         {
-          path: "blog",
+          path: "/blog",
           element: (
             <ScrollToTop>
               <Blog />

@@ -1,6 +1,7 @@
 {
   "name": "amorservconsulting",
   "version": "0.1.0",
+  "homepage": "http://amorservconsulting.com/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -68,9 +69,9 @@
       "/social-media-marketing",
       "/email-marketing",
       "/search-engine-marketing",
-      "about-us",
-      "portfolio-page",
-      "blog",
+      "/about-us",
+      "/portfolio-page",
+      "/blog",
       "/contact-us",
       "/thank-you",
       "/branding"
