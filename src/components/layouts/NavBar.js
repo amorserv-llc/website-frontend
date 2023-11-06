@@ -12,14 +12,16 @@ import sem from "../../Assets/sem.png";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-
-
   const [toggle, setToggle] = useState(false);
-  // const [isOpen, setIsOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const closeServicesDropdown = () => {
+    setToggle(false);
+  };
+
+  // Close the UL dropdown when "Portfolio" link is clicked
+  const closeUlDropdown = () => {
+    setIsNavExpanded(false);
+  };
 
   useEffect(() => {
     const closeDropdown = (event) => {
@@ -64,6 +66,8 @@ export default function Navbar() {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
+        <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+
           <ul>
           <li className="navItem dropdown" onClick={() => setToggle((prev) => !prev)}>
             <Link
@@ -77,7 +81,7 @@ export default function Navbar() {
                 <div className='dropIn'>
                   <Link
                     className='nav-link dropInLinks hoverable-link'
-                    to='/search-engine-optimization'
+                    to='/search-engine-optimization' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
                     <img src={seoIcon} width='20' height='20' alt='...' />
@@ -89,7 +93,7 @@ export default function Navbar() {
 
                   <Link
                     className='nav-link dropInLinks hoverable-link'
-                    to='/social-media-marketing'
+                    to='/social-media-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
                     <img src={smm} width='20' height='20' alt='...' />
@@ -104,7 +108,7 @@ export default function Navbar() {
 
                   <Link
                     className='nav-link dropInLinks hoverable-link'
-                    to='/email-marketing'
+                    to='/email-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
                     <img src={em} width='20' height='20' alt='...' />
@@ -118,7 +122,7 @@ export default function Navbar() {
 
                   <Link
                     className='nav-link dropInLinks hoverable-link'
-                    to='/search-engine-marketing'
+                    to='/search-engine-marketing' onClick={closeUlDropdown}
                     style={{ display: "flex", alignItems: "center" }}
                   >
                     <img src={sem} width='20' height='20' alt='...' />
@@ -131,23 +135,24 @@ export default function Navbar() {
               )}
             </li>
             <li>
-              <Link className='nav-link' to='/about-us'>
+              <Link className='nav-link' to='/about-us' onClick={closeUlDropdown}>
                 About Us
               </Link>{" "}
             </li>
             <li>
-              <Link className='nav-link' to='/portfolio-page'>
+              <Link className='nav-link' to='/portfolio-page' onClick={closeUlDropdown}>
                 Portfolio
               </Link>{" "}
             </li>
             <li>
-               <Link className="nav-link navtopbtn" to="/contact-us">
+               <Link className="nav-link navtopbtn" to="/contact-us" onClick={closeUlDropdown}>
                 Contact Us
               </Link> 
               
             </li>
           </ul>
-        </div>
+          </div>
+          </div>
       </nav>
     </div>
   );
