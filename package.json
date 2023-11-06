@@ -60,21 +60,8 @@
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
-    ],
-    "include": [
-      "/",
-      "/terms-conditions",
-      "/search-engine-optimization",
-      "/social-media-marketing",
-      "/email-marketing",
-      "/search-engine-marketing",
-      "/about-us",
-      "/Portfolio-page",
-      "/blog",
-      "/contact-us",
-      "/thank-you",
-      "/branding"
     ]
+    
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
