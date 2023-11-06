@@ -68,9 +68,9 @@
       "/social-media-marketing",
       "/email-marketing",
       "/search-engine-marketing",
-      "/about-us",
-      "/portfolio-page",
-      "/blog",
+      "about-us",
+      "portfolio-page",
+      "blog",
       "/contact-us",
       "/thank-you",
       "/branding"
