@@ -66,12 +66,13 @@ export default function Navbar() {
 
           <ul>
           <li className="navItem dropdown" onClick={() => setToggle((prev) => !prev)}>
-            <a href="#"
-                className="nav-link dropdown-toggle"                
+            <Link
+                className="nav-link dropdown-toggle"
+                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >Services</a>
+              >Services</Link>
               {toggle && (
                 <div className='dropIn'>
                   <Link
